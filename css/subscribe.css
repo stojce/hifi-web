@@ -1,0 +1,96 @@
+/**
+ * HighFidelity's subscribe page styling
+ */
+
+div#main > article fieldset {
+    padding: 15px 0;
+}
+
+div#main > article input[type="email"],
+div#main > article input[type="email"] + a {
+    font-family: proxima-nova, sans-serif;
+}
+
+div#main > article input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #b1b1b1;
+    border-radius: 0;
+    font-size: 21px;
+    background-color: #f1f1f1;
+    color: #262626;
+    padding: 15px 13px 11px;
+    width: 317px;
+    box-shadow: none;
+}
+
+div#main > article input[type="email"]:focus {
+    box-shadow: none;
+}
+
+div#main > article input[type="email"] + a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 13px;
+    vertical-align: top;
+    margin-top: 12px;
+    height: 22px;
+    text-decoration: underline;
+    padding: 0;
+    color: #000000;
+}
+
+div#main > article input[type="email"] + a:hover {
+    text-decoration: none;
+}
+
+div#main > article input[type="email"] + a:active {
+    color: #d7605d;
+}
+
+div#main > article p {
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 970px) {
+    div#main > article p {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    div#main > article input[type="email"] {
+        font-size: 18px;
+        padding: 10px;
+        width: 270px;
+    }
+    
+    div#main > article input[type="email"] + a {
+        font-size: 17px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    div#main > article p {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    div#main > article h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    
+    div#main > article input[type="email"] {
+        font-size: 13px;
+        padding: 5px;
+        width: 140px;
+    }
+    
+    div#main > article input[type="email"] + a {
+        font-size: 12px;
+        margin-left: 7px;
+        margin-top: 6px;
+    }
+}

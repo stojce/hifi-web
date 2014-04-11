@@ -1,0 +1,512 @@
+/**
+ * HighFidelity's company page styling
+ */
+
+/* 
+ * bg is actually an element block on this page because of parallax reasons,
+ * no need to inherit from common.cs 
+ */
+html > body {
+    background: #ffffff none;
+}
+
+/* the actual background */
+html.skrollr .company-bg {
+    position: fixed;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff url('../img/dragon-curve.png') no-repeat left 150px;
+}
+
+html.skrollr .hifi-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1080px;
+    max-width: 715px;
+}
+
+.hifi-button:hover .hifi-button-content,
+#hifi-audio.playing #hifi-audio-play-button > rect,
+#hifi-audio.playing #hifi-audio-play-button > path {
+    stroke: #000000;
+}
+
+#hifi-audio.paused #hifi-audio-pause-button > rect {
+    stroke: #000000;
+}
+
+.hifi-audio-volume-knob:hover {
+    cursor:ns-resize;
+}
+
+.hifi-button:hover {
+    cursor: pointer;
+}
+
+#hifi-greenlight {
+    animation:blink infinite .8s;
+    -webkit-animation:blink infinite .8s;
+}
+
+#hifi-orangelight {
+    fill: white;
+    stroke: #ccc;
+}
+
+@keyframes blink {
+    0% {fill: #00ff00;}
+    50% {fill: white;}
+    100% {fill: #00ff00;}
+}   
+
+@-webkit-keyframes blink {
+    0% {fill: #00ff00;}
+    50% {fill: white;}
+    100% {fill: #00ff00;}
+}
+
+#hifi-audio.paused #hifi-greenlight {
+    fill: white;
+}
+
+#hifi-audio.paused #hifi-orangelight {
+    fill: orange;
+    stroke: #ffce75;
+}
+
+#hifi-audio.playing #hifi-greenlight {
+    fill: #0f0;
+    stroke: #99ff99;
+}
+
+#hifi-audio.playing #hifi-orangelight {
+    fill: white;
+    stroke: #ccc;
+}
+
+html.skrollr .fixed-skrollable {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+html.skrollr #navbar {
+    z-index: 1100;
+    position: fixed;
+    width: 100%;
+}
+
+html.skrollr footer#site-links {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    right: 0;
+    margin-bottom: auto;
+}
+
+footer#site-links #social p {
+    border-right: 0;
+    border-left: 0;
+}
+
+html.skrollr #container {
+    z-index: 1000;
+}
+
+html.skrollr #container {
+    width: 609px;
+}
+
+div#main > article li {
+    font-size: 1.1em;
+    font-family: proxima-nova, sans-serif;
+}
+
+#main ol {
+    padding-top: 30px;
+}
+
+#main ol .hifi-gray,
+#main ul .hifi-gray {
+    font-style: normal;
+    font-weight: 300;
+    color: #666666;
+}
+
+#hifi-audio {
+    display: none;
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: -7px;
+}
+
+html.skrollr #hifi-audio {
+    display: block;
+}
+#main > article {
+    border: 0;
+}
+
+div#main > article .hifi-investor,
+div#main > article .hifi-advisor {
+    list-style: none;
+    color: #333333;
+    font-size: 1em;
+    position: absolute;
+}
+
+div#main > article .hifi-investor {
+    width: 190px;
+    height: 152px;
+    padding: 22px;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+div#main > article .hifi-advisor {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+div#main > article .hifi-investor h3,
+div#main > article .hifi-advisor h3 {
+    line-height: 150%;
+}
+
+div#main > article .hifi-advisor h3 {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.hifi-advisor a {
+    display: inline-block;
+}
+
+div#main > article .hifi-advisor a,
+div#main > article .hifi-advisor a:hover,
+div#main > article .hifi-advisor a:active {
+    text-decoration: none;
+}
+
+div#main > article .hifi-advisor a:hover {
+    color: #666666;
+}
+
+.hifi-investor-1 {
+    z-index: 200;
+    left: -80px;
+}
+
+.hifi-investor-2 {
+    z-index: 199;
+    left: 135px;
+    margin-top: 9px;
+    -moz-transform: rotate(16deg);
+    -ms-transform: rotate(16deg);
+    -o-transform: rotate(16deg);
+    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
+}
+
+.hifi-investor-3 {
+    z-index: 198;
+    left: 370px;
+    margin-top: 20px;
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.hifi-investor-4 {
+    z-index: 196;
+    left: 60px;
+    margin-top: 185px;
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.hifi-investor-5 {
+    z-index: 197;
+    left: 275px;
+    margin-top: 200px;
+}
+
+.hifi-advisor-1 {
+    left: -50px;
+}
+
+.hifi-advisor-2 {
+    right: -50px;
+}
+
+div#main > article h3 {
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.2;
+}
+
+div#main > article .hifi-investor p {
+    padding-top: 0.8em;
+    font-family: proxima-nova, sans-serif;
+    color: #333333;
+    font-size: 0.8em;
+}
+
+div#main > article .hifi-investor p a {
+    color: #333333;
+    font-weight: normal;
+}
+
+div#main > article h2 {
+    font-size: 56px;
+    color: #3698bf;
+}
+
+div#main > article p + h2 {
+    padding-top: 35px;
+}
+
+div#main > article ol li {
+    margin-bottom: 25px;
+}
+
+.scroll-arrow a > .scroll-top {
+    border: 0 !important;
+}
+
+.scroll-arrow a > .icon-arrow-up {
+    color: #3698bf;
+}
+
+.scroll-arrow a:hover > .icon-arrow-up {
+    color: #333333;
+}
+
+.hifi-investor-container,
+.hifi-advisor-container {
+    position: relative;
+    left: -105px;
+    top: 15px;
+    padding: 33px 0;
+    height: 380px;
+}
+
+html.skrollr .hifi-investor-container,
+html.skrollr .hifi-advisor-container {
+    left: 0;
+}
+
+.hifi-advisor-container {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+footer#site-links > * {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll-arrow a > .scroll-top {
+    color: #666666;
+    font-size: 16px;
+}
+
+.scroll-arrow a > .scroll-top,
+.scroll-arrow a:hover > .scroll-top {
+    text-decoration: none;
+}
+
+.scroll-arrow a > .scroll-top {
+    border-bottom: 1px solid #d9d9d9;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    height: 1.05em;
+}
+
+.scroll-arrow a:hover > .scroll-top {
+    border-bottom: 0 none;
+}
+
+/**
+ * Responsive sizes
+ */
+@media screen and (max-width: 1090px) {
+    html.skrollr .hifi-container {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    html.skrollr .hifi-container {
+        width: 760px;
+    }
+    
+    div#main > article {
+        font-size: 1.65em;
+    }
+    
+    #main > article ol,
+    #main > article ul {
+        font-size: 0.8em;
+    }
+
+    #main ol {
+        padding-top: 0px;
+    }
+    
+    div#main > article .hifi-investor,
+    div#main > article .hifi-advisor {
+        font-size: 1.25em;
+    }
+    
+    .hifi-investor-container,
+    .hifi-advisor-container {
+        left: -95px;
+        padding: 10px 0;
+        height: 330px;
+        transform: scale(0.9);
+        transform-origin: 60% 0%;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: 60% 0%;
+        -ms-transform: scale(0.9);
+        -ms-transform-origin: 60% 0%;
+        -o-transform: scale(0.9);
+        -o-transform-origin: 60% 0%;
+        -webkit-transform: scale(0.9);
+        -webkit-transform-origin: 60% 0%;
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    #main > article {
+        padding: 0 20px;
+    }
+
+    div#main > article li {
+        margin-bottom: .5em;
+    }
+    
+    .hifi-investor-container,
+    .hifi-advisor-container {
+        left: 0px;
+        padding: 0px;
+        height: 250px;
+        transform: scale(0.55);
+        transform-origin: 18% 0%;
+        -moz-transform: scale(0.55);
+        -moz-transform-origin: 18% 0%;
+        -ms-transform: scale(0.55);
+        -ms-transform-origin: 18% 0%;
+        -o-transform: scale(0.55);
+        -o-transform-origin: 18% 0%;
+        -webkit-transform: scale(0.55);
+        -webkit-transform-origin: 18% 0%;
+    }
+    
+    footer#site-links > * {
+        width: auto;
+    }
+    
+    .scroll-arrow a > .scroll-top {
+        height: 1.25em;
+    }
+    
+    .scroll-arrow a > .scroll-top {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    div#main > article h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    
+    div#main > article p + h2 {
+        padding-top: 15px;
+    }
+    
+    .hifi-investor-container {
+        height: 180px;
+        position: static;
+        transform: none;
+        transform-origin: 0 0;
+        -moz-transform: none;
+        -moz-transform-origin: 0 0;
+        -ms-transform: none;
+        -ms-transform-origin: 0 0;
+        -o-transform: none;
+        -o-transform-origin: 0 0;
+        -webkit-transform: none;
+        -webkit-transform-origin: 0 0;
+    }
+    
+    .hifi-advisor-container {
+        height: 210px;
+    }
+
+    div#main > article .hifi-investor {
+        position: static;
+        
+        list-style: disc;
+        color: #3698bf;
+        font-size: 0.66em;
+        line-height: 1.426;
+    
+        border: 0 none;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        
+        left: 0;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+    
+    div#main > article .hifi-investor h3,
+    div#main > article .hifi-advisor h3 {
+        margin: 0;
+        color: #666666;
+    }
+    
+    div#main > article .hifi-investor p {
+        font-size: 1.2em;
+        color: #666666;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hifi-advisor-1 {
+        left: -70px;
+    }
+
+    .hifi-advisor-2 {
+        right: -200px;
+    }
+}

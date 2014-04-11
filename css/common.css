@@ -1,0 +1,424 @@
+/**
+ * HighFidelity's common styling
+ *
+ * This file is assumed to be included on every HF page when using the
+ * common layout. Each shared rule on most pages should live here. 
+ * 
+ * Page-specific styling rules should be at their own styling file(s).
+ *
+ */
+
+body {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-style: normal;
+    font-weight: normal;
+    background: url('../img/dragon-curve.png') no-repeat left 150px #ffffff;
+}
+
+#main ol span,
+#main ul span {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+}
+
+#main ol,
+#main ul {
+    font-weight: bold;
+    color: #3698bf;
+    font-family: proxima-nova, sans-serif;
+}
+
+a,
+body {
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: #3698bf;
+}
+
+#main > article p.lead,
+#main > article p em {
+    font-weight: bold;
+}
+
+#main > article p.lead {
+    color: #000000;
+}
+
+#main > article p em {
+    color: #000;
+}
+
+#main > article p.lead,
+#main > article p em,
+a.grey-link {
+    font-family: proxima-nova, sans-serif;
+}
+
+#main > article p.lead {
+    font-size: 52px;
+    line-height: 1.15em;
+}
+
+#container {
+    position: relative;
+    margin: 0 auto;
+    width: 1080px;
+    max-width: 715px;
+}
+
+em {
+    font-style: normal;
+}
+
+#main > article {
+    border: 1px solid #cccccc;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0.75) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.75)), color-stop(5%, rgba(255, 255, 255, 0.9)), color-stop(95%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.75)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0.75) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0.75) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0.75) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.9) 95%, rgba(255, 255, 255, 0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfffffff', endColorstr='#bfffffff', GradientType=1);
+    z-index: 10;
+    margin: 0;
+    padding: 55px 120px 45px 112px;
+    font-size: 2.05em;
+    position: relative;
+}
+
+#main > article h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+#main > article p {
+    font-size: .75em;
+    line-height: 1.3em;
+    font-family: proxima-nova, sans-serif;
+    margin-bottom: 44px;
+}
+
+div#main > article li {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-bottom: 15px;    
+}
+
+#main article > a.tweetthis {
+    color: #262626;
+    font-size: .6em;
+    position: absolute;
+    text-decoration: none;
+    font-weight: normal;
+    bottom: 2em;
+    right: 5%;
+}
+
+#main article > a.tweetthis:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#main article > a.tweetthis:hover i {
+    text-decoration: none;
+}
+
+#main article > a.tweetthis:active {
+    color: #3698bf;
+}
+
+#main > article a {
+    color: #3698bf;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: proxima-nova, sans-serif;
+}
+
+#main > article a:hover {
+    text-decoration: none;
+}
+
+#main > article a:active {
+    color: #333333;
+}
+
+/* jobs list */
+#main #jobs {
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+}
+
+
+#main #jobs ul {
+    margin-top: 15px;
+}
+
+#main #jobs ul > li {
+    list-style-type: none;
+    border-top: 1px solid #cccccc;
+    margin: 0 0 5px -25px;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.5em;
+}
+
+
+#main #jobs a {
+    text-decoration: none;
+    font-size: .9em;
+    color: #3698bf;
+    display: inline-block;
+    width: 9999px;
+    font-weight: normal;
+}
+
+#main #jobs a:after {
+    content: '';
+    float: right;
+    width: 100px;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1);
+}
+
+#main #jobs a:hover {
+    text-decoration: underline;
+}
+
+#main #jobs ul > li:last-child {
+    margin-bottom: 40px; 
+}
+
+#main #jobs ul > li:last-child a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#main #jobs ul > li:last-child a:hover {
+    text-decoration: none;
+}
+
+#main #jobs a:hover {
+    text-decoration: underline;
+}
+
+#main #jobs a:active,
+#main #jobs ul > li:last-child a:active {
+    color: #000000;
+}
+
+#supported-browsers {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#supported-browsers li {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 15px 10px 0;
+}
+
+#supported-browsers li a {
+    color: #000;
+}
+
+body > .modal {
+    border-radius: 0;
+    border: 0 none;
+    box-shadow: none;
+    padding: 15px 50px;
+    width: 375px;
+    margin-left: -240px;
+    font-family: Helvetica, arial;
+    color: #555;
+}
+
+body > .modal + .modal-backdrop {
+    background-color: #CCCCCC;
+}
+
+body > .modal p,
+body > .modal li {
+    font-size: 1.2em;
+}
+
+/**
+ * Responsive sizes
+ */
+@media screen and (max-width: 1090px) {
+    #container {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 970px) {    
+    #main > article {
+        font-size: 1.65em;
+    }
+    
+    #container {
+        width: 760px;
+    }
+    
+    #main > article p.lead {
+        font-size: 42px;
+        line-height: 1.2em;
+    }
+    
+    #main > article h2 {
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+    
+    #main > article p {
+        margin-bottom: 20px;
+        line-height: 1.4em;
+    }
+    
+    #main > article ol,
+    #main > article ul {
+        font-size: 1em;
+    }
+    
+    div#requirements, 
+    div#apply {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        background-size: contain;
+    }
+    
+    header {
+        font-size: .8em;
+    }
+    
+    #main > article {
+        font-size: 1.2em;
+    }
+    
+    #main > article h2 {
+        font-size: 1.3em;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    
+    #main > article p.lead {
+        font-size: 30px;
+        line-height: 1.3em;
+    }
+    
+    #main > article p {
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+    
+    #main #jobs {
+        font-size: 15px;
+    }
+    
+    #main #jobs ul,
+    #main #jobs ul > li {
+        margin: 0 0 5px 0;
+        font-size: 1.1em;
+    }
+    
+    #container {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    header {
+        font-size: .7em;
+    }
+    
+    #main > article {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+    
+    #main > article h2 {
+        font-size: 1.1em;
+        margin-top: 10px;
+        line-height: 1em;
+    }
+    
+    #main > article p.lead {
+        font-size: 22px;
+    }
+    
+    #main > article p {
+        margin-bottom: 10px;
+    }
+    
+    #main #jobs {
+        font-size: 13px;
+    }
+    
+    #main #jobs ul,
+    #main #jobs ul > li {
+        margin: 0;
+    }
+    
+    #container {
+        width: 280px;
+    }
+}
+
+/**
+ * Easter egg for really small screens
+ * (shouldn't be seen on current standard sizes)
+ */
+@media screen and (max-width: 250px) {
+    header,
+    #container > * {
+        display: none;
+    }
+    
+    #container,
+    html.skrollr.dancer .hifi-container {
+        margin: auto;
+        width: 150px;
+        height: 110px;
+        position: relative;
+        padding: 10%;
+        background-position: center;
+        color: rgb(54, 152, 191);
+    }
+    
+    #container:after {
+        position: absolute;
+        content: 'Oops, looks like your screen is too small - try a larger device.';
+        display: block;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,210 @@
+/**
+ * HighFidelity's jobs page styling
+ */
+
+/* bg is a particle system, we don't need to inherit from common.cs */
+html > body {
+    background: #ffffff none;
+}
+
+#particle-system {
+    position: fixed;
+    border: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+div#main > article {
+    padding: 55px 75px;
+}
+
+div#main > h2 {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+    font-weight: normal;
+    margin-top: 45px;
+    color: #333;
+}
+
+div#main > h2,
+div#main > h3 {
+    text-align: center;    
+}
+
+div#main > h2 > strong {
+    color: #3698bf;
+    font-family: proxima-nova, sans-serif;
+}
+
+div#main > article h3 {
+    font-family: proxima-nova, sans-serif;
+}
+
+div#main > article h3 {
+    line-height: 1em;
+}
+
+div#main > article p em,
+div#main > article p.lead {
+    color: #3698bf;
+}
+
+div#main > article p.lead {
+    font-size: 56px;
+    line-height: 1.20em;
+}
+
+#voxel-sketch {
+    margin: 30px 0 20px;
+}
+
+#requirements,
+#apply {
+    margin-top: 60px;
+}
+
+#requirements > ul {
+    margin-left: 0px;
+    color: #3698bf;
+}
+
+#requirements > ul > li {
+    font-size: 0.75em !important;
+    line-height: 1.3em !important;
+}
+
+#requirements > ul > li > span {
+    font-family: proxima-nova, sans-serif !important;
+}
+
+div#main > article p em {
+    color: #262626;
+}
+
+#main a {
+    color: #3698bf;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#main a:hover {
+    text-decoration: none;
+}
+
+#main a:active {
+    color: #000000;
+}
+
+#main br + a[href^=mailto] {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+div#main #jobs {
+    margin-top: 40px;
+    width: 450px;
+}
+
+div#main > article.no-border-bottom {
+    border-bottom: none;
+}
+
+div#main > article.get-our-attention {
+    background-color: #A7A7A7;
+    padding: 50px 75px 9px 75px;
+    border-top: none;
+}
+
+div#main > article.get-our-attention p:first-child {
+    margin-bottom: 30px;
+}
+
+div#main > article.get-our-attention span.strong {
+    font-weight: 800;
+}
+
+    /**
+     * Responsive sizes
+     */
+@media screen and (max-width: 770px) {
+    /**
+     * hide particles at this screen size
+     */
+    #particle-system {
+        display: none;
+    }
+    
+    div#main > article li {
+        margin-bottom: 5px;
+    }
+    
+    div#main > article {
+        padding: 35px 55px;
+    }
+    
+    div#main > h2 {
+        font-size: 1.2em;
+    }
+
+    div#main > article p.lead {
+        font-size: 40px;
+        line-height: 1.10em;
+    }
+
+    #voxel-sketch {
+        float: right;
+        margin: 5px;
+        width: 60%;
+    }
+    
+    div#main #jobs {
+        width: 100%;
+        margin-top: .5em;
+    }
+    
+    #main #jobs ul > li:last-child {
+        margin-bottom: 10px;
+    }
+
+    #requirements > ul > li {
+        font-size: 1em !important;
+    }
+
+    div#main > article.get-our-attention {
+        padding: 15px 25px 9px 25px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    div#main > article {
+        padding: 15px 25px;
+    }
+    
+    div#main > h2 {
+        font-size: 1em;
+        margin-top: 5px;
+    }
+    
+    div#main > article li {
+        margin-bottom: 3px;
+    }
+   
+    div#main > article p.lead {
+        font-size: 32px;
+        line-height: 1.10em;
+    }
+    
+    #voxel-sketch {
+        float: right;
+        margin: 5px;
+        width: 60%;
+    }
+    
+    div#main #jobs {
+        width: 100%;
+    }
+}

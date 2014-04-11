@@ -1,0 +1,456 @@
+/**
+ * HighFidelity's alpha page styling
+ */
+
+/* bg is just white here, we don't need to inherit from common.cs */
+html > body {
+    background: none #ffffff;
+    text-align: center;
+}
+
+body > * {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > * * {
+    text-align: left;
+}
+
+h1 {
+    margin: 23px auto 14px;
+}
+
+h1 > a {
+    text-indent: -10000px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url('../img/hifi-logo-alpha.png') no-repeat top center transparent;
+    background-size: 78px 78px;
+}
+
+h1 > a:hover {
+    background: none #3697be;
+    border-radius: 80px;
+    position: relative;
+}
+
+
+h1 > a:hover:after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: url('../img/glyphicons-halflings-white.png') no-repeat 11px -27px transparent;
+    background-size: 703px 238px;
+}
+
+body > p {
+    line-height: 26px;
+}
+
+h1 + p {
+    border-top: 1px solid #ddd;
+    padding-top: 21px;
+    color: #E04324;
+    margin-bottom: 0px;
+    font-size: 1.4em;
+}
+
+h1 + p + p {
+    margin-bottom: 20px;
+    font-size: 1.35em;
+}
+
+body > form {
+    font-family: proxima-nova, sans-serif;
+    color: #999;
+}
+
+form > fieldset {
+    display: inline-block;
+    vertical-align: top;
+}
+
+fieldset h3 {
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+fieldset > h3 {
+    color: #333;
+}
+
+fieldset h3,
+form ul > li {
+    margin-bottom: 5px;
+}
+
+fieldset h3,
+form ul > li label {
+    line-height: 1em;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+
+fieldset h3 > span {
+    color: #999;
+}
+
+form > fieldset:first-child {
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+    width: 238px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+form > fieldset:last-child {
+    width: 300px;
+}
+
+form ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+form ul li input[type="checkbox"] + label {
+    font-weight: bold;
+}
+
+form ul li > ul input[type="checkbox"] + label {
+    font-weight: normal;
+}
+
+form li > ul li {
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+form ul li > ul {
+    margin: 5px 0 8px 30px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+form input[type="checkbox"][name] + label:before,
+form input[type="radio"] + label:before {
+    content: "\00a0";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #3697be;
+    border: 1px solid #ddd;
+    padding: 2px;
+}
+
+form input[type="checkbox"][name] + label:before {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 -25px;
+    border-radius: 5px;
+}
+
+form input[type="radio"] + label:before {
+    width: 9px;
+    height: 9px;
+    margin: 0 5px 0 -15px;
+    border-radius: 9px;
+    line-height: 9px;
+    font-size: 10px;
+}
+
+form input[type="checkbox"] + label {
+    padding-left: 10px;
+}
+
+form input:checked + label,
+form input[type="checkbox"]:focus + label,
+form input[type="radio"]:focus + label {
+    color: #3697be;
+}
+
+form input[type="checkbox"]:checked:focus + label,
+form input[type="radio"]:checked:focus + label {
+    color: #333;
+}
+
+form input[type="checkbox"]:checked + label:before {
+    content: "\f00c";
+}
+
+form input[type="radio"]:checked + label:before {
+    content: "\f111";
+}
+
+form > fieldset:last-child select + div,
+form > fieldset:last-child select,
+form > fieldset:last-child input {
+    margin-bottom: 13px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.45em;
+}
+
+form > fieldset:last-child select {
+    width: 301px;
+}
+
+form > fieldset:last-child input {
+    width: 279px;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single {
+    border-radius: 0px;
+    background: none transparent;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single {
+    height: 1.4em;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-search {
+    padding: 0;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-search input[type=text] {
+    margin: 0;
+    border-right: 0px;
+    border-left: 0px;
+    line-height: 2.1em;
+    height: 50px;
+}
+
+form > fieldset:last-child .chosen-container-single.chosen-container-active.chosen-with-drop .chosen-single,
+form > fieldset:last-child .chosen-container-single .chosen-drop,
+form > fieldset:last-child .chosen-container-single .chosen-search input[type=text] {
+    border-color: #e0e0e0;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single,
+form > fieldset:last-child .chosen-container-single .chosen-search input[type=text] {
+    background: none transparent;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single,
+form > fieldset:last-child .chosen-container-single .chosen-search input[type=text],
+form > fieldset:last-child .chosen-container-single .chosen-drop {
+    box-shadow: none;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-drop {
+    border-radius: 0;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-search:before {
+    font-family: FontAwesome;
+    content: "\f002";
+    display: inline-block;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #3697be;
+    margin-top: 11px;
+    margin-right: 19px;
+    float: right;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single div {
+    width: 35px;
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single div b {
+    background: none transparent;
+    margin-top: 6px;
+
+}
+
+form > fieldset:last-child .chosen-container-single .chosen-single div b:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #3697be;
+    margin-top: 6px;
+}
+
+form > fieldset:last-child .chosen-container-single.chosen-with-drop .chosen-single div b:before {
+    content: "\f077";    
+}
+
+form > fieldset:last-child input,
+form > fieldset:last-child .chosen-container-single .chosen-single {
+    padding: 10px;
+}
+
+form > fieldset:last-child .chosen-container .chosen-results {
+    overflow-y: hidden;
+    margin: 0;
+}
+
+form > fieldset:last-child .chosen-container .chosen-results li {
+    margin: 0 0 0 -5px;
+    line-height: 1.2em;
+}
+
+form > fieldset:last-child .chosen-container .chosen-results li.highlighted {
+    background: none #3697be;
+}
+
+form select,
+form > fieldset:last-child input,
+form button {
+    font-family: proxima-nova, sans-serif;
+}
+
+form > fieldset:last-child select,
+form > fieldset:last-child .chosen-container-single .chosen-single,
+form > fieldset:last-child input {
+    border: 1px solid #e0e0e0;
+}
+
+form > fieldset:last-child .chosen-container-single.chosen-container-active .chosen-single,
+form > fieldset:last-child input:focus {
+    border-color: #3697be;
+}
+
+form > fieldset:last-child input:focus,
+form > fieldset:last-child input.valid {
+    color: #3697be;
+    outline: none;
+}
+
+form > fieldset:last-child input.error,
+form > fieldset:last-child select.error {
+    outline: none;
+}
+
+form > fieldset:last-child input.error,
+form > fieldset:last-child select.error,
+form > fieldset:last-child select.error + div > .chosen-single {
+    color: #E04324;
+}
+
+form > fieldset:first-child.error,
+form > fieldset:last-child input.error,
+form > fieldset:last-child select.error,
+form > fieldset:last-child select.error + div > .chosen-single {
+    border-color: #E04324;
+}
+
+form button { 
+    background-color: #E04324;
+    padding: 14px 24px;
+    color: #fff;
+    font-size: 19px;
+    border: 0;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form button:hover,
+form button:active {
+    background-color: transparent;
+    color: #E04324;
+}
+
+form button,
+form #errors {
+    display: inline-block;
+    vertical-align: top;
+}
+
+form #errors {
+    width: 160px;
+    margin-left: 15px;
+}
+
+form #errors label {
+    line-height: 1.1em;
+}
+
+body > #success,
+body > #success + p,
+body > #success + p + p,
+body > #success + p + p + p {
+    margin-bottom: 0px;
+    max-width: 345px;
+}
+
+body > #success {
+    max-width: 345px;
+    width: 345px;
+    display: block;
+}
+
+#success h1 {
+    margin: 0px auto 17px;
+}
+
+#success h1 + p {
+    font-size: 36px;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ddd;
+    color: rgb(54, 151, 190);
+}
+
+#success h1,
+#success h1 + p {
+    text-align: center;    
+    padding: 29px 50px;
+}
+
+
+#success p {
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    margin-bottom: 0;
+}
+
+#success p + p {
+    padding: 29px 50px 5px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+#success p:last-child {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 29px;
+    margin-bottom: 20px;
+}
+
+#success a {
+    color: #3697BE;
+    text-decoration: underline;
+}
+
+/**
+ * Responsive sizes
+ */
+@media screen and (max-width: 370px) {
+    body > #success {
+        width: auto;
+    }
+
+    #success p {
+        border-right: 0 none;
+        border-left: 0 none;
+    }
+}

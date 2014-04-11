@@ -1,0 +1,274 @@
+/**
+ * HighFidelity's code page styling
+ */
+
+/* word cloud styling */
+#cloud > ul * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#cloud > ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer {
+    width: 20%;
+}
+
+#cloud h2 {
+    font-size: 2.5em;
+}
+
+#cloud h2,
+#cloud h2 + h3 {
+    line-height: 1em;
+}
+
+#cloud h2 + h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: proxima-nova, sans-serif;
+}
+
+/**
+ * we're using 12 stamps (4 big ones at corners, each one of them with 2 
+ * small ones at their sides) so words will fit to some kind of circle 
+ * container circle despite it's a reclangle or a square.
+ *
+ * Visual explanation: http://cdpn.io/oLygd
+ */
+.stamp {
+    position: absolute;
+}
+
+.stamp:nth-child(3n+1) {
+    height: 17%;
+    width: 5%;
+}
+
+.stamp:nth-child(3n+2) {
+    width: 13%;
+    height: 13%;
+}
+
+.stamp:nth-child(3n+3) {
+    width: 17%;
+    height: 5%;
+}
+
+#cloud > ul > .stamp:nth-child(1) {
+    top: 13%;
+    left: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(2) {
+    top: 0px;
+    left: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(3) {
+    top: 0px;
+    left: 13%;
+}
+
+#cloud > ul > .stamp:nth-child(4) {
+    top: 13%;
+    right: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(5) {
+    top: 0px;
+    right: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(6) {
+    top: 0px;
+    right: 13%;
+}
+
+#cloud > ul > .stamp:nth-child(7) {
+    bottom: 13%;
+    left: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(8) {
+    bottom: 0px;
+    left: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(9) {
+    bottom: 0px;
+    left: 13%;
+}
+
+#cloud > ul > .stamp:nth-child(10) {
+    bottom: 13%;
+    right: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(11) {
+    bottom: 0px;
+    right: 0px;
+}
+
+#cloud > ul > .stamp:nth-child(12) {
+    bottom: 0px;
+    right: 13%;
+}
+
+#cloud > ul > li {
+    list-style-type: none;
+    display: block;
+    margin: 5px;
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+#cloud > ul > li:hover {
+    color: #333;
+    border-color: #666;
+}
+
+#cloud > ul > li,
+#cloud > h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#cloud > h2 {
+    margin-top: 15px;
+}
+
+/**
+ * Styling of words according to its weight on the cloud
+ *
+ * @todo: an assumption of max-weight=20 is being used, let's
+ *        clearly find out which levels won't ever be reached
+ */
+#cloud > ul > li[weight="1"],
+#cloud > ul > li[weight="2"],
+#cloud > ul > li[weight="3"] {
+    font-size: 1.3em;
+    padding: 5px 10px;
+}
+
+#cloud > ul > li[weight="4"],
+#cloud > ul > li[weight="5"],
+#cloud > ul > li[weight="6"] {
+    font-size:2em;
+    padding: 10px 15px 13px;
+}
+
+#cloud > ul > li[weight="7"],
+#cloud > ul > li[weight="8"],
+#cloud > ul > li[weight="9"] {
+    font-size:2.5em;
+    padding: 15px 25px 18px;
+}
+
+#cloud > ul > li[weight="10"],
+#cloud > ul > li[weight="11"],
+#cloud > ul > li[weight="12"] {
+    font-size:3em;
+    padding: 20px 25px 23px;
+}
+
+#cloud > ul > li[weight="13"],
+#cloud > ul > li[weight="14"],
+#cloud > ul > li[weight="15"],
+#cloud > ul > li[weight="16"],
+#cloud > ul > li[weight="17"],
+#cloud > ul > li[weight="18"],
+#cloud > ul > li[weight="19"],
+#cloud > ul > li[weight="20"] {
+    font-size:3.5em;
+    padding: 25px 30px 27px;
+}
+
+/* popover on word hit */
+body > .popover.bottom {
+    z-index: 100;
+    margin-top: 5px;
+}
+
+body > .popover.bottom .popover-content {
+    padding: 15px 20px;
+    padding-left: 20px;
+    text-indent: 5px;
+    list-style: none;
+    list-style-position: outside;
+}
+
+.popover li:before {
+    content: '·';
+    font-weight: bold;
+    margin-left: -1em; 
+    margin-right: .1em;
+}
+
+.popover li {
+    font-family: proxima-nova, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+
+.popover li,
+.popover li a:last-child {
+    color: #666;
+    font-weight: normal;
+    font-style: italic;    
+}
+
+.popover li a {
+    font-style: normal;
+}
+
+.popover li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.popover li a:hover {
+    text-decoration: underline;
+}
+
+.popover li a:active {
+    color: #3698bf;
+}
+
+.popover li > a:last-child {
+    text-decoration: underline;
+}
+
+.popover li > a:last-child:hover {
+    color: #333;
+}
+
+#cloud > h2 {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+    font-weight: normal;
+    margin-top: 45px;
+    color: #333;
+}
+
+
+#cloud > h2,
+#cloud > h3 {
+    text-align: center;    
+}
+
+footer#site-links #social p {
+    border-right: 0px none;
+    border-left: 0px none;
+}

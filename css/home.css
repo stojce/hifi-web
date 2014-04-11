@@ -1,0 +1,1008 @@
+/**
+ * HighFidelity's home page styling
+ */
+
+/* bg on this page is not from body, no need to inherit from common.cs */
+html > body {
+    background-image: none;
+}
+
+/* bg is actually from the navbar */
+header#navbar {
+    height: 1060px;
+    background: #ffffff url('../img/gyro-glasses.jpg') no-repeat 50px 200px;
+    background-size: contain;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+header#navbar h1 img:hover {
+    opacity: 1;
+}
+
+#main > article p.lead {
+    margin: 0 auto;
+    position: absolute;
+    left: -40px;
+    top: -750px;
+    width: 495px;
+    text-align: center;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;    
+}
+
+/* Alpha subscription section styling */
+#alpha {
+    position: absolute;
+    top: -370px;
+    left: 250px;
+    max-width: 720px;
+    padding: 0 40px 30px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba( 255, 255, 255, 0.5);
+}
+
+#alpha > p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Georgia", "Times", serif;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+#alpha > p:first-child {
+    color: #E04324;
+    display: block;
+    margin-bottom: 0px;
+    padding-top: 21px;
+    border-top: 1px solid #ddd;
+}
+
+#alpha a.button {
+    background-color: #E04324;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+    border: 0;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#container {
+    max-width: inherit;
+    position: relative;
+}
+
+a {
+    text-decoration: underline;
+}
+
+#main {
+    border: 1px solid #cccccc;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.5)), color-stop(5%, rgba(255, 255, 255, 0.9)), color-stop(50%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
+    z-index: 10;
+    margin-top: -151px;
+}
+
+#main,
+footer#site-links {
+    float: right;
+    margin-left: -100px;
+}
+
+#main,
+footer#site-links {
+    margin-right: 113px;
+    
+}
+
+#main {
+    width: 635px;
+}
+
+footer#site-links > #social {
+    width: 637px;
+    margin-right: 0;
+}
+
+#main > article,
+#jobs {
+    padding: 15px 55px 15px 72px;
+}
+
+#main > article {
+    padding-top: 35px;
+    background: none transparent;
+    border: 0;
+    margin: 0;
+}
+
+#main > article h2 {
+    color: #3698bf;
+}
+
+#main p.image {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#main .image img {
+    margin: 0 auto;
+}
+
+#main ol {
+    margin-left: 35px;
+}
+
+/* flocking dots background  */
+#flocking {
+    position: relative;
+    width: 100%;
+}
+
+#flocking > img,
+#flocking > figcaption {
+    position: absolute;
+}
+
+#flocking > img {
+    top: -1170px;
+    left: -300px;
+}
+
+#flocking > img {
+    z-index: -10;
+}
+
+#flocking > figcaption {
+    width: 100px;
+    top: -250px;
+    padding-left: 22px;
+    left: -250px;
+}
+
+a.grey-link {
+    font-size: 1.3em;
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+a.grey-link:hover {
+    text-decoration: none;
+    color: #ed6f3f;
+}
+
+a.grey-link:active {
+    color: #000000;
+}
+
+/* Team section styling */
+#team {
+    width: 283px;
+    background-color: #ffffff;
+    padding-left: 25px;
+    padding-top: 46px;
+    border: 1px solid #cccccc;
+    box-shadow: 5px 5px 20px #eeeeee;
+    z-index: 20;
+    margin-top: -151px;
+    margin-left: 63px;
+}
+
+#team {
+    float: left;
+}
+
+#team > div {
+    margin: 0;
+    padding: 0;
+}
+
+#team h2 {
+    font-size: 1.7em;
+    color: #cccccc;
+    font-weight: normal;
+    margin: -17px 17px 0 28px;
+    color: #333333;
+}
+
+#team h2,
+#team h3 + p {
+    font-family: proxima-nova, sans-serif;    
+}
+
+#team ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#team figure {
+    position: relative;
+    margin: 0 0 33px 0;
+    width: 80%;
+}
+
+#team img,
+#youimg figure > div {
+    position: absolute;
+    left: -72px;
+    width: 90px;
+    height: 90px;   
+}
+
+#team h3, 
+#team figure > p {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+#team h3 {
+    color: #3698bf;
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+#team figure > p {
+    font-size: 1.2em;
+    color: #666666;
+}
+
+#youimg figure > div {
+    background-color: #3698bf; 
+}
+
+#team a {
+    font-style: italic;
+}
+
+#team a:hover {
+    color: #ed6f3f;
+}
+
+/* disco mode styling */
+.fade-container, 
+.disco-container {
+    display: none;
+}
+
+.fade-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.3);
+    z-index: 1;
+}
+
+#team.on-top {
+    z-index: 10100;
+    position: absolute;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+p.person-disco a {
+    z-index: 12000;
+    opacity: 0.8;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    cursor: pointer;
+}
+
+p.person-disco a.disabled {
+    opacity: 0.1;
+    cursor: default;
+}
+
+p.person-disco a.active {
+    background-position: -22px;
+}
+
+.person-disco-pause {
+    background: url(../img/pause.png) no-repeat left top;
+}
+
+.person-disco-stop {
+    background: url(../img/stop.png) no-repeat left top;
+}
+
+.person-disco-play {
+    background: url(../img/play.png) no-repeat left top;
+}
+
+.person-disco-play:hover {
+    opacity: 1;
+}
+
+#team figure {
+    margin-bottom: 45px; 
+}
+
+.disco-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+}
+
+.disco-circle {
+    display: block;
+    position: absolute;
+    background: yellow;
+    border-radius: 100%;
+    box-shadow: 0px 0px 40px;
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    z-index: 12100;
+}
+
+.disco-circle-1.play {
+    top: 600px;
+    transform: scale(1.9);
+    -o-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -webkit-transform: scale(1.9);
+    opacity: 0.5;
+    animation: movelights 4s linear infinite;
+    -o-animation: movelights 4s linear infinite;
+    -moz-animation: movelights 4s linear infinite;
+    -webkit-animation: movelights 4s linear infinite;
+}
+
+.disco-circle-2.play {
+    top: 200px;
+    transform: scale(1.6);
+    -o-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    opacity: 0.5;
+    animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
+    -o-animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
+    -moz-animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
+    -webkit-animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
+}
+
+.disco-circle-3.play {
+    top: 350px;
+    transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0.5;
+    animation: movelights 8s ease-in-out infinite;
+    -o-animation: movelights 8s ease-in-out infinite;
+    -moz-animation: movelights 8s ease-in-out infinite;
+    -webkit-animation: movelights 8s ease-in-out infinite;
+}
+
+.disco-circle-4.play {
+    top: 450px;
+    transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    opacity: 0.5;
+    animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
+    -o-animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
+    -moz-animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
+    -webkit-animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
+}
+
+#main.to-bg {
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes movelights { 
+    0% { 
+      margin-left: -155%;
+    }
+    100% { 
+      margin-left: 110%;
+    }
+}
+
+@-o-keyframes movelights { 
+    0% { 
+      margin-left: -155%;
+    }
+    100% { 
+      margin-left: 110%;
+    }
+}
+
+@-webkit-keyframes movelights { 
+    0% { 
+      margin-left: -155%;
+    }
+    100% { 
+      margin-left: 110%;
+    }
+}
+
+@-moz-keyframes movelights { 
+    0% { 
+      margin-left: -155%;
+    }
+    100% { 
+      margin-left: 110%;
+    }
+}
+
+@keyframes verticalMoveTop { 
+    0% { 
+      top: -1%;
+    }
+    100% { 
+      top: 100%;
+    }
+}
+
+@-o-keyframes verticalMoveTop { 
+    0% { 
+      top: -1%;
+    }
+    100% { 
+      top: 100%;
+    }
+}
+
+@-webkit-keyframes verticalMoveTop { 
+    0% { 
+      top: -1%;
+    }
+    100% { 
+      top: 100%;
+    }
+}
+
+@-moz-keyframes verticalMoveTop { 
+    0% { 
+      top: -1%;
+    }
+    100% { 
+      top: 100%;
+    }
+}
+
+@keyframes verticalMoveBottom { 
+    0% { 
+      top: 100%;
+    }
+    100% { 
+      top: -1%;
+    }
+}
+
+@-o-keyframes verticalMoveBottom { 
+    0% { 
+      top: 100%;
+    }
+    100% { 
+      top: -1%;
+    }
+}
+
+@-webkit-keyframes verticalMoveBottom { 
+    0% { 
+      top: 100%;
+    }
+    100% { 
+      top: -1%;
+    }
+}
+
+@-moz-keyframes verticalMoveBottom { 
+    0% { 
+      top: 100%;
+    }
+    100% { 
+      top: -1%;
+    }
+}
+
+/**
+ * Responsive sizes
+ */
+@media screen and (max-width: 1090px) {
+    #main > article,
+    #jobs {
+        padding-left: 100px;
+    }
+    
+    #main > article p.lead {
+        width: 480px;
+        top: -740px;
+        font-size: 50px;
+        line-height: 60px;
+        left: -70px;
+    }
+
+    #alpha {
+        left: 185px;
+    }
+    
+    #main,
+    footer#site-links {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+    body {
+        background-position: center 800px;
+    }
+    
+    body header#navbar {
+        background-position: 40px 150px;
+        width: auto;
+    }
+    
+    #main > article p.lead {
+        width: 345px;
+        top: -555px;
+        font-size: 36px;
+        left: 205px;
+        line-height: 45px;
+    }
+
+    #alpha {
+        left: 100px;
+        top: -230px;
+    }
+    
+    #team,
+    #main {
+        width: 100%;
+    }
+    
+    footer#site-links p,
+    footer#site-links #social {
+        width: auto;
+    } 
+    
+    #main, 
+    footer#site-links {
+        float: none;
+    }
+    
+    #main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #team {
+        float: none;
+        margin: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    #team h2 {
+        margin-left: 0;
+    }
+    
+    #team > div {
+        width: 100%;
+        position: relative;
+    }
+    
+    #team ul:after {
+        display: block;
+        float: none;
+        content: '';
+    }
+    
+    #team li {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 15px;
+        min-height: 90px;
+    }
+
+    #team figure {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #team img,
+    #youimg figure > div {
+        left: 5px;
+    }
+    
+    #team h3, 
+    #team figure > p {
+        margin-left: 100px;
+    }
+    
+    #team figure > p {
+        font-size: .8em;
+        line-height: 1.3em;
+    }
+    
+    .person-disco {
+        display: none;
+    }
+    
+    #main {
+        margin-top: -350px;
+        border: 0;
+    }
+   
+    #main > article,
+    #jobs,
+    #team {
+        padding: 5px 25px 5px 50px;
+    }
+
+    #main > article,
+    #jobs {
+        font-size: 1.65em;
+    }
+    
+    #main > article {
+        padding-top: 15px;
+    }
+    
+    #main p.image {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #octal-address,
+    #data-transmission {
+        width: 40%;
+        margin: 20px;
+    }
+
+    #data-transmission + p {
+        padding-top: 45px;
+    }
+    
+    #data-transmission + p:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+    #octal-address {
+        float: right;
+    }
+
+    #data-transmission {
+        float: left;
+    }
+    
+    #flocking {
+        display: none;
+    }
+    
+    a.grey-link {
+        font-size: 1.1em;
+    }
+    
+    footer#site-links {
+        margin: 0 auto;
+    }
+    
+    div#social p {
+        border-right: 0 none;
+        border-left: 0 none;
+    }
+}
+ 
+@media screen and (max-width: 770px) {
+    body {
+        background-position: center 900px;
+    }
+    
+    body header#navbar {
+        height: 820px;
+        background-position: 30px 150px;
+        width: auto;
+    }
+        
+    #main > article p.lead {
+        width: 265px;
+        top: -520px;
+        font-size: 28px;
+        left: 120px;
+        line-height: 35px;
+    }
+    
+    #alpha {
+        left: 44px;
+        top: -260px;
+    }
+    
+    #alpha > p {
+        font-size: 14px;
+    }
+
+    #container {
+        background-position: center 100px;
+    }
+    
+    #team,
+    #main {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    #team {
+        margin-top: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    #team h2 {
+        margin-left: 0;
+    }
+    
+    #team > div {
+        width: 100%;
+        position: relative;
+    }
+    
+    #team ul:after {
+        display: block;
+        float: none;
+        content: '';
+    }
+    
+    #team li {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+    
+    #team figure {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #team img,
+    #youimg figure > div {
+        left: 5px;
+    }
+    
+    #team h3, 
+    #team figure > p {
+        margin-left: 100px;
+    }
+    
+    #team figure > p {
+        font-size: .7em;
+        line-height: 1.2em;
+    }
+    
+    #main {
+        margin-top: -150px;
+        border: 0;
+    }
+    
+    #main > article,
+    #jobs {
+        font-size: 1.45em;
+    }
+    
+    #main > article,
+    #jobs,
+    #team {
+        padding: 10px;
+    }
+    
+    #main p.image {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    #octal-address,
+    #data-transmission {
+        width: 40%;
+        margin: 20px;
+    }
+
+    #octal-address {
+        float: right;
+    }
+
+    #data-transmission {
+        float: left;
+    }
+    
+    #flocking {
+        display: none;
+    }
+    
+    a.grey-link {
+        font-size: 1.1em;
+    }
+
+    footer#site-links {
+        float: none;
+        margin: inherit;
+    }
+    
+    footer#site-links #social p {
+        width: 43%;
+    }
+}
+ 
+@media screen and (max-width: 530px) {
+    body {
+        background-position: center 800px;
+        padding: 10px;
+    }
+    
+    body header#navbar {
+        height: 550px;
+        background-position: 20px 120px;
+        width: auto;
+    }
+        
+    #main > article p.lead {
+        width: 213px;
+        top: -390px;
+        font-size: 22px;
+        left: 25px;
+        line-height: 28px;
+    }
+
+    #alpha {
+        left: 0;
+        top: -165px;
+        padding: 0 15px 30px;
+    }
+
+    #alpha > p {
+        font-size: 9px;
+        margin-bottom: 0px;
+        line-height: 15px;
+    }
+    
+    #alpha a.button {
+        margin-top: 10px;
+        font-size: 11px;
+        padding: 2px 5px;
+    }
+
+    
+    #main > article,
+    #jobs,
+    #team {
+        padding: 10px;
+    }
+    
+    #team,
+    #main {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    #team {
+        margin-top: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    #team h2 {
+        margin-left: 0;
+    }
+    
+    #team > div {
+        width: 100%;
+        position: relative;
+    }
+    
+    #team ul:after {
+        display: block;
+        float: none;
+        content: '';
+    }
+    
+    #team li {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+    
+    #team figure {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #team figure > img,
+    #youimg figure > div {
+        display: none;
+    }
+    
+    #team h3, 
+    #team figure > p {
+        margin-left: 0;
+    }
+    
+    #team h3 {
+        font-size: 1.1em;
+    }
+    
+    #team figure > p {
+        font-size: .7em;
+        line-height: 1.4em;
+        padding-right: 10px;
+        margin-bottom: -40px;
+    }
+    
+    #main {
+        margin-top: -80px;
+    }
+    
+    #main > article,
+    #jobs {
+        font-size: 1em;
+    }
+    
+    #main p.image {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
+    
+    #data-transmission {
+        width: 40%;
+        margin: 20px;
+    }
+
+    #octal-address {
+        float: right;
+    }
+    #data-transmission {
+
+        float: left;
+    }
+    
+    #flocking {
+        display: none;
+    }
+    
+    a.grey-link {
+        font-size: .8em;
+    }
+
+    footer#site-links {
+        margin-top: 50px;
+    }
+}

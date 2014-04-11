@@ -1,0 +1,177 @@
+/**
+ * HighFidelity's navbar styling
+ *
+ * This file is assumed to be included on every HF page when using the
+ * common layout. Each shared rule for the navbar should live here. 
+ * 
+ * Page-specific styling on the navbar should be at their own styling file(s).
+ *
+ */
+
+#navbar {
+    height: 137px;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#navbar h1 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 173px;
+}
+
+#navbar h1,
+#navbar nav {
+    text-align: center;
+}
+
+#navbar h1 img,
+#navbar nav ul {
+    margin: 0;
+}
+
+#navbar h1 img {
+    margin-bottom: 10px;
+    opacity: .9;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#navbar h1 img:hover {
+    opacity: .6;
+}
+
+#navbar h1 a:active {
+    opacity: 0.5;
+}
+
+#navbar nav {
+    display: inline-block;
+    margin: 0 auto;    
+}
+
+#navbar nav ul {
+    display: inline-block;
+    margin-top: 22px;
+}
+
+#navbar nav li {
+    display: inline-block;
+    border-right: 1px solid #c1c1c1;
+}
+
+#navbar nav li:last-child {
+    border-right: 0 none;
+}
+
+#navbar nav ul li:nth-child(n+2) {
+    margin: 0 0 0 -5px;
+}
+
+#navbar nav li a {
+    text-decoration: none;
+    color: #535353;
+    padding: 8px 14px;
+    display: inline-block;
+    font: bold 1.15em proxima-nova, sans-serif;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.25) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0.75)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0.25)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.25) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.25) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.25) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0.25) 100%);
+}
+
+#navbar nav li a:hover {
+    color: #000;
+}
+
+#navbar nav li.selected a,
+#navbar nav li a:active {
+    color: #3698bf;
+}
+
+#navbar nav > ul,
+#navbar nav > h1 {
+    vertical-align: top;
+}
+
+/**
+ * Responsive sizes
+ */
+@media screen and (max-width: 770px) {
+    #navbar {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    
+    #navbar h1 {
+        margin-top: 8px;
+        width: 140px;
+    }
+    
+    #logo img {
+        width: 120px;
+    }
+    
+    #navbar nav ul {
+        margin-top: 37px;
+    }
+    
+    #navbar nav li a {
+        padding: 5px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    #navbar {
+        font-size: 9px;
+        height: 70px;
+    }
+    
+    #navbar nav {
+        border-bottom: none;
+        display: block;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        right: 0;    
+    }
+    
+    #navbar h1 {
+        margin-top: 8px;
+        width: 85px;
+    }
+    
+    #logo img {
+        width: 80px;
+    }
+    
+    #navbar nav ul li:nth-child(n+2) {
+        margin: 0;
+    }    
+    
+    #navbar nav li a {
+        padding: 2px 5px;
+    }
+    
+    #navbar nav ul {
+        margin-top: 10px;
+    }
+    
+    #navbar h1 {
+        width: 60px;
+        margin-top: 0;
+    }
+    
+    #logo img {
+        width: 55px;
+    }
+}
