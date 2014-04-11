@@ -277,6 +277,18 @@ form > fieldset:last-child .chosen-container-single .chosen-single div b {
 
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:144dpi) {
+    body .chosen-rtl .chosen-search input[type=text],
+    body .chosen-container-single .chosen-single abbr,
+    body .chosen-container-single .chosen-single div b,
+    body .chosen-container-single .chosen-search input[type=text],
+    body .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+    body .chosen-container .chosen-results-scroll-down span,
+    body .chosen-container .chosen-results-scroll-up span {
+        background-image: none !important;
+    }
+}
+
 form > fieldset:last-child .chosen-container-single .chosen-single div b:before {
     font-family: FontAwesome;
     content: "\f078";
