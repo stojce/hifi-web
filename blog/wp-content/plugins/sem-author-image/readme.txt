@@ -1,9 +1,8 @@
 === Author Image ===
 Contributors: Denis-de-Bernardy, Mike_Koepke
-Donate link: http://www.semiologic.com/partners/
-Tags: author-image, semiologic
+Tags: author-image, author, semiologic
 Requires at least: 3.1
-Tested up to: 3.5.1
+Tested up to: 3.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,15 +12,29 @@ Lets you easily add author images on your site.
 
 == Description ==
 
-The author image plugin for WordPress lets you easily add author images on your site.
+The Author Image plugin for WordPress lets you easily add author images on your site.
 
 It creates a widget that you can insert in a sidebar, or much about anywhere if using the [Semiologic theme](http://www.semiologic.com/software/sem-reloaded/).
 
-Alternatively, place the following call in the loop where you want the author image to appear:
+Alternatively, you can place the following call in the loop where you want the author image to appear:
 
-    <?php the_author_image(); ?>
+    <?php the_author_image($author_id = null); ?>
+
+	This $author_id parameter is optional.  If it is not passed in, the code will attempt to get the current author of the page/post.
+
+A second version of this function exists whereby you can pass in width and height to display the image.
+
+    <?php the_author_image_size($width, $height, $author_id = null); ?>
+
+	This $author_id parameter is optional.  If it is not passed in, the code will attempt to get the current author of the page/post.
 
 To configure your author image, browse Users / Your Profile in the admin area.
+
+= Setting Author Image Size =
+
+You can adjust the actual display size in the Author Image widget or by using the_author_image_size function call.
+
+If you do not specify a size the width and height of the actual image will be used.
 
 = Author's Bio =
 
@@ -29,22 +42,43 @@ You can configure the widget so it outputs the author's description in addition 
 
 This fits well on a site where the author's image is placed in a sidebar, or the [Semiologic theme](http://www.semiologic.com/software/sem-reloaded/) when the widget is placed immediately after the posts' content -- i.e. "About The Author."
 
+= Gravatar Support =
+
+The uploaded image will be used as your gravatar by themes that call the get_avatar() function.  This will override an image set on gravatar.com
+
 = Multi-Author Sites =
 
 For sites with multitudes of authors, the widget offers the ability to insert a link to the author's posts -- his archives.
 
 = Single Author Sites =
 
-Normally, the widget will only display an author image when it can clearly identify who the content's author actually is. In other words, on singular pages or in the loop.
+Normally the widget will only display an author image when it can clearly identify who the content's author actually is. In other words, on singular pages or in the loop.
 
 If you run a single author site, or a site with multiple ghost writers, be sure to check the "This site has a single author" option. The widget will then output your image at all times.
+
+= Alternate About Page Link =
+
+Normally the widget will use the author's posts page (/author/authorname/) is the image is clicked on.   If your site has a dedicated page for the author, such as an 'About Me' page,
+
+there is a new field in 'Your Profile' called 'About Me Page'.  Entering a url in this field (/about-me/) will cause the widget to use this link as opposed to /author/authorname.
+
+= Retrieving Author Url =
+
+You can retrieve the url to the respective author image by calling the function
+
+	<?php the_author_image_url($author_id = null); ?>
+
+If $author_id is blank the plugin will attempt to determine the current author and retrieve his/her image.
 
 = Help Me! =
 
 The [Semiologic forum](http://forum.semiologic.com) is the best place to report issues. Please note, however, that while community members and I do our best to answer all queries, we're assisting you on a voluntary basis.
 
-If you require more dedicated assistance, consider using [Semiologic Pro](http://www.getsemiologic.com).
+If you require more dedicated assistance, consider using [Semiologic Pro](http://www.semiologic.com).
 
+== Credits ==
+
+Props to By Daniel J. Schneider for author_image_url functionality
 
 == Installation ==
 
@@ -72,22 +106,57 @@ For instance:
       margin: 1.2em 1.2em 0px .1em;
     }
 
-
 = Overriding CSS Floats =
 
 When displaying wide videos, images or tabular data, it becomes desirable to bump the content below the author's image. To achieve this, insert the following code in your post:
 
 	<div style="clear:both;"></div>
 
-= Overriding the max width/height =
+= Set Uploaded Image Max Width and Height =
 
-This can be done by setting two constants in your `wp-config.php` file:
+Two constants can be set in your `wp-config.php` file to set the max size of the uploaded image.  These values are in pixels.
 
-	define('SEM_AUTHOR_IMAGE_WIDTH', 360);
-	define('SEM_AUTHOR_IMAGE_HEIGHT', 360);
+	define('SEM_AUTHOR_IMAGE_WIDTH', 100);
+	define('SEM_AUTHOR_IMAGE_HEIGHT', 120);
+
+The default values for these settings are 250 x 250.
+
+= Nothing is Displaying =
+
+More than likely you have place the the_author_image function call outside of your template's posts loop so the author cannot be determined.  Trying passing in an author id directly.
 
 
 == Change Log ==
+
+= 4.6 =
+
+- Added function to retrieve direct link to author's image - the_author_image_url
+- Refactored some of the code around the get_author_.....  type functions
+
+= 4.5.1 =
+
+- WP 3.8 compat
+
+= 4.5 =
+
+- Fix bug where the author image was shown as the default avatar in the Settings->Discussions screen.
+- WP 3.7 compat
+
+= 4.4 =
+
+- Added ability to specify a width and height in the widget
+- Added new the_author_image_size function
+
+= 4.3 =
+
+- Added ability to set link to alternate page if image is clicked on.
+- Your author's image will also be served as your gravatar/avatar on the site for themes that call get_avatar for the post author or in comments.
+- WP 3.6 compat
+- PHP 5.4 Strict compat
+
+= 4.2 =
+
+- <img> alt field now set with author display name
 
 = 4.1.1 =
 
