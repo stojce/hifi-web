@@ -1,0 +1,130 @@
+body > * {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > * * {
+    text-align: left;
+}
+
+html > body {
+    background: none #ffffff;
+    text-align: center;
+}
+
+h1 {
+    margin: 23px auto 14px;
+}
+
+h1 > a {
+    text-indent: -10000px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url('../img/hifi-logo-alpha.png') no-repeat top center transparent;
+    background-size: 78px 78px;
+}
+
+h1 > a:hover {
+    background: none #3697be;
+    border-radius: 80px;
+    position: relative;
+}
+
+
+h1 > a:hover:after {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: url('../img/glyphicons-halflings-white.png') no-repeat 11px -27px transparent;
+    background-size: 703px 238px;
+}
+
+h1 + p {
+    border-top: 1px solid #ddd;
+    padding-top: 21px;
+    color: #E04324;
+    margin-bottom: 0px;
+    font-size: 1.4em;
+}
+
+h1 + p + p {
+    margin-bottom: 20px;
+    font-size: 1.35em;
+}
+
+body > #success,
+body > #success + p,
+body > #success + p + p,
+body > #success + p + p + p {
+    margin-bottom: 0px;
+    max-width: 345px;
+}
+
+body > #success {
+    max-width: 345px;
+    width: 345px;
+    display: block;
+}
+
+#success h1 {
+    margin: 0px auto 17px;
+}
+
+#success h1 + p {
+    font-size: 36px;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ddd;
+    color: rgb(54, 151, 190);
+}
+
+#success h1,
+#success h1 + p {
+    text-align: center;    
+    padding: 29px 50px;
+}
+
+
+#success p {
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    margin-bottom: 0;
+}
+
+#success p + p {
+    padding: 29px 50px 5px;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.4em;
+}
+
+#success p:last-child {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 29px;
+    margin-bottom: 20px;
+}
+
+#success a {
+    color: #3697BE;
+    text-decoration: underline;
+}
+
+/**
+ * Responsive sizes
+ */
+@media screen and (max-width: 370px) {
+    body > #success {
+        width: auto;
+    }
+
+    #success p {
+        border-right: 0 none;
+        border-left: 0 none;
+    }
+}
+
