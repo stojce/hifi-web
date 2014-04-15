@@ -2,7 +2,6 @@
 require_once('config.php');
 
 View::write('page', 'alpha');
-View::$header = 'layout/empty/header';
 View::$footer = 'layout/empty/footer';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['email']) {
@@ -31,15 +30,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['email']) {
 
     $title = 'Subscription success';
     $view = 'alpha_success';
+    View::$header = 'layout/empty/header';
+    View::addStyle('css/alpha_success.css');
 } else {
     $title = 'High Fidelity Alpha Signup';
     $view = 'alpha';
     View::addScript('js/alpha.js');
     View::addScript('js/chosen/chosen.jquery.min.js');
     View::addScript('js/validate/jquery.validate.min.js');
+    View::addStyle('css/alpha.css');
     View::addStyle('css/chosen/chosen.min.css');
 }
 
 View::$title = $title;
-View::addStyle('css/alpha.css');
 View::renderCommonLayout($view);
