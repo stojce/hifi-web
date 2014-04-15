@@ -1,6 +1,3 @@
-<h1>
-    <a href="./">High Fidelity</a>
-</h1>
 <p>
     Interested in contributing to the Alpha stage of High Fidelity?
 </p>
