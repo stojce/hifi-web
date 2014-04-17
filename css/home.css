@@ -5,6 +5,7 @@
 /* bg on this page is not from body, no need to inherit from common.cs */
 html > body {
     background-image: none;
+    min-width: 320px;
 }
 
 /* bg is actually from the navbar */
@@ -1004,5 +1005,16 @@ p.person-disco a.active {
 
     footer#site-links {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    audio {
+    	display: none;
+    	width: 0;
     }
 }
