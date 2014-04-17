@@ -18,7 +18,7 @@ html > body {
 }
 
 div#main > article {
-    padding: 55px 75px;
+    padding: 46px 62px;
 }
 
 div#main > h2 {
@@ -36,40 +36,44 @@ div#main > h3 {
 }
 
 div#main > h2 > strong {
-    color: #3698bf;
+    color: #3398cb;
     font-family: proxima-nova, sans-serif;
 }
 
 div#main > article h3 {
     font-family: proxima-nova, sans-serif;
-}
-
-div#main > article h3 {
+    font-size: 22px;
     line-height: 1em;
 }
 
 div#main > article p em,
 div#main > article p.lead {
-    color: #3698bf;
+    color: #3398cb;
 }
 
 div#main > article p.lead {
     font-size: 56px;
+    font-family: inherit;
+    font-weight: normal;
     line-height: 1.20em;
+    margin-bottom: 22px;
 }
 
 #voxel-sketch {
     margin: 30px 0 20px;
 }
 
-#requirements,
+#requirements{
+    margin-top: -11px;
+}
+
 #apply {
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 #requirements > ul {
     margin-left: 0px;
-    color: #3698bf;
+    color: #3398cb;
 }
 
 #requirements > ul > li {
@@ -86,7 +90,7 @@ div#main > article p em {
 }
 
 #main a {
-    color: #3698bf;
+    color: #3398cb;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -113,8 +117,23 @@ div#main > article.no-border-bottom {
     border-bottom: none;
 }
 
+div#main > article.no-border-top {
+    border-top: none;
+}
+
+div#main > article.radius-border-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div#main > article.radius-border-bottom{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 div#main > article.get-our-attention {
-    background-color: #A7A7A7;
+    background-color: #f2f2f2;
+    background: #f2f2f2;
     padding: 50px 75px 9px 75px;
     border-top: none;
 }
@@ -127,6 +146,10 @@ div#main > article.get-our-attention span.strong {
     font-weight: 800;
 }
 
+#jobs > span:first-child{
+    font-size: 22px;
+    color: #3398cb;
+}
     /**
      * Responsive sizes
      */
