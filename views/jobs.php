@@ -1,15 +1,15 @@
 <?php
 $jobs = View::read('jobList'); 
-$tweetStrJob1 = urlencode('High Fidelity is working on building a new virtual world and they need a Graphics Engineer! Check out http://highfidelity.io/jobs #jobs #graphics');
-$tweetStrJob2 = urlencode('High Fidelity is working on building a new virtual world and they need a Technical Artist! Check out http://highfidelity.io/jobs #jobs #3dartists');
+$tweetStrJob1 = urlencode('@highfidelityinc is working on building a new virtual world and they need a Graphics Engineer! Check out http://highfidelity.io/jobs #jobs #graphics');
+$tweetStrJob2 = urlencode('@highfidelityinc is working on building a new virtual world and they need a Technical Artist! Check out http://highfidelity.io/jobs #jobs #3dartists');
 ?>
 <section id="particle-system"></section>
 <div role="main" id="main">
     <h2><strong>1.</strong> Full-time Jobs</h2>
     <article class="no-border-bottom radius-border-top">
-        <p class="lead">Graphics <br>software engineer</p>
+        <p class="lead">Graphics engineer</p>
         <p>
-            We're looking for additional engineers to join our team of eight, 
+            We're looking for additional engineers to join our team of twelve, 
             working side-by-side with us writing code, testing ideas, 
             learning a lot, and enjoying the experience of creating something astonishing.  
         </p>
@@ -59,7 +59,7 @@ $tweetStrJob2 = urlencode('High Fidelity is working on building a new virtual wo
     <article class="no-border-top radius-border-bottom">
         <p class="lead">Technical artist</p>
         <p>
-            High Fidelity is looking for talented technical artists to build a next-generation virtual world. As a member of our team, you'll have the opportunity to apply your creativity and design high-caliber assets from the ground up and in an open ended environment. 
+            High Fidelity is looking for talented technical artists to build a next-generation virtual world. As a member of our team, you'll have the opportunity to apply your creativity and design high-caliber assets from the ground up in an open ended environment. 
         </p>
         <div id="requirements">
             <h3>Requirements</h3>
