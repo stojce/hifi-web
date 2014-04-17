@@ -99,18 +99,18 @@ $tweetStrJob2 = urlencode('High Fidelity is working on building a new virtual wo
     <article class="radius-border-bottom radius-border-top">
         <p>
             Our distributed development system, 
-            <a target="_blank" href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
+            <a href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
             for new developers proficient in <strong>C, C++, OpenGL, iOS, Android, PHP,</strong> 
             and more. Hop in and do some work.
         </p>
-        <?php if (empty($jobs)): ?>
+        <?php if (!empty($jobs)): ?>
             <div id="jobs">
-                <span style="font-size: 22px;color: #3398cb;">You can bid on these jobs right now:</span>
+                <span>You can bid on these jobs right now:</span>
                 <ul>
                     <?php foreach ($jobs as $job): ?>
-                        <li><a target="_blank" href="<?php echo $job['link']; ?>"><?php echo $job['title']; ?></a></li>
+                        <li><a href="<?php echo $job['link']; ?>"><?php echo $job['title']; ?></a></li>
                     <?php endforeach; ?>
-                    <li><a target="_blank" href="<?php echo WORKLIST_URL; ?>">View them all</a></li>
+                    <li><a href="<?php echo WORKLIST_URL; ?>">View them all</a></li>
                 </ul>
             </div>
         <?php endif; ?>

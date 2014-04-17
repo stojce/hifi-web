@@ -146,6 +146,10 @@ div#main > article.get-our-attention span.strong {
     font-weight: 800;
 }
 
+#jobs > span:first-child{
+    font-size: 22px;
+    color: #3398cb;
+}
     /**
      * Responsive sizes
      */
