@@ -54,7 +54,7 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(1),
 #main > article p.lead + ul li:nth-child(2) {
-    padding-right: 290px;
+    padding-right: 165px;
 }
 
 div#main > article li {
@@ -75,13 +75,15 @@ div#main > article li {
 
 #main > article:first-child {
     border: 0;
-    padding: 0;
+    padding: 0 70px;
     background: transparent none;
 }
 
 #main > article:nth-child(n+2) {
     border-radius: 10px;
-    background-color: #999;
+    background: #fafafa none;
+    border-color: #e0e0e0;
+    padding: 20px 60px;
 }
 
 #investors {
@@ -93,10 +95,10 @@ div#main > article li {
     list-style: none;
     color: #333333;
     font-size: 1em;
-    position: absolute;
 }
 
 #investors li {
+    position: absolute;
     width: 190px;
     height: 152px;
     padding: 22px;
@@ -107,10 +109,8 @@ div#main > article li {
     background-color: #fff;
 }
 
-#advisors li {
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
+div#main #advisors li {
+    display: inline-block;
 }
 
 #investors li h3,
@@ -118,7 +118,7 @@ div#main > article li {
     line-height: 150%;
 }
 
-#advisors li h3 {
+div#main #advisors > ul li h3 {
     font-size: 0.8em;
     text-align: center;
 }
@@ -181,14 +181,6 @@ div#main > article li {
     margin-top: 200px;
 }
 
-#advisors li:nth-child(1) {
-    left: -50px;
-}
-
-#advisors li:nth-child(2) {
-    right: -50px;
-}
-
 div#main > article h3 {
     font-family: proxima-nova, sans-serif;
     font-size: 1.6em;
@@ -199,7 +191,7 @@ div#main > article h3 {
     padding-top: 0.8em;
     font-family: proxima-nova, sans-serif;
     color: #333333;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 
 #investors li p a {
@@ -212,6 +204,10 @@ div#main > article h2 {
     color: #3698bf;
 }
 
+div#main > article:nth-child(n+2) h2 {
+    text-align: center;
+}
+
 div#main > article p + h2 {
     padding-top: 35px;
 }
@@ -220,19 +216,19 @@ div#main > article ol li {
     margin-bottom: 25px;
 }
 
-#investors > ul,
-#advisors > ul {
-    position: relative;
-    left: -105px;
-    top: 15px;
-    padding: 33px 0;
-    height: 380px;
+#investors > ul {
+    height: 500px;
+}
+
+div#main #investors > h2 {
+    margin-bottom: 50px;
 }
 
 #investors > ul {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
+    margin-left: 30px;
 }
 
 /**

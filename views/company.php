@@ -72,7 +72,7 @@
                 <li>
                     <a target="_blank" href="http://en.wikipedia.org/wiki/Peter_Diamandis">
                         <figure>
-                            <img src="img/advisors/peter_diamandis.jpg" class="img-circle" alt="Peter Diamandis" />
+                            <img src="img/advisors/peter_diamandis.jpg" alt="Peter Diamandis" />
                             <h3>Peter Diamandis</h3>
                         </figure>
                     </a>
@@ -80,7 +80,7 @@
                 <li>
                     <a target="_blank" href="http://profiles.ucsf.edu/adam.gazzaley">
                         <figure>
-                            <img src="img/advisors/adam_gazzaley.jpg" class="img-circle" alt="Adam Gazzaley" />
+                            <img src="img/advisors/adam_gazzaley.jpg" alt="Adam Gazzaley" />
                             <h3>Adam Gazzaley</h3>
                         </figure>
                     </a>
