@@ -14,7 +14,7 @@
                 </p>
             </li>
             <li>
-                <h2>Connection.</h2>
+                <h2>Connection</h2>
                 <p>
                     Coupling these devices with high-speed networks and the vast computing 
                     power many of us have on tap, High Fidelity is working to capture and 
@@ -23,7 +23,7 @@
                 </p>
             </li>
             <li>
-                <h2>Collaboration &amp; Commerce.</h2>
+                <h2>Collaboration &amp; Commerce</h2>
                 <p>
                     By borrowing computing time and bandwidth from others, virtual events 
                     can grow to any size, space or audience.  High Fidelity is developing 
