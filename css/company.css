@@ -57,6 +57,24 @@ header#navbar {
     padding-right: 165px;
 }
 
+#main > article p.lead + ul li:nth-child(2) {
+    position: relative;
+    padding-bottom: 190px;
+    background: transparent url(../img/devices-network.png) bottom left no-repeat;
+}
+
+#main > article p.lead + ul li:nth-child(2):before {
+    content: '\00a0';
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    position: absolute;
+    right: -100px;
+    top: 75px;
+    background: url(../img/eyes-connection.png) center center no-repeat;
+    width: 200px;
+    height: 200px;
+}
+
 div#main > article li {
     font-size: 1.1em;
     font-family: proxima-nova, sans-serif;

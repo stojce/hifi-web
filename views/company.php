@@ -65,7 +65,6 @@
                 </li>
             </ul>
         </div>
-
         <div id="advisors">
             <h2>Advisors</h2>
             <ul>
