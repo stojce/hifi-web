@@ -11,7 +11,7 @@ html > body {
 /* bg is actually from the navbar */
 header#navbar {
     height: 1200px;
-    background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 20px 550px;
+    background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 20px 430px;
     background-size: contain;
     width: 1020px;
     margin: 0 auto;
@@ -20,41 +20,43 @@ header#navbar {
 #main > article p.lead {
     margin: 0 auto;
     position: absolute;
-    left: 0px;
-    width: 705px;
+    left: 90px;
+    width: 525px;
     text-align: center;
     font-weight: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif !important;    
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size: 1.2em;
 }
 
 #main > article p.lead:first-child {
-    top: -900px;
+    top: -780px;
 }
 
 #main > article p.lead + p.lead {
-    top: -650px;
+    top: -600px;
     color: #3698BF;
 }
 
 #main > article p.lead + ul {
     list-style-type: none;
-    margin-top: -150px;
+    margin-top: -250px;
     margin-left: -30px;
 }
 
 #main > article p.lead + ul h2 {
     font-family: Georgia, 'Times New Roman', Times, serif !important;    
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 #main > article p.lead + ul p {
-    color: #333333;
+    color: #666;
     font-weight: normal;
+    font-size: 0.7em;
 }
 
 #main > article p.lead + ul li:nth-child(1),
 #main > article p.lead + ul li:nth-child(2) {
-    padding-right: 165px;
+    padding-right: 91px;
 }
 
 #main > article p.lead + ul li:nth-child(2) {
@@ -68,7 +70,7 @@ header#navbar {
     border-right: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     position: absolute;
-    right: -100px;
+    right: -125px;
     top: 75px;
     background: url(../img/eyes-connection.png) center center no-repeat;
     width: 200px;
@@ -93,7 +95,7 @@ div#main > article li {
 
 #main > article:first-child {
     border: 0;
-    padding: 0 70px;
+    padding: 0 120px;
     background: transparent none;
 }
 
@@ -102,6 +104,7 @@ div#main > article li {
     background: #fafafa none;
     border-color: #e0e0e0;
     padding: 20px 60px;
+    margin-bottom: 50px;
 }
 
 #investors {
