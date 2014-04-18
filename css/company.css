@@ -2,124 +2,58 @@
  * HighFidelity's company page styling
  */
 
-/* 
- * bg is actually an element block on this page because of parallax reasons,
- * no need to inherit from common.cs 
- */
+/* bg on this page is not from body, no need to inherit from common.cs */
 html > body {
-    background: #ffffff none;
+    background-image: none;
+    min-width: 320px;
 }
 
-/* the actual background */
-html.skrollr .company-bg {
-    position: fixed;
-    z-index: -1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff url('../img/dragon-curve.png') no-repeat left 150px;
-}
-
-html.skrollr .hifi-container {
-    position: relative;
+/* bg is actually from the navbar */
+header#navbar {
+    height: 1200px;
+    background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 20px 550px;
+    background-size: contain;
+    width: 1020px;
     margin: 0 auto;
-    width: 1080px;
-    max-width: 715px;
 }
 
-.hifi-button:hover .hifi-button-content,
-#hifi-audio.playing #hifi-audio-play-button > rect,
-#hifi-audio.playing #hifi-audio-play-button > path {
-    stroke: #000000;
+#main > article p.lead {
+    margin: 0 auto;
+    position: absolute;
+    left: 0px;
+    width: 705px;
+    text-align: center;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;    
 }
 
-#hifi-audio.paused #hifi-audio-pause-button > rect {
-    stroke: #000000;
+#main > article p.lead:first-child {
+    top: -1000px;
 }
 
-.hifi-audio-volume-knob:hover {
-    cursor:ns-resize;
+#main > article p.lead + p.lead {
+    top: -750px;
 }
 
-.hifi-button:hover {
-    cursor: pointer;
+#main > article p.lead + ul {
+    list-style-type: none;
+    margin-top: -150px;
+    margin-left: -30px;
 }
 
-#hifi-greenlight {
-    animation:blink infinite .8s;
-    -webkit-animation:blink infinite .8s;
+#main > article p.lead + ul h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;    
+    font-size: 1.5em;
 }
 
-#hifi-orangelight {
-    fill: white;
-    stroke: #ccc;
+#main > article p.lead + ul p {
+    color: #333333;
+    font-weight: normal;
 }
 
-@keyframes blink {
-    0% {fill: #00ff00;}
-    50% {fill: white;}
-    100% {fill: #00ff00;}
-}   
-
-@-webkit-keyframes blink {
-    0% {fill: #00ff00;}
-    50% {fill: white;}
-    100% {fill: #00ff00;}
-}
-
-#hifi-audio.paused #hifi-greenlight {
-    fill: white;
-}
-
-#hifi-audio.paused #hifi-orangelight {
-    fill: orange;
-    stroke: #ffce75;
-}
-
-#hifi-audio.playing #hifi-greenlight {
-    fill: #0f0;
-    stroke: #99ff99;
-}
-
-#hifi-audio.playing #hifi-orangelight {
-    fill: white;
-    stroke: #ccc;
-}
-
-html.skrollr .fixed-skrollable {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    left: 0;
-    right: 0;
-}
-
-html.skrollr #navbar {
-    z-index: 1100;
-    position: fixed;
-    width: 100%;
-}
-
-html.skrollr footer#site-links {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    right: 0;
-    margin-bottom: auto;
-}
-
-footer#site-links #social p {
-    border-right: 0;
-    border-left: 0;
-}
-
-html.skrollr #container {
-    z-index: 1000;
-}
-
-html.skrollr #container {
-    width: 609px;
+#main > article p.lead + ul li:nth-child(1),
+#main > article p.lead + ul li:nth-child(2) {
+    padding-right: 290px;
 }
 
 div#main > article li {
@@ -138,29 +72,30 @@ div#main > article li {
     color: #666666;
 }
 
-#hifi-audio {
-    display: none;
-    margin-top: 200px;
-    text-align: center;
-    margin-bottom: -7px;
-}
-
-html.skrollr #hifi-audio {
-    display: block;
-}
-#main > article {
+#main > article:first-child {
     border: 0;
+    padding: 0;
+    background: transparent none;
 }
 
-div#main > article .hifi-investor,
-div#main > article .hifi-advisor {
+#main > article:nth-child(n+2) {
+    border-radius: 10px;
+    background-color: #999;
+}
+
+#investors {
+    position: relative;
+}
+
+#investors li,
+#advisors li {
     list-style: none;
     color: #333333;
     font-size: 1em;
     position: absolute;
 }
 
-div#main > article .hifi-investor {
+#investors li {
     width: 190px;
     height: 152px;
     padding: 22px;
@@ -171,42 +106,42 @@ div#main > article .hifi-investor {
     background-color: #fff;
 }
 
-div#main > article .hifi-advisor {
+#advisors li {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
 }
 
-div#main > article .hifi-investor h3,
-div#main > article .hifi-advisor h3 {
+#investors li h3,
+#advisors li h3 {
     line-height: 150%;
 }
 
-div#main > article .hifi-advisor h3 {
+#advisors li h3 {
     font-size: 0.8em;
     text-align: center;
 }
 
-.hifi-advisor a {
+#advisors li a {
     display: inline-block;
 }
 
-div#main > article .hifi-advisor a,
-div#main > article .hifi-advisor a:hover,
-div#main > article .hifi-advisor a:active {
+#advisors li a,
+#advisors li a:hover,
+#advisors li a:active {
     text-decoration: none;
 }
 
-div#main > article .hifi-advisor a:hover {
+#advisors li a:hover {
     color: #666666;
 }
 
-.hifi-investor-1 {
+#investors li:nth-child(1) {
     z-index: 200;
     left: -80px;
 }
 
-.hifi-investor-2 {
+#investors li:nth-child(2) {
     z-index: 199;
     left: 135px;
     margin-top: 9px;
@@ -217,7 +152,7 @@ div#main > article .hifi-advisor a:hover {
     transform: rotate(16deg);
 }
 
-.hifi-investor-3 {
+#investors li:nth-child(3) {
     z-index: 198;
     left: 370px;
     margin-top: 20px;
@@ -228,7 +163,7 @@ div#main > article .hifi-advisor a:hover {
     transform: rotate(2deg);
 }
 
-.hifi-investor-4 {
+#investors li:nth-child(4) {
     z-index: 196;
     left: 60px;
     margin-top: 185px;
@@ -239,17 +174,17 @@ div#main > article .hifi-advisor a:hover {
     transform: rotate(4deg);
 }
 
-.hifi-investor-5 {
+#investors li:nth-child(5) {
     z-index: 197;
     left: 275px;
     margin-top: 200px;
 }
 
-.hifi-advisor-1 {
+#advisors li:nth-child(1) {
     left: -50px;
 }
 
-.hifi-advisor-2 {
+#advisors li:nth-child(2) {
     right: -50px;
 }
 
@@ -259,14 +194,14 @@ div#main > article h3 {
     line-height: 1.2;
 }
 
-div#main > article .hifi-investor p {
+#investors li p {
     padding-top: 0.8em;
     font-family: proxima-nova, sans-serif;
     color: #333333;
     font-size: 0.8em;
 }
 
-div#main > article .hifi-investor p a {
+#investors li p a {
     color: #333333;
     font-weight: normal;
 }
@@ -284,20 +219,8 @@ div#main > article ol li {
     margin-bottom: 25px;
 }
 
-.scroll-arrow a > .scroll-top {
-    border: 0 !important;
-}
-
-.scroll-arrow a > .icon-arrow-up {
-    color: #3698bf;
-}
-
-.scroll-arrow a:hover > .icon-arrow-up {
-    color: #333333;
-}
-
-.hifi-investor-container,
-.hifi-advisor-container {
+#investors > ul,
+#advisors > ul {
     position: relative;
     left: -105px;
     top: 15px;
@@ -305,59 +228,16 @@ div#main > article ol li {
     height: 380px;
 }
 
-html.skrollr .hifi-investor-container,
-html.skrollr .hifi-advisor-container {
-    left: 0;
-}
-
-.hifi-advisor-container {
+#investors > ul {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
 }
 
-footer#site-links > * {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.scroll-arrow a > .scroll-top {
-    color: #666666;
-    font-size: 16px;
-}
-
-.scroll-arrow a > .scroll-top,
-.scroll-arrow a:hover > .scroll-top {
-    text-decoration: none;
-}
-
-.scroll-arrow a > .scroll-top {
-    border-bottom: 1px solid #d9d9d9;
-    font-family: proxima-nova, sans-serif;
-    font-weight: bold;
-    display: inline-block;
-    height: 1.05em;
-}
-
-.scroll-arrow a:hover > .scroll-top {
-    border-bottom: 0 none;
-}
-
 /**
  * Responsive sizes
  */
-@media screen and (max-width: 1090px) {
-    html.skrollr .hifi-container {
-        width: 950px;
-    }
-}
-
 @media screen and (max-width: 970px) {
-    html.skrollr .hifi-container {
-        width: 760px;
-    }
-    
     div#main > article {
         font-size: 1.65em;
     }
@@ -371,13 +251,13 @@ footer#site-links > * {
         padding-top: 0px;
     }
     
-    div#main > article .hifi-investor,
-    div#main > article .hifi-advisor {
+    #investors li,
+    #advisors li {
         font-size: 1.25em;
     }
     
-    .hifi-investor-container,
-    .hifi-advisor-container {
+    #investors > ul,
+    #advisors > ul {
         left: -95px;
         padding: 10px 0;
         height: 330px;
@@ -404,8 +284,8 @@ footer#site-links > * {
         margin-bottom: .5em;
     }
     
-    .hifi-investor-container,
-    .hifi-advisor-container {
+    #investors > ul,
+    #advisors > ul {
         left: 0px;
         padding: 0px;
         height: 250px;
@@ -420,18 +300,6 @@ footer#site-links > * {
         -webkit-transform: scale(0.55);
         -webkit-transform-origin: 18% 0%;
     }
-    
-    footer#site-links > * {
-        width: auto;
-    }
-    
-    .scroll-arrow a > .scroll-top {
-        height: 1.25em;
-    }
-    
-    .scroll-arrow a > .scroll-top {
-        font-size: 11px;
-    }
 }
 
 @media screen and (max-width: 530px) {
@@ -444,7 +312,7 @@ footer#site-links > * {
         padding-top: 15px;
     }
     
-    .hifi-investor-container {
+    #investors > ul {
         height: 180px;
         position: static;
         transform: none;
@@ -459,11 +327,11 @@ footer#site-links > * {
         -webkit-transform-origin: 0 0;
     }
     
-    .hifi-advisor-container {
+    #advisors > ul {
         height: 210px;
     }
 
-    div#main > article .hifi-investor {
+    #investors li {
         position: static;
         
         list-style: disc;
@@ -489,24 +357,24 @@ footer#site-links > * {
         transform: none;
     }
     
-    div#main > article .hifi-investor h3,
-    div#main > article .hifi-advisor h3 {
+    #investors li h3,
+    #advisors li h3 {
         margin: 0;
         color: #666666;
     }
     
-    div#main > article .hifi-investor p {
+    #investors li p {
         font-size: 1.2em;
         color: #666666;
         margin: 0;
         padding: 0;
     }
 
-    .hifi-advisor-1 {
+    #advisors li:nth-child(1) {
         left: -70px;
     }
 
-    .hifi-advisor-2 {
+    #advisors li:nth-child(2) {
         right: -200px;
     }
 }

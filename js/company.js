@@ -1,5 +1,4 @@
 var company = {
-    PARALLAX_MIN_WIDTH: 770,
     options: {
         unsupported_warning: true
     },
@@ -12,16 +11,11 @@ var company = {
     volumeKnobDrag: null,
     playing: false,
     paused: false,
-    skrollr: null,
 
     init: function() {
         try {
             $('body').removeClass('no-dancer');
             $('html').addClass('dancer');
-            
-            if (skrollr) {
-                company.initParallax();
-            }
             
             Dancer.setOptions({
                 flashSWF : 'js/dancerjs/lib/soundmanager2.swf',
@@ -155,63 +149,6 @@ var company = {
     },
 
     /**
-     * Initializes parallax scrolling (skrollr)
-     */
-    initParallax: function() {
-        if ($(document).outerWidth() >= company.PARALLAX_MIN_WIDTH) {
-            company.startParallax()
-        }
-        window.addEventListener('resize', company.handleResize, false);
-    },
-
-    /**
-     * Starts parallax scrolling and do some previous needed dom changes
-     */
-    startParallax: function() {
-        if (company.skrollr) {
-            company.stopParallax();
-        }
-        $('#navbar').attr({
-            "data-0": "top: 0px; display: block;",
-            "data-200": "top: -150px; display: none;" 
-        });
-        $('footer#site-links').attr({
-            "data-0": "bottom: -100%; display: block;",
-            "data-250-end": "bottom: -100%; display: block;",
-            "data-end": "bottom: 0px; display: block;"
-        });
-        var skrollrDiv = $('<div>').attr('id', 'skrollr-body').css({
-            width: '100%',
-            height: '100%'
-        });
-        $('#navbar, #container').wrapAll(skrollrDiv);
-        company.skrollr = skrollr.init();
-    },
-
-    /**
-     * Destroys changes/resources made by startParallax
-     */
-    stopParallax: function() {
-        if (company.skrollr) {
-            company.skrollr.destroy();
-        }
-        $('#skrollr-body > #navbar').unwrap();
-        $('#navbar').removeAttr('data-0 data-200');
-        $('footer#site-links').removeAttr('data-0 data-250-end data-end');
-    },
-
-    /**
-     * Parallax scrolling tweaks on resize, it's actually re-starting
-     */
-    handleResize: function() {
-        if ($(document).outerWidth() < company.PARALLAX_MIN_WIDTH) {
-            company.stopParallax();
-        } else {
-            company.startParallax();
-        }
-    },
-    
-    /**
      * Get volume level from the audio player, used by the vu-meter
      */
     getVolume: function() {
@@ -295,6 +232,6 @@ var company = {
             }
         }
         
-        return dancerSupported && skrollr;
+        return dancerSupported;
     }
 };
