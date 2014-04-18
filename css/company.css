@@ -28,11 +28,12 @@ header#navbar {
 }
 
 #main > article p.lead:first-child {
-    top: -1000px;
+    top: -900px;
 }
 
 #main > article p.lead + p.lead {
-    top: -750px;
+    top: -650px;
+    color: #3698BF;
 }
 
 #main > article p.lead + ul {
