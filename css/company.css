@@ -144,8 +144,13 @@ div#main #advisors li {
 }
 
 div#main #advisors > ul li h3 {
-    font-size: 0.8em;
+    font-size: 0.65em;
     text-align: center;
+    color: #666666;
+}
+
+div#main #advisors > ul li a:hover h3 {
+    color: #3698bf;
 }
 
 #advisors li a {
