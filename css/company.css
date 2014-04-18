@@ -67,6 +67,7 @@ header#navbar {
     position: relative;
     padding-bottom: 190px;
     background: transparent url(../img/devices-network.png) bottom left no-repeat;
+    background-size: contain;
 }
 
 #main > article p.lead + ul li:nth-child(2):before {
@@ -265,10 +266,39 @@ div#main #investors > h2 {
  * Responsive sizes
  */
 @media screen and (max-width: 970px) {
+    header#navbar {
+        width: auto;
+    }
+
     div#main > article {
         font-size: 1.65em;
     }
+
+    #main > article p.lead {
+        width: 375px;
+        left: 170px;
+    }
     
+    #main > article p.lead + ul li:nth-child(2):before {
+        display: none;
+    }
+
+    header#navbar {
+        background-position: 20px 350px;
+    }
+
+    #main > article p.lead:first-child {
+        top: -595px;
+    }
+
+    #main > article p.lead + p.lead {
+        top: -450px;
+    }
+
+    #main > article p.lead + ul {
+        margin-top: -460px;
+    }
+
     #main > article ol,
     #main > article ul {
         font-size: 0.8em;
@@ -277,17 +307,25 @@ div#main #investors > h2 {
     #main ol {
         padding-top: 0px;
     }
-    
+
+    div#main #investors > h2,
+    div#main #advisors > h2 {
+        font-size: 1.4em;
+    }
+
     #investors li,
     #advisors li {
         font-size: 1.25em;
+    }
+
+    #investors > ul {
+        height: 400px;
     }
     
     #investors > ul,
     #advisors > ul {
         left: -95px;
         padding: 10px 0;
-        height: 330px;
         transform: scale(0.9);
         transform-origin: 60% 0%;
         -moz-transform: scale(0.9);
@@ -307,6 +345,23 @@ div#main #investors > h2 {
         padding: 0 20px;
     }
 
+    #main > article p.lead {
+        left: 75px;
+    }
+
+    #main > article p.lead + ul {
+        margin-left: 0;
+    }
+
+    #main > article:first-child {
+        padding: 0;
+    }
+
+    #main > article p.lead + ul li:nth-child(1),
+    #main > article p.lead + ul li:nth-child(2) {
+        padding-right: 0;
+    }
+    
     div#main > article li {
         margin-bottom: .5em;
     }
@@ -330,6 +385,26 @@ div#main #investors > h2 {
 }
 
 @media screen and (max-width: 530px) {
+    header#navbar {
+        background-position: 20px 230px;
+    }
+
+    #main > article p.lead {
+        left: -50px;
+    }
+
+    #main > article p.lead + ul {
+        margin-top: -750px;
+    }
+
+    #main > article p.lead:first-child {
+        top: -400px;
+    }
+
+    #main > article p.lead + p.lead {
+        top: -280px;
+    }
+    
     div#main > article h2 {
         font-size: 1.3em;
         margin-bottom: 15px;
@@ -338,70 +413,35 @@ div#main #investors > h2 {
     div#main > article p + h2 {
         padding-top: 15px;
     }
-    
-    #investors > ul {
-        height: 180px;
-        position: static;
-        transform: none;
-        transform-origin: 0 0;
-        -moz-transform: none;
-        -moz-transform-origin: 0 0;
-        -ms-transform: none;
-        -ms-transform-origin: 0 0;
-        -o-transform: none;
-        -o-transform-origin: 0 0;
-        -webkit-transform: none;
-        -webkit-transform-origin: 0 0;
-    }
-    
-    #advisors > ul {
-        height: 210px;
+
+    #main > article:nth-child(n+2) {
+        padding: 20px 0;
     }
 
-    #investors li {
-        position: static;
-        
-        list-style: disc;
-        color: #3698bf;
-        font-size: 0.66em;
-        line-height: 1.426;
-    
-        border: 0 none;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        
-        left: 0;
-        -moz-transform: none;
-        -ms-transform: none;
-        -o-transform: none;
-        -webkit-transform: none;
-        transform: none;
-    }
-    
-    #investors li h3,
-    #advisors li h3 {
-        margin: 0;
-        color: #666666;
-    }
-    
-    #investors li p {
+    div#main #investors > h2,
+    div#main #advisors > h2 {
         font-size: 1.2em;
-        color: #666666;
-        margin: 0;
-        padding: 0;
+    }
+    
+    #investors > ul,
+    #advisors > ul {
+        left: 0px;
+        padding: 0px;
+        height: 150px;
+        transform: scale(0.35);
+        transform-origin: 18% 0%;
+        -moz-transform: scale(0.35);
+        -moz-transform-origin: 18% 0%;
+        -ms-transform: scale(0.35);
+        -ms-transform-origin: 18% 0%;
+        -o-transform: scale(0.35);
+        -o-transform-origin: 18% 0%;
+        -webkit-transform: scale(0.35);
+        -webkit-transform-origin: 18% 0%;
     }
 
-    #advisors li:nth-child(1) {
-        left: -70px;
-    }
-
-    #advisors li:nth-child(2) {
-        right: -200px;
+    #advisors > ul {
+        width: 300%;
+        margin-left: -50px;
     }
 }
