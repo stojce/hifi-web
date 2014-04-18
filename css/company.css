@@ -49,9 +49,13 @@ header#navbar {
 }
 
 #main > article p.lead + ul p {
-    color: #666;
+    color: #666666;
     font-weight: normal;
     font-size: 0.7em;
+}
+
+#main > article p.lead + ul p strong {
+    color: #333333;
 }
 
 #main > article p.lead + ul li:nth-child(1),
