@@ -13,14 +13,14 @@ header#navbar {
     height: 1200px;
     background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 20px 430px;
     background-size: contain;
-    width: 1020px;
+    width: 800px;
     margin: 0 auto;
 }
 
 #main > article p.lead {
     margin: 0 auto;
     position: absolute;
-    left: 90px;
+    left: 85px;
     width: 525px;
     text-align: center;
     font-weight: normal;
@@ -29,29 +29,31 @@ header#navbar {
 }
 
 #main > article p.lead:first-child {
-    top: -780px;
+    top: -645px;
 }
 
 #main > article p.lead + p.lead {
-    top: -600px;
+    top: -472px;
     color: #3698BF;
 }
 
 #main > article p.lead + ul {
     list-style-type: none;
-    margin-top: -250px;
-    margin-left: -30px;
+    margin-top: -402px;
+    margin-left: -78px;
 }
 
 #main > article p.lead + ul h2 {
     font-family: Georgia, 'Times New Roman', Times, serif !important;    
     font-size: 1.1em;
+    line-height: 1.1em;
+    margin-bottom: 5px;
 }
 
 #main > article p.lead + ul p {
     color: #666666;
     font-weight: normal;
-    font-size: 0.7em;
+    font-size: 0.74em;
 }
 
 #main > article p.lead + ul p strong {
@@ -60,6 +62,10 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(1),
 #main > article p.lead + ul li:nth-child(2) {
+    margin-bottom: 57px;
+}
+
+#main > article p.lead + ul li:nth-child(1) {
     padding-right: 91px;
 }
 
@@ -68,6 +74,7 @@ header#navbar {
     padding-bottom: 190px;
     background: transparent url(../img/devices-network.png) bottom left no-repeat;
     background-size: contain;
+    padding-right: 120px;
 }
 
 #main > article p.lead + ul li:nth-child(2):before {
@@ -75,8 +82,8 @@ header#navbar {
     border-right: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     position: absolute;
-    right: -125px;
-    top: 75px;
+    right: -77px;
+    top: 66px;
     background: url(../img/eyes-connection.png) center center no-repeat;
     width: 200px;
     height: 200px;
