@@ -290,6 +290,7 @@ div#main #investors > h2 {
     #main > article p.lead {
         width: 375px;
         left: 170px;
+        font-size: 1.2em;
     }
     
     #main > article p.lead + ul li:nth-child(2):before {
@@ -415,7 +416,7 @@ div#main #investors > h2 {
         -webkit-transform: scale(0.55);
         -webkit-transform-origin: 18% 0%;
     }
-    
+
     #advisors > ul {
         width: 300%;
         margin-left: -50px;
@@ -424,23 +425,26 @@ div#main #investors > h2 {
 
 @media screen and (max-width: 530px) {
     header#navbar {
-        background-position: 0 220px;
+        background-position: 0 240px;
     }
 
     #main > article p.lead {
-        left: -50px;
+        left: -25px;
+        font-size: 1em;
+        width: 320px;
     }
+    
 
     #main > article p.lead + ul {
-        margin-top: -750px;
+        margin-top: -700px;
     }
 
     #main > article p.lead:first-child {
-        top: -400px;
+        top: -420px;
     }
 
     #main > article p.lead + p.lead {
-        top: -280px;
+        top: -300px;
     }
     
     div#main > article h2 {
@@ -476,5 +480,17 @@ div#main #investors > h2 {
         -o-transform-origin: 18% 0%;
         -webkit-transform: scale(0.35);
         -webkit-transform-origin: 18% 0%;
-    }s
+    }
+
+    div#main #investors > ul li h3 {
+        font-size: 2em;
+    }
+
+    div#main #investors > ul li p {
+        font-size: 1.2em;
+    }
+
+    div#main #advisors > ul li h3 {
+        font-size: 1.5em;
+    }
 }
