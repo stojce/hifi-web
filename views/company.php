@@ -1,6 +1,6 @@
 <div role="main" id="main">
     <article>
-        <p class="lead">We’re building open source software to help people create a new virtual world.</p>
+        <p class="lead">We’re building open source software to help people create new virtual worlds.</p>
         <p class="lead">This starts with:</p>
         <ul>
             <li>
