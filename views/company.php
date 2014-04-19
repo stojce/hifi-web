@@ -1,187 +1,90 @@
 <div role="main" id="main">
-    <div
-     class="company-bg"
-     data-0="background-position: left 450px;"
-     data-end="background-position: left -500px;"></div>
-    <div
-     id="hifi-audio"
-     class="fixed-skrollable"
-     data-0="top: 0%; display: block;"
-     data-700="top: 0%; display: block;"
-     data-1100="top:-100%; display: none;">
-        <audio id="HifiAmbientNoise" preload="auto" autobuffer>
-            <source src="media/audio/HiFi Ambient Noise.mp3"/>
-            <source src="media/audio/HiFi Ambient Noise.ogg"/>
-        </audio>
-        <?php include('./views/partials/audio-controller.svg'); ?>
-    </div>
-    <div
-     class="fixed-skrollable"
-     style="bottom: 0; display: none;"
-     data-0="opacity: 1; display: block;"
-     data-200-end="opacity: 1;"
-     data-50-end="opacity: 0;">
-        <div style="text-align: center; padding-bottom: 10px; font-size: 40px;">
-            <i class="icon-arrow-down"></i>
-        </div>
-    </div>
-    <div
-     class="fixed-skrollable scroll-arrow"
-     style="top: 25%; opacity: 0; display: none;"
-     data-0="opacity: 0; display: none;"
-     data-30-end="opacity: 0; display: block;"
-     data-20-end="opacity: 1; display: block;">
-        <div style="text-align: center; padding-bottom: 10px;">
-            <a href="#">
-                <i class="icon-arrow-up" style="font-size: 40px;"></i>
-                <br />
-                <span class="scroll-top">back to top</span>
-            </a>
-        </div>
-    </div>
     <article>
-        <div
-         class="fixed-skrollable"
-         data-0="top: 100%; display: none;"
-         data-1000="top: 100%; display: block;"
-         data-1400="top: 0%; display: block;"
-         data-3000="top: 0%; display: block;"
-         data-3400="top:-100%; display: none;">
-            <div class="hifi-container">
-                <h2 id="h2" style="position: relative; margin-top: 75px;">Credo</h2>
-                <ol>
-                    <li
-                     data-0="left: 200%;"
-                     data-1600="left: 200%;"
-                     data-1760="left: -10%;"
-                     data-1790="left: 5%;"
-                     data-1800="left: 0%;"
-                     style="position: relative;">
-                        <div class="hifi-gray">
-                            <strong>We work fast.</strong> Many tech startups claim as much, but we started 
-                            typing this sentence 10 seconds from now.
-                        </div>
-                    </li>
-                    <li
-                     data-0="left: 200%;"
-                     data-2000="left: 200%;"
-                     data-2160="left: -10%;"
-                     data-2190="left: 5%;"
-                     data-2200="left: 0%;"
-                     style="position: relative;">
-                        <div class="hifi-gray">
-                            We will not tolerate nudity. <br />Not even the engineers.
-                        </div>
-                    </li>
-                    <li
-                     data-0="left: 200%;"
-                     data-2400="left: 200%;"
-                     data-2560="left: -10%;"
-                     data-2590="left: 5%;"
-                     data-2600="left: 0%;"
-                     style="position: relative;">
-                        <div class="hifi-gray">
-                            We know we're going to do it.
-                        </div>
-                    </li>
-                </ol>
-            </div>
+        <p class="lead">We’re building open source software to help people create a new virtual world.</p>
+        <p class="lead">This starts with:</p>
+        <ul>
+            <li>
+                <h2>Presence</h2>
+                <p>
+                    We’re working with a wide variety of consumer-available motion 
+                    controllers, 3D cameras, and head-mounted displays. These amazing 
+                    new devices make real immersion possible, enabling virtual world 
+                    residents to animate avatar movements and facial expressions in real 
+                    time. Which we’ve observed leads to:
+                </p>
+            </li>
+            <li>
+                <h2>Connection</h2>
+                <p>
+                    Coupling these devices with high-speed networks and the vast computing 
+                    power many of us have on tap, High Fidelity is working to capture and 
+                    replicate the little details that underpin our interactions with others--things 
+                    like countenance, gaze, and spatialized audio cues. Which takes us to:
+                </p>
+            </li>
+            <li>
+                <h2>Collaboration &amp; Commerce</h2>
+                <p>
+                    By borrowing computing time and bandwidth from others, virtual events 
+                    can grow to any size, space or audience.  High Fidelity is developing 
+                    an exchange which facilitates the lending and borrowing of computing 
+                    resources, using cryptocurrency credits to recognize these transactions. 
+                    These credits will be used to buy digital goods and services from others 
+                    to help people build and power expansive digital worlds.
+                </p>
+                <p>
+                    <strong>The worlds created with High Fidelity can be linked together </strong>
+                    by the common avatar identity and digital marketplace we are building, operating 
+                    as a shared service to all users of the software platform. The open source software 
+                    is not yet complete, but is available on <a target="_blank" href="https://github.com">GitHub</a> 
+                    for experimentation and contribution. To supplement our in-house team, we have 
+                    also created a software development marketplace listing part-time paid opportunities – 
+                    you can find it at <a href="https://worklist.net">worklist.net</a>
+                </p>
+            </li>
+        </ul>
+    </article>
+    <article>
+        <div id="investors">
+            <h2>Investors</h2>
+            <ul>
+                <li>
+                    <h3>True Ventures</h3>
+                </li>
+                <li>
+                    <h3>Google Ventures</h3>
+                </li>
+                <li>
+                    <h3>Kapor Capital</h3>
+                </li>
+                <li>
+                    <h3>Linden Lab</h3>
+                </li>
+                <li>
+                    <p>And an intriguing assortment of forward-looking angels.</p>
+                </li>
+            </ul>
         </div>
-        
-        <div
-         class="fixed-skrollable"
-         data-0="top: 100%; display: none;"
-         data-3400="top: 100%; display: block;"
-         data-3800="top: 0%; display: block;"
-         data-5700="top: 0%; display: block;"
-         data-6100="top:-100%; display: none;">
-            <div class="hifi-container" style="position: relative;">
-                <h2 style="margin-top: 75px">Investors</h2>
-                <ul class="hifi-investor-container">
-                    <li
-                     class="hifi-investor hifi-investor-1"
-                     data-0="left: 2000px; transform:rotate(-90deg);"
-                     data-4020="left: 2000px; transform:rotate(-90deg);"
-                     data-4420="left: -80px; transform:rotate(0deg)">
-                        <h3>True Ventures</h3>
-                    </li>
-                    <li
-                     class="hifi-investor hifi-investor-2"
-                     data-0="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
-                     data-4060="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
-                     data-4460="left: 135px; transform:rotate(16deg);">
-                        <h3>Google Ventures</h3>
-                    </li>
-                    <li
-                     class="hifi-investor hifi-investor-3"
-                     data-0="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
-                     data-4100="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
-                     data-4500="left: 370px; transform:rotate(2deg);">
-                        <h3>Kapor Capital</h3>
-                    </li>
-                    <li
-                     class="hifi-investor hifi-investor-4"
-                     data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-                     data-4140="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-                     data-4540="left: 60px; transform:rotate(4deg);">
-                        <h3>Linden Lab</h3>
-                    </li>
-                    <li
-                     class="hifi-investor hifi-investor-5"
-                     data-0="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-                     data-4180="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-                     data-4580="left: 275px; transform:rotate(0deg);">
-                        <p>And an intriguing assortment of&nbsp;forward-looking angels.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div
-         class="fixed-skrollable"
-         data-0="top: 100%; display: none;"
-         data-5700="top: 100%; display: block;"
-         data-6200="top: 70%; display: block;"
-         data-7000="top: 70%; display: block;"
-         data-7200="top: 0%; display: block;"
-         data-14700="top: 0%; display: block;"
-         data-15100="top:-100%; display: none;">
-            <div class="hifi-container" style="position: relative;">
-                <h2 style="margin-top: 50px">Advisors</h2>
-                <ul class="hifi-advisor-container"
-                 data-0="opacity: 0; left: -2000px; transform:rotateY(0deg);"
-                 data-6520="opacity: 0; left: -2000px; transform:rotateY(0deg);"
-                 data-8420="opacity: 1; left: 0px; transform:rotateY(360deg)"
-                 data-14400="opacity: 1; left: 0px; transform:rotateY(1080deg)"
-                 data-15200="opacity: 0;  left: 2000px; transform:rotateY(1440deg)">
-                    <li class="hifi-advisor hifi-advisor-1"
-                     data-0="transform:rotateY(1440deg);"
-                     data-6520="transform:rotateY(1044deg);"
-                     data-8420="transform:rotateY(1080deg)"
-                     data-14400="transform:rotateY(360deg)"
-                     data-15200="transform:rotateY(0deg)">
-                        <a target="_blank" href="http://en.wikipedia.org/wiki/Peter_Diamandis">
-                            <figure>
-                                <img src="img/advisors/peter_diamandis.jpg" class="img-circle" alt="Peter Diamandis" />
-                                <h3>Peter Diamandis</h3>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="hifi-advisor hifi-advisor-2"
-                     data-0="transform:rotateY(1440deg);"
-                     data-6520="transform:rotateY(1440deg);"
-                     data-8420="transform:rotateY(1080deg)"
-                     data-14400="transform:rotateY(360deg)"
-                     data-15200="transform:rotateY(0deg)">
-                        <a target="_blank" href="http://profiles.ucsf.edu/adam.gazzaley">
-                            <figure>
-                                <img src="img/advisors/adam_gazzaley.jpg" class="img-circle" alt="Adam Gazzaley" />
-                                <h3>Adam Gazzaley</h3>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div id="advisors">
+            <h2>Advisors</h2>
+            <ul>
+                <li>
+                    <a target="_blank" href="http://profiles.ucsf.edu/adam.gazzaley">
+                        <figure>
+                            <img src="img/advisors/adam_gazzaley.jpg" alt="Adam Gazzaley" />
+                            <h3>Adam Gazzaley</h3>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://en.wikipedia.org/wiki/Peter_Diamandis">
+                        <figure>
+                            <img src="img/advisors/peter_diamandis.jpg" alt="Peter Diamandis" />
+                            <h3>Peter Diamandis</h3>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
         </div>
     </article>
 </div>
