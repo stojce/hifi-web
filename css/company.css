@@ -11,21 +11,21 @@ html > body {
 /* bg is actually from the navbar */
 header#navbar {
     height: 1200px;
-    background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 20px 430px;
+    background: #ffffff url('../img/Emily-and-hifi-rig-for-website-v2.png') no-repeat 7px 424px;
     background-size: contain;
-    width: 800px;
+    width: 784px;
     margin: 0 auto;
 }
 
 #main > article p.lead {
     margin: 0 auto;
     position: absolute;
-    left: 85px;
-    width: 525px;
+    left: 111px;
+    width: 488px;
     text-align: center;
     font-weight: normal;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 #main > article p.lead:first-child {
@@ -39,8 +39,7 @@ header#navbar {
 
 #main > article p.lead + ul {
     list-style-type: none;
-    margin-top: -402px;
-    margin-left: -78px;
+    margin: -402px 0 97px -78px;
 }
 
 #main > article p.lead + ul h2 {
@@ -48,12 +47,19 @@ header#navbar {
     font-size: 1.1em;
     line-height: 1.1em;
     margin-bottom: 5px;
+    letter-spacing: .015em;
 }
 
 #main > article p.lead + ul p {
     color: #666666;
     font-weight: normal;
     font-size: 0.74em;
+    line-height: 1.25em;
+    word-spacing: .1em;
+}
+
+#main > article p.lead + ul p + p {
+    margin-top: 70px;
 }
 
 #main > article p.lead + ul p strong {
@@ -62,7 +68,7 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(1),
 #main > article p.lead + ul li:nth-child(2) {
-    margin-bottom: 57px;
+    margin-bottom: 64px;
 }
 
 #main > article p.lead + ul li:nth-child(1) {
@@ -71,10 +77,10 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(2) {
     position: relative;
-    padding-bottom: 190px;
-    background: transparent url(../img/devices-network.png) bottom left no-repeat;
+    padding-bottom: 143px;
+    background: transparent url(../img/devices-network.png) -12px 335px no-repeat;
     background-size: contain;
-    padding-right: 120px;
+    padding-right: 199px;
 }
 
 #main > article p.lead + ul li:nth-child(2):before {
@@ -115,7 +121,7 @@ div#main > article li {
     border-radius: 10px;
     background: #fafafa none;
     border-color: #e0e0e0;
-    padding: 20px 60px;
+    padding: 28px 60px;
     margin-bottom: 50px;
 }
 
@@ -291,19 +297,23 @@ div#main #investors > h2 {
     }
 
     header#navbar {
-        background-position: 20px 350px;
+        background-position: 15px 350px;
     }
 
     #main > article p.lead:first-child {
-        top: -595px;
+        top: -695px;
     }
 
     #main > article p.lead + p.lead {
-        top: -450px;
+        top: -550px;
     }
 
     #main > article p.lead + ul {
-        margin-top: -460px;
+        margin-top: -360px;
+    }
+
+    div#main > article p.lead + ul li:nth-child(2) {
+        padding-bottom: 0;
     }
 
     #main > article ol,
@@ -348,6 +358,22 @@ div#main #investors > h2 {
 }
 
 @media screen and (max-width: 770px) {
+    header#navbar {
+        background-position: 0px inherit;
+    }
+
+    #main > article p.lead:first-child {
+        top: -495px;
+    }
+
+    #main > article p.lead + p.lead {
+        top: -350px;
+    }
+
+    #main > article p.lead + ul {
+        margin-top: -560px;
+    }
+
     #main > article {
         padding: 0 20px;
     }
@@ -389,11 +415,16 @@ div#main #investors > h2 {
         -webkit-transform: scale(0.55);
         -webkit-transform-origin: 18% 0%;
     }
+    
+    #advisors > ul {
+        width: 300%;
+        margin-left: -50px;
+    }
 }
 
 @media screen and (max-width: 530px) {
     header#navbar {
-        background-position: 20px 230px;
+        background-position: 0 220px;
     }
 
     #main > article p.lead {
@@ -445,10 +476,5 @@ div#main #investors > h2 {
         -o-transform-origin: 18% 0%;
         -webkit-transform: scale(0.35);
         -webkit-transform-origin: 18% 0%;
-    }
-
-    #advisors > ul {
-        width: 300%;
-        margin-left: -50px;
-    }
+    }s
 }
