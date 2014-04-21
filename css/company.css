@@ -29,7 +29,8 @@ header#navbar {
 }
 
 #main > article p.lead:first-child {
-    top: -645px;
+    top: -644px;
+    line-height: 1.2em;
 }
 
 #main > article p.lead + p.lead {
@@ -39,14 +40,14 @@ header#navbar {
 
 #main > article p.lead + ul {
     list-style-type: none;
-    margin: -402px 0 97px -78px;
+    margin: -403px 0 97px -49px;
 }
 
 #main > article p.lead + ul h2 {
     font-family: Georgia, 'Times New Roman', Times, serif !important;    
     font-size: 1.1em;
-    line-height: 1.1em;
-    margin-bottom: 5px;
+    line-height: 1.28em;
+    margin-bottom: 3px;
     letter-spacing: .015em;
 }
 
@@ -56,10 +57,12 @@ header#navbar {
     font-size: 0.74em;
     line-height: 1.25em;
     word-spacing: .1em;
+    white-space: pre-line;
+
 }
 
 #main > article p.lead + ul p + p {
-    margin-top: 70px;
+    margin-top: -15px;
 }
 
 #main > article p.lead + ul p strong {
@@ -68,7 +71,7 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(1),
 #main > article p.lead + ul li:nth-child(2) {
-    margin-bottom: 64px;
+    margin-bottom: 60px;
 }
 
 #main > article p.lead + ul li:nth-child(1) {
@@ -77,10 +80,9 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(2) {
     position: relative;
-    padding-bottom: 143px;
+    padding-bottom: 171px;
     background: transparent url(../img/devices-network.png) -12px 335px no-repeat;
     background-size: contain;
-    padding-right: 199px;
 }
 
 #main > article p.lead + ul li:nth-child(2):before {
@@ -88,11 +90,15 @@ header#navbar {
     border-right: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     position: absolute;
-    right: -77px;
-    top: 66px;
+    right: -47px;
+    top: 69px;
     background: url(../img/eyes-connection.png) center center no-repeat;
     width: 200px;
     height: 200px;
+}
+
+#main > article p.lead + ul li:nth-child(3) > p:first-child {
+    line-height: 1.29em;
 }
 
 div#main > article li {
@@ -113,7 +119,7 @@ div#main > article li {
 
 #main > article:first-child {
     border: 0;
-    padding: 0 120px;
+    padding: 0 90px;
     background: transparent none;
 }
 
@@ -121,7 +127,7 @@ div#main > article li {
     border-radius: 10px;
     background: #fafafa none;
     border-color: #e0e0e0;
-    padding: 28px 60px;
+    padding: 28px 10px;
     margin-bottom: 50px;
 }
 
@@ -129,24 +135,25 @@ div#main > article li {
     position: relative;
 }
 
-#investors li,
-#advisors li {
+div#main #investors li,
+div#main #advisors li {
     list-style: none;
     color: #333333;
-    font-size: 1em;
+    font-size: .81em;
 }
 
-#investors li {
+div#main #investors li {
     position: absolute;
-    width: 190px;
-    height: 152px;
-    padding: 22px;
+    width: 165px;
+    height: 158px;
+    padding: 19px 33px;
     border: 1px solid #ccc;
     -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
+
 
 div#main #advisors li {
     display: inline-block;
@@ -181,26 +188,26 @@ div#main #advisors > ul li a:hover h3 {
     color: #666666;
 }
 
-#investors li:nth-child(1) {
+div#main #investors li:nth-child(1) {
     z-index: 200;
     left: -80px;
 }
 
-#investors li:nth-child(2) {
+div#main #investors li:nth-child(2) {
     z-index: 199;
-    left: 135px;
-    margin-top: 9px;
-    -moz-transform: rotate(16deg);
-    -ms-transform: rotate(16deg);
-    -o-transform: rotate(16deg);
-    -webkit-transform: rotate(16deg);
-    transform: rotate(16deg);
+    left: 130px;
+    margin-top: 12px;
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
 }
 
-#investors li:nth-child(3) {
+div#main #investors li:nth-child(3) {
     z-index: 198;
-    left: 370px;
-    margin-top: 20px;
+    left: 354px;
+    margin-top: 12px;
     -moz-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     -o-transform: rotate(2deg);
@@ -208,10 +215,10 @@ div#main #advisors > ul li a:hover h3 {
     transform: rotate(2deg);
 }
 
-#investors li:nth-child(4) {
+div#main #investors li:nth-child(4) {
     z-index: 196;
-    left: 60px;
-    margin-top: 185px;
+    left: 38px;
+    margin-top: 181px;
     -moz-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     -o-transform: rotate(4deg);
@@ -219,10 +226,16 @@ div#main #advisors > ul li a:hover h3 {
     transform: rotate(4deg);
 }
 
-#investors li:nth-child(5) {
+div#main #investors li:nth-child(5) {
     z-index: 197;
-    left: 275px;
-    margin-top: 200px;
+    left: 248px;
+    margin-top: 196px;
+    padding: 24px 19px 10px 25px;
+    width: 190px;
+}
+
+div#main #investors li:nth-child(5) p {
+    font-size: .95em;
 }
 
 div#main > article h3 {
@@ -261,18 +274,18 @@ div#main > article ol li {
 }
 
 #investors > ul {
-    height: 500px;
+    height: 470px;
 }
 
 div#main #investors > h2 {
-    margin-bottom: 50px;
+    margin-bottom: 72px;
 }
 
 #investors > ul {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-    margin-left: 30px;
+    margin-left: 88px;
 }
 
 /**
