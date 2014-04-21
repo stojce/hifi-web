@@ -22,7 +22,7 @@
                     on tap, High Fidelity is working to 
                     capture and replicate the little details 
                     that underpin our interactions with 
-                    others--things ike countenance, 
+                    others–things like countenance, 
                     gaze, and spatialized audio cues. 
                     Which takes us to: </p>
             </li>
