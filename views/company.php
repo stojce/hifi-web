@@ -46,8 +46,8 @@
                     available on <a target="_blank" href="https://github.com">GitHub</a> for experimentation and 
                     contribution. To supplement our in-house team, we 
                     have also created a software development 
-                    marketplace listing part-time paid opportunities – you 
-                    can find it at <a href="https://worklist.net">worklist.net</a></p>
+                    marketplace listing part-time paid opportunities 
+                    – you can find it at <a href="https://worklist.net">worklist.net</a></p>
             </li>
         </ul>
     </article>
