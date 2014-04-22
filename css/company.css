@@ -377,7 +377,7 @@ div#main #advisors > h2 {
     }
 
     div#main #investors li h3 {
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
     div#main #investors li:nth-child(5) p {
@@ -533,10 +533,6 @@ div#main #advisors > h2 {
         -webkit-transform-origin: 18% 0%;
     }
 
-    div#main #investors > ul li h3 {
-        font-size: 2em;
-    }
-
     div#main #investors > ul li p {
         font-size: 1.2em;
     }
@@ -546,8 +542,10 @@ div#main #advisors > h2 {
     }
 
     div#main #advisors > ul > li,
+    div#main #advisors > ul > li a,
     div#main #advisors > ul > li figure {
-        width: 40%;
+        margin: 0;
+        width: 110px;
     }
 
     div#main #advisors > ul li h3 {
