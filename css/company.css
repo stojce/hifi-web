@@ -40,7 +40,7 @@ header#navbar {
 
 #main > article p.lead + ul {
     list-style-type: none;
-    margin: -403px 0 97px -49px;
+    margin: -403px 0 97px -45px;
 }
 
 #main > article p.lead + ul h2 {
@@ -88,14 +88,14 @@ header#navbar {
 
 #main > article p.lead + ul li:nth-child(2):before {
     content: '\00a0';
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     position: absolute;
-    right: -47px;
-    top: 69px;
-    background: url(../img/eyes-connection.png) center center no-repeat;
-    width: 200px;
-    height: 200px;
+    right: -41px;
+    top: 33px;
+    background: url(../img/eyes-connection.png) 71px 60px no-repeat;
+    width: 235px;
+    height: 265px;
 }
 
 #main > article p.lead + ul li:last-child p:nth-child(2) {
@@ -120,7 +120,7 @@ div#main > article li {
 
 #main > article:first-child {
     border: 0;
-    padding: 0 90px;
+    padding: 0 85px;
     background: transparent none;
 }
 
@@ -319,8 +319,8 @@ div#main #advisors > h2 {
         font-size: 1.2em;
     }
     
-    #main > article p.lead + ul li:nth-child(2):before {
-        display: none;
+    #main > article p.lead + ul p {
+        white-space: normal;
     }
 
     header#navbar {
@@ -328,19 +328,33 @@ div#main #advisors > h2 {
     }
 
     #main > article p.lead:first-child {
-        top: -695px;
+        top: -655px;
     }
 
     #main > article p.lead + p.lead {
-        top: -550px;
+        top: -520px;
     }
 
     #main > article p.lead + ul {
-        margin-top: -360px;
+        margin-top: -400px;
+        margin-bottom: 40px;
     }
 
-    div#main > article p.lead + ul li:nth-child(2) {
-        padding-bottom: 0;
+    #main > article p.lead + ul li:nth-child(2):before {
+        display: none;
+    }
+
+    #main > article p.lead + ul li:nth-child(2) {
+        background-position: -12px 110px;
+    }
+
+    #main > article p.lead + ul li:nth-child(1), 
+    #main > article p.lead + ul li:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    #main > article p.lead + ul p + p {
+        margin-top: 0;
     }
 
     #main > article ol,
@@ -355,19 +369,27 @@ div#main #advisors > h2 {
     div#main #investors > h2,
     div#main #advisors > h2 {
         font-size: 1.4em;
+        margin-bottom: .5em;
     }
 
-    #investors li,
-    #advisors li {
-        font-size: 1.25em;
+    div#main #investors li h3 {
+        font-size: 2em;
+    }
+
+    div#main #investors li:nth-child(5) p {
+        font-size: 1.5em;
     }
 
     #investors > ul {
-        height: 400px;
+        height: 350px;
+        margin: 10px 20px;
+    }
+
+    div#main #advisors > ul li h3 {
+        font-size: 1.3em;
     }
     
-    #investors > ul,
-    #advisors > ul {
+    #investors > ul {
         left: -95px;
         padding: 10px 0;
         transform: scale(0.9);
@@ -381,7 +403,6 @@ div#main #advisors > h2 {
         -webkit-transform: scale(0.9);
         -webkit-transform-origin: 60% 0%;
     }
-    
 }
 
 @media screen and (max-width: 770px) {
@@ -390,15 +411,21 @@ div#main #advisors > h2 {
     }
 
     #main > article p.lead:first-child {
-        top: -495px;
+        top: -595px;
     }
 
     #main > article p.lead + p.lead {
-        top: -350px;
+        top: -450px;
     }
 
     #main > article p.lead + ul {
-        margin-top: -560px;
+        margin-top: -460px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    #main > article p.lead + ul p {
+        font-size: .65em;
     }
 
     #main > article {
@@ -409,43 +436,36 @@ div#main #advisors > h2 {
         left: 75px;
     }
 
-    #main > article p.lead + ul {
-        margin-left: 0;
-    }
-
     #main > article:first-child {
         padding: 0;
     }
 
-    #main > article p.lead + ul li:nth-child(1),
     #main > article p.lead + ul li:nth-child(2) {
-        padding-right: 0;
+        background-size: contain;
+        background-position: 0px 171px;
     }
-    
+
     div#main > article li {
         margin-bottom: .5em;
     }
     
-    #investors > ul,
-    #advisors > ul {
+    #investors > ul {
         left: 0px;
         padding: 0px;
         height: 250px;
-        transform: scale(0.55);
-        transform-origin: 18% 0%;
-        -moz-transform: scale(0.55);
-        -moz-transform-origin: 18% 0%;
-        -ms-transform: scale(0.55);
-        -ms-transform-origin: 18% 0%;
-        -o-transform: scale(0.55);
-        -o-transform-origin: 18% 0%;
-        -webkit-transform: scale(0.55);
-        -webkit-transform-origin: 18% 0%;
     }
 
-    #advisors > ul {
-        width: 300%;
-        margin-left: -50px;
+    #investors > ul {
+        transform: scale(0.65);
+        transform-origin: 18% 0%;
+        -moz-transform: scale(0.65);
+        -moz-transform-origin: 18% 0%;
+        -ms-transform: scale(0.65);
+        -ms-transform-origin: 18% 0%;
+        -o-transform: scale(0.65);
+        -o-transform-origin: 18% 0%;
+        -webkit-transform: scale(0.65);
+        -webkit-transform-origin: 18% 0%;
     }
 }
 
@@ -491,8 +511,7 @@ div#main #advisors > h2 {
         font-size: 1.2em;
     }
     
-    #investors > ul,
-    #advisors > ul {
+    #investors > ul {
         left: 0px;
         padding: 0px;
         height: 150px;
@@ -516,7 +535,16 @@ div#main #advisors > h2 {
         font-size: 1.2em;
     }
 
+    div#main #advisors > ul {
+        margin: 0;
+    }
+
+    div#main #advisors > ul > li,
+    div#main #advisors > ul > li figure {
+        width: 40%;
+    }
+
     div#main #advisors > ul li h3 {
-        font-size: 1.5em;
+        font-size: .9em;
     }
 }
