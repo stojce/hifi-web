@@ -446,7 +446,7 @@ div#main #advisors > h2 {
 
     #main > article p.lead + ul li:nth-child(2) {
         background-size: contain;
-        background-position: 0px 171px;
+        background-position: 0px 100px;
     }
 
     div#main > article li {
@@ -493,7 +493,12 @@ div#main #advisors > h2 {
     #main > article p.lead + p.lead {
         top: -300px;
     }
-    
+
+    #main > article p.lead + ul li:nth-child(2) {
+        background-position: 0px 170px;
+        padding-bottom: 120px;
+    }
+
     div#main > article h2 {
         font-size: 1.3em;
         margin-bottom: 15px;
