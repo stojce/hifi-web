@@ -585,7 +585,7 @@ cite:before {
 }
 
 .container-fluid {
-    max-width: 730px;
+    max-width: 830px;
     margin: 0 auto;
 }
 
@@ -777,7 +777,7 @@ cite:before {
 
     .related-articles {
         width: 960px;
-        margin-left: -140px;
+        margin-left: -88px;
         padding-left: 50px;
     }
 
