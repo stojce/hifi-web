@@ -60,7 +60,7 @@ if (class_exists('View')) {
             </ul>
         </div>
         <p>
-            <span>&copy; 2013 High Fidelity Inc</span>
+            <span>&copy; 2014 High Fidelity Inc</span>
         </p>
     </footer>
 </div>
