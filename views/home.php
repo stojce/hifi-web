@@ -295,12 +295,33 @@ $jobs = View::read('jobList');
             </li>
             <li>
                 <figure>
-                    <img src="img/team/andrew.png" class="img-circle" alt="Emily Donald" />
+                    <img src="img/team/andrew.png" class="img-circle" alt="Andrew Meadows" />
                     <h3>Andrew Meadows</h3>
                     <p>
                         Physicist, motorcyclist, and listener
                         of Pink Floyd. Convinced all problems
                         have technical solutions. 
+                    </p>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/team/ozan.png" class="img-circle" alt="Ozan Serim" />
+                    <h3>Ozan Serim</h3>
+                    <p>
+                        Tenacious CG generalist in pursuit of 
+                        character, music, film and story.
+                    </p>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/team/chris.png" class="img-circle" alt="Chris Collins" />
+                    <h3>Chris Collins</h3>
+                    <p>
+                        Gets excited when people use his products. 
+                        Life hacker with kid-like curiosity. 
+                        Animal spotter.
                     </p>
                 </figure>
             </li>
