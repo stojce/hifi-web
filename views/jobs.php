@@ -7,30 +7,108 @@ $tweetStrJob2 = urlencode('@highfidelityinc is working on building a new virtual
 <div role="main" id="main">
     <h2><strong>1.</strong> Full-time Jobs</h2>
     <article class="no-border-bottom radius-border-top">
-        <p class="lead">Graphics engineer</p>
+        <p class="lead">Lead 3D Graphics Engineer</p>
         <p>
-            We're looking for additional engineers to join our team of twelve, 
-            working side-by-side with us writing code, testing ideas, 
-            learning a lot, and enjoying the experience of creating something astonishing.  
+            We're looking for a lead 3D graphics engineer to help build our virtual 
+            world’s 3D graphics engine, working closely with us to create something 
+            astonishing. We are creating an open source rendering engine that can 
+            display a very large user-created environment at high FPS, using data 
+            streaming at low latency from multiple simultaneous servers.
         </p>
         <div id="requirements">
             <h3>Skills / Requirements</h3>
             <ul>
-                <li><span>Proficiency in C and C++</span></li>
-                <li><span>Experience with real-time graphics</span></li>
+                <li>
+                    <span>
+                        Expert in designing and building graphics engine componentry
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Deep knowledge of rendering systems, with experience working on multiple pieces 
+                        of high performance visual systems—e.g., shaders, animation, lighting, particle 
+                        systems, and/or procedural routines
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Experience developing and maintaining multi-threaded code; skilled in optimizing 
+                        around CPU and GPU architectures
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Fluent in C++, and OpenGL
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Dangerous 3D math skills
+                    </span>
+                </li>
             </ul>
             <br/>
             <h3>Bonus Points</h3>
             <ul>
-                <li><span>Experience with physics simulations</span></li>
-                <li><span>Experience with OpenGL, voxels, GPU's</span></li>
-                <li><span>Experience building in Git environments</span></li>
+                <li>
+                    <span>
+                        Experience with low-latency networking
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Experience with physics engines / simulation
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Experience with voxel-based systems
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Experience developing in Git environments
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Experience with scripting languages (e.g., Javascript)
+                    </span>
+                </li>
             </ul>
             <br/>
             <h3>Professional Qualities</h3>
             <ul>
-                <li><span>Ability to switch between different projects quickly and easily while rapidly prototyping</span></li>
-                <li><span>Good at explaining, good at thinking out loud, hard to frustrate, and fun to work with</span></li>
+                <li>
+                    <span>
+                        Demonstrable history of designing/building rendering engines/components
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Ability to switch between different projects quickly and easily while rapidly prototyping
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Autonomous in setting work priorities within product plans
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Comfortable as both perpetrator and victim of rigorous code reviews
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Appetite for sharing technical knowledge with other engineers
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Good at explaining, good at thinking out loud, hard to frustrate, and fun to work with
+                    </span>
+                </li>
             </ul>
         </div>
         <div id="apply">
@@ -49,52 +127,13 @@ $tweetStrJob2 = urlencode('@highfidelityinc is working on building a new virtual
             <span>Tweet this job</span>
         </a>
     </article>
-    <article class="no-border-bottom get-our-attention">
+    <article class="get-our-attention radius-border-bottom">
         <p><span class="strong">We are seeing lots of great applicants!</span> If you'd like to get our attention and also have
         more fun than sitting in an interview, do the following:</p>
         <p>Checkout our code on <a href="https://github.com/highfidelity/hifi">GitHub</a>, build the Interface client, and see if you
         can login to Hifi. Then, take a look at <a href="https://worklist.net">Worklist</a> and see if there's a job you can do
         to show us your work skills.</p>
     </article>
-    <article class="no-border-top radius-border-bottom">
-        <p class="lead">Technical artist</p>
-        <p>
-            High Fidelity is looking for talented technical artists to build a next-generation virtual world. As a member of our team, you'll have the opportunity to apply your creativity and design high-caliber assets from the ground up in an open ended environment. 
-        </p>
-        <div id="requirements">
-            <h3>Requirements</h3>
-            <p>
-                We're looking for artists with the following experience: modeling, rigging, shading, lighting, simulation, vfx, animation and pipeline engineering.
-            </p>
-            <h3>Bonus Points</h3>
-            <ul>
-                <li><span>Experience with constructing real-time assets</span></li>
-                <li><span>Experience with building studio or game level assets</span></li>
-                <li><span>Experience with physics simulations</span></li>
-            </ul>
-            <br>
-            <h3>Professional Qualities</h3>
-            <ul>
-                <li><span>Ability to quickly construct visually appealing, efficient and robust assets</span></li>
-                <li><span>Good at collaborating in a fast-paced and dynamic environment</span></li>
-            </ul>
-        </div>
-        <div id="apply">
-            <h3>Apply</h3>
-            <p>
-                Email us your resume or LinkedIn profile. A link to your showreel is most welcome.
-            </p>
-            <p>
-                <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
-            </p>
-        </div>
-        <a class="tweetthis" target="_blank"
-            href="http://twitter.com/home/?status=<?php echo $tweetStrJob2; ?>">
-            <i class="icon-twitter"></i>
-            <span>Tweet this job</span>
-        </a>
-    </article>
-    
     <h2><strong>2.</strong> Contract jobs</h2>
     <article class="radius-border-bottom radius-border-top">
         <p>
