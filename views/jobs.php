@@ -127,6 +127,66 @@ $tweetStrJob2 = urlencode('@highfidelityinc is working on building a new virtual
             <span>Tweet this job</span>
         </a>
     </article>
+    <article class="no-border-top radius-border-bottom">
+        <p class="lead">Marketing Coordinator</p>
+            <p>
+            High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
+            
+            </p>
+            <div id="requirements">
+                <h3>Skills / Requirements</h3>
+                <ul>
+                    <li>
+                        <span>
+                        The ideal candidate has worked 3+ years in a consumer-facing tech company producing marketing assets across
+                        several dimensions.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                        You are a proficient writer capable of creating engaging short form copy for websites, blogs and social media
+                        campaigns.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                        You can produce polished webinars and instructional videos, and coordinate events and convention activities.
+                        </span>
+                    </li>
+                </ul>
+                <br/>
+                <h3>Professional Qualities</h3>
+                <ul>
+                    <li>
+                        <span>
+                        You exercise high attention to detail, are self-directed, data driven, and game for working in a fluid
+                        startup environment.
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                        You're comfortable helping to define and revise a continually-shifting set of messages as the company
+                        evolves.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div id="apply">
+            <h3>Apply</h3>
+                <p>
+                    Interested applicants should be sure to include writing samples, social media account management examples, and
+                    references.
+                </p>
+                <p>
+                    <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
+                </p>
+            </div>
+        <a class="tweetthis" target="_blank"
+            href="http://twitter.com/home/?status=<?php echo $tweetStrJob1; ?>">
+            <i class="icon-twitter"></i>
+            <span>Tweet this job</span>
+        </a>
+    </article>
     <article class="get-our-attention radius-border-bottom">
         <p><span class="strong">We are seeing lots of great applicants!</span> If you'd like to get our attention and also have
         more fun than sitting in an interview, do the following:</p>
