@@ -136,25 +136,25 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </article>
     <article class="no-border-top radius-border-bottom">
         <p class="lead">Marketing Coordinator</p>
-            <p>
-                High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
-                The ideal candidate has worked 3+ years in a consumer-facing tech company producing marketing assets across
-                several dimensions.  You are a proficient writer capable of creating engaging short form copy for websites, blogs and
-                social media campaigns.  You can produce polished webinars and instructional videos, and coordinate events and convention
-                activities.
-            </p>
-            <p> 
-                You exercise high attention to detail, are self-directed, data driven, and game for working in a fluid
-                startup environment.  You're comfortable helping to define and revise a continually-shifting set of messages as the
-                company evolves.
-            </p> 
-            <p>
-                Interested applicants should be sure to include writing samples, social media account management examples, and
-                references.
-            </p>
-            <p>
-                <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
-            </p>
+        <p>
+            High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
+            The ideal candidate has worked 3+ years in a consumer-facing tech company producing marketing assets across
+            several dimensions.  You are a proficient writer capable of creating engaging short form copy for websites, blogs and
+            social media campaigns.  You can produce polished webinars and instructional videos, and coordinate events and convention
+            activities.
+        </p>
+        <p> 
+            You exercise high attention to detail, are self-directed, data driven, and game for working in a fluid
+            startup environment.  You're comfortable helping to define and revise a continually-shifting set of messages as the
+            company evolves.
+        </p> 
+        <p>
+            Interested applicants should be sure to include writing samples, social media account management examples, and
+            references.
+        </p>
+        <p>
+            <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
+        </p>
         <a class="tweetthis" target="_blank"
             href="http://twitter.com/home/?status=<?php echo $tweetStrJob2; ?>">
             <i class="icon-twitter"></i>
