@@ -1,7 +1,7 @@
 <?php
 $jobs = View::read('jobList'); 
 $tweetStrJob1 = urlencode('@highfidelityinc is working on building a new virtual world and they need a Graphics Engineer! Check out http://highfidelity.io/jobs #jobs #graphics');
-$tweetStrJob2 = urlencode('@highfidelityinc is working on building a new virtual world and they need a Technical Artist! Check out http://highfidelity.io/jobs #jobs #3dartists');
+$tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and they need a Marketing Coordinator! Check out http://highfidelity.io/jobs #jobs #marketing');
 ?>
 <section id="particle-system"></section>
 <div role="main" id="main">
@@ -127,12 +127,39 @@ $tweetStrJob2 = urlencode('@highfidelityinc is working on building a new virtual
             <span>Tweet this job</span>
         </a>
     </article>
-    <article class="get-our-attention radius-border-bottom">
+    <article class="no-border-bottom get-our-attention">
         <p><span class="strong">We are seeing lots of great applicants!</span> If you'd like to get our attention and also have
         more fun than sitting in an interview, do the following:</p>
         <p>Checkout our code on <a href="https://github.com/highfidelity/hifi">GitHub</a>, build the Interface client, and see if you
         can login to Hifi. Then, take a look at <a href="https://worklist.net">Worklist</a> and see if there's a job you can do
         to show us your work skills.</p>
+    </article>
+    <article class="no-border-top radius-border-bottom">
+        <p class="lead">Marketing Coordinator</p>
+        <p>
+            High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
+            The ideal candidate has worked 3+ years in a consumer-facing tech company producing marketing assets across
+            several dimensions.  You are a proficient writer capable of creating engaging short form copy for websites, blogs and
+            social media campaigns.  You can produce polished webinars and instructional videos, and coordinate events and convention
+            activities.
+        </p>
+        <p> 
+            You exercise high attention to detail, are self-directed, data driven, and game for working in a fluid
+            startup environment.  You're comfortable helping to define and revise a continually-shifting set of messages as the
+            company evolves.
+        </p> 
+        <p>
+            Interested applicants should be sure to include writing samples, social media account management examples, and
+            references.
+        </p>
+        <p>
+            <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
+        </p>
+        <a class="tweetthis" target="_blank"
+            href="http://twitter.com/home/?status=<?php echo $tweetStrJob2; ?>">
+            <i class="icon-twitter"></i>
+            <span>Tweet this job</span>
+        </a>
     </article>
     <h2><strong>2.</strong> Contract jobs</h2>
     <article class="radius-border-bottom radius-border-top">
