@@ -9,7 +9,7 @@ var code = {
     },
 
     initCloud: function() {
-        code.pckry = new Packery($('#cloud > ul')[0], {
+        code.pckry = new Packery($('.cloud > ul')[0], {
             gutter: 5,
             itemSelector: 'li'
         });
@@ -22,9 +22,9 @@ var code = {
         });
 
         // popover on word click
-        $('#cloud > ul > li').on('click', function(e) {
+        $('.cloud > ul > li').on('click', function(e) {
             e.stopPropagation();
-            $('#cloud > ul > li').popover('destroy');
+            $('.cloud > ul > li').popover('destroy');
             $(this).popover({
                 content: code.handleCloudWordClick,
                 placement: 'bottom',
@@ -35,7 +35,7 @@ var code = {
         });
         // destroys any popover when clicking outside of them
         $('body').on('click', function() {
-            $('#cloud > ul > li').popover('destroy');
+            $('.cloud > ul > li').popover('destroy');
         });
     },
 
