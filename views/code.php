@@ -7,7 +7,7 @@ $github_repos = View::read('github_repos');
 
     <?php foreach ($github_repos as $repo): ?>
         <div class="cloud">
-            <h2><i class="fa fa-github"> </i><?php echo $repo['title']; ?></h2>
+            <h2><i class="icon-github"></i><?php echo $repo['title']; ?></h2>
             <h3><?php echo $repo['description']; ?></h3>
             <?php if (!empty($repo['words'])): ?>
                 <ul>

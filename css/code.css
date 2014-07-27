@@ -10,6 +10,10 @@
     margin-bottom: 20px;
 }
 
+.cloud > ul {
+    margin-top: 30px;
+}
+
 .cloud > ul * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -145,8 +149,7 @@
     border-color: #666;
 }
 
-.cloud > ul > li,
-.cloud > h2 {
+.cloud > ul > li {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -261,24 +264,27 @@ body > .popover.bottom .popover-content {
 }
 
 .cloud > h2 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
     color: #3698bf;
     font-size: 3em;
-    line-height: 1.3em;
     margin-bottom: 5px;
-    font-weight: normal;
     margin-top: 45px;
 }
 
-.cloud > h2,
-.cloud > h3 {
+.cloud > h2 {
     margin-top: 10px;
+}
+
+.cloud > h3 {
+    margin-top: 0;
 }
 
 .cloud > h2 > i {
     color: #999999;
-    font-size: 30px;
+    font-size: 32px;
     display: inline-block;
-    margin-left: -36px;
+    margin-left: -40px;
     margin-right: 12px;
 }
 
@@ -295,6 +301,18 @@ canvas {
     margin-top: -145px;
     width: 715px;
     height: 220px;
+}
+
+@media screen and (max-width: 770px) {
+   canvas {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    canvas {
+        width: 480px;
+    }
 }
 
 #container {
