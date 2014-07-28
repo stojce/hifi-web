@@ -4,10 +4,10 @@
 
 /* word cloud styling */
 .cloud {
-    padding: 30px 40px 40px 80px;
+    padding: 26px 52px 40px 100px;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 .cloud > ul {
@@ -34,15 +34,12 @@
     font-size: 2.5em;
 }
 
-.cloud h2,
 .cloud h2 + h3 {
-    line-height: 1em;
-}
-
-.cloud h2 + h3 {
+    line-height: 1.2em;
     font-size: 1.2em;
     font-weight: normal;
     font-family: proxima-nova, sans-serif;
+    padding-right: 15px;
 }
 
 /**
@@ -266,26 +263,29 @@ body > .popover.bottom .popover-content {
 .cloud > h2 {
     font-family: proxima-nova, sans-serif;
     font-weight: bold;
-    color: #3698bf;
-    font-size: 3em;
+    font-size: 3.4em;
     margin-bottom: 5px;
-    margin-top: 45px;
+    margin-top: 10px;
 }
 
-.cloud > h2 {
-    margin-top: 10px;
+.cloud > h2 > a {
+    color: #3698bf;
+}
+
+.cloud > h2 > a:hover {
+    color: #333333;;
 }
 
 .cloud > h3 {
     margin-top: 0;
 }
 
-.cloud > h2 > i {
+.cloud > h2 i {
     color: #999999;
-    font-size: 32px;
+    font-size: 34px;
     display: inline-block;
     margin-left: -40px;
-    margin-right: 12px;
+    padding-right: 10px;
 }
 
 footer#site-links #social p {
@@ -323,4 +323,8 @@ canvas {
     position: relative;
     margin-top: -100px;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+#game-of-life {
+    display: none;
 }

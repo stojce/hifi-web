@@ -80,7 +80,7 @@
 
     // Zoom level
     zoom : {
-      current : 0,
+      current : 2,
       schedule : false,
 
       schemes : [

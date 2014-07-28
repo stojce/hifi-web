@@ -23,7 +23,7 @@ $github_repos = array(
     array(
         'title' => 'hifi-web', 
         'description' => 'High Fidelity Inc\'s website.', 
-        'github_repo' => 'highfidelity/hifi'
+        'github_repo' => 'highfidelity/hifi-web'
     ),
 
     array(
