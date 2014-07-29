@@ -135,7 +135,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         to show us your work skills.</p>
     </article>
     <article class="no-border-top radius-border-bottom">
-        <p class="lead">Marketing Coordinator</p>
+        <p class="lead">Marketing Communications Manager</p>
         <p>
             High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
             The ideal candidate has worked 3+ years in a consumer-facing tech company producing marketing assets across
