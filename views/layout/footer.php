@@ -14,7 +14,7 @@ if (class_exists('View')) {
             <ul>
                 <li>
                     <a href="mailto:<?php echo CONTACT_EMAIL_ADDRESS; ?>" title="Email">
-                        <i class="icon-envelope icon-2x"></i>
+                        <i class="icon-envelope-alt icon-2x"></i>
                         Email
                     </a>
                 </li>

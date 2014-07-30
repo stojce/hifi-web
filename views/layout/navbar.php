@@ -15,8 +15,8 @@ if (class_exists('View')) {
             <li class="<?php echo ($page == 'alpha' ? 'selected' : ''); ?>">
                 <a href="<?php echo $base_path; ?>alpha" title="Alpha">Alpha</a>
             </li>
-            <li>
-                <a href="https://github.com/highfidelity/hifi" title="Code" target="_blank">Code</a>
+            <li class="<?php echo ($page == 'code' ? 'selected' : ''); ?>">
+                <a href="<?php echo $base_path; ?>code" title="Code">Code</a>
             </li>
             <li class="<?php echo ($page == 'blog' ? 'selected' : ''); ?>">
                 <a href="<?php echo $base_path; ?>blog/" title="Blog">Blog</a>

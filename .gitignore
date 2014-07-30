@@ -1,0 +1,7 @@
+composer.lock
+.idea
+vendor
+server.local.php
+download
+latestVersion.xml
+.htaccess
