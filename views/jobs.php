@@ -136,14 +136,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </article>
     <h2><strong>2.</strong> Contract jobs</h2>
     <article class="no-border-bottom radius-border-top">
-        <p>
-            Our distributed development system, 
-            <a href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
-            for new developers proficient in <strong>C, C++, OpenGL, iOS, Android, PHP,</strong> 
-            and more. Hop in and do some work.
-        </p>
-    </article>
-    <article class="line-border-top no-border-bottom">
         <p class="lead">Marketing Communications Manager</p>
         <p>
             High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
@@ -169,6 +161,14 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
             <i class="icon-twitter"></i>
             <span>Tweet this job</span>
         </a>
+    </article>
+    <article class="line-border-top no-border-bottom">
+        <p>
+            Our distributed development system, 
+            <a href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
+            for new developers proficient in <strong>C, C++, OpenGL, iOS, Android, PHP,</strong> 
+            and more. Hop in and do some work.
+        </p>
     </article>
     <article class="no-border-top radius-border-bottom">
         <?php if (!empty($jobs)): ?>
