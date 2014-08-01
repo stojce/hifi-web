@@ -10,18 +10,17 @@ if (class_exists('View')) {
 ?>
     <footer id="site-links" role="contentinfo">
         <div id="social">
-            <p>Stay connected</p>
             <ul>
-                <li>
-                    <a href="mailto:<?php echo CONTACT_EMAIL_ADDRESS; ?>" title="Email">
-                        <i class="icon-envelope-alt icon-2x"></i>
-                        Email
+                <li class="<?php echo $page == 'subscribe' ? 'selected' : ''; ?>">
+                    <a href="https://github.com/highfidelity/hifi" title="GitHub repository">
+                        <i class="icon-github icon-2x"></i>
+                        GitHub
                     </a>
                 </li>
-                <li class="<?php echo $page == 'subscribe' ? 'selected' : ''; ?>">
-                    <a href="<?php echo $base_path; ?>subscribe" title="Subscribe">
-                        <i class="icon-inbox icon-2x"></i>
-                        Subscribe
+                <li>
+                    <a target="_blank" href="https://worklist.net" title="Worklist">
+                        <img src="img/wl-logo.svg">
+                        Worklist
                     </a>
                 </li>
                 <li>
@@ -43,20 +42,33 @@ if (class_exists('View')) {
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://plus.google.com/116747659392437653711/" title="Google Plus">
-                        <i class="icon-google-plus-sign icon-2x"></i>
-                        Google+
+                    <a href="mailto:<?php echo CONTACT_EMAIL_ADDRESS; ?>" title="Email">
+                        <i class="icon-envelope-alt icon-2x"></i>
+                        Contact
                     </a>
                 </li>
             </ul>
-        </div>
-        <div id="ubernerds">
-            <p>über nerds:</p>
             <ul>
-                <li><a target="_blank" href="http://alpha.app.net/highfidelity" title="ADN">ADN</a></li>
-                <li><a target="_blank" href="https://github.com/highfidelity/hifi" title="Github">Github</a></li>
-                <li><a target="_blank" href="http://www.worklist.net" title="Worklist">Worklist</a></li>
-                <li>blog feed: <a target="_blank" href="http://highfidelity.io/blog/feed/" title="RSS Feed">RSS</a></li>
+                <li>
+                    <a href="#" title="Alpha">
+                        Alpha
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Docs">
+                        Docs
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Jobs">
+                        Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Blog">
+                        Blog
+                    </a>
+                </li>
             </ul>
         </div>
         <p>
