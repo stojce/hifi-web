@@ -117,6 +117,10 @@ div#main > article.no-border-bottom {
     border-bottom: none;
 }
 
+div#main > article.line-border-top {
+    border-top-width: 1px;
+}
+
 div#main > article.no-border-top {
     border-top: none;
 }

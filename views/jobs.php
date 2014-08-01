@@ -127,14 +127,15 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
             <span>Tweet this job</span>
         </a>
     </article>
-    <article class="no-border-bottom get-our-attention">
+    <article class="radius-border-bottom get-our-attention">
         <p><span class="strong">We are seeing lots of great applicants!</span> If you'd like to get our attention and also have
         more fun than sitting in an interview, do the following:</p>
         <p>Checkout our code on <a href="https://github.com/highfidelity/hifi">GitHub</a>, build the Interface client, and see if you
         can login to Hifi. Then, take a look at <a href="https://worklist.net">Worklist</a> and see if there's a job you can do
         to show us your work skills.</p>
     </article>
-    <article class="no-border-top radius-border-bottom">
+    <h2><strong>2.</strong> Contract jobs</h2>
+    <article class="no-border-bottom radius-border-top">
         <p class="lead">Marketing Communications Manager</p>
         <p>
             High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
@@ -161,14 +162,15 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
             <span>Tweet this job</span>
         </a>
     </article>
-    <h2><strong>2.</strong> Contract jobs</h2>
-    <article class="radius-border-bottom radius-border-top">
+    <article class="line-border-top no-border-bottom">
         <p>
             Our distributed development system, 
             <a href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
             for new developers proficient in <strong>C, C++, OpenGL, iOS, Android, PHP,</strong> 
             and more. Hop in and do some work.
         </p>
+    </article>
+    <article class="no-border-top radius-border-bottom">
         <?php if (!empty($jobs)): ?>
             <div id="jobs">
                 <span>You can bid on these jobs right now:</span>
