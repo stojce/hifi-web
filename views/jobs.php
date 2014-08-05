@@ -162,15 +162,13 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
             <span>Tweet this job</span>
         </a>
     </article>
-    <article class="line-border-top no-border-bottom">
+    <article class="line-border-top radius-border-bottom">
         <p>
             Our distributed development system, 
             <a href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
             for new developers proficient in <strong>C, C++, OpenGL, iOS, Android, PHP,</strong> 
             and more. Hop in and do some work.
         </p>
-    </article>
-    <article class="no-border-top radius-border-bottom">
         <?php if (!empty($jobs)): ?>
             <div id="jobs">
                 <span>You can bid on these jobs right now:</span>
