@@ -2,3 +2,446 @@
  * HighFidelity's home page styling
  */
 
+
+header#navbar {
+    height: 675px;
+
+    background: rgb(51,51,51);
+    background: -moz-linear-gradient(top, rgba(51,51,51,1) 0px, rgba(51,51,51,1) 669px, rgba(51,51,51,1) 669px, rgba(51,76,89,1) 670px, rgba(51,152,203,1) 670px, rgba(51,152,203,1) 675px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0px,rgba(51,51,51,1)), color-stop(669px,rgba(51,51,51,1)), color-stop(669px,rgba(51,51,51,1)), color-stop(670px,rgba(51,76,89,1)), color-stop(670px,rgba(51,152,203,1)), color-stop(675px,rgba(51,152,203,1)));
+    background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0px,rgba(51,51,51,1) 669px,rgba(51,51,51,1) 669px,rgba(51,76,89,1) 670px,rgba(51,152,203,1) 670px,rgba(51,152,203,1) 675px);
+    background: -o-linear-gradient(top, rgba(51,51,51,1) 0px,rgba(51,51,51,1) 669px,rgba(51,51,51,1) 669px,rgba(51,76,89,1) 670px,rgba(51,152,203,1) 670px,rgba(51,152,203,1) 675px);
+    background: -ms-linear-gradient(top, rgba(51,51,51,1) 0px,rgba(51,51,51,1) 669px,rgba(51,51,51,1) 669px,rgba(51,76,89,1) 670px,rgba(51,152,203,1) 670px,rgba(51,152,203,1) 675px);
+    background: linear-gradient(to bottom, rgba(51,51,51,1) 0px,rgba(51,51,51,1) 669px,rgba(51,51,51,1) 669px,rgba(51,76,89,1) 670px,rgba(51,152,203,1) 670px,rgba(51,152,203,1) 675px);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#3398cb',GradientType=0 );
+}
+
+header#navbar nav li {
+    border-right: 1px solid #424242;
+}
+
+header#navbar nav li a {
+    text-decoration: none;
+    color: #666666;
+    padding: 8px 14px;
+    display: inline-block;
+    font: bold 1.15em proxima-nova, sans-serif;
+    background: transparent none;
+}
+
+body > #container {
+    max-width: 990px;
+}
+#container > section:not(#main):not(#investors) {
+    max-width: 715px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* vimeo videos section */
+section#main {
+    margin-top: -500px; /* videos are placed over most of the navbar background */
+    position: absolute;
+    left: 50px;
+    right: 50px;
+
+}
+
+section#main > article {
+    background: transparent none;
+    border: 0 none;
+    padding: 0;
+}
+
+/* @todo: REMOVE THIS BEFORE MERGE */
+#main video, #main ul, #main ul li { 
+    border: 1px solid black;
+    background: gray;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 100%;
+    font-size: .8em;
+}
+
+#blog article {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Blogs section blocks */
+#blog .span6 {
+    border-width: 1px 0 0 1px;
+    border-style: dashed;
+    border-color: #cbcbcb;
+    margin-left: 0;
+    padding: 1% 2%;
+}
+
+#blog h4 {
+    font-size: 1.3em;
+}
+
+#blog h4 em {
+    font-style: italic;
+    color: #999;
+}
+
+#blog h3 {
+    color: #333;
+}
+
+article p strong {
+    font-size: 1.05em;
+}
+
+article p.lead strong span {
+    font-size: 1.5em;
+}
+
+article {
+    margin: 25px 15px;
+    font-family: proxima-nova,sans-serif;
+}
+
+article h2,
+article h3,
+p.lead strong {
+    font-family: Quadon-Bold;    
+    font-weight: normal;
+}
+
+#company h3 {
+    font-size: 2.4em;
+    padding-right: 150px;
+}
+
+article p.lead,
+article p {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+
+article h3,
+article p a {
+    color: #3398CB;
+    font-weight: bold;
+}
+
+article p a:hover {
+    color: #333333;
+    border-bottom-color: #333333;
+}
+
+article p a {
+    border-bottom: 1px solid #3398CB;
+}
+
+article p a:hover {
+    border-bottom: 0px solid #3398CB;
+}
+
+article p.lead + p {
+    background: transparent url('../img/home/Emily-and-hifi.png') no-repeat center bottom;
+    padding-bottom: 500px;
+    background-size: contain; 
+}
+
+article p.lead + p + p + p {
+    position: relative;
+}
+
+article p.lead + p + p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/home/priovr-hand-v3-duotone.png');
+    right: -600px;
+    margin-top: 100px;
+    width: 800px;
+    height: 473px;
+}
+
+#company article:nth-child(2) h3:first-child + p {
+    padding-right: 220px
+}
+
+#company article:nth-child(2) h3:first-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/home/avatar-eye-contact.svg');
+    margin-top: 20px;
+    width: 728px;
+    height: 109px;
+    margin-left: -100px;
+}
+
+#company article:nth-child(2) h3:nth-child(3) + p {
+    padding-right: 70px;
+    padding-bottom: 500px;
+    background: transparent url('../img/home/octal-codes.svg') no-repeat center bottom;
+    background-size: contain; 
+}
+
+#company article:nth-child(2) h3:nth-child(5) + p {
+    padding-right: 70px;
+    padding-bottom: 350px;
+    background: transparent url('../img/home/scalability.svg') no-repeat center bottom;
+    background-size: contain; 
+}
+
+#company article:nth-child(2) h3:nth-child(7) + p {
+    padding-right: 70px;
+    padding-bottom: 350px;
+    background-size: contain; 
+}
+
+/* Team section styling */
+#team > article > h2 {
+    border-bottom: 1px solid #DADADA;
+    background: transparent url('../img/home/gg-bridge.svg') 350px center no-repeat;
+    padding-top: 70px;
+    background-size: 82px 79px;
+}
+
+#team > article > h2:after {
+    content: "We are located in San Francisco";
+    color: #ccc;
+    display: block;
+    width: 134px;
+    font-size: 0.5em;
+    position: absolute;
+    left: 600px;
+    margin-top: -50px;
+    line-height: 1.3em;
+}
+
+#team h3 + p {
+    font-family: proxima-nova, sans-serif;    
+}
+
+#team ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#team li {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+    min-height: 90px;
+}
+
+#team figure {
+    position: relative;
+    margin: 0 0 33px 0;
+}
+
+#team img,
+#youimg figure > div {
+    position: absolute;
+    width: 90px;
+    height: 90px;   
+}
+
+#team h3, 
+#team figure > p {
+    margin-left: 110px;
+    margin-top: 5px;
+}
+
+#team h3 {
+    color: #3698bf;
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+#team figure > p {
+    font-size: 1.2em;
+    color: #666666;
+}
+
+#youimg figure > div {
+    border: 2px solid #3698bf; 
+}
+
+#team a {
+    font-style: italic;
+}
+
+#team a:hover {
+    color: #ed6f3f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#investors {
+    background: transparent url('../img/home/flocking-investor-bg.jpg') center center no-repeat;
+    background-size: contain;
+}
+
+#investors > article,
+#advisors > article {
+    position: relative;
+    max-width: 715px;
+    margin: 0 auto;
+}
+
+#investors > article li,
+#advisors > article li {
+    list-style: none;
+    color: #333333;
+    font-size: .81em;
+    position: absolute;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#investors > article li {
+    height: 158px;    
+    padding: 19px 33px;
+    width: 165px;
+}
+
+#advisors > article li {
+    height: 240px;    
+    padding: 10px;
+    width: 200px;
+}
+
+#investors > article li h3,
+#advisors > article li h3 {
+    line-height: 150%;
+}
+
+#investors > article li h3,
+#investors > article li:nth-child(5) p {
+    font-family: Quadon-Bold;
+    font-weight: normal;
+}
+
+#advisors > article li h3 {
+    font-size: 1.5em;
+}
+
+#investors > article li p {
+    padding-top: 0.8em;
+    font-family: proxima-nova, sans-serif;
+    color: #333333;
+    font-size: 0.75em;
+}
+
+#investors > article li h3 {
+    font-size: 3em;
+}
+
+#advisors > article li a > figure {
+    margin: 0;
+}
+
+#investors > article li:nth-child(1) {
+    z-index: 200;
+    left: -80px;
+}
+
+#investors > article li:nth-child(2) {
+    z-index: 199;
+    left: 130px;
+    margin-top: 12px;
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+#investors > article li:nth-child(3) {
+    z-index: 198;
+    left: 354px;
+    margin-top: 12px;
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+#investors > article li:nth-child(4) {
+    z-index: 196;
+    left: 38px;
+    margin-top: 181px;
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+#investors > article li:nth-child(5) {
+    z-index: 197;
+    left: 248px;
+    margin-top: 196px;
+    padding: 24px 19px 10px 25px;
+    width: 190px;
+}
+
+#investors > article li:nth-child(5) p {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+#advisors > article li:nth-child(1) {
+    z-index: 199;
+    left: 120px;
+}
+
+#advisors > article li:nth-child(2) {
+    z-index: 200;
+    left: 310px;
+    margin-top: 35px;
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+#investors > article > ul {
+    height: 455px;
+}
+
+#advisors > article > ul {
+    height: 350px;
+}
+
+#investors > article > h2 {
+    margin-bottom: 63px;
+}
+
+#investors > article > ul {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    margin-left: 88px;
+}
