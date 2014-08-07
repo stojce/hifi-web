@@ -1,15 +1,8 @@
 <?php
 require_once('config.php');
 
-$vimeo_videos = preg_split('/,/', VIMEO_VIDEOS);
-$videos = array();
-foreach ($vimeo_videos as $video) {
-    $url = sprintf('http://vimeo.com/api/v2/video/%d.json', $video);
-    $video_data = json_decode(file_get_contents($url));
-    $videos[] = $video_data[0];
-
-}
-View::write('videos', $videos);
+$url = sprintf('http://vimeo.com/api/v2/%s/videos.json', VIMEO_NICKNAME);
+View::write('videos', json_decode(file_get_contents($url)));
 
 View::write('page', 'home');
 View::addScript('js/skrollr.js');
