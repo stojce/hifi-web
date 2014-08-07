@@ -60,15 +60,38 @@ section#main > article {
     padding: 0;
 }
 
-/* @todo: REMOVE THIS BEFORE MERGE */
-#main video, #main ul, #main ul li { 
-    border: 1px solid black;
-    background: gray;
+#main iframe {
+    width: 700px;
+    height: 393px;
+}
+
+#main ul {
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0;
     padding: 0;
-    width: 100%;
-    font-size: .8em;
+}
+
+#main ul li {
+    padding: 6px;
+}
+
+#main ul li.last {
+    border: 2px solid #ccc;
+    padding: 2px;
+    position: relative;
+}
+
+#main ul li.last:after {
+    content: "\f04b";
+    display: block;
+    left: -2px;
+    top: 35%;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    position: absolute;
+    color: #ccc;
 }
 
 #blog article {

@@ -1,14 +1,24 @@
+<?php
+$videos = View::read('videos');
+$last_video = $videos[count($videos) -1];
+?>
 <section role="main" id="main">
   <article class="container-fluid">
     <div class="row-fluid">
       <div class="span10">
-        <video></video>
+        <iframe src="//player.vimeo.com/video/<?php echo $last_video->id; ?>?title=0&amp;byline=0&amp;portrait=0"
+          frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
       </div>
       <div class="span2">
         <ul>
-          <li><a href="#">Video item</a></li>
-          <li><a href="#">Video item</a></li>
-          <li><a href="#">Video item</a></li>
+          <?php foreach($videos as $video): ?>
+          <li class="<?php echo $last_video == $video ? 'last' : ''; ?>">
+            <a href="<?php echo $video->url; ?>">
+              <img src="<?php echo $video->thumbnail_medium; ?>" title="<?php echo htmlspecialchars($video->title); ?>"/>
+            </a>
+          </li>
+          <?php endforeach; ?>
         </ul>
       </div>
     </div>
