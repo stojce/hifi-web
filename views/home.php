@@ -252,19 +252,34 @@ $last_video = $videos[count($videos) -1];
   <article>
     <h2>Investors</h2>
     <ul>
-      <li>
+      <li
+        data-0="left: 2000px; transform:rotate(-90deg);"
+        data-5520="left: 2000px; transform:rotate(-90deg);"
+        data-5920="left: -80px; transform:rotate(0deg)">
         <h3>True Ventures</h3>
       </li>
-      <li>
+      <li
+        data-0="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
+        data-5560="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
+        data-5960="left: 135px; transform:rotate(16deg);">
         <h3>Google Ventures</h3>
       </li>
-      <li>
+      <li
+        data-0="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
+        data-5500="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
+        data-5900="left: 370px; transform:rotate(2deg);">
         <h3>Kapor Capital</h3>
       </li>
-      <li>
+      <li
+        data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
+        data-5640="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
+        data-6040="left: 60px; transform:rotate(4deg);">
         <h3>Linden Lab</h3>
       </li>
-      <li>
+      <li
+        data-0="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
+        data-5680="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
+        data-6080="left: 275px; transform:rotate(0deg);">
         <p>And an intriguing assortment of forward-looking angels.</p>
       </li>
     </ul>

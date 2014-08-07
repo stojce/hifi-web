@@ -12,6 +12,7 @@ foreach ($vimeo_videos as $video) {
 View::write('videos', $videos);
 
 View::write('page', 'home');
+View::addScript('js/skrollr.js');
 View::addScript('js/home.js');
 View::addStyle('css/home.css');
 View::renderCommonLayout('home');

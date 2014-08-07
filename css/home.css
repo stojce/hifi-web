@@ -35,7 +35,7 @@ header#navbar h1 img {
     margin-top: 2px;
 }
 
-body > #container {
+div#container {
     max-width: 990px;
 }
 #container > section:not(#main):not(#investors) {
