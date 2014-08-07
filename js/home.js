@@ -12,6 +12,7 @@ var home = {
         if (skrollr) {
             home.initParallax();
         }
+        home.renderDeviceNetwork();
     },
 
     initParallax: function() {
@@ -54,6 +55,34 @@ var home = {
             home.stopParallax();
         } else {
             home.startParallax();
+        }
+    },
+
+    renderDeviceNetwork: function() {
+        var devices = $('#device-network svg path');
+        Utils.processLargeArrayAsync(devices, home.processNetworkDevice, 50);
+        setTimeout(function() {
+            home.animationFrame = Utils.requestAnimationFrame(home.renderDeviceNetwork);
+        }, 100);
+    },
+
+    processNetworkDevice: function(device) {
+        if ($(device).css('display') == 'none') {
+            if ($(device).attr('showAt') < Date.now()) {
+                $(device).removeAttr('showAt');
+                $(device).show();
+                $(device).attr('hideAt', Date.now() + Math.floor((Math.random() * 8000) + 5000));
+            }
+        } else {
+            if ($(device).attr('hideAt') && $(device).attr('hideAt') < Date.now()) {
+                $(device).removeAttr('hideAt');
+                $(device).attr('showAt', Date.now() + Math.floor((Math.random() * 2000) + 1000));
+                $(device).hide();
+            } else {
+                if (!$(device).attr('hideAt')) {
+                    $(device).attr('hideAt', Date.now() + Math.floor((Math.random() * 8000) + 5000));
+                }
+            }
         }
     },
 

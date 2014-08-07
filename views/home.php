@@ -99,6 +99,9 @@ $last_video = $videos[count($videos) -1];
       to each other for scalability, using a digital currency that compensates participants for shared 
       machine time.
     </p>
+    <div id="device-network">
+      <?php include('img/home/device-network.svg'); ?>
+    </div>
   </article>
 </section>
 <section id="team">

@@ -222,6 +222,18 @@ article p.lead + p + p:after {
     background-size: contain; 
 }
 
+#company article:nth-child(2) h3:nth-child(7) + p {
+    padding-right: 70px;
+    padding-bottom: 350px;
+}
+
+#device-network svg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: -380px;
+}
+
 /* Team section styling */
 #team > article > h2 {
     border-bottom: 1px solid #DADADA;
@@ -301,20 +313,6 @@ article p.lead + p + p:after {
 #team a:hover {
     color: #ed6f3f;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #investors {
     background: transparent url('../img/home/flocking-investor-bg.jpg') center center no-repeat;
