@@ -28,7 +28,7 @@ if (class_exists('View')) {
                     <img src="<?php echo $base_path; ?>img/hifi-logo.png" alt="High Fidelity" />
                 </a>
             <?php else: ?>
-                <img src="<?php echo $base_path; ?>img/hifi-logo.png" alt="High Fidelity" />
+                <img src="<?php echo $base_path; ?>img/hifi-logo-grey.svg" alt="High Fidelity" />
             <?php endif; ?>
         </h1>
         <ul id="sitenav">

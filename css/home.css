@@ -29,6 +29,12 @@ header#navbar nav li a {
     background: transparent none;
 }
 
+/* custom logo */
+header#navbar h1 img {
+    width: 76px;
+    margin-top: 2px;
+}
+
 body > #container {
     max-width: 990px;
 }
