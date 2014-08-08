@@ -308,6 +308,14 @@ $last_video = $videos[0];
           </figure>
         </a>
       </li>
+      <li>
+        <a target="_blank" href="http://www.tonyparisi.com/">
+          <figure>
+            <img src="img/advisors/tonyparisi.png" alt="Tony Parisi" />
+            <h3>Tony Parisi</h3>
+          </figure>
+        </a>
+      </li>
     </ul>
   </article>
 </section>

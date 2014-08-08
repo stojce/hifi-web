@@ -163,17 +163,13 @@ article p a {
     font-weight: bold;
 }
 
+article p a {
+    text-decoration: underline;
+}
+
 article p a:hover {
     color: #333333;
-    border-bottom-color: #333333;
-}
-
-article p a {
-    border-bottom: 1px solid #3398CB;
-}
-
-article p a:hover {
-    border-bottom: 0px solid #3398CB;
+    text-decoration: none;
 }
 
 article p.lead + p {
@@ -443,18 +439,29 @@ article p.lead + p + p:after {
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
-    left: 120px;
+    left: 80px;
 }
 
 #advisors > article li:nth-child(2) {
     z-index: 200;
-    left: 310px;
+    left: 270px;
     margin-top: 35px;
     -moz-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
     -o-transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
+}
+
+#advisors > article li:nth-child(3) {
+    z-index: 199;
+    left: 480px;
+    margin-top: 20px;
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 
 #investors > article > ul {
