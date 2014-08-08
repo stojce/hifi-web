@@ -358,7 +358,7 @@ article p.lead + p + p:after {
 
 #investors > article li h3,
 #advisors > article li h3 {
-    line-height: 150%;
+    line-height: 120%;
 }
 
 #investors > article li h3,
