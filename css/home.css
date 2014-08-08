@@ -234,7 +234,16 @@ article p.lead + p + p:after {
     height: 380px;
     margin-top: -380px;
 }
-
+#device-network svg path,
+#device-network svg line {
+    stroke: #99CCCC;
+}
+#device-network svg line {
+    fill: none;
+}
+#device-network svg path {
+    fill: #3398CB;
+}
 #device-network svg path[idle] {
     opacity: 0.25;
 }

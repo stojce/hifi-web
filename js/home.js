@@ -8,6 +8,9 @@ var home = {
     PARALLAX_MIN_WIDTH: 770,
     skrollr: null,
     networkDevices: [],
+    networkDevicesFrames: 4,
+    networkDevicesCurrentFrame: 0,
+    networkDevicesFrameWidth: null,
 
     init: function() {
         if (skrollr) {
@@ -63,20 +66,56 @@ var home = {
         // intialize network devices array
         home.networkDevices = [];
         var deviceElements = $('#device-network svg path');
-        for(var i = 0; i < deviceElements.length; i++) {
-            home.networkDevices.push({
+        for (var i = 0; i < deviceElements.length; i++) {
+            var element = deviceElements[i];
+            var device = {
                 hidden: false,
-                element: deviceElements[i],
+                element: element,
                 hideAt: Date.now() + Math.floor((Math.random() * 8000) + 5000),
-                showAt: null
-            });
+                showAt: null,
+                siblings: []
+            };
+            home.networkDevices.push(device);
+        }
+        home.networkDevicesFrameWidth = home.networkDevices.length / home.networkDevicesFrames;
+
+        // find device sibling paths
+        for (var i = 0; i < home.networkDevices.length; i++) {
+            var device = home.networkDevices[i];
+            var element = device.element;
+            var siblings = $(element).siblings('path');
+            var notPathSiblingsCount = $(element).siblings(':not(path)').length;
+            if (notPathSiblingsCount == 0) {
+                for (var s = 0; s < siblings.length; s++) {
+                    siblingDevice = home.findDeviceFromPathElement(siblings[s]);
+                    device.siblings.push(siblingDevice);
+                }
+            }
         }
 
+        home.toggleGetworkDevicesFrame();
         home.renderDeviceNetwork();
     },
 
+    findDeviceFromPathElement: function(element) {
+        for (var i = 0; i < home.networkDevices.length; i++) {
+            if (home.networkDevices[i].element == element) {
+                return home.networkDevices[i];
+            }
+        }
+        return null;
+    },
+
+    toggleGetworkDevicesFrame: function() {
+        home.networkDevicesCurrentFrame = home.networkDevicesCurrentFrame + 1 >= home.networkDevicesFrames ? 0 : home.networkDevicesCurrentFrame + 1;
+        setTimeout(home.toggleGetworkDevicesFrame, 50);
+    },
+
     renderDeviceNetwork: function() {
-        Utils.processLargeArrayAsync(home.networkDevices, home.processNetworkDevice, 100);
+        var start = home.networkDevicesCurrentFrame * home.networkDevicesFrameWidth;
+        var end = start + home.networkDevicesFrameWidth;
+        var devices = home.networkDevices.slice(start, end);
+        Utils.processLargeArrayAsync(devices, home.processNetworkDevice, 50);
         setTimeout(function() {
             home.animationFrame = Utils.requestAnimationFrame(home.renderDeviceNetwork);
         }, 100);
@@ -85,19 +124,39 @@ var home = {
     processNetworkDevice: function(device) {
         if (device.hidden) {
             if (device.showAt < Date.now()) {
-                device.showAt = null;
-                $(device.element).removeAttr('idle');
-                device.hidden = false;
-                device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
+                home.showDevice(device, true);
             }
         } else {
             if (device.hideAt && device.hideAt < Date.now()) {
-                device.hideAt = null;
-                $(device.element).attr('idle', true);
-                device.hidden = true;
-                device.showAt =  Date.now() + Math.floor((Math.random() * 2000) + 1000);
+                home.hideDevice(device, true);
             } else if (!device.hideAt) {
                 device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
+            }
+        }
+    },
+
+    hideDevice: function(device, recurse) {
+        device.hideAt = null;
+        $(device.element).attr('idle', true);
+        device.hidden = true;
+        device.showAt =  Date.now() + Math.floor((Math.random() * 2000) + 1000);
+        if (recurse && device.siblings.length) {
+            for (var i = 0; i < device.siblings.length; i++) {
+                var siblingDevice = device.siblings[i];
+                home.hideDevice(siblingDevice, false);
+            }
+        }
+    },
+
+    showDevice: function(device, recurse) {
+        device.showAt = null;
+        $(device.element).removeAttr('idle');
+        device.hidden = false;
+        device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
+        if (recurse && device.siblings.length) {
+            for (var i = 0; i < device.siblings.length; i++) {
+                var siblingDevice = device.siblings[i];
+                home.showDevice(siblingDevice, false);
             }
         }
     },
