@@ -311,7 +311,7 @@ $last_video = $videos[0];
       <li>
         <a target="_blank" href="http://www.tonyparisi.com/">
           <figure>
-            <img src="img/advisors/tonyparisi.png" alt="Tony Parisi" />
+            <img src="img/advisors/tonyparisi.jpg" alt="Tony Parisi" />
             <h3>Tony Parisi</h3>
           </figure>
         </a>
