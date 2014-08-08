@@ -239,6 +239,10 @@ article p.lead + p + p:after {
     margin-top: -380px;
 }
 
+#device-network svg path[idle] {
+    opacity: 0.25;
+}
+
 /* Team section styling */
 #team > article > h2 {
     border-bottom: 1px solid #DADADA;

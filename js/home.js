@@ -7,6 +7,7 @@ var home = {
 
     PARALLAX_MIN_WIDTH: 770,
     skrollr: null,
+    networkDevices: [],
 
     init: function() {
         if (skrollr) {
@@ -59,42 +60,44 @@ var home = {
     },
 
     initDeviceNetwork: function() {
-        home.currentDevicesFrame = (Math.floor((Math.random() * 4) + 1));
+        // intialize network devices array
+        home.networkDevices = [];
+        var deviceElements = $('#device-network svg path');
+        for(var i = 0; i < deviceElements.length; i++) {
+            home.networkDevices.push({
+                hidden: false,
+                element: deviceElements[i],
+                hideAt: Date.now() + Math.floor((Math.random() * 8000) + 5000),
+                showAt: null
+            });
+        }
+
         home.renderDeviceNetwork();
     },
 
-    toggleDevicesFrame: function() {
-        home.currentDevicesFrame = home.currentDevicesFrame +1 > 4 ? 1 : home.currentDevicesFrame +1;
+    renderDeviceNetwork: function() {
+        Utils.processLargeArrayAsync(home.networkDevices, home.processNetworkDevice, 100);
         setTimeout(function() {
-            home.toggleDevicesFrame();
+            home.animationFrame = Utils.requestAnimationFrame(home.renderDeviceNetwork);
         }, 100);
     },
 
-    renderDeviceNetwork: function() {
-        var devices_filter = ':nth-child(4n+' + home.currentDevicesFrame + ')';
-        var devices = $('#device-network svg path' + devices_filter);
-        Utils.processLargeArrayAsync(devices, home.processNetworkDevice, 50);
-        setTimeout(function() {
-            home.animationFrame = Utils.requestAnimationFrame(home.renderDeviceNetwork);
-        }, 25);
-    },
-
     processNetworkDevice: function(device) {
-        if ($(device).css('display') == 'none') {
-            if ($(device).attr('showAt') < Date.now()) {
-                $(device).removeAttr('showAt');
-                $(device).fadeIn();
-                $(device).attr('hideAt', Date.now() + Math.floor((Math.random() * 8000) + 5000));
+        if (device.hidden) {
+            if (device.showAt < Date.now()) {
+                device.showAt = null;
+                $(device.element).removeAttr('idle');
+                device.hidden = false;
+                device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
             }
         } else {
-            if ($(device).attr('hideAt') && $(device).attr('hideAt') < Date.now()) {
-                $(device).removeAttr('hideAt');
-                $(device).attr('showAt', Date.now() + Math.floor((Math.random() * 2000) + 1000));
-                $(device).fadeOut();
-            } else {
-                if (!$(device).attr('hideAt')) {
-                    $(device).attr('hideAt', Date.now() + Math.floor((Math.random() * 8000) + 5000));
-                }
+            if (device.hideAt && device.hideAt < Date.now()) {
+                device.hideAt = null;
+                $(device.element).attr('idle', true);
+                device.hidden = true;
+                device.showAt =  Date.now() + Math.floor((Math.random() * 2000) + 1000);
+            } else if (!device.hideAt) {
+                device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
             }
         }
     },
