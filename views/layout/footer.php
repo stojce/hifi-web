@@ -25,7 +25,7 @@ if (class_exists('View')) {
                 </li>
                 <li>
                     <a target="_blank" href="http://www.youtube.com/HighFidelityio" title="Contact us">
-                        <i class="icon-film icon-2x"></i>
+                        <i class="icon-youtube icon-2x"></i>
                         YouTube
                     </a>
                 </li>
