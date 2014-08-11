@@ -98,9 +98,14 @@ section#main > article {
     color: #ccc;
 }
 
+#blog {
+    overflow-x: display;
+}
+
 #blog article {
     padding-left: 0;
     padding-right: 0;
+    width: 110%;
 }
 
 /* Blogs section blocks */
@@ -112,17 +117,21 @@ section#main > article {
     padding: 1% 2%;
 }
 
+#blog h3 {
+    color: #333;
+    font-size: 3em;
+    font-weight: normal;
+}
+
 #blog h4 {
     font-size: 1.3em;
+    font-family: Quadom;
+    font-weight: normal;
 }
 
 #blog h4 em {
     font-style: italic;
     color: #999;
-}
-
-#blog h3 {
-    color: #333;
 }
 
 article p strong {
