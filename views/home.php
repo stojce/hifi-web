@@ -1,6 +1,8 @@
 <?php
 $videos = View::read('videos');
 $last_video = $videos[0];
+
+$posts = View::read('posts');
 ?>
 <section role="main" id="main">
   <article class="container-fluid">
@@ -28,19 +30,16 @@ $last_video = $videos[0];
   <article class="container-fluid">
     <div class="row-fluid">
       <h3>Blog</h3>
-      <div class="span6">
-        <h4>Details: Authentication in High Fidelity <em>by Philip Rosedale</em></h4>
-      </div>
-      <div class="span6">
-        <h4>High Fidelity System Architecture <em>by Philip Rosedale</em></h4>
-      </div>
-      <div class="span6">
-        <h4>Latest progress / SVVR video <em>by Grayson Stebbins</em></h4>
-      </div>
-      <div class="span6">
-        <h4>Identity in the Metaverse <em>by Philip Rosedale</em></h4>
-      </div>
-    </div>
+      <?php foreach($posts as $post): setup_postdata($post); ?>
+        <div class="span6">
+          <h4>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+              <?php the_title(); ?>
+            </a>
+            <em>by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a> </em>
+          </h4>
+        </div>
+      <?php endforeach; ?>
   </article>
 </section>
 <section id="company">

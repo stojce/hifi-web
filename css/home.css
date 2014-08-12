@@ -129,9 +129,14 @@ section#main > article {
     font-weight: normal;
 }
 
-#blog h4 em {
+#blog h4 em,
+#blog h4 em a {
     font-style: italic;
     color: #999;
+}
+
+#blog h4 em a:hover {
+    text-decoration: underline;
 }
 
 article p strong {
