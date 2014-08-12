@@ -13,10 +13,26 @@ var home = {
     networkDevicesFrameWidth: null,
 
     init: function() {
+        home.initVimeoPlayer();
         if (skrollr) {
             home.initParallax();
         }
         home.initDeviceNetwork();
+    },
+
+    initVimeoPlayer: function() {
+        $('#main ul a').click(function() {
+            home.playVideo($(this).attr('href'), true)
+            return false;
+        });
+        home.playVideo($('#main ul a:eq(0)').attr('href'), false);
+    },
+
+    playVideo: function(url, autoplay) {
+        var id = url.substr(url.lastIndexOf('/') + 1);
+        var src = '//player.vimeo.com/video/' + id + '?title=0&amp;byline=0&amp;portrait=0&autoplay=' + autoplay;
+        $('#main iframe').attr('src', src);
+        return false;
     },
 
     initParallax: function() {

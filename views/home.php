@@ -8,8 +8,7 @@ $posts = View::read('posts');
   <article class="container-fluid">
     <div class="row-fluid">
       <div class="span9">
-        <iframe src="//player.vimeo.com/video/<?php echo $last_video->id; ?>?title=0&amp;byline=0&amp;portrait=0"
-          frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
         </iframe>
       </div>
       <div class="span3">
