@@ -8,8 +8,6 @@ header#navbar {
     background: #333;
     border-bottom: 5px solid #3398cb;
 }
-@media screen and (min-width: 992px) {
-}
 @media screen and (max-width: 770px) {
     header#navbar {
         height: 500px;
@@ -45,13 +43,16 @@ header#navbar h1 img {
     margin-right: auto;
 }
 
-div#container,
+
+div#container {
+    max-width: 1008px;
+}
 #container > section:not(#main):not(#investors) {
     max-width: 715px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 990px) {
     div#container {
-        max-width: 1008px;
+        max-width: 715px;
     }
 }
 @media screen and (max-width: 770px) {
@@ -60,54 +61,55 @@ div#container,
     }
 }
 
-
-@media screen and (min-width: 992px) {
+section > article {
+    padding-left: 7px;
+}
+@media screen and (max-width: 990px) {
     section > article {
-        padding-left: 7px;
+        padding-left: 0;
     }
 }
 
-
 /* vimeo videos section */
 section#main {
-    margin-top: -497px; /* videos are placed over the navbar gray background */
     position: absolute;
     width: 100%;
+    margin-top: -562px; /* videos are placed over the navbar gray background */
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 990px) {
     section#main {
-        margin-top: -562px; /* tweaking #main content be closer to the navbar when it's bigger */
+        margin-top: -497px; /* tweaking #main content be closer to the navbar when it's bigger */
     }
 }
 @media screen and (max-width: 770px) {
     section#main {
-        margin-top: -332px;
+        margin-top: -350px; /* tweaking #main content be closer to the navbar when it's bigger */
     }
 }
 
 #main iframe,
 #main ul {
-    height: 336px;
+    height: 478px;
 }
 #main iframe {
-    width: 600px;
+    width: 865px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 990px) {
     #main iframe,
     #main ul {
-        height: 481px;
+        height: 326px;
     }
     #main iframe {
-        width: 872px;
+        width: 580px;
     }
 }
 @media screen and (max-width: 770px) {
     #main iframe,
     #main ul {
-        height: 221px;
+        height: 215px;
     }
     #main iframe {
-        width: 395px;
+        width: 380px;
     }
 }
 
@@ -337,6 +339,11 @@ article p.lead + p + p:after {
     padding-right: 70px;
     padding-bottom: 350px;
 }
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:nth-child(7) + p {
+        padding-bottom: 220px;
+    }
+}
 
 #device-network svg {
     position: absolute;
@@ -344,6 +351,15 @@ article p.lead + p + p:after {
     width: 100%;
     height: 380px;
     margin-top: -380px;
+}
+@media screen and (max-width: 770px) {
+    #device-network svg {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 380px;
+        margin-top: -310px;
+    }
 }
 #device-network svg path,
 #device-network svg line {
