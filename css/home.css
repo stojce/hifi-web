@@ -86,7 +86,7 @@ section#main > article {
 }
 
 #main ul li.last:after {
-    content: "\f04b";
+    content: "\f0da";
     display: block;
     left: 0px;
     top: 35%;
