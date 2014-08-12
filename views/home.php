@@ -33,8 +33,8 @@ $posts = View::read('posts');
       <?php foreach($posts as $post): setup_postdata($post); ?>
         <div class="span6">
           <h4>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
-              <?php the_title(); ?>
+            <a href="<?php echo $post->guid; ?>" title="<?php echo $post->post_title; ?>">
+              <?php echo $post->post_title; ?>
             </a>
             <em>by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a> </em>
           </h4>
