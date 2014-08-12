@@ -4,7 +4,7 @@
 
 
 header#navbar {
-    height: 675px;
+    height: 642px;
     background: #333;
     border-bottom: 5px solid #3398cb;
 }
@@ -51,7 +51,7 @@ div#container,
 }
 @media screen and (min-width: 992px) {
     div#container {
-        max-width: 990px;
+        max-width: 1008px;
     }
 }
 @media screen and (max-width: 770px) {
@@ -60,20 +60,28 @@ div#container,
     }
 }
 
+
+@media screen and (min-width: 992px) {
+    section > article {
+        padding-left: 7px;
+    }
+}
+
+
 /* vimeo videos section */
 section#main {
-    margin-top: -530px; /* videos are placed over the navbar gray background */
+    margin-top: -497px; /* videos are placed over the navbar gray background */
     position: absolute;
     width: 100%;
 }
 @media screen and (min-width: 992px) {
     section#main {
-        margin-top: -590px; /* tweaking #main content be closer to the navbar when it's bigger */
+        margin-top: -562px; /* tweaking #main content be closer to the navbar when it's bigger */
     }
 }
 @media screen and (max-width: 770px) {
     section#main {
-        margin-top: -365px;
+        margin-top: -332px;
     }
 }
 
@@ -87,10 +95,10 @@ section#main {
 @media screen and (min-width: 992px) {
     #main iframe,
     #main ul {
-        height: 488px;
+        height: 481px;
     }
     #main iframe {
-        width: 870px;
+        width: 872px;
     }
 }
 @media screen and (max-width: 770px) {
@@ -109,7 +117,8 @@ section#main {
     padding: 0;
     overflow-y: hidden;
     float: right;
-    width: 100px;
+    width: 110px;
+    margin-right: 15px;
 }
 
 #main ul li {
@@ -142,9 +151,8 @@ section#main {
 }
 
 #blog article {
-    padding-left: 0;
     padding-right: 0;
-    width: 110%;
+    width: 95%;
 }
 @media screen and (max-width: 991px) {
     #blog article {
@@ -159,13 +167,14 @@ section#main {
     border-color: #cbcbcb;
     margin-left: 0;
     padding: 1% 2%;
-    height: 6.8em;
+    height: 6.2em;
 }
 
 #blog h3 {
     color: #333;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: normal;
+    margin-bottom: 6px;
 }
 
 #blog h4 {
@@ -185,7 +194,7 @@ section#main {
 }
 
 article p strong {
-    font-size: 1.05em;
+    font-size: .95em;
 }
 
 article p.lead strong span {
@@ -202,6 +211,10 @@ article h3,
 p.lead strong {
     font-family: Quadon-Bold;    
     font-weight: normal;
+}
+
+#company {
+    margin-top: 65px;
 }
 
 #company h3 {

@@ -31,6 +31,7 @@ $posts = View::read('posts');
           </h4>
         </div>
       <?php endforeach; ?>
+    </div>
   </article>
 </section>
 <section id="company">
