@@ -14,10 +14,11 @@ var home = {
 
     init: function() {
         home.initVimeoPlayer();
-        if (skrollr) {
-            home.initParallax();
-        }
         home.initDeviceNetwork();
+
+        // let's delay parallax initialization a bit in order to let it calculate 
+        // the content height better once it's fully loaded
+        setTimeout(home.initParallax, 2000);
     },
 
     initVimeoPlayer: function() {
@@ -36,6 +37,9 @@ var home = {
     },
 
     initParallax: function() {
+        if (!skrollr) {
+            return;
+        }
         if ($(document).outerWidth() >= home.PARALLAX_MIN_WIDTH) {
             home.startParallax();
         }
@@ -52,7 +56,6 @@ var home = {
         }
         var skrollrDiv = $('<div>').attr('id', 'skrollr-body').css({
             width: '100%',
-            height: '100%'
         });
         $('#navbar, #container').wrapAll(skrollrDiv);
         home.skrollr = skrollr.init();
