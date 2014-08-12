@@ -13,12 +13,15 @@ var home = {
     networkDevicesFrameWidth: null,
 
     init: function() {
-        home.initVimeoPlayer();
         home.initDeviceNetwork();
 
         // let's delay parallax initialization a bit in order to let it calculate 
         // the content height better once it's fully loaded
-        setTimeout(home.initParallax, 2000);
+        setTimeout(function() {
+            home.initParallax();
+            home.initVimeoPlayer();
+            window.addEventListener('resize', home.handleResize, false);
+        }, 2000);
     },
 
     initVimeoPlayer: function() {
@@ -40,10 +43,9 @@ var home = {
         if (!skrollr) {
             return;
         }
-        if ($(document).outerWidth() >= home.PARALLAX_MIN_WIDTH) {
+        if ($(window).outerWidth() >= home.PARALLAX_MIN_WIDTH) {
             home.startParallax();
         }
-        window.addEventListener('resize', home.handleResize, false);
     },
 
 
@@ -54,10 +56,10 @@ var home = {
         if (home.skrollr) {
             home.stopParallax();
         }
-        var skrollrDiv = $('<div>').attr('id', 'skrollr-body').css({
-            width: '100%',
-        });
-        $('#navbar, #container').wrapAll(skrollrDiv);
+        if (!$('#skrollr-body').length) {
+            var skrollrDiv = $('<div>').attr('id', 'skrollr-body').css('width', '100%');
+            $('#navbar, #container').wrapAll(skrollrDiv);
+        }
         home.skrollr = skrollr.init();
     },
 
@@ -74,7 +76,7 @@ var home = {
     * Parallax scrolling tweaks on resize, it's actually re-starting
     */
     handleResize: function() {
-        if ($(document).outerWidth() < home.PARALLAX_MIN_WIDTH) {
+        if ($(window).outerWidth() < home.PARALLAX_MIN_WIDTH) {
             home.stopParallax();
         } else {
             home.startParallax();

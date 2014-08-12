@@ -54,12 +54,21 @@
     width: 103px;
     color: #cccccc;
 }
-
+@media screen and (max-width: 770px) {
+    #social li a {
+        padding: 10px 0px;
+        width: 82px;
+    }
+}
 #social ul + ul li a {
     font-weight: bold;
     padding: 28px 0;
 }
-
+@media screen and (max-width: 770px) {
+    #social ul + ul li a {
+        padding: 18px 0;
+    }
+}
 
 #social li.selected a,
 #social li.selected a > i {
@@ -99,53 +108,4 @@
 
 #social ul li:last-child {
     border-right: none;
-}
-
-/**
- * Responsive sizes
- */
-@media screen and (max-width: 770px) {
-    #site-links {
-        font-size: 12px;
-        margin-top: 20px;
-    }
-    
-    #social {
-        border: none;
-    }
-    
-    #social {
-        padding: 10px 0 10px 5%;
-        margin-bottom: 20px;
-    }
-    
-    #social ul {
-        border: 0 none;
-        width: auto;
-        margin-left: 125px;
-        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(5%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
-        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
-        background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
-        background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
-        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 70%,rgba(255,255,255,0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
-    }
-    
-    #social ul li {
-        display: block;
-        text-align: left;
-        margin-bottom: 0;
-        border: 0 none;
-        line-height: 1em;
-    }
-    
-    #social li a {
-        padding: 0;
-        width: auto;
-    }
-    
-    #site-links a > i {
-        display: inline-block;
-    }
 }

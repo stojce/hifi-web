@@ -8,6 +8,13 @@ header#navbar {
     background: #333;
     border-bottom: 5px solid #3398cb;
 }
+@media screen and (min-width: 992px) {
+}
+@media screen and (max-width: 770px) {
+    header#navbar {
+        height: 500px;
+    }
+}
 
 header#navbar nav li {
     border-right: 1px solid #424242;
@@ -33,45 +40,76 @@ header#navbar h1 img {
     margin-top: 2px;
 }
 
-div#container {
-    max-width: 990px;
-}
-#container > section:not(#main):not(#investors) {
-    max-width: 715px;
+#container > section {
     margin-left: auto;
     margin-right: auto;
 }
 
+div#container,
+#container > section:not(#main):not(#investors) {
+    max-width: 715px;
+}
+@media screen and (min-width: 992px) {
+    div#container {
+        max-width: 990px;
+    }
+}
+@media screen and (max-width: 770px) {
+    div#container {
+        font-size: .7em;
+    }
+}
 
 /* vimeo videos section */
 section#main {
-    margin-top: -500px; /* videos are placed over most of the navbar background */
+    margin-top: -530px; /* videos are placed over the navbar gray background */
     position: absolute;
-    left: 50px;
-    right: 50px;
-
+    width: 100%;
 }
-
-section#main > article {
-    background: transparent none;
-    border: 0 none;
-    padding: 0;
+@media screen and (min-width: 992px) {
+    section#main {
+        margin-top: -590px; /* tweaking #main content be closer to the navbar when it's bigger */
+    }
+}
+@media screen and (max-width: 770px) {
+    section#main {
+        margin-top: -365px;
+    }
 }
 
 #main iframe,
 #main ul {
-    height: 365px;
+    height: 336px;
 }
-
 #main iframe {
-    width: 650px;
+    width: 600px;
+}
+@media screen and (min-width: 992px) {
+    #main iframe,
+    #main ul {
+        height: 488px;
+    }
+    #main iframe {
+        width: 870px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #main iframe,
+    #main ul {
+        height: 221px;
+    }
+    #main iframe {
+        width: 395px;
+    }
 }
 
 #main ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 35px;
-    overflow-y: hidden
+    padding: 0;
+    overflow-y: hidden;
+    float: right;
+    width: 100px;
 }
 
 #main ul li {
@@ -96,6 +134,7 @@ section#main > article {
     line-height: 1;
     position: absolute;
     color: #ccc;
+    font-size: 2em;
 }
 
 #blog {
@@ -106,6 +145,11 @@ section#main > article {
     padding-left: 0;
     padding-right: 0;
     width: 110%;
+}
+@media screen and (max-width: 991px) {
+    #blog article {
+        width: 100%;
+    }
 }
 
 /* Blogs section blocks */
@@ -164,6 +208,12 @@ p.lead strong {
     font-size: 2.4em;
     padding-right: 150px;
 }
+@media screen and (max-width: 770px) {
+    #company h3 {
+        font-size: 2em;
+        padding-right: 100px;
+    }
+}
 
 article p.lead,
 article p {
@@ -192,6 +242,12 @@ article p.lead + p {
     padding-bottom: 500px;
     background-size: contain; 
 }
+@media screen and (max-width: 770px) {
+    article p.lead + p {
+        padding-bottom: 350px;
+    }
+}
+
 
 article p.lead + p + p + p {
     position: relative;
@@ -207,9 +263,20 @@ article p.lead + p + p:after {
     width: 800px;
     height: 473px;
 }
+@media screen and (max-width: 770px) {
+    article p.lead + p + p:after {
+        right: -725px;
+        margin-top: 30px;
+    }
+}
 
 #company article:nth-child(2) h3:first-child + p {
     padding-right: 220px
+}
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:first-child + p {
+        padding-right: 50px
+    }
 }
 
 #company article:nth-child(2) h3:first-child:after {
@@ -222,6 +289,11 @@ article p.lead + p + p:after {
     height: 109px;
     margin-left: -100px;
 }
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:first-child:after {
+        margin-top: 35px;
+    }
+}
 
 #company article:nth-child(2) h3:nth-child(3) + p {
     padding-right: 70px;
@@ -229,12 +301,22 @@ article p.lead + p + p:after {
     background: transparent url('../img/home/octal-codes.svg') no-repeat center bottom;
     background-size: contain; 
 }
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-bottom: 285px;
+    }
+}
 
 #company article:nth-child(2) h3:nth-child(5) + p {
     padding-right: 70px;
     padding-bottom: 350px;
     background: transparent url('../img/home/scalability.svg') no-repeat center bottom;
     background-size: contain; 
+}
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        padding-bottom: 250px;
+    }
 }
 
 #company article:nth-child(2) h3:nth-child(7) + p {
@@ -301,10 +383,20 @@ article p.lead + p + p:after {
     margin-bottom: 15px;
     min-height: 90px;
 }
+@media screen and (max-width: 770px) {
+    #team li {
+        margin-bottom: 5px;
+    }
+}
 
 #team figure {
     position: relative;
     margin: 0 0 33px 0;
+}
+@media screen and (max-width: 770px) {
+    #team figure {
+        margin-bottom: 0;
+    }
 }
 
 #team img,
@@ -375,6 +467,11 @@ article p.lead + p + p:after {
     padding: 19px 33px;
     width: 165px;
 }
+@media screen and (max-width: 770px) {
+    #investors > article li {
+        top: -60px;
+    }
+}
 
 #advisors > article li {
     height: 240px;    
@@ -396,6 +493,11 @@ article p.lead + p + p:after {
 #advisors > article li h3 {
     font-size: 1.5em;
 }
+@media screen and (max-width: 770px) {
+    #advisors > article li h3 {
+        font-size: 2.3em;
+    }
+}
 
 #investors > article li p {
     padding-top: 0.8em;
@@ -407,7 +509,11 @@ article p.lead + p + p:after {
 #investors > article li h3 {
     font-size: 3em;
 }
-
+@media screen and (max-width: 770px) {
+    #investors > article li h3 {
+        font-size: 4.5em;
+    }
+}
 #advisors > article li a > figure {
     margin: 0;
 }
@@ -462,6 +568,11 @@ article p.lead + p + p:after {
     font-size: 2em;
     line-height: 1.2em;
 }
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(5) p {
+        font-size: 2.7em;
+    }
+}
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
@@ -493,13 +604,29 @@ article p.lead + p + p:after {
 #investors > article > ul {
     height: 455px;
 }
+@media screen and (max-width: 770px) {
+    #investors > article > ul {
+        height: 350px;
+    }
+}
 
 #advisors > article > ul {
     height: 350px;
 }
+@media screen and (max-width: 770px) {
+    #advisors > article > ul {
+        margin-top: -30px;
+        height: 250px;
+    }
+}
 
 #investors > article > h2 {
     margin-bottom: 63px;
+}
+@media screen and (max-width: 770px) {
+    #investors > article > h2 {
+        margin-bottom: 20px;
+    }
 }
 
 #investors > article > ul {
@@ -508,3 +635,20 @@ article p.lead + p + p:after {
     -moz-transform-style: preserve-3d;
     margin-left: 88px;
 }
+
+@media screen and (max-width: 770px) {
+    #investors > article > ul,
+    #advisors > article > ul {
+        -moz-transform: scale(.65);
+        -ms-transform: scale(.65);
+        -o-transform: scale(.65);
+        -webkit-transform: scale(.65);
+        transform: scale(.65);
+    }
+    #investors > article > ul {
+        margin-left: 0px;
+    }
+    #advisors > article > ul {
+        margin-left: -100px;
+    }
+ }
