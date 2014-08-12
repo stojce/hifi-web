@@ -54,7 +54,7 @@ var home = {
     */
     startParallax: function() {
         if (home.skrollr) {
-            home.stopParallax();
+            return;
         }
         if (!$('#skrollr-body').length) {
             var skrollrDiv = $('<div>').attr('id', 'skrollr-body').css('width', '100%');
