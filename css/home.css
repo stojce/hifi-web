@@ -255,6 +255,8 @@ article p.lead + p + p:after {
 }
 #device-network svg line {
     fill: none;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
 }
 #device-network svg path {
     fill: #3398CB;
