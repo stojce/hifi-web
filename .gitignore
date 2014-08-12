@@ -5,3 +5,5 @@ download
 latestVersion.xml
 .htaccess
 php.errors
+blog/wp-config.php
+blog/db-config.php
