@@ -12,7 +12,7 @@ if (class_exists('View')) {
         <div id="social">
             <ul>
                 <li class="<?php echo $page == 'subscribe' ? 'selected' : ''; ?>">
-                    <a href="https://github.com/highfidelity/hifi" title="GitHub repository">
+                    <a href="https://github.com/highfidelity" title="GitHub repository">
                         <i class="icon-github icon-2x"></i>
                         GitHub
                     </a>
