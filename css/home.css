@@ -190,7 +190,7 @@ section#main {
 
 #blog h4 {
     font-size: 1.3em;
-    font-family: Quadon, Georgia, serif;;
+    font-family: Quadon, Georgia, serif;
     font-weight: normal;
 }
 
@@ -220,7 +220,7 @@ article {
 article h2,
 article h3,
 p.lead strong {
-    font-family: Quadon-Bold;    
+    font-family: Quadon-Bold, Georgia, serif;
     font-weight: normal;
 }
 
@@ -525,7 +525,7 @@ article p.lead + p + p:after {
 
 #investors > article li h3,
 #investors > article li:nth-child(5) p {
-    font-family: Quadon-Bold;
+    font-family: Quadon-Bold, Georgia, serif;
     font-weight: normal;
 }
 
