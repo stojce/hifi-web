@@ -5,7 +5,7 @@
 
 header#navbar {
     height: 642px;
-    background: #333;
+    background: #222;
     border-bottom: 5px solid #3398cb;
 }
 @media screen and (max-width: 770px) {
@@ -89,10 +89,19 @@ section#main {
 
 #main iframe,
 #main ul {
-    height: 478px;
+    height: 489px;
 }
 #main iframe {
-    width: 865px;
+    width: 871px;
+}
+@media screen and (max-width: 1090px) {
+    #main iframe,
+    #main ul {
+        height: 458px;
+    }
+    #main iframe {
+        width: 815px;
+    }
 }
 @media screen and (max-width: 990px) {
     #main iframe,
@@ -181,7 +190,7 @@ section#main {
 
 #blog h4 {
     font-size: 1.3em;
-    font-family: Quadom;
+    font-family: Quadon, Georgia, serif;;
     font-weight: normal;
 }
 

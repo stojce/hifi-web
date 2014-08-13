@@ -68,20 +68,20 @@ $posts = View::read('posts');
     <h3>Low-latency sensor based interaction between avatars</h3>
     <p>
       We are using inexpensive webcams and motion controllers to capture gaze, facial expressions,
-      and body language, which is then streamed at low latency among with high fidelity 3D positional
+      and body language, which is then streamed at low latency along with high fidelity 3D positional
       audio to establish lifelike presence. We also use the Oculus Rift for full immersion, as well
       as hand and full body motion controllers.
     </p>
     <h3>Content scalability</h3>
     <p>
       Virtual worlds servers using a spatial tree structure for storage are nested inside each other
-      and dinamically assigned to handle content load. 3D content from multiple formats can be loaded
+      and dynamically assigned to handle content load. 3D content from multiple formats can be loaded
       into the world and presented at multiple levels of detail and/or transformed into voxels to allow
       for infinite draw distances.
     </p>
     <h3>Audience scalability</h3>
     <p>
-      Servers recruited from user-contributed pools of devices are dinamically reassigned to rebroadcasting
+      Servers recruited from user-contributed pools of devices are dynamically reassigned to rebroadcasting
       trees to allow rapidly varying audiences at any scale.
     </p>
     <h3>Crypto-currency backed device ecosystem</h3>
