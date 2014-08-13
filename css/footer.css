@@ -13,6 +13,8 @@
     font-size: 16px;
     max-width: 645px;
     margin: 0 auto;    
+    overflow-x: hidden;
+    text-align: center;
 }
 
 #site-links p,
@@ -22,13 +24,9 @@
     color: #878787;
 }
 
-#social {
-    overflow-x: hidden;
-}
-
-#social ul {
+#site-links ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border-top: 1px solid #dadada;
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
@@ -38,16 +36,24 @@
     background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
-    text-align: center;
+}
+@media screen and (max-width: 530px) {
+    #site-links ul {
+        width: 328px;
+    }
+    #site-links ul,
+    #site-links ul + ul {
+        margin: 0 auto;
+    }
 }
 
-#social ul li {
+#site-links ul li {
     display: inline-block;
     text-align: center;
     border-right: 1px solid #dadada;
 }
 
-#social li a {
+#site-links li a {
     text-decoration: none;
     padding: 18px 0px;
     display: inline-block;
@@ -55,23 +61,29 @@
     color: #cccccc;
 }
 @media screen and (max-width: 770px) {
-    #social li a {
+    #site-links li a {
         padding: 10px 0px;
         width: 82px;
     }
 }
-#social ul + ul li a {
+@media screen and (max-width: 530px) {
+    #site-links li a {
+        padding: 10px 0 5px;
+        width: 50px;
+    }
+}
+#site-links ul + ul li a {
     font-weight: bold;
     padding: 28px 0;
 }
 @media screen and (max-width: 770px) {
-    #social ul + ul li a {
+    #site-links ul + ul li a {
         padding: 18px 0;
     }
 }
 
-#social li.selected a,
-#social li.selected a > i {
+#site-links li.selected a,
+#site-links li.selected a > i {
     color: #3698bf;
 }
 
@@ -106,6 +118,16 @@
     height: 28px;
 }
 
-#social ul li:last-child {
+#site-links ul li:last-child {
     border-right: none;
+}
+
+@media screen and (max-width: 530px) {
+    #site-links a > img {
+        display: inline;
+    }
+
+    #site-links a > span {
+        display: none;
+    }
 }
