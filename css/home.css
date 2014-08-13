@@ -125,6 +125,15 @@ section#main {
         width: 380px;
     }
 }
+@media screen and (max-width: 530px) {
+    #main iframe,
+    #main ul {
+        height: 191px;
+    }
+    #main iframe {
+        width: 340px;
+    }
+}
 
 #main ul {
     list-style-type: none;
