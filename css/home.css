@@ -151,12 +151,12 @@ section#main {
     margin-bottom: 5px;
 }
 
-#main ul li.last {
+#main ul li.current {
     position: relative;
     border-color: #ccc;
 }
 
-#main ul li.last:after {
+#main ul li.current:after {
     content: "\f0da";
     display: block;
     left: 0px;

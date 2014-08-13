@@ -7,7 +7,7 @@ $posts = View::read('posts');
 <section role="main" id="main">
   <ul>
     <?php foreach($videos as $video): ?>
-    <li class="<?php echo $last_video == $video ? 'last' : ''; ?>">
+    <li class="<?php echo $last_video == $video ? 'current' : ''; ?>">
       <a href="<?php echo $video->url; ?>">
         <img src="<?php echo $video->thumbnail_medium; ?>" title="<?php echo htmlspecialchars($video->title); ?>"/>
       </a>

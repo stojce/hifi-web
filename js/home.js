@@ -26,7 +26,9 @@ var home = {
 
     initVimeoPlayer: function() {
         $('#main ul a').click(function() {
-            home.playVideo($(this).attr('href'), true)
+            $('#main ul li.current').removeClass('current');
+            home.playVideo($(this).attr('href'), true);
+            $(this).parent().addClass('current');
             return false;
         });
         home.playVideo($('#main ul a:eq(0)').attr('href'), false);
