@@ -311,15 +311,19 @@ article p a:hover {
     display: block;
     position: absolute;
     background: url('../img/home/priovr-hand-v3-duotone.png');
-    right: -600px;
-    margin-top: 100px;
+    right: -520px;
     width: 800px;
     height: 473px;
 }
+@media screen and (max-width: 990px) {
+    #company p.lead + p + p:after {
+        right: -660px;
+    }
+}
 @media screen and (max-width: 770px) {
     #company p.lead + p + p:after {
-        right: -725px;
-        margin-top: 30px;
+        right: -685px;
+        margin-top: -20px;
     }
 }
 
