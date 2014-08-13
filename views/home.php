@@ -19,19 +19,15 @@ $posts = View::read('posts');
 </section>
 <section id="blog">
   <article class="container-fluid">
-    <div class="row-fluid">
-      <h3>Blog</h3>
-      <?php foreach($posts as $post): setup_postdata($post); ?>
-        <div class="span6">
-          <h4>
-            <a href="<?php echo $post->guid; ?>" title="<?php echo $post->post_title; ?>">
-              <?php echo $post->post_title; ?>
-            </a>
-            <em>by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a> </em>
-          </h4>
-        </div>
-      <?php endforeach; ?>
-    </div>
+    <h3>Blog</h3>
+    <?php foreach($posts as $post): setup_postdata($post); ?>
+      <h4>
+        <a href="<?php echo $post->guid; ?>" title="<?php echo $post->post_title; ?>">
+          <?php echo $post->post_title; ?>
+        </a>
+        <em>by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a> </em>
+      </h4>
+    <?php endforeach; ?>
   </article>
 </section>
 <section id="company">

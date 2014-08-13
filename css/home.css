@@ -161,10 +161,6 @@ section#main {
     font-size: 2em;
 }
 
-#blog {
-    overflow-x: display;
-}
-
 #blog article {
     padding-right: 0;
     width: 95%;
@@ -176,13 +172,18 @@ section#main {
 }
 
 /* Blogs section blocks */
-#blog .span6 {
+#blog h4 {
+    display: inline-block;
+    margin: 0;
     border-width: 1px 0 0 1px;
     border-style: dashed;
     border-color: #cbcbcb;
     margin-left: 0;
-    padding: 1% 2%;
-    height: 6.2em;
+    padding: 0;
+    height: 3.2em;
+    width: 40%;
+    vertical-align: middle;
+    padding: 4%;
 }
 
 #blog h3 {
@@ -196,6 +197,11 @@ section#main {
     font-size: 1.3em;
     font-family: Quadon, Georgia, serif;
     font-weight: normal;
+}
+@media screen and (max-width: 770px) {
+    #blog h4 {
+        line-height: 1.1em;
+    }
 }
 
 #blog h4 em,
