@@ -61,7 +61,7 @@ $posts = View::read('posts');
       interaction with others lifelike and emotional.
     </p>
     <p>
-      <strong>Our ongoing development and R&amp;D work focuses on several areas:</strong>
+      Our ongoing development and R&amp;D work focuses on several areas:
     </p>
   </article>
   <article>

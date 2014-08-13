@@ -3,6 +3,10 @@
  */
 
 
+html body {
+    color: #666;
+}
+
 header#navbar {
     height: 642px;
     background: #222;
@@ -302,6 +306,11 @@ article p.lead + p + p:after {
     #company article:nth-child(2) h3:first-child + p {
         padding-right: 50px
     }
+}
+
+#company article:first-child p:last-child {
+    font-weight: bold;
+    padding-right: 170px;
 }
 
 #company article:nth-child(2) h3:first-child:after {
