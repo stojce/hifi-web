@@ -318,7 +318,7 @@ article p.lead + p + p:after {
     display: block;
     position: absolute;
     background: url('../img/home/avatar-eye-contact.svg');
-    margin-top: 20px;
+    margin-top: 16px;
     width: 728px;
     height: 109px;
     margin-left: -100px;
