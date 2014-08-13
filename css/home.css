@@ -410,7 +410,7 @@ article p.lead + p + p:after {
     width: 134px;
     font-size: 0.5em;
     position: absolute;
-    left: 600px;
+    left: 608px;
     margin-top: -50px;
     line-height: 1.3em;
 }
@@ -624,12 +624,12 @@ article p.lead + p + p:after {
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
-    left: 80px;
+    left: 55px;
 }
 
 #advisors > article li:nth-child(2) {
     z-index: 200;
-    left: 270px;
+    left: 245px;
     margin-top: 35px;
     -moz-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
@@ -640,7 +640,7 @@ article p.lead + p + p:after {
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
-    left: 480px;
+    left: 455px;
     margin-top: 20px;
     -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
