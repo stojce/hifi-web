@@ -169,7 +169,7 @@ section#main {
     padding-right: 0;
     width: 95%;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
     #blog article {
         width: 100%;
     }
@@ -204,15 +204,23 @@ section#main {
     color: #999;
 }
 
+#blog h4 > a:hover {
+    color: #3398CB;
+}
+
 #blog h4 em a:hover {
     text-decoration: underline;
+}
+
+#company p.lead {
+    padding-right: 45px;
 }
 
 article p strong {
     font-size: .95em;
 }
 
-article p.lead strong span {
+#company p.lead strong span {
     font-size: 1.5em;
 }
 
@@ -223,7 +231,7 @@ article {
 
 article h2,
 article h3,
-p.lead strong {
+#company p.lead strong {
     font-family: Quadon-Bold, Georgia, serif;
     font-weight: normal;
 }
@@ -244,7 +252,7 @@ p.lead strong {
     }
 }
 
-article p.lead,
+#company p.lead,
 article p {
     font-size: 1.8em;
     line-height: 1.5em;
@@ -254,6 +262,9 @@ article p {
 article h3,
 article p a {
     color: #3398CB;
+}
+
+article p a {
     font-weight: bold;
 }
 
@@ -266,23 +277,30 @@ article p a:hover {
     text-decoration: none;
 }
 
-article p.lead + p {
+#company p.lead + p {
     background: transparent url('../img/home/Emily-and-hifi.png') no-repeat center bottom;
     padding-bottom: 500px;
+    padding-right: 30px;
     background-size: contain; 
 }
 @media screen and (max-width: 770px) {
-    article p.lead + p {
+    #company p.lead + p {
         padding-bottom: 350px;
     }
 }
 
 
-article p.lead + p + p + p {
+#company p.lead + p + p + p {
     position: relative;
+    padding-right: 125px;
+}
+@media screen and (max-width: 770px) {
+    #company p.lead + p + p + p {
+        padding-right: 100px;
+    }
 }
 
-article p.lead + p + p:after {
+#company p.lead + p + p:after {
     content: '';
     display: block;
     position: absolute;
@@ -293,7 +311,7 @@ article p.lead + p + p:after {
     height: 473px;
 }
 @media screen and (max-width: 770px) {
-    article p.lead + p + p:after {
+    #company p.lead + p + p:after {
         right: -725px;
         margin-top: 30px;
     }
@@ -310,7 +328,7 @@ article p.lead + p + p:after {
 
 #company article:first-child p:last-child {
     font-weight: bold;
-    padding-right: 170px;
+    padding-right: 160px;
 }
 
 #company article:nth-child(2) h3:first-child:after {
@@ -330,19 +348,20 @@ article p.lead + p + p:after {
 }
 
 #company article:nth-child(2) h3:nth-child(3) + p {
-    padding-right: 70px;
+    padding-right: 60px;
     padding-bottom: 500px;
     background: transparent url('../img/home/octal-codes.svg') no-repeat center bottom;
     background-size: contain; 
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(3) + p {
-        padding-bottom: 285px;
+        padding-bottom: 310px;
+        padding-right: 20px;
     }
 }
 
 #company article:nth-child(2) h3:nth-child(5) + p {
-    padding-right: 70px;
+    padding-right: 25px;
     padding-bottom: 350px;
     background: transparent url('../img/home/scalability.svg') no-repeat center bottom;
     background-size: contain; 
@@ -354,7 +373,7 @@ article p.lead + p + p:after {
 }
 
 #company article:nth-child(2) h3:nth-child(7) + p {
-    padding-right: 70px;
+    padding-right: 40px;
     padding-bottom: 350px;
 }
 @media screen and (max-width: 770px) {
