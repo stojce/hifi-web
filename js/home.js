@@ -70,6 +70,7 @@ var home = {
         if (home.skrollr) {
             home.skrollr.destroy();
         }
+        home.skrollr = null;
         $('#skrollr-body > #navbar').unwrap();
     },
     /**
