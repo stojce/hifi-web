@@ -354,7 +354,7 @@ article p a:hover {
     content: '';
     display: block;
     position: absolute;
-    background: url('../img/home/avatar-eye-contact.svg');
+    background: url('../img/home/avatar-eye-contact.svg') no-repeat center center;
     margin-top: 16px;
     width: 728px;
     height: 109px;
@@ -368,26 +368,28 @@ article p a:hover {
 
 #company article:nth-child(2) h3:nth-child(3) + p {
     padding-right: 60px;
-    padding-bottom: 500px;
+    padding-bottom: 400px;
     background: transparent url('../img/home/octal-codes.svg') no-repeat center bottom;
-    background-size: contain; 
+    background-size: 630px 390px;
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(3) + p {
-        padding-bottom: 310px;
+        padding-bottom: 258px;
         padding-right: 20px;
+        background-size: 400px 248px;
     }
 }
 
 #company article:nth-child(2) h3:nth-child(5) + p {
     padding-right: 25px;
-    padding-bottom: 350px;
+    padding-bottom: 306px;
     background: transparent url('../img/home/scalability.svg') no-repeat center bottom;
-    background-size: contain; 
+    background-size: 630px 296px;
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(5) + p {
-        padding-bottom: 250px;
+        padding-bottom: 198px;
+        background-size: 400px 188px;
     }
 }
 
@@ -741,4 +743,4 @@ article p a:hover {
     #advisors > article > ul {
         margin-left: -100px;
     }
- }
+}
