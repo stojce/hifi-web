@@ -79,6 +79,7 @@ section#main {
     position: absolute;
     width: 100%;
     margin-top: -562px; /* videos are placed over the navbar gray background */
+    text-align: center;
 }
 @media screen and (max-width: 990px) {
     section#main {
@@ -94,9 +95,11 @@ section#main {
 #main iframe,
 #main ul {
     height: 489px;
+    display: inline-block;
 }
 #main iframe {
     width: 871px;
+    margin-left: 4px;
 }
 @media screen and (max-width: 1090px) {
     #main iframe,
@@ -138,16 +141,14 @@ section#main {
 #main ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow-y: hidden;
-    float: right;
-    width: 110px;
-    margin-right: 15px;
+    width: 115px;
+    padding: 0 0 0 8px;
 }
 
 #main ul li {
-    border: 1px solid #666;
-    padding: 4px;
+    border: 2px solid #666;
+    padding: 2px;
     margin-bottom: 5px;
 }
 
@@ -171,6 +172,7 @@ section#main {
 }
 
 #blog article {
+    padding-left: 15px;
     padding-right: 0;
     width: 95%;
 }
@@ -181,20 +183,6 @@ section#main {
 }
 
 /* Blogs section blocks */
-#blog h4 {
-    display: inline-block;
-    margin: 0;
-    border-width: 1px 0 0 1px;
-    border-style: dashed;
-    border-color: #cbcbcb;
-    margin-left: 0;
-    padding: 0;
-    height: 3.2em;
-    width: 40%;
-    vertical-align: middle;
-    padding: 4%;
-}
-
 #blog h3 {
     color: #333;
     font-size: 2.5em;
@@ -203,10 +191,22 @@ section#main {
 }
 
 #blog h4 {
+    display: inline-block;
+    margin: 0;
+    border-width: 1px 0 0 1px;
+    border-style: dashed;
+    border-color: #cbcbcb;
+    margin-left: 0;
+    padding: 0;
+    height: 4em;
+    width: 40%;
+    vertical-align: middle;
+    padding: 3.5% 2%;
     font-size: 1.3em;
-    font-family: Quadon, Georgia, serif;
+    font-family: Georgia, serif;
     font-weight: normal;
 }
+
 @media screen and (max-width: 770px) {
     #blog h4 {
         line-height: 1.1em;

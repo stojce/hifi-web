@@ -5,6 +5,8 @@ $last_video = $videos[0];
 $posts = View::read('posts');
 ?>
 <section role="main" id="main">
+  <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+  </iframe>
   <ul>
     <?php foreach($videos as $video): ?>
     <li class="<?php echo $last_video == $video ? 'current' : ''; ?>">
@@ -14,11 +16,9 @@ $posts = View::read('posts');
     </li>
     <?php endforeach; ?>
   </ul>
-  <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-  </iframe>
 </section>
 <section id="blog">
-  <article class="container-fluid">
+  <article>
     <h3>Blog</h3>
     <?php foreach($posts as $post): setup_postdata($post); ?>
       <h4>
@@ -244,32 +244,32 @@ $posts = View::read('posts');
     <ul>
       <li
         data-0="left: 2000px; transform:rotate(-90deg);"
-        data-5720="left: 2000px; transform:rotate(-90deg);"
-        data-6120="left: -80px; transform:rotate(0deg)">
+        data-5620="left: 2000px; transform:rotate(-90deg);"
+        data-6020="left: -80px; transform:rotate(0deg);">
         <h3>True Ventures</h3>
       </li>
       <li
         data-0="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
-        data-5760="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
-        data-6160="left: 135px; transform:rotate(16deg);">
+        data-5660="left: 2000px; transform:rotate(90deg); margin-top: 9px;"
+        data-6060="left: 135px; transform:rotate(16deg);">
         <h3>Google Ventures</h3>
       </li>
       <li
         data-0="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
-        data-5700="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
-        data-6100="left: 370px; transform:rotate(2deg);">
+        data-5600="left: 2000px; transform:rotate(160deg); margin-top: 20px;"
+        data-6000="left: 370px; transform:rotate(2deg);">
         <h3>Kapor Capital</h3>
       </li>
       <li
         data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-        data-5840="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-        data-6240="left: 60px; transform:rotate(4deg);">
+        data-5740="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
+        data-6140="left: 60px; transform:rotate(4deg);">
         <h3>Linden Lab</h3>
       </li>
       <li
         data-0="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-        data-5880="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-        data-6280="left: 275px; transform:rotate(0deg);">
+        data-5780="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
+        data-6180="left: 275px; transform:rotate(0deg);">
         <p>And an intriguing assortment of forward-looking angels.</p>
       </li>
     </ul>

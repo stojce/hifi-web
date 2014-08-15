@@ -8,6 +8,7 @@ var home = {
     PARALLAX_MIN_WIDTH: 770,
     skrollr: null,
     networkDevices: [],
+    offlineDevices: [],
     networkDevicesFrames: 4,
     networkDevicesCurrentFrame: 0,
     networkDevicesFrameWidth: null,
@@ -158,6 +159,7 @@ var home = {
         device.hideAt = null;
         $(device.element).attr('idle', true);
         device.hidden = true;
+        home.offlineDevices.push(device);
         device.showAt =  Date.now() + Math.floor((Math.random() * 2000) + 1000);
         if (recurse && device.siblings.length) {
             for (var i = 0; i < device.siblings.length; i++) {
@@ -171,6 +173,7 @@ var home = {
         device.showAt = null;
         $(device.element).removeAttr('idle');
         device.hidden = false;
+        home.offlineDevices.splice(home.offlineDevices.indexOf(device), 1);
         device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
         if (recurse && device.siblings.length) {
             for (var i = 0; i < device.siblings.length; i++) {
