@@ -58,10 +58,6 @@ var home = {
         if (home.skrollr) {
             return;
         }
-        if (!$('#skrollr-body').length) {
-            var skrollrDiv = $('<div>').attr('id', 'skrollr-body').css('width', '100%');
-            $('#navbar, #container').wrapAll(skrollrDiv);
-        }
         home.skrollr = skrollr.init();
     },
 
@@ -73,7 +69,6 @@ var home = {
             home.skrollr.destroy();
         }
         home.skrollr = null;
-        $('#skrollr-body > #navbar').unwrap();
     },
     /**
     * Parallax scrolling tweaks on resize, it's actually re-starting
