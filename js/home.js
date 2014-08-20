@@ -86,6 +86,7 @@ var home = {
         }
     },
 
+    /*
     initDeviceNetwork: function() {
         var height = $(document).innerHeight();
         var devices = home.randomEighthDevices();
@@ -117,6 +118,7 @@ var home = {
             home.processedDevices.push(devices[i]);
         }
     },
+    */
 
     randomEighthDevices: function(not_processed_before) {
         var deviceElements = $('#device-network svg path');
