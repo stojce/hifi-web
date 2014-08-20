@@ -136,23 +136,27 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </article>
     <h2><strong>2.</strong> Contract jobs</h2>
     <article class="no-border-bottom radius-border-top">
-        <p class="lead">Marketing Communications Manager</p>
-        <p>
-            High Fidelity seeks a marketing coordinator to help us reach and engage potential employees and customers. 
-            The ideal candidate has worked 3+ years in a consumer-facing tech company producing marketing assets across
-            several dimensions.  You are a proficient writer capable of creating engaging short form copy for websites, blogs and
-            social media campaigns.  You can produce polished webinars and instructional videos, and coordinate events and convention
-            activities.
-        </p>
-        <p> 
-            You exercise high attention to detail, are self-directed, data driven, and game for working in a fluid
-            startup environment.  You're comfortable helping to define and revise a continually-shifting set of messages as the
-            company evolves.
-        </p> 
-        <p>
-            Interested applicants should be sure to include writing samples, social media account management examples, and
-            references.
-        </p>
+        <p class="lead">Raconteur</p>
+            <p>
+            High Fidelity seeks a master storyteller with a broad command of social media tools to engage customers and
+            recruits.
+            <br/><br/>
+            You have worked in a consumer-facing tech company producing marketing assets across multiple media.
+            <br/><br/>
+            You communicate your company's ideas in powerful, interesting ways. This includes fresh and frequent short-form
+            copy for websites, blogs and social media campaigns. 
+            <br/><br/>
+            You produce polished video shorts and webinars, and can coordinate events and convention activities.
+            <br/><br/>
+            You have a flare for language, an eye for detail, and like to work hard to show rather than tell.
+            <br/><br/>
+            You are self-directed, data driven, and game for working in a fluid startup environment.
+            <br/><br/>
+            You're comfortable helping to define and revise a continually-shifting set of messages as your company evolves.
+            <br/><br/>
+            Interested applicants should be sure to include writing samples, social media account management examples,
+            multimedia examples, and references. 
+            </p>
         <p>
             <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
         </p>
