@@ -34,8 +34,8 @@ $posts = View::read('posts');
   <article>
     <p class="lead">
       <strong><span>High Fidelity</span> powers inter-connected virtual worlds, using new hardware devices to 
-      catalyze entirely new kind of interactions between avatars.</strong> Our open source 
-      software  architecture enables unlimited scalability of both content and audience.
+      catalyze entirely new kinds of interactions between avatars.</strong> Our open source
+      software architecture enables unlimited scalability of both content and audience.
     </p>
     <p>
       We are currently Alpha testing. You'll find our
@@ -49,7 +49,7 @@ $posts = View::read('posts');
       to give billions of people access to an interconnected "Metaverse" that will offer a broad
       range of capabilities for creativity, education, exploration, and play</strong>. And by using
       all of our computers together in an open shared network, we can simulate this space at a far
-      larger scale that would be possible by any single company or centrally hosted system.
+      larger scale than would be possible by any single company or centrally hosted system.
     </p>
     <p>
       By using a range of new hardware devices like the Oculus Rift, Leap Motion, PrioVR, Sixsense,
