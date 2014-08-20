@@ -7,14 +7,18 @@ var home = {
 
     PARALLAX_MIN_WIDTH: 770,
     skrollr: null,
+    /*
     networkDevices: [],
     offlineDevices: [],
     networkDevicesFrames: 4,
     networkDevicesCurrentFrame: 0,
     networkDevicesFrameWidth: null,
+    */
+
+    processedDevices: [],
 
     init: function() {
-        home.initDeviceNetwork();
+        //home.initDeviceNetwork();
 
         // let's delay parallax initialization a bit in order to let it calculate 
         // the content height better once it's fully loaded
@@ -82,6 +86,49 @@ var home = {
         }
     },
 
+    initDeviceNetwork: function() {
+        var height = $(document).innerHeight();
+        var devices = home.randomEighthDevices();
+        for(var i = 0; i < devices.length; i++) {
+            var shutdownFrom = Math.floor((Math.random() * height - 500) + 1500),
+            var shutdownTo = shutdownFrom + Math.floor((Math.random() * 40) + 200);
+            devices[i].attr('data-0', 'visibility: visible');
+            devices[i].attr('data-'  + (shutdownFrom - 1), 'visibility: visible');
+            devices[i].attr('data-'  + shutdownFrom, 'visibility: hidden');
+            devices[i].attr('data-'  + (shutdownTo -1), 'visibility: hidden');
+            devices[i].attr('data-'  + shutdownTo, 'visibility: visible');
+
+            shutdownFrom = shutdownTo + Math.floor((Math.random() * 300) + 100);
+            shutdownTo = shutdownFrom + Math.floor((Math.random() * 40) + 200);
+            devices[i].attr('data-0', 'visibility: visible');
+            devices[i].attr('data-'  + (shutdownFrom - 1), 'visibility: visible');
+            devices[i].attr('data-'  + shutdownFrom, 'visibility: hidden');
+            devices[i].attr('data-'  + (shutdownTo -1), 'visibility: hidden');
+            devices[i].attr('data-'  + shutdownTo, 'visibility: visible');
+
+            shutdownFrom = shutdownTo + Math.floor((Math.random() * 300) + 100);
+            shutdownTo = shutdownFrom + Math.floor((Math.random() * 40) + 200);
+            devices[i].attr('data-0', 'visibility: visible');
+            devices[i].attr('data-'  + (shutdownFrom - 1), 'visibility: visible');
+            devices[i].attr('data-'  + shutdownFrom, 'visibility: hidden');
+            devices[i].attr('data-'  + (shutdownTo -1), 'visibility: hidden');
+            devices[i].attr('data-'  + shutdownTo, 'visibility: visible');
+
+            home.processedDevices.push(devices[i]);
+        }
+    },
+
+    randomEighthDevices: function(not_processed_before) {
+        var deviceElements = $('#device-network svg path');
+        var ret = [];
+        for(var i = 0; i < deviceElements.length / 8; i++) {
+            randomDeviceIndex = Math.floor(Math.random() * deviceElements.length);
+            ret.push(deviceElements.get(randomDeviceIndex));
+        }
+        return ret;
+    },
+
+    /*
     initDeviceNetwork: function() {
         // intialize network devices array
         home.networkDevices = [];
@@ -182,6 +229,7 @@ var home = {
             }
         }
     },
+    */
 
     isCompatible: function() {
         return true;
