@@ -18,13 +18,8 @@ if (class_exists('View')) {
             <li class="<?php echo ($page == 'code' ? 'selected' : ''); ?>">
                 <a href="<?php echo $base_path; ?>code" title="Code">Code</a>
             </li>
-            <li class="<?php echo ($page == 'blog' ? 'selected' : ''); ?>">
-                <a href="<?php echo $base_path; ?>blog/" title="Blog">Blog</a>
-            </li>
             <li>
-                <a target="_blank" href="http://twitter.com/highfidelityinc" title="Follow us on Twitter">
-                    <i class="icon-twitter"></i>
-                </a>
+                <a href="http://twitter.com/highfidelityinc" title="Twitter">Twitter</a>
             </li>
         </ul>
         <h1 id="logo">
@@ -33,7 +28,7 @@ if (class_exists('View')) {
                     <img src="<?php echo $base_path; ?>img/hifi-logo.png" alt="High Fidelity" />
                 </a>
             <?php else: ?>
-                <img src="<?php echo $base_path; ?>img/hifi-logo.png" alt="High Fidelity" />
+                <img src="<?php echo $base_path; ?>img/hifi-logo-grey.svg" alt="High Fidelity" />
             <?php endif; ?>
         </h1>
         <ul id="sitenav">
@@ -43,8 +38,8 @@ if (class_exists('View')) {
             <li class="<?php echo ($page == 'jobs' ? 'selected' : ''); ?>">
                 <a href="<?php echo $base_path; ?>jobs" title="Jobs">Jobs</a>
             </li>
-            <li class="<?php echo ($page == 'company' ? 'selected' : ''); ?>">
-                <a href="<?php echo $base_path; ?>company" title="Company">Company</a>
+            <li class="<?php echo ($page == 'blog' ? 'selected' : ''); ?>">
+                <a href="<?php echo $base_path; ?>blog/" title="Blog">Blog</a>
             </li>
         </ul>
     </nav>

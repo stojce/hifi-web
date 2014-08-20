@@ -16,7 +16,8 @@ class View {
     protected static $stylesheets = array(
         'css/bootstrap.min.css',
         'css/font-awesome.min.css',
-        'css/common.css'
+        'css/common.css',
+        'css/MyFontsWebfontsKit.css'
     );
     protected static $scripts = array(
         'js/hifi.js',

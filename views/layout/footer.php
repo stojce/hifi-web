@@ -9,56 +9,66 @@ if (class_exists('View')) {
 
 ?>
     <footer id="site-links" role="contentinfo">
-        <div id="social">
-            <p>Stay connected</p>
-            <ul>
-                <li>
-                    <a href="mailto:<?php echo CONTACT_EMAIL_ADDRESS; ?>" title="Email">
-                        <i class="icon-envelope-alt icon-2x"></i>
-                        Email
-                    </a>
-                </li>
-                <li class="<?php echo $page == 'subscribe' ? 'selected' : ''; ?>">
-                    <a href="<?php echo $base_path; ?>subscribe" title="Subscribe">
-                        <i class="icon-inbox icon-2x"></i>
-                        Subscribe
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="http://www.youtube.com/HighFidelityio" title="Contact us">
-                        <i class="icon-film icon-2x"></i>
-                        YouTube
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="http://twitter.com/highfidelityinc" title="Twitter">
-                        <i class="icon-twitter icon-2x"></i>
-                        Twitter
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="http://www.facebook.com/HighFidelityInc" title="Facebook">
-                        <i class="icon-facebook icon-2x"></i>
-                        Facebook
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://plus.google.com/116747659392437653711/" title="Google Plus">
-                        <i class="icon-google-plus-sign icon-2x"></i>
-                        Google+
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="ubernerds">
-            <p>über nerds:</p>
-            <ul>
-                <li><a target="_blank" href="http://alpha.app.net/highfidelity" title="ADN">ADN</a></li>
-                <li><a target="_blank" href="https://github.com/highfidelity/hifi" title="Github">Github</a></li>
-                <li><a target="_blank" href="http://www.worklist.net" title="Worklist">Worklist</a></li>
-                <li>blog feed: <a target="_blank" href="http://highfidelity.io/blog/feed/" title="RSS Feed">RSS</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li class="<?php echo $page == 'subscribe' ? 'selected' : ''; ?>">
+                <a href="https://github.com/highfidelity" title="GitHub repository">
+                    <i class="icon-github icon-2x"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://worklist.net" title="Worklist">
+                    <img src="<?php echo $base_path; ?>img/wl-logo.svg">
+                    <span>Worklist</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.youtube.com/HighFidelityio" title="Contact us">
+                    <i class="icon-youtube icon-2x"></i>
+                    <span>YouTube</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://twitter.com/highfidelityinc" title="Twitter">
+                    <i class="icon-twitter icon-2x"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.facebook.com/HighFidelityInc" title="Facebook">
+                    <i class="icon-facebook icon-2x"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:<?php echo CONTACT_EMAIL_ADDRESS; ?>" title="Email">
+                    <i class="icon-envelope-alt icon-2x"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="<?php echo $base_path; ?>alpha" title="Alpha">
+                    Alpha
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com/highfidelityinc" title="Twitter">
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $base_path; ?>jobs" title="Jobs">
+                    Jobs
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $base_path; ?>blog/" title="Blog">
+                    Blog
+                </a>
+            </li>
+        </ul>
         <p>
             <span>&copy; 2014 High Fidelity Inc</span>
         </p>

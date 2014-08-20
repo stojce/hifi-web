@@ -2,227 +2,459 @@
  * HighFidelity's home page styling
  */
 
-/* bg on this page is not from body, no need to inherit from common.cs */
-html > body {
-    background-image: none;
-    min-width: 320px;
+
+html body {
+    color: #666;
 }
 
-/* bg is actually from the navbar */
 header#navbar {
-    height: 1060px;
-    background: #ffffff url('../img/gyro-glasses.jpg') no-repeat 50px 200px;
-    background-size: contain;
-    width: 1020px;
-    margin: 0 auto;
+    height: 642px;
+    background: #222;
+    border-bottom: 5px solid #3398cb;
+}
+@media screen and (max-width: 770px) {
+    header#navbar {
+        height: 500px;
+    }
 }
 
-header#navbar h1 img:hover {
-    opacity: 1;
+header#navbar nav li {
+    border-right: 1px solid #424242;
 }
 
-#main > article p.lead {
-    margin: 0 auto;
-    position: absolute;
-    left: -40px;
-    top: -750px;
-    width: 495px;
-    text-align: center;
-    font-weight: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif !important;    
-}
-
-/* Alpha subscription section styling */
-#alpha {
-    position: absolute;
-    top: -370px;
-    left: 250px;
-    max-width: 720px;
-    padding: 0 40px 30px;
-    margin-top: 20px;
-    text-align: center;
-    background-color: rgba( 255, 255, 255, 0.5);
-}
-
-#alpha > p {
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Georgia", "Times", serif;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 26px;
-}
-
-#alpha > p:first-child {
-    color: #E04324;
-    display: block;
-    margin-bottom: 0px;
-    padding-top: 21px;
-    border-top: 1px solid #ddd;
-}
-
-#alpha a.button {
-    background-color: #E04324;
-    padding: 10px 15px;
-    color: #fff;
-    font-size: 18px;
-    font-family: proxima-nova, sans-serif;
-    border: 0;
-    display: inline-block;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+header#navbar nav li a {
     text-decoration: none;
+    color: #666666;
+    padding: 8px 14px;
+    display: inline-block;
+    font: bold 1.15em proxima-nova, sans-serif;
+    background: transparent none;
 }
 
-#container {
-    max-width: inherit;
+header#navbar nav li a:hover {
+    color: #ccc;
+}
+
+
+/* custom logo */
+header#navbar h1 img {
+    width: 76px;
+    margin-top: 2px;
+}
+
+#container > section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div#container {
+    max-width: 1008px;
+}
+#container > section:not(#main):not(#investors) {
+    max-width: 715px;
+}
+@media screen and (max-width: 990px) {
+    div#container {
+        max-width: 715px;
+    }
+}
+@media screen and (max-width: 770px) {
+    div#container {
+        font-size: .7em;
+    }
+}
+
+section > article {
+    padding-left: 7px;
+}
+@media screen and (max-width: 990px) {
+    section > article {
+        padding-left: 0;
+    }
+}
+
+/* vimeo videos section */
+section#main {
+    position: absolute;
+    width: 100%;
+    margin-top: -562px; /* videos are placed over the navbar gray background */
+    text-align: center;
+}
+@media screen and (max-width: 990px) {
+    section#main {
+        margin-top: -497px; /* tweaking #main content be closer to the navbar when it's bigger */
+    }
+}
+@media screen and (max-width: 770px) {
+    section#main {
+        margin-top: -350px; /* tweaking #main content be closer to the navbar when it's bigger */
+    }
+}
+
+#main iframe,
+#main ul {
+    height: 489px;
+    display: inline-block;
+}
+#main iframe {
+    width: 871px;
+    margin-left: 4px;
+}
+@media screen and (max-width: 1090px) {
+    #main iframe,
+    #main ul {
+        height: 458px;
+    }
+    #main iframe {
+        width: 815px;
+    }
+}
+@media screen and (max-width: 990px) {
+    #main iframe,
+    #main ul {
+        height: 326px;
+    }
+    #main iframe {
+        width: 580px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #main iframe,
+    #main ul {
+        height: 215px;
+    }
+    #main iframe {
+        width: 380px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #main iframe,
+    #main ul {
+        height: 191px;
+    }
+    #main iframe {
+        width: 340px;
+    }
+}
+
+#main ul {
+    list-style-type: none;
+    margin: 0;
+    overflow-y: hidden;
+    width: 115px;
+    padding: 0 0 0 8px;
+}
+
+#main ul li {
+    border: 2px solid #666;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+#main ul li.current {
     position: relative;
+    border-color: #ccc;
 }
 
-a {
+#main ul li.current:after {
+    content: "\f0da";
+    display: block;
+    left: 0px;
+    top: 35%;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    position: absolute;
+    color: #ccc;
+    font-size: 2em;
+}
+
+#blog article {
+    padding-left: 15px;
+    padding-right: 0;
+    width: 95%;
+}
+@media screen and (max-width: 990px) {
+    #blog article {
+        width: 100%;
+    }
+}
+
+/* Blogs section blocks */
+#blog h3 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+#blog h4 {
+    display: inline-block;
+    margin: 0;
+    border-width: 1px 0 0 1px;
+    border-style: dashed;
+    border-color: #cbcbcb;
+    margin-left: 0;
+    padding: 0;
+    height: 4em;
+    width: 40%;
+    vertical-align: middle;
+    padding: 3.5% 2%;
+    font-size: 1.3em;
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 770px) {
+    #blog h4 {
+        line-height: 1.1em;
+    }
+}
+
+#blog h4 em,
+#blog h4 em a {
+    font-style: italic;
+    color: #999;
+}
+
+#blog h4 > a:hover {
+    color: #3398CB;
+}
+
+#blog h4 em a:hover {
     text-decoration: underline;
 }
 
-#main {
-    border: 1px solid #cccccc;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.5)), color-stop(5%, rgba(255, 255, 255, 0.9)), color-stop(50%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 1)));
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 5%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
-    z-index: 10;
-    margin-top: -151px;
+#company p.lead {
+    padding-right: 45px;
 }
 
-#main,
-footer#site-links {
-    float: right;
+article p strong {
+    font-size: .95em;
+}
+
+#company p.lead strong span {
+    font-size: 1.5em;
+}
+
+article {
+    margin: 25px 15px;
+    font-family: proxima-nova,sans-serif;
+}
+
+article h2,
+article h3,
+#company p.lead strong {
+    font-family: Quadon-Bold, Georgia, serif;
+    font-weight: normal;
+}
+
+#company {
+    margin-top: 65px;
+}
+
+#company h3 {
+    font-size: 2.4em;
+    padding-right: 150px;
+}
+@media screen and (max-width: 770px) {
+    #company h3 {
+        font-size: 2.8em;
+        line-height: 1.1em;
+        padding-right: 55px;
+    }
+}
+
+#company p.lead,
+article p {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+}
+
+article h3,
+article p a {
+    color: #3398CB;
+}
+
+article p a {
+    font-weight: bold;
+}
+
+article p a {
+    text-decoration: underline;
+}
+
+article p a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+#company p.lead + p {
+    background: transparent url('../img/home/Emily-and-hifi.png') no-repeat center bottom;
+    padding-bottom: 500px;
+    padding-right: 30px;
+    background-size: contain; 
+}
+@media screen and (max-width: 770px) {
+    #company p.lead + p {
+        padding-bottom: 350px;
+    }
+}
+
+
+#company p.lead + p + p + p {
+    position: relative;
+    padding-right: 125px;
+}
+@media screen and (max-width: 770px) {
+    #company p.lead + p + p + p {
+        padding-right: 100px;
+    }
+}
+
+#company p.lead + p + p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/home/priovr-hand-v3-duotone.png');
+    right: -520px;
+    width: 800px;
+    height: 473px;
+}
+@media screen and (max-width: 990px) {
+    #company p.lead + p + p:after {
+        right: -660px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #company p.lead + p + p:after {
+        right: -685px;
+        margin-top: -20px;
+    }
+}
+
+#company article:nth-child(2) h3:first-child + p {
+    padding-right: 220px
+}
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:first-child + p {
+        padding-right: 50px
+    }
+}
+
+#company article:first-child p:last-child {
+    font-weight: bold;
+    padding-right: 160px;
+}
+
+#company article:nth-child(2) h3:first-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/home/avatar-eye-contact.svg') no-repeat center center;
+    margin-top: 16px;
+    width: 728px;
+    height: 109px;
     margin-left: -100px;
 }
-
-#main,
-footer#site-links {
-    margin-right: 113px;
-    
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:first-child:after {
+        margin-top: 35px;
+    }
 }
 
-#main {
-    width: 635px;
+#company article:nth-child(2) h3:nth-child(3) + p {
+    padding-right: 60px;
+    padding-bottom: 400px;
+    background: transparent url('../img/home/octal-codes.svg') no-repeat center bottom;
+    background-size: 630px 390px;
+}
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-bottom: 258px;
+        padding-right: 20px;
+        background-size: 400px 248px;
+    }
 }
 
-footer#site-links > #social {
-    width: 637px;
-    margin-right: 0;
+#company article:nth-child(2) h3:nth-child(5) + p {
+    padding-right: 25px;
+    padding-bottom: 306px;
+    background: transparent url('../img/home/scalability.svg') no-repeat center bottom;
+    background-size: 630px 296px;
+}
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        padding-bottom: 198px;
+        background-size: 400px 188px;
+    }
 }
 
-#main > article,
-#jobs {
-    padding: 15px 55px 15px 72px;
+#company article:nth-child(2) h3:nth-child(7) + p {
+    padding-right: 40px;
+    padding-bottom: 350px;
+}
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:nth-child(7) + p {
+        padding-bottom: 220px;
+    }
 }
 
-#main > article {
-    padding-top: 35px;
-    background: none transparent;
-    border: 0;
-    margin: 0;
-}
-
-#main > article h2 {
-    color: #3698bf;
-}
-
-#main p.image {
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
-#main .image img {
-    margin: 0 auto;
-}
-
-#main ol {
-    margin-left: 35px;
-}
-
-/* flocking dots background  */
-#flocking {
-    position: relative;
-    width: 100%;
-}
-
-#flocking > img,
-#flocking > figcaption {
+#device-network svg {
     position: absolute;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    margin-top: -380px;
 }
-
-#flocking > img {
-    top: -1170px;
-    left: -300px;
+@media screen and (max-width: 770px) {
+    #device-network svg {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 380px;
+        margin-top: -310px;
+    }
 }
-
-#flocking > img {
-    z-index: -10;
+#device-network svg path,
+#device-network svg line {
+    stroke: #99CCCC;
 }
-
-#flocking > figcaption {
-    width: 100px;
-    top: -250px;
-    padding-left: 22px;
-    left: -250px;
+#device-network svg line {
+    fill: none;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
 }
-
-a.grey-link {
-    font-size: 1.3em;
-    color: #cccccc;
-    text-decoration: underline;
+#device-network svg path {
+    fill: #3398CB;
 }
-
-a.grey-link:hover {
-    text-decoration: none;
-    color: #ed6f3f;
-}
-
-a.grey-link:active {
-    color: #000000;
+#device-network svg path[idle] {
+    opacity: 0.25;
 }
 
 /* Team section styling */
-#team {
-    width: 283px;
-    background-color: #ffffff;
-    padding-left: 25px;
-    padding-top: 46px;
-    border: 1px solid #cccccc;
-    box-shadow: 5px 5px 20px #eeeeee;
-    z-index: 20;
-    margin-top: -151px;
-    margin-left: 63px;
+#team > article > h2 {
+    border-bottom: 1px solid #DADADA;
+    background: transparent url('../img/home/gg-bridge.svg') 350px center no-repeat;
+    padding-top: 70px;
+    background-size: 82px 79px;
 }
 
-#team {
-    float: left;
+#team > article > h2:after {
+    content: "We are located in San Francisco";
+    color: #ccc;
+    display: block;
+    width: 134px;
+    font-size: 0.5em;
+    position: absolute;
+    left: 632px;
+    margin-top: -50px;
+    line-height: 1.3em;
 }
 
-#team > div {
-    margin: 0;
-    padding: 0;
-}
-
-#team h2 {
-    font-size: 1.7em;
-    color: #cccccc;
-    font-weight: normal;
-    margin: -17px 17px 0 28px;
-    color: #333333;
-}
-
-#team h2,
 #team h3 + p {
     font-family: proxima-nova, sans-serif;    
 }
@@ -232,23 +464,42 @@ a.grey-link:active {
     margin: 0;
 }
 
+#team li {
+    width: 43%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    min-height: 90px;
+}
+#team li:nth-child(2n+1) {
+    margin-right: 10%;
+}
+@media screen and (max-width: 770px) {
+    #team li {
+        margin-bottom: 5px;
+    }
+}
+
 #team figure {
     position: relative;
-    margin: 0 0 33px 0;
-    width: 80%;
+    margin: 0;
+}
+@media screen and (max-width: 770px) {
+    #team figure {
+        margin-bottom: 0;
+    }
 }
 
 #team img,
 #youimg figure > div {
     position: absolute;
-    left: -72px;
     width: 90px;
     height: 90px;   
 }
 
 #team h3, 
 #team figure > p {
-    margin-left: 30px;
+    margin-left: 100px;
     margin-top: 5px;
 }
 
@@ -261,12 +512,13 @@ a.grey-link:active {
 }
 
 #team figure > p {
-    font-size: 1.2em;
+    font-size: 1.15em;
+    line-height: 1.3em;
     color: #666666;
 }
 
 #youimg figure > div {
-    background-color: #3698bf; 
+    border: 2px solid #3698bf; 
 }
 
 #team a {
@@ -277,744 +529,218 @@ a.grey-link:active {
     color: #ed6f3f;
 }
 
-/* disco mode styling */
-.fade-container, 
-.disco-container {
-    display: none;
+#investors {
+    background: transparent url('../img/home/flocking-investor-bg.jpg') center center no-repeat;
+    background-size: contain;
 }
 
-.fade-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(51, 51, 51, 0.3);
-    z-index: 1;
-}
-
-#team.on-top {
-    z-index: 10100;
-    position: absolute;
-    box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-p.person-disco a {
-    z-index: 12000;
-    opacity: 0.8;
-    display: inline-block;
-    width: 22px;
-    height: 18px;
-    cursor: pointer;
-}
-
-p.person-disco a.disabled {
-    opacity: 0.1;
-    cursor: default;
-}
-
-p.person-disco a.active {
-    background-position: -22px;
-}
-
-.person-disco-pause {
-    background: url(../img/pause.png) no-repeat left top;
-}
-
-.person-disco-stop {
-    background: url(../img/stop.png) no-repeat left top;
-}
-
-.person-disco-play {
-    background: url(../img/play.png) no-repeat left top;
-}
-
-.person-disco-play:hover {
-    opacity: 1;
-}
-
-#team figure {
-    margin-bottom: 45px; 
-}
-
-.disco-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1100;
-}
-
-.disco-circle {
-    display: block;
-    position: absolute;
-    background: yellow;
-    border-radius: 100%;
-    box-shadow: 0px 0px 40px;
-    opacity: 0;
-    width: 150px;
-    height: 150px;
-    z-index: 12100;
-}
-
-.disco-circle-1.play {
-    top: 600px;
-    transform: scale(1.9);
-    -o-transform: scale(1.9);
-    -moz-transform: scale(1.9);
-    -webkit-transform: scale(1.9);
-    opacity: 0.5;
-    animation: movelights 4s linear infinite;
-    -o-animation: movelights 4s linear infinite;
-    -moz-animation: movelights 4s linear infinite;
-    -webkit-animation: movelights 4s linear infinite;
-}
-
-.disco-circle-2.play {
-    top: 200px;
-    transform: scale(1.6);
-    -o-transform: scale(1.6);
-    -moz-transform: scale(1.6);
-    -webkit-transform: scale(1.6);
-    opacity: 0.5;
-    animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
-    -o-animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
-    -moz-animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
-    -webkit-animation: movelights 6s ease-in-out infinite, verticalMoveTop 4s ease-in-out infinite;
-}
-
-.disco-circle-3.play {
-    top: 350px;
-    transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    opacity: 0.5;
-    animation: movelights 8s ease-in-out infinite;
-    -o-animation: movelights 8s ease-in-out infinite;
-    -moz-animation: movelights 8s ease-in-out infinite;
-    -webkit-animation: movelights 8s ease-in-out infinite;
-}
-
-.disco-circle-4.play {
-    top: 450px;
-    transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    opacity: 0.5;
-    animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
-    -o-animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
-    -moz-animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
-    -webkit-animation: movelights 6s ease-in-out infinite, verticalMoveBottom 4s ease-in-out infinite;
-}
-
-#main.to-bg {
+#investors > article,
+#advisors > article {
     position: relative;
-    z-index: 0;
+    max-width: 715px;
+    margin: 0 auto;
 }
 
-@keyframes movelights { 
-    0% { 
-      margin-left: -155%;
-    }
-    100% { 
-      margin-left: 110%;
-    }
+#investors > article li,
+#advisors > article li {
+    list-style: none;
+    color: #333333;
+    font-size: .81em;
+    position: absolute;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
-@-o-keyframes movelights { 
-    0% { 
-      margin-left: -155%;
-    }
-    100% { 
-      margin-left: 110%;
-    }
+#investors > article li {
+    height: 158px;    
+    padding: 19px 33px;
+    width: 165px;
 }
-
-@-webkit-keyframes movelights { 
-    0% { 
-      margin-left: -155%;
-    }
-    100% { 
-      margin-left: 110%;
-    }
-}
-
-@-moz-keyframes movelights { 
-    0% { 
-      margin-left: -155%;
-    }
-    100% { 
-      margin-left: 110%;
-    }
-}
-
-@keyframes verticalMoveTop { 
-    0% { 
-      top: -1%;
-    }
-    100% { 
-      top: 100%;
-    }
-}
-
-@-o-keyframes verticalMoveTop { 
-    0% { 
-      top: -1%;
-    }
-    100% { 
-      top: 100%;
-    }
-}
-
-@-webkit-keyframes verticalMoveTop { 
-    0% { 
-      top: -1%;
-    }
-    100% { 
-      top: 100%;
-    }
-}
-
-@-moz-keyframes verticalMoveTop { 
-    0% { 
-      top: -1%;
-    }
-    100% { 
-      top: 100%;
-    }
-}
-
-@keyframes verticalMoveBottom { 
-    0% { 
-      top: 100%;
-    }
-    100% { 
-      top: -1%;
-    }
-}
-
-@-o-keyframes verticalMoveBottom { 
-    0% { 
-      top: 100%;
-    }
-    100% { 
-      top: -1%;
-    }
-}
-
-@-webkit-keyframes verticalMoveBottom { 
-    0% { 
-      top: 100%;
-    }
-    100% { 
-      top: -1%;
-    }
-}
-
-@-moz-keyframes verticalMoveBottom { 
-    0% { 
-      top: 100%;
-    }
-    100% { 
-      top: -1%;
-    }
-}
-
-/**
- * Responsive sizes
- */
-@media screen and (max-width: 1090px) {
-    #main > article,
-    #jobs {
-        padding-left: 100px;
-    }
-    
-    #main > article p.lead {
-        width: 480px;
-        top: -740px;
-        font-size: 50px;
-        line-height: 60px;
-        left: -70px;
-    }
-
-    #alpha {
-        left: 185px;
-    }
-    
-    #main,
-    footer#site-links {
-        margin-right: 10px;
-    }
-}
-
-@media screen and (max-width: 970px) {
-
-    body {
-        background-position: center 800px;
-    }
-    
-    body header#navbar {
-        background-position: 40px 150px;
-        width: auto;
-    }
-    
-    #main > article p.lead {
-        width: 345px;
-        top: -555px;
-        font-size: 36px;
-        left: 205px;
-        line-height: 45px;
-    }
-
-    #alpha {
-        left: 100px;
-        top: -230px;
-    }
-    
-    #team,
-    #main {
-        width: 100%;
-    }
-    
-    footer#site-links p,
-    footer#site-links #social {
-        width: auto;
-    } 
-    
-    #main, 
-    footer#site-links {
-        float: none;
-    }
-    
-    #main {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    #team {
-        float: none;
-        margin: 0;
-        border: 0;
-        background: transparent;
-        box-shadow: none;
-    }
-    
-    #team h2 {
-        margin-left: 0;
-    }
-    
-    #team > div {
-        width: 100%;
-        position: relative;
-    }
-    
-    #team ul:after {
-        display: block;
-        float: none;
-        content: '';
-    }
-    
-    #team li {
-        width: 48%;
-        display: inline-block;
-        vertical-align: top;
-        margin-bottom: 15px;
-        min-height: 90px;
-    }
-
-    #team figure {
-        width: 100%;
-        margin: 0;
-    }
-    
-    #team img,
-    #youimg figure > div {
-        left: 5px;
-    }
-    
-    #team h3, 
-    #team figure > p {
-        margin-left: 100px;
-    }
-    
-    #team figure > p {
-        font-size: .8em;
-        line-height: 1.3em;
-    }
-    
-    .person-disco {
-        display: none;
-    }
-    
-    #main {
-        margin-top: -350px;
-        border: 0;
-    }
-   
-    #main > article,
-    #jobs,
-    #team {
-        padding: 5px 25px 5px 50px;
-    }
-
-    #main > article,
-    #jobs {
-        font-size: 1.65em;
-    }
-    
-    #main > article {
-        padding-top: 15px;
-    }
-    
-    #main p.image {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
-    #octal-address,
-    #data-transmission {
-        width: 40%;
-        margin: 20px;
-    }
-
-    #data-transmission + p {
-        padding-top: 45px;
-    }
-    
-    #data-transmission + p:after {
-        clear: both;
-        content: '';
-        display: block;
-    }
-
-    #octal-address {
-        float: right;
-    }
-
-    #data-transmission {
-        float: left;
-    }
-    
-    #flocking {
-        display: none;
-    }
-    
-    a.grey-link {
-        font-size: 1.1em;
-    }
-    
-    footer#site-links {
-        margin: 0 auto;
-    }
-    
-    div#social p {
-        border-right: 0 none;
-        border-left: 0 none;
-    }
-}
- 
 @media screen and (max-width: 770px) {
-    body {
-        background-position: center 900px;
+    #investors > article li {
+        top: -60px;
     }
-    
-    body header#navbar {
-        height: 820px;
-        background-position: 30px 150px;
-        width: auto;
-    }
-        
-    #main > article p.lead {
-        width: 265px;
-        top: -520px;
-        font-size: 28px;
-        left: 120px;
-        line-height: 35px;
-    }
-    
-    #alpha {
-        left: 44px;
-        top: -260px;
-    }
-    
-    #alpha > p {
-        font-size: 14px;
-    }
+}
 
-    #container {
-        background-position: center 100px;
+#advisors > article li {
+    height: 240px;    
+    padding: 10px;
+    width: 200px;
+}
+
+#investors > article li h3,
+#advisors > article li h3 {
+    line-height: 120%;
+}
+
+#investors > article li h3,
+#investors > article li:nth-child(5) p {
+    font-family: Quadon-Bold, Georgia, serif;
+    font-weight: normal;
+}
+
+#advisors > article li h3 {
+    font-size: 1.5em;
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li h3 {
+        font-size: 2.3em;
     }
-    
-    #team,
-    #main {
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+}
+
+#investors > article li p {
+    padding-top: 0.8em;
+    font-family: proxima-nova, sans-serif;
+    color: #333333;
+    font-size: 0.75em;
+}
+
+#investors > article li h3 {
+    font-size: 3em;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li h3 {
+        font-size: 4.5em;
     }
-    
-    #team {
-        margin-top: 0;
-        padding: 0;
-        border: 0;
-        background: transparent;
-        box-shadow: none;
+}
+#advisors > article li a > figure {
+    margin: 0;
+}
+
+#investors > article li:nth-child(1) {
+    z-index: 200;
+    left: -80px;
+}
+
+#investors > article li:nth-child(2) {
+    z-index: 199;
+    left: 130px;
+    margin-top: 12px;
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+#investors > article li:nth-child(3) {
+    z-index: 198;
+    left: 354px;
+    margin-top: 12px;
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+#investors > article li:nth-child(4) {
+    z-index: 196;
+    left: 38px;
+    margin-top: 181px;
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+#investors > article li:nth-child(5) {
+    z-index: 197;
+    left: 248px;
+    margin-top: 196px;
+    padding: 24px 19px 10px 25px;
+    width: 190px;
+}
+
+#investors > article li:nth-child(5) p {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(5) p {
+        font-size: 2.7em;
     }
-    
-    #team h2 {
-        margin-left: 0;
+}
+
+#advisors > article li:nth-child(1) {
+    z-index: 199;
+    left: 55px;
+}
+
+#advisors > article li:nth-child(2) {
+    z-index: 200;
+    left: 245px;
+    margin-top: 35px;
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+#advisors > article li:nth-child(3) {
+    z-index: 199;
+    left: 455px;
+    margin-top: 20px;
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+#investors > article > ul {
+    height: 455px;
+}
+@media screen and (max-width: 770px) {
+    #investors > article > ul {
+        height: 350px;
     }
-    
-    #team > div {
-        width: 100%;
-        position: relative;
+}
+
+#advisors > article > ul {
+    height: 350px;
+}
+@media screen and (max-width: 770px) {
+    #advisors > article > ul {
+        margin-top: -30px;
+        height: 250px;
     }
-    
-    #team ul:after {
-        display: block;
-        float: none;
-        content: '';
-    }
-    
-    #team li {
-        width: 48%;
-        display: inline-block;
-        vertical-align: top;
-        margin-bottom: 10px;
-    }
-    
-    #team figure {
-        width: 100%;
-        margin: 0;
-    }
-    
-    #team img,
-    #youimg figure > div {
-        left: 5px;
-    }
-    
-    #team h3, 
-    #team figure > p {
-        margin-left: 100px;
-    }
-    
-    #team figure > p {
-        font-size: .7em;
-        line-height: 1.2em;
-    }
-    
-    #main {
-        margin-top: -150px;
-        border: 0;
-    }
-    
-    #main > article,
-    #jobs {
-        font-size: 1.45em;
-    }
-    
-    #main > article,
-    #jobs,
-    #team {
-        padding: 10px;
-    }
-    
-    #main p.image {
+}
+
+#investors > article > h2 {
+    margin-bottom: 63px;
+}
+@media screen and (max-width: 770px) {
+    #investors > article > h2 {
         margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    
-    #octal-address,
-    #data-transmission {
-        width: 40%;
-        margin: 20px;
-    }
-
-    #octal-address {
-        float: right;
-    }
-
-    #data-transmission {
-        float: left;
-    }
-    
-    #flocking {
-        display: none;
-    }
-    
-    a.grey-link {
-        font-size: 1.1em;
-    }
-
-    footer#site-links {
-        float: none;
-        margin: inherit;
-    }
-    
-    footer#site-links #social p {
-        width: 43%;
-    }
-}
- 
-@media screen and (max-width: 530px) {
-    body {
-        background-position: center 800px;
-        padding: 10px;
-    }
-    
-    body header#navbar {
-        height: 550px;
-        background-position: 20px 120px;
-        width: auto;
-    }
-        
-    #main > article p.lead {
-        width: 213px;
-        top: -390px;
-        font-size: 22px;
-        left: 25px;
-        line-height: 28px;
-    }
-
-    #alpha {
-        left: 0;
-        top: -165px;
-        padding: 0 15px 30px;
-    }
-
-    #alpha > p {
-        font-size: 9px;
-        margin-bottom: 0px;
-        line-height: 15px;
-    }
-    
-    #alpha a.button {
-        margin-top: 10px;
-        font-size: 11px;
-        padding: 2px 5px;
-    }
-
-    
-    #main > article,
-    #jobs,
-    #team {
-        padding: 10px;
-    }
-    
-    #team,
-    #main {
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-    
-    #team {
-        margin-top: 0;
-        border: 0;
-        background: transparent;
-        box-shadow: none;
-    }
-    
-    #team h2 {
-        margin-left: 0;
-    }
-    
-    #team > div {
-        width: 100%;
-        position: relative;
-    }
-    
-    #team ul:after {
-        display: block;
-        float: none;
-        content: '';
-    }
-    
-    #team li {
-        width: 48%;
-        display: inline-block;
-        vertical-align: top;
-        margin-bottom: 10px;
-    }
-    
-    #team figure {
-        width: 100%;
-        margin: 0;
-    }
-    
-    #team figure > img,
-    #youimg figure > div {
-        display: none;
-    }
-    
-    #team h3, 
-    #team figure > p {
-        margin-left: 0;
-    }
-    
-    #team h3 {
-        font-size: 1.1em;
-    }
-    
-    #team figure > p {
-        font-size: .7em;
-        line-height: 1.4em;
-        padding-right: 10px;
-        margin-bottom: -40px;
-    }
-    
-    #main {
-        margin-top: -80px;
-    }
-    
-    #main > article,
-    #jobs {
-        font-size: 1em;
-    }
-    
-    #main p.image {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }    
-    
-    #data-transmission {
-        width: 40%;
-        margin: 20px;
-    }
-
-    #octal-address {
-        float: right;
-    }
-    #data-transmission {
-
-        float: left;
-    }
-    
-    #flocking {
-        display: none;
-    }
-    
-    a.grey-link {
-        font-size: .8em;
-    }
-
-    footer#site-links {
-        margin-top: 50px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        padding: 0;
-    }
+#investors > article > ul {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    margin-left: 88px;
+}
 
-    audio {
-    	display: none;
-    	width: 0;
+@media screen and (max-width: 770px) {
+    #investors > article > ul,
+    #advisors > article > ul {
+        -moz-transform: scale(.65);
+        -ms-transform: scale(.65);
+        -o-transform: scale(.65);
+        -webkit-transform: scale(.65);
+        transform: scale(.65);
+    }
+    #investors > article > ul {
+        margin-left: 0px;
+    }
+    #advisors > article > ul {
+        margin-left: -100px;
     }
 }

@@ -6,18 +6,14 @@ USERNAME=`whoami`
 BLOG_DIRECTORY=`dirname "$CURRENT_PATH"`
 BLOG_DIRECTORY=${BLOG_DIRECTORY##*/}
 
-DB_HOST=dev-db-master.highfidelity.io
-DB_USER=dev_hifiio
-DB_NAME=dev_highfidelityio
-DB_PASS=unsecure
+DB_HOST=${HIFIWEB_WP_DB_HOST:="dev-db-master.highfidelity.io"}
+DB_USER=${HIFIWEB_WP_DB_USER:="dev_hifiio"}
+DB_NAME=${HIFIWEB_WP_DB_NAME:="dev_highfidelityio"}
+DB_PASS=${HIFIWEB_WP_DB_PASS:="unsecure"}
 
-WP_URL=http://dev.highfidelity.io/~$USERNAME/$BLOG_DIRECTORY/blog/
-WP_SITE_DEFINE="define('WP_SITEURL', '${WP_URL}');"
-WP_HOME_DEFINE="define('WP_HOME', '${WP_URL}');"
-WP_NAVBAR_VIEW_DEFINE="define('WP_NAVBAR_VIEW', dirname(__FILE__) . '/../views/layout/navbar.php');"
-WP_NAVBAR_CSS_DEFINE="define('WP_NAVBAR_CSS', '${WP_URL}../css/navbar.css');"
-WP_FOOTER_VIEW_DEFINE="define('WP_FOOTER_VIEW', dirname(__FILE__) . '/../views/layout/footer.php');"
-WP_FOOTER_CSS_DEFINE="define('WP_FOOTER_CSS', '${WP_URL}../css/footer.css');"
+WP_SERVER_NAME=${HIFIWEB_WP_SERVER_NAME:="dev.highfidelity.io"}
+
+WP_URL=https://${WP_SERVER_NAME}/~$USERNAME/$BLOG_DIRECTORY/blog/
 
 UPDATE_DB=0
 
@@ -52,12 +48,18 @@ fi
 
 cp wp-config.php-default wp-config.php
 cp db-config.php-default db-config.php
-echo $WP_SITE_DEFINE >> wp-config.php
-echo $WP_HOME_DEFINE >> wp-config.php
-echo $WP_NAVBAR_VIEW_DEFINE >> wp-config.php
-echo $WP_NAVBAR_CSS_DEFINE >> wp-config.php
-echo $WP_FOOTER_VIEW_DEFINE >> wp-config.php
-echo $WP_FOOTER_CSS_DEFINE >> wp-config.php
+echo "define('DB_NAME', '${DB_NAME}');"  >> wp-config.php
+echo "define('DB_USER', '${DB_USER}');"  >> wp-config.php
+echo "define('DB_PASSWORD', '${DB_PASS}');"  >> wp-config.php
+echo "define('DB_HOST', '${DB_HOST}');"  >> wp-config.php
+echo "define('WP_SITEURL', '${WP_URL}');" >> wp-config.php
+echo "define('WP_HOME', '${WP_URL}');" >> wp-config.php
+echo "define('WP_NAVBAR_VIEW', dirname(__FILE__) . '/../views/layout/navbar.php');" >> wp-config.php
+echo "define('WP_NAVBAR_CSS', '${WP_URL}../css/navbar.css');" >> wp-config.php
+echo "define('WP_FOOTER_VIEW', dirname(__FILE__) . '/../views/layout/footer.php');" >> wp-config.php
+echo "define('WP_FOOTER_CSS', '${WP_URL}../css/footer.css');" >> wp-config.php
+echo "require_once(ABSPATH . 'wp-settings.php');" >> wp-config.php
+
 mkdir wp-content/uploads
 chmod 777 wp-content/uploads
 cp wp-content/plugins/tantan-s3-cloudfront/wordpress-s3/config.php-default wp-content/plugins/tantan-s3-cloudfront/wordpress-s3/config.php

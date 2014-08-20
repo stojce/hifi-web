@@ -33,5 +33,7 @@ defineOnce('TEMP_DIR', dirname(__FILE__) . '/tmp');
 defineOnce('MC_ALPHA_SUBSCRIBE_API_KEY', 'c8b29f2f7e16cd5292a1b04b4310216f-us2');
 defineOnce('MC_ALPHA_SUBSCRIBE_LIST_ID', '56eb53e74a');
 
+defineOnce('VIMEO_NICKNAME', 'highfidelityinc');
+
 require_once('vendor/autoload.php');
 require_once('functions.php');

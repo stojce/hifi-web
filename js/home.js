@@ -5,117 +5,235 @@ var home = {
         unsupported_warning: true
     },
 
+    PARALLAX_MIN_WIDTH: 770,
+    skrollr: null,
+    /*
+    networkDevices: [],
+    offlineDevices: [],
+    networkDevicesFrames: 4,
+    networkDevicesCurrentFrame: 0,
+    networkDevicesFrameWidth: null,
+    */
+
+    processedDevices: [],
+
     init: function() {
-        // outer fade container, shown on disco mode 
-        $('<div>').addClass('fade-container').prependTo('body');
+        //home.initDeviceNetwork();
 
-        $('.person-disco-stop').on('click', function() {
-            var stopButton = $(this);
-            if (! stopButton.hasClass('active')) {
-                // nothing to do when clicking on a disabled button
-                return;
-            }
-            home.toggleDisco(stopButton, 'hide', true);
-        });
-
-        $('.person-disco-pause').click(function() {
-            var pauseButton = $(this);
-            if (! pauseButton.hasClass('active')) {
-                // nothing to do when clicking on a disabled button
-                return;
-            }
-            home.toggleDisco(pauseButton, 'hide');
-        });
-
-        $('.person-disco-play').click(function() {
-            var playButton = $(this);
-            if (! playButton.hasClass('active') || $('body').hasClass('shadowed')) {
-                // nothing to do when either clicking on a disabled play button
-                // or when also another character's audio is being played
-                return;
-            }
-            home.toggleDisco(playButton, 'show');
-
-            // hide disco lights when a track ends
-            playButton.parent().next('audio').get(0).addEventListener("ended", function() {
-                var stopButton = $('.person-disco-stop', playButton.parent());
-                home.toggleDisco(stopButton, 'hide', true);
-            });
-        });
+        // let's delay parallax initialization a bit in order to let it calculate 
+        // the content height better once it's fully loaded
+        setTimeout(function() {
+            home.initParallax();
+            home.initVimeoPlayer();
+            window.addEventListener('resize', home.handleResize, false);
+        }, 2000);
     },
 
-    toggleDisco: function(button, action, ended) {
-        if (action == 'hide') {
-            home.hideDiscoLights();
-            $('.fade-container').fadeOut(200, function() {
-                // dom changes made by 'show' action are undone on 'hide' action...
-                $('#main').removeClass('to-bg');
-                $('#team').removeClass('on-top');
-                $('body').removeClass('shadowed');
-                $('.person-disco a').removeClass('disabled');
-                // ... as well as audio volume 
-                button.parent().next('audio').animate({volume: 0});                
-                button.parent().next('audio').get(0).pause();
-                if (ended) {
-                    // if disco is being hidden because of a track ending we
-                    // need to reset it's current position to its begining
-                    // in order to be able to re-play it
-                    button.parent().next('audio').get(0).currentTime = 0;
-                }
-            });
-        } else { // action == 'show' // hey Mr. DJ, put a record on
-            $('.fade-container').fadeIn(200, function() {
-                button.parent().next('audio').get(0).volume = 1;
-                button.parent().next('audio').get(0).play();
-                $('.person-disco-play').not(button).addClass('disabled');
-                $('.person-disco-pause, .person-disco-stop').not('.active').addClass('disabled');
-                home.showDiscoLights();
-            });
-            // turn off the lights, bring da team up
-            $('body').addClass('shadowed');
-            $('#main').addClass('to-bg');
-            $('#team').addClass('on-top');
+    initVimeoPlayer: function() {
+        $('#main ul a').click(function() {
+            $('#main ul li.current').removeClass('current');
+            home.playVideo($(this).attr('href'), true);
+            $(this).parent().addClass('current');
+            return false;
+        });
+        home.playVideo($('#main ul a:eq(0)').attr('href'), false);
+    },
+
+    playVideo: function(url, autoplay) {
+        var id = url.substr(url.lastIndexOf('/') + 1);
+        var src = '//player.vimeo.com/video/' + id + '?title=0&amp;byline=0&amp;portrait=0&autoplay=' + autoplay;
+        $('#main iframe').attr('src', src);
+        return false;
+    },
+
+    initParallax: function() {
+        if (!skrollr) {
+            return;
         }
-        $('a', button.parent()).toggleClass('active');
+        if ($(window).outerWidth() >= home.PARALLAX_MIN_WIDTH) {
+            home.startParallax();
+        }
+    },
+
+
+    /**
+    * Starts parallax scrolling and do some previous needed dom changes
+    */
+    startParallax: function() {
+        if (home.skrollr) {
+            return;
+        }
+        home.skrollr = skrollr.init();
     },
 
     /**
-     * Circles that appears to be disco lights reflectors from 
-     * backside pointing to the content
-     */
-    showDiscoLights: function() {
-        $('.disco-container').show();
-        var lightColors = ['#FFFFCC', '#CCFFCC', '#FFCCCC'];
-        $('.disco-circle').each(function(index) {
-            // will add random coloring/positioning and speed for lights here.
-            var lightColor = lightColors[Math.floor(Math.random() * lightColors.length)];
-            $('.disco-circle-' + index)
-                .addClass('play')
-                .css('background-color', lightColor)
-                .css('color', lightColor);
-        });
-    },
-
-    hideDiscoLights: function() {
-        $('.disco-container').hide();
-        $('.disco-circle').removeClass('play');
-    },
-    
-    isCompatible: function() {
-        var audio_element = document.createElement('audio'); 
-        var ret = false;
-        if (audio_element.canPlayType) {
-            var canPlayMp3 = !!audio_element.canPlayType 
-                && "" != audio_element.canPlayType('audio/mpeg');
-            var canPlayOgg = !!audio_element.canPlayType 
-                && "" != audio_element.canPlayType('audio/ogg; codecs="vorbis"');
-            ret = canPlayMp3 || canPlayOgg;
+    * Destroys changes/resources made by startParallax
+    */
+    stopParallax: function() {
+        if (home.skrollr) {
+            home.skrollr.destroy();
         }
+        home.skrollr = null;
+    },
+    /**
+    * Parallax scrolling tweaks on resize, it's actually re-starting
+    */
+    handleResize: function() {
+        if ($(window).outerWidth() < home.PARALLAX_MIN_WIDTH) {
+            home.stopParallax();
+        } else {
+            home.startParallax();
+        }
+    },
 
-        if (!ret && Utils.isMobile()) {
-            // won't show the unsupported warning on mobile devices
-            home.options.unsupported_warning = false;
+    /*
+    initDeviceNetwork: function() {
+        var height = $(document).innerHeight();
+        var devices = home.randomEighthDevices();
+        for(var i = 0; i < devices.length; i++) {
+            var shutdownFrom = Math.floor((Math.random() * height - 500) + 1500),
+            var shutdownTo = shutdownFrom + Math.floor((Math.random() * 40) + 200);
+            devices[i].attr('data-0', 'visibility: visible');
+            devices[i].attr('data-'  + (shutdownFrom - 1), 'visibility: visible');
+            devices[i].attr('data-'  + shutdownFrom, 'visibility: hidden');
+            devices[i].attr('data-'  + (shutdownTo -1), 'visibility: hidden');
+            devices[i].attr('data-'  + shutdownTo, 'visibility: visible');
+
+            shutdownFrom = shutdownTo + Math.floor((Math.random() * 300) + 100);
+            shutdownTo = shutdownFrom + Math.floor((Math.random() * 40) + 200);
+            devices[i].attr('data-0', 'visibility: visible');
+            devices[i].attr('data-'  + (shutdownFrom - 1), 'visibility: visible');
+            devices[i].attr('data-'  + shutdownFrom, 'visibility: hidden');
+            devices[i].attr('data-'  + (shutdownTo -1), 'visibility: hidden');
+            devices[i].attr('data-'  + shutdownTo, 'visibility: visible');
+
+            shutdownFrom = shutdownTo + Math.floor((Math.random() * 300) + 100);
+            shutdownTo = shutdownFrom + Math.floor((Math.random() * 40) + 200);
+            devices[i].attr('data-0', 'visibility: visible');
+            devices[i].attr('data-'  + (shutdownFrom - 1), 'visibility: visible');
+            devices[i].attr('data-'  + shutdownFrom, 'visibility: hidden');
+            devices[i].attr('data-'  + (shutdownTo -1), 'visibility: hidden');
+            devices[i].attr('data-'  + shutdownTo, 'visibility: visible');
+
+            home.processedDevices.push(devices[i]);
+        }
+    },
+    */
+
+    randomEighthDevices: function(not_processed_before) {
+        var deviceElements = $('#device-network svg path');
+        var ret = [];
+        for(var i = 0; i < deviceElements.length / 8; i++) {
+            randomDeviceIndex = Math.floor(Math.random() * deviceElements.length);
+            ret.push(deviceElements.get(randomDeviceIndex));
         }
         return ret;
+    },
+
+    /*
+    initDeviceNetwork: function() {
+        // intialize network devices array
+        home.networkDevices = [];
+        var deviceElements = $('#device-network svg path');
+        for (var i = 0; i < deviceElements.length; i++) {
+            var element = deviceElements[i];
+            var device = {
+                hidden: false,
+                element: element,
+                hideAt: Date.now() + Math.floor((Math.random() * 8000) + 5000),
+                showAt: null,
+                siblings: []
+            };
+            home.networkDevices.push(device);
+        }
+        home.networkDevicesFrameWidth = home.networkDevices.length / home.networkDevicesFrames;
+
+        // find device sibling paths
+        for (var i = 0; i < home.networkDevices.length; i++) {
+            var device = home.networkDevices[i];
+            var element = device.element;
+            var siblings = $(element).siblings('path');
+            var notPathSiblingsCount = $(element).siblings(':not(path)').length;
+            if (notPathSiblingsCount == 0) {
+                for (var s = 0; s < siblings.length; s++) {
+                    siblingDevice = home.findDeviceFromPathElement(siblings[s]);
+                    device.siblings.push(siblingDevice);
+                }
+            }
+        }
+
+        home.toggleGetworkDevicesFrame();
+        home.renderDeviceNetwork();
+    },
+
+    findDeviceFromPathElement: function(element) {
+        for (var i = 0; i < home.networkDevices.length; i++) {
+            if (home.networkDevices[i].element == element) {
+                return home.networkDevices[i];
+            }
+        }
+        return null;
+    },
+
+    toggleGetworkDevicesFrame: function() {
+        home.networkDevicesCurrentFrame = home.networkDevicesCurrentFrame + 1 >= home.networkDevicesFrames ? 0 : home.networkDevicesCurrentFrame + 1;
+        setTimeout(home.toggleGetworkDevicesFrame, 50);
+    },
+
+    renderDeviceNetwork: function() {
+        var start = home.networkDevicesCurrentFrame * home.networkDevicesFrameWidth;
+        var end = start + home.networkDevicesFrameWidth;
+        var devices = home.networkDevices.slice(start, end);
+        Utils.processLargeArrayAsync(devices, home.processNetworkDevice, 50);
+        setTimeout(function() {
+            home.animationFrame = Utils.requestAnimationFrame(home.renderDeviceNetwork);
+        }, 100);
+    },
+
+    processNetworkDevice: function(device) {
+        if (device.hidden) {
+            if (device.showAt < Date.now()) {
+                home.showDevice(device, true);
+            }
+        } else {
+            if (device.hideAt && device.hideAt < Date.now()) {
+                home.hideDevice(device, true);
+            } else if (!device.hideAt) {
+                device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
+            }
+        }
+    },
+
+    hideDevice: function(device, recurse) {
+        device.hideAt = null;
+        $(device.element).attr('idle', true);
+        device.hidden = true;
+        home.offlineDevices.push(device);
+        device.showAt =  Date.now() + Math.floor((Math.random() * 2000) + 1000);
+        if (recurse && device.siblings.length) {
+            for (var i = 0; i < device.siblings.length; i++) {
+                var siblingDevice = device.siblings[i];
+                home.hideDevice(siblingDevice, false);
+            }
+        }
+    },
+
+    showDevice: function(device, recurse) {
+        device.showAt = null;
+        $(device.element).removeAttr('idle');
+        device.hidden = false;
+        home.offlineDevices.splice(home.offlineDevices.indexOf(device), 1);
+        device.hideAt = Date.now() + Math.floor((Math.random() * 8000) + 5000);
+        if (recurse && device.siblings.length) {
+            for (var i = 0; i < device.siblings.length; i++) {
+                var siblingDevice = device.siblings[i];
+                home.showDevice(siblingDevice, false);
+            }
+        }
+    },
+    */
+
+    isCompatible: function() {
+        return true;
     }
 };
