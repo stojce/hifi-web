@@ -18,7 +18,7 @@ if (class_exists('View')) {
             </li>
             <li>
                 <a target="_blank" href="https://worklist.net" title="Worklist">
-                    <img src="img/wl-logo.svg">
+                    <img src="<?php echo $base_path; ?>img/wl-logo.svg">
                     <span>Worklist</span>
                 </a>
             </li>
