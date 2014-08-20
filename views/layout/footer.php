@@ -49,22 +49,22 @@ if (class_exists('View')) {
         </ul>
         <ul>
             <li>
-                <a href="#" title="Alpha">
+                <a href="<?php echo $base_path; ?>alpha" title="Alpha">
                     Alpha
                 </a>
             </li>
             <li>
-                <a href="#" title="Docs">
-                    Docs
+                <a href="http://twitter.com/highfidelityinc" title="Twitter">
+                    Twitter
                 </a>
             </li>
             <li>
-                <a href="#" title="Jobs">
+                <a href="<?php echo $base_path; ?>jobs" title="Jobs">
                     Jobs
                 </a>
             </li>
             <li>
-                <a href="#" title="Blog">
+                <a href="<?php echo $base_path; ?>blog/" title="Blog">
                     Blog
                 </a>
             </li>
