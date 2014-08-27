@@ -25,7 +25,7 @@ $posts = View::read('posts');
         <a href="<?php echo $post->guid; ?>" title="<?php echo $post->post_title; ?>">
           <?php echo $post->post_title; ?>
         </a>
-        <em>by <a href="<?php the_author_link(); ?>"><?php the_author(); ?></a> </em>
+        <em>by <a href="<?php echo get_author_posts_url($post->post_author); ?>"><?php the_author(); ?></a></em>
       </h4>
     <?php endforeach; ?>
   </article>
