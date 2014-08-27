@@ -164,7 +164,7 @@ $posts = View::read('posts');
           <img src="img/team/brad.png" class="img-circle" alt="Brad Hefta-Gaub" />
           <h3>Brad Hefta-Gaub</h3>
           <p>
-            Hacker Punk who runs <br/>
+            Hacker Punk who runs<br/>
             fifty miles for his coffee,</br>
             eggs, bacon, and gin.
           </p>
