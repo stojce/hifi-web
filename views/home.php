@@ -41,7 +41,7 @@ $posts = View::read('posts');
       We are currently Alpha testing. You'll find our
       <a href="https://github.com/highfidelity/hifi" target="_blank">code on GitHub</a>,
       so you can use it today as well as make open source contributions. 
-      <a href="#">We are hiring</a>.
+      <a href="./jobs">We are hiring</a>.
       You can also help with paid part-time development using our <a href="https://worklist.net">Worklist system</a>
     </p>
     <p>
