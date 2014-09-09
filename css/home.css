@@ -236,7 +236,27 @@ article p strong {
 }
 
 #company p.lead strong span {
-    font-size: 1.5em;
+    color: #3398CB;
+    position: relative;
+    padding-left: 42px;
+}
+#company p.lead strong span:before {
+    display: inline-block;
+    content: '';
+    width: 35px;
+    height: 35px;
+    background: transparent url('../img/logo-small-blue.svg') no-repeat center center;
+    position: absolute;
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #company p.lead strong span {
+        padding-left: 30px;
+    }
+    #company p.lead strong span:before {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 article {
