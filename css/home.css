@@ -194,13 +194,11 @@ section#main {
     margin: 0;
     border-width: 1px 0 0 1px;
     border-style: dashed;
-    border-color: #cbcbcb;
+    border-color: #D8D8D8;
     margin-left: 0;
-    padding: 0;
-    height: 4em;
     width: 40%;
     vertical-align: middle;
-    padding: 3.5% 2%;
+    padding: 1.3em;
     font-size: 1.3em;
     font-family: Georgia, serif;
     font-weight: normal;
