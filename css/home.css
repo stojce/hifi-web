@@ -35,11 +35,10 @@ header#navbar nav li a:hover {
     color: #ccc;
 }
 
-
 /* custom logo */
 header#navbar h1 img {
-    width: 76px;
-    margin-top: 2px;
+    width: 109px;
+    margin: 2px 0 0 2px;
 }
 
 #container > section {
@@ -78,7 +77,7 @@ section > article {
 section#main {
     position: absolute;
     width: 100%;
-    margin-top: -562px; /* videos are placed over the navbar gray background */
+    margin-top: -547px; /* videos are placed over the navbar gray background */
     text-align: center;
 }
 @media screen and (max-width: 990px) {
@@ -195,10 +194,10 @@ section#main {
     margin: 0;
     border-width: 1px 0 0 1px;
     border-style: dashed;
-    border-color: #cbcbcb;
+    border-color: #D8D8D8;
     margin-left: 0;
     padding: 0;
-    height: 4em;
+    height: 2em;
     width: 40%;
     vertical-align: middle;
     padding: 3.5% 2%;

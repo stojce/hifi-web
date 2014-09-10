@@ -38,7 +38,7 @@ $posts = View::read('posts');
       software architecture enables unlimited scalability of both content and audience.
     </p>
     <p>
-      We are currently Alpha testing. You'll find our
+      We are currently Alpha testing. Download our
       <a href="https://github.com/highfidelity/hifi" target="_blank">code on GitHub</a>,
       so you can use it today as well as make open source contributions. 
       <a href="./jobs">We are hiring</a>.
@@ -64,7 +64,7 @@ $posts = View::read('posts');
     <h3>Low-latency sensor based interaction between avatars</h3>
     <p>
       We are using inexpensive webcams and motion controllers to capture gaze, facial expressions,
-      and body language, which is then streamed at low latency along with high fidelity 3D positional
+      and body language, which is then streamed at low latency along with 3D positional
       audio to establish lifelike presence. We also use the Oculus Rift for full immersion, as well
       as hand and full body motion controllers.
     </p>
