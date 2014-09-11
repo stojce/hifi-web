@@ -206,6 +206,7 @@ section#main {
     font-family: Georgia, serif;
     font-weight: normal;
     position: relative;
+    overflow-y: hidden;
 }
 
 /* gradient effect for long blog titles that will take more than 2 lines */
