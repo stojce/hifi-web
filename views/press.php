@@ -7,9 +7,9 @@
         <ul>
             <li>
                 <blockquote>
-                    <em>The expressive faces looked</em> incredibly human-like,
-                    <em>which adds a whole other dimension to the
-                    interaction by invoking</em> emotion
+                    The expressive faces looked <em>incredibly human-like,</em>
+                    which adds a whole other dimension to the
+                    interaction by invoking <em>emotion</em>
                 </blockquote>
                 <cite>quoVice News</cite>
             </li>
@@ -22,6 +22,7 @@
             </li>
         </ul>
     </section>
+
     <div id="game-of-life">
         <!--
             GAME OF LIFE - http://pmav.eu
