@@ -15,8 +15,9 @@
             </li>
             <li>
                 <blockquote>
-                    With this incredibly innovative interface, <em>virtual realities</em>, once exclusive to the fantastical
-                    world of gaming, <em>may very well become an integral part of our daily lives</em>
+                    With this incredibly innovative interface, <em>virtual realities,</em> 
+                    once exclusive to the fantastical world of gaming, <em>may very well 
+                    become an integral part of our daily lives</em>
                 </blockquote>
                 <cite>CNET</cite>
             </li>
