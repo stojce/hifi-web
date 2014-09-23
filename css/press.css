@@ -58,14 +58,10 @@ h2,
     width: 1440px;
     position: absolute;
     left: 0;
-    animation-name: slidein;
-    animation-duration: 20s;
-    animation-timing-function: cubic-bezier(.14, .38, 0, 1.03);
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    anomation-fill-mode: forwards;
     padding: 0;
     margin: 0;
+    animation: slidein 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
+    -webkit-animation: slidein 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
 }
 
 #quotes li {
@@ -78,6 +74,28 @@ h2,
 }
 
 @keyframes slidein {
+    0% {
+        transform: translateX(0px);
+    }
+
+    48% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-715px);
+    }
+
+    98% {
+        transform: translateX(-715px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes slidein {
     0% {
         transform: translateX(0px);
     }
