@@ -1,0 +1,138 @@
+/**
+ * HighFidelity's press page styling
+ */
+
+#navbar {
+    position: relative;
+}
+
+#gofcanvas {
+    text-align: center;
+}
+
+#gofcanvas canvas {
+    margin: -145px auto 10px;
+    width: 450px;
+    height: 300px;
+}
+@media screen and (max-width: 770px) {
+   #gofcanvas canvas {
+        width: 520px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #gofcanvas canvas {
+        width: 480px;
+    }
+}
+
+#container {
+    position: static;
+}
+
+#main {
+    position: relative;
+    margin-top: -200px;
+}
+
+#game-of-life {
+    display: none;
+}
+
+h2,
+#quotes blockquote {
+    font-family: Quadon-Bold, Georgia, serif;
+}
+
+#quotes {
+    width: 715px;
+    height: 150px;
+    padding: 50px 0;
+    position: relative;
+    overflow-x: hidden;
+    border-top: 1px solid #dadada;
+}
+
+#quotes ul {
+    list-style-type: none;
+    width: 1440px;
+    position: absolute;
+    left: 0;
+    animation-name: slidein;
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(.14, .38, 0, 1.03);
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    anomation-fill-mode: forwards;
+    padding: 0;
+    margin: 0;
+}
+
+#quotes li {
+    display: inline-block;
+    width: 715px;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    vertical-align: top;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(0px);
+    }
+
+    48% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-715px);
+    }
+
+    98% {
+        transform: translateX(-715px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#quotes blockquote {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    font-size: 2.05em;
+    line-height: 1.2em;
+    color: #333;
+    font-weight: normal;
+}
+
+#quotes blockquote:before,
+#quotes blockquote:after,
+#quotes blockquote em {
+    color: #3698BF;
+}
+
+#quotes blockquote:before {
+    content: '\201C';
+}
+#quotes blockquote:after {
+    content: '.\201D';
+}
+#quotes blockquote:before,
+#quotes blockquote:after {
+    font-weight: normal;
+}
+
+#quotes blockquote + cite {
+    color: #dadada;
+}
+
+#quotes blockquote + cite:before {
+    content: '\2014';
+    display: inline-block;
+    margin-right: 5px;
+}
