@@ -114,8 +114,8 @@
       schemes : [
       {
         dead : '#FFFFFF',
-        trail : ['#F9F9F9'],
-        alive : ['#C7F2FF', '#99CCFF', '#C7F2FF', '#C7F2FF', '#C7F2FF', '#40BCE6', '#89E1FF', '#7BDEFF', '#95E5FF', '#A0E8FF', '#AAEAFF', '#3ca8cc', '#B2ECFF', '#BAEEFF', '#C1F0FF', '#C7F2FF']
+        trail : ['#4FC3EB', '#333333', '#B5FFFA', '#EEEEEE', '#B5FFFA ', '#FFFFFF', '#FFFFFF'],
+        alive : ['#FF0000', '#333333', '#FFFF00', '#EEEEEE ', '#CCCCCC', '#40BBE5', '#EEEEEE']
       },
 
       {
