@@ -19,7 +19,7 @@ if (class_exists('View')) {
                 <a href="<?php echo $base_path; ?>code" title="Code">Code</a>
             </li>
             <li>
-                <a href="http://twitter.com/highfidelityinc" title="Twitter">Twitter</a>
+                <a href="<?php echo $base_path; ?>press" title="Twitter">Press</a>
             </li>
         </ul>
         <h1 id="logo">
