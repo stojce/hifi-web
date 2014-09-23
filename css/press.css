@@ -12,8 +12,8 @@
 
 #gofcanvas canvas {
     margin: -145px auto 10px;
-    width: 450px;
-    height: 300px;
+    width: 715px;
+    height: 220px;
 }
 @media screen and (max-width: 770px) {
    #gofcanvas canvas {
@@ -32,7 +32,7 @@
 
 #main {
     position: relative;
-    margin-top: -200px;
+    margin-top: -75px;
 }
 
 #game-of-life {
@@ -47,7 +47,7 @@ h2,
 #quotes {
     width: 715px;
     height: 150px;
-    padding: 50px 0;
+    padding: 30px 0;
     position: relative;
     overflow-x: hidden;
     border-top: 1px solid #dadada;

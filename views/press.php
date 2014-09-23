@@ -1,5 +1,5 @@
 <section id="gofcanvas">
-    <canvas id="canvas" height="300" width="500"></canvas>
+    <canvas id="canvas" height="220" width="715"></canvas>
 </section>
 <div role="main" id="main">
     <h2>Press</h2>
@@ -23,7 +23,6 @@
             </li>
         </ul>
     </section>
-
     <div id="game-of-life">
         <!--
             GAME OF LIFE - http://pmav.eu
