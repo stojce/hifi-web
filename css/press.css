@@ -2,8 +2,21 @@
  * HighFidelity's press page styling
  */
 
-#navbar {
+body #navbar {
     position: relative;
+}
+
+body #navbar nav li {
+    border-color: #dadada;
+}
+
+body #navbar nav li a {
+    background: none transparent;
+    color: #ccc;
+}
+
+body #navbar nav li a[href$='/press'] {
+    color: #535353;
 }
 
 #gofcanvas {
@@ -188,9 +201,9 @@ h2,
     border-color: #dadada;
     border-style: solid;
     border-width: 0px;
-    width: 237px;
+    width: 267px;
     text-align: center;
-    padding: 30px;
+    padding: 30px 15px;
     vertical-align: top;
     font-size: 1.1em;
 }
@@ -211,40 +224,69 @@ h2,
 #references q {
     display: inline-block;
     padding-top: 80px;
+    position: relative;
+}
+#references q:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-color: transparent;
 }
-
 #references q[cite="cnet"] {
+    /* text rag padding tweaks */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#references q[cite="cnet"]:after {
     background-image: url("../img/press/cnet.svg");
     background-size: 65px 65px;
     background-position: center 10px;
-
-    /* text rag padding tweaks */
-    padding-left: 20px;
-    padding-right: 20px;
 }
 #references q[cite="new-scientist"] {
+    /* text rag padding tweaks */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#references q[cite="new-scientist"]:after {
     background-image: url("../img/press/new-scientist.png");
     background-size: 150px 32px;
     background-position: center 30px;
-
-    /* text rag padding tweaks */
-    padding-left: 30px;
-    padding-right: 30px;
+    opacity: 0.8;
 }
-#references q[cite="mit-tech-review"] {
+#references q[cite="mit-tech-review"]:after {
     background-image: url("../img/press/mit-tech-review.png");
     background-size: 135px 71px;
     background-position: center top;
+    opacity: 0.8;
 }
 #references q[cite="cnbc"] {
+    /* text rag padding tweaks */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#references q[cite="cnbc"]:after {
     background-image: url("../img/press/cnbc.svg");
     background-size: 80px 60px;
     background-position: center 8px;
 }
 #references q[cite="the-atlantic"] {
+    /* text rag padding tweaks */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#references q[cite="the-atlantic"]:after {
     background-image: url("../img/press/the-atlantic.jpg");
     background-size: 135px 45px;
     background-position: center 20px;
+    opacity: 0.8;
+}
+#references q[cite="techcrunch"]:after {
+    background-image: url("../img/press/techcrunch.svg");
+    background-size: 150px 21px;
+    background-position: center 40px;
+    opacity: 0.8;
 }

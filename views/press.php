@@ -37,6 +37,9 @@
             <li>
                 <q cite="the-atlantic">Avatars make online conferencing easy</q>
             </li>
+            <li>
+                <q cite="techcrunch">Second Life Founder Philip Rosedale’s New Startup High Fidelity</q>
+            </li>
         </ul>
     </section>
     <div id="game-of-life">
