@@ -186,9 +186,9 @@ h2,
     border-color: #dadada;
     border-style: solid;
     border-width: 0px;
-    width: 219px;
+    width: 237px;
     text-align: center;
-    padding: 30px 39px;
+    padding: 30px;
     vertical-align: top;
     font-size: 1.1em;
 }
@@ -217,11 +217,19 @@ h2,
     background-image: url("../img/press/cnet.svg");
     background-size: 65px 65px;
     background-position: center 10px;
+
+    /* text rag padding tweaks */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #references q[cite="new-scientist"] {
     background-image: url("../img/press/new-scientist.png");
     background-size: 150px 32px;
     background-position: center 30px;
+
+    /* text rag padding tweaks */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #references q[cite="mit-tech-review"] {
     background-image: url("../img/press/mit-tech-review.png");
