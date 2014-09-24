@@ -25,8 +25,8 @@ body #navbar nav li a[href$='/press'] {
 
 #gofcanvas canvas {
     margin: -145px auto 10px;
-    width: 715px;
-    height: 220px;
+    width: 400px;
+    height: 300px;
 }
 @media screen and (max-width: 770px) {
    #gofcanvas canvas {
@@ -45,7 +45,7 @@ body #navbar nav li a[href$='/press'] {
 
 #main {
     position: relative;
-    margin: -75px 58px 0;
+    margin: -175px 58px 0;
 }
 
 #game-of-life {

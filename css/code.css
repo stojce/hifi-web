@@ -288,13 +288,21 @@ body > .popover.bottom .popover-content {
     padding-right: 10px;
 }
 
-footer#site-links p {
-    border-right: 0px none;
-    border-left: 0px none;
+body #navbar {
+    position: relative;
 }
 
-#navbar {
-    position: relative;
+body #navbar nav li {
+    border-color: #dadada;
+}
+
+body #navbar nav li a {
+    background: none transparent;
+    color: #ccc;
+}
+
+body #navbar nav li a[href$='/code'] {
+    color: #535353;
 }
 
 canvas {

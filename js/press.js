@@ -4,6 +4,9 @@ var press = {
     },
 
     init: function() {
+        GOL.init({
+            zoom: 2
+        });
     },
 
     isCompatible: function() {

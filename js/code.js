@@ -6,6 +6,7 @@ var code = {
     
     init: function() {
         code.initCloud();
+        GOL.init();
     },
 
     initCloud: function() {
