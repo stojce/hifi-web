@@ -28,16 +28,6 @@ body #navbar nav li a[href$='/press'] {
     width: 400px;
     height: 300px;
 }
-@media screen and (max-width: 770px) {
-   #gofcanvas canvas {
-        width: 520px;
-    }
-}
-@media screen and (max-width: 530px) {
-    #gofcanvas canvas {
-        width: 480px;
-    }
-}
 
 #container {
     position: static;
@@ -56,6 +46,11 @@ h2 {
     font-size: 2.7em;
     font-weight: normal;
 }
+@media screen and (max-width: 770px) {
+   h2 {
+        font-size: 1.9em;
+    }
+}
 
 h2,
 #quotes blockquote {
@@ -68,6 +63,12 @@ h2,
     overflow-x: hidden;
     height: 120px;
 }
+@media screen and (max-width: 770px) {
+    #quotes {
+        padding: 5px 0;
+        height: 75px;
+    }
+}
 
 #quotes ul {
     width: 1220px;
@@ -76,10 +77,20 @@ h2,
     animation: slidein 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
     -webkit-animation: slidein 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
 }
-
+@media screen and (max-width: 770px) {
+    #quotes ul {
+        width: 820px;
+    }
+}
 #quotes,
 #quotes li {
     width: 600px;
+}
+@media screen and (max-width: 770px) {
+    #quotes,
+    #quotes li {
+        width: 404px;
+    }
 }
 
 #quotes li {
@@ -113,7 +124,6 @@ h2,
         transform: translateX(0px);
     }
 }
-
 @-webkit-keyframes slidein {
     0% {
         transform: translateX(0px);
@@ -135,6 +145,50 @@ h2,
         transform: translateX(0px);
     }
 }
+@media screen and (max-width: 770px) {
+    @keyframes slidein {
+        0% {
+            transform: translateX(0px);
+        }
+
+        47% {
+            transform: translateX(0px);
+        }
+
+        50% {
+            transform: translateX(-404px);
+        }
+
+        97% {
+            transform: translateX(-404px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    @-webkit-keyframes slidein {
+        0% {
+            transform: translateX(0px);
+        }
+
+        48% {
+            transform: translateX(0px);
+        }
+
+        50% {
+            transform: translateX(-404px);
+        }
+
+        98% {
+            transform: translateX(-404px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
 
 #quotes blockquote {
     border: 0 none;
@@ -146,6 +200,12 @@ h2,
     font-weight: normal;
     color: #3698BF;
     white-space: pre-line;
+}
+@media screen and (max-width: 770px) {
+    #quotes blockquote {
+        font-size: 1em;
+        line-height: 1em;
+    }
 }
 
 #quotes blockquote em {
@@ -170,7 +230,11 @@ h2,
     font-weight: normal;
     font-style: italic;
 }
-
+@media screen and (max-width: 770px) {
+    #quotes blockquote + cite {
+        font-size: .9em;
+    }
+}
 #quotes blockquote + cite:before {
     content: '\2014';
     display: inline-block;
@@ -195,6 +259,11 @@ h2,
     width: 100%;
     border-bottom: 1px solid #dadada;
 }
+@media screen and (max-width: 770px) {
+    #references ul {
+        padding-bottom: 20px;
+    }
+}
 
 #references li {
     display: inline-block;
@@ -207,18 +276,28 @@ h2,
     vertical-align: top;
     font-size: 1.1em;
 }
-
-#references li:nth-child(odd) {
-    border-right-width: 1px;
+@media screen and (max-width: 770px) {
+    #references li {
+        width: 130px;
+        padding: 10px 0;
+        font-size: .7em;
+        line-height: 1.1em;
+        font-weight: normal;
+    }
 }
-#references li:nth-child(even) {
-    margin-left: -4px;
-}
 
-#references li:nth-child(3),
-#references li:nth-child(4) {
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+@media screen and (min-width: 771px) {
+    #references li:nth-child(odd) {
+        border-right-width: 1px;
+    }
+    #references li:nth-child(even) {
+        margin-left: -4px;
+    }
+    #references li:nth-child(3),
+    #references li:nth-child(4) {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
 }
 
 #references q {
@@ -246,6 +325,17 @@ h2,
     background-size: 65px 65px;
     background-position: center 10px;
 }
+@media screen and (max-width: 770px) {
+    #references q[cite="cnet"] {
+        /* text rag padding tweaks */
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #references q[cite="cnet"]:after {
+        background-size: 35px 35px;
+        background-position: center 20px;
+    }
+}
 #references q[cite="new-scientist"] {
     /* text rag padding tweaks */
     padding-left: 50px;
@@ -257,11 +347,28 @@ h2,
     background-position: center 30px;
     opacity: 0.8;
 }
+@media screen and (max-width: 770px) {
+    #references q[cite="new-scientist"] {
+        /* text rag padding tweaks */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #references q[cite="new-scientist"]:after {
+        background-size: 75px 16px;
+        background-position: center 30px;
+    }
+}
 #references q[cite="mit-tech-review"]:after {
     background-image: url("../img/press/mit-tech-review.png");
     background-size: 135px 71px;
     background-position: center top;
     opacity: 0.8;
+}
+@media screen and (max-width: 770px) {
+    #references q[cite="mit-tech-review"]:after {
+        background-size: 68px 36px;
+        background-position: center 20px;
+    }
 }
 #references q[cite="cnbc"] {
     /* text rag padding tweaks */
@@ -272,6 +379,17 @@ h2,
     background-image: url("../img/press/cnbc.svg");
     background-size: 80px 60px;
     background-position: center 8px;
+}
+@media screen and (max-width: 770px) {
+    #references q[cite="cnbc"] {
+        /* text rag padding tweaks */
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #references q[cite="cnbc"]:after {
+        background-size: 40px 30px;
+        background-position: center 20px;
+    }
 }
 #references q[cite="the-atlantic"] {
     /* text rag padding tweaks */
@@ -284,9 +402,21 @@ h2,
     background-position: center 20px;
     opacity: 0.8;
 }
+@media screen and (max-width: 770px) {
+    #references q[cite="the-atlantic"]:after {
+        background-size: 58px 23px;
+        background-position: center 20px;
+    }
+}
 #references q[cite="techcrunch"]:after {
     background-image: url("../img/press/techcrunch.svg");
     background-size: 150px 21px;
     background-position: center 40px;
     opacity: 0.8;
+}
+@media screen and (max-width: 770px) {
+    #references q[cite="techcrunch"]:after {
+        background-size: 76px 11px;
+        background-position: center 30px;
+    }
 }
