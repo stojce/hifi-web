@@ -153,7 +153,9 @@ h2,
 }
 
 #quotes blockquote + cite {
-    color: #dadada;
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
 }
 
 #quotes blockquote + cite:before {
