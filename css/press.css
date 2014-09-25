@@ -319,7 +319,7 @@ h2,
     #references li {
         width: 165px;
         padding: 10px 0;
-        font-size: .6em;
+        font-size: .7em;
         line-height: 1.1em;
         font-weight: normal;
     }
@@ -386,8 +386,8 @@ h2,
 }
 #references q[cite="cnet"] {
     /* text rag padding tweaks */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 #references q[cite="cnet"]:after {
     background-image: url("../img/press/cnet.svg");
@@ -395,6 +395,11 @@ h2,
     background-position: center 10px;
 }
 @media screen and (max-width: 770px) {
+    #references q[cite="cnet"] {
+        /* text rag padding tweaks */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     #references q[cite="cnet"]:after {
         background-size: 35px 35px;
         background-position: center 20px;
@@ -402,8 +407,8 @@ h2,
 }
 #references q[cite="new-scientist"] {
     /* text rag padding tweaks */
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 #references q[cite="new-scientist"]:after {
     background-image: url("../img/press/new-scientist.png");
@@ -412,10 +417,20 @@ h2,
     opacity: 0.8;
 }
 @media screen and (max-width: 770px) {
+    #references q[cite="new-scientist"] {
+        /* text rag padding tweaks */
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     #references q[cite="new-scientist"]:after {
         background-size: 75px 16px;
         background-position: center 30px;
     }
+}
+#references q[cite="mit-tech-review"] {
+    /* text rag padding tweaks */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #references q[cite="mit-tech-review"]:after {
     background-image: url("../img/press/mit-tech-review.png");
@@ -433,6 +448,11 @@ h2,
         background-size: 68px 36px;
         background-position: center 20px;
     }
+}
+#references q[cite="cnbc"] {
+    /* text rag padding tweaks */
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #references q[cite="cnbc"]:after {
     background-image: url("../img/press/cnbc.svg");
@@ -452,8 +472,8 @@ h2,
 }
 #references q[cite="the-atlantic"] {
     /* text rag padding tweaks */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 #references q[cite="the-atlantic"]:after {
     background-image: url("../img/press/the-atlantic.jpg");
@@ -462,10 +482,20 @@ h2,
     opacity: 0.8;
 }
 @media screen and (max-width: 770px) {
+    #references q[cite="the-atlantic"] {
+        /* text rag padding tweaks */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     #references q[cite="the-atlantic"]:after {
         background-size: 58px 23px;
         background-position: center 20px;
     }
+}
+#references q[cite="techcrunch"] {
+    /* text rag padding tweaks */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #references q[cite="techcrunch"]:after {
     background-image: url("../img/press/techcrunch.svg");
@@ -474,6 +504,11 @@ h2,
     opacity: 0.8;
 }
 @media screen and (max-width: 770px) {
+    #references q[cite="techcrunch"] {
+        /* text rag padding tweaks */
+        padding-left: 1px;
+        padding-right: 1px;
+    }
     #references q[cite="techcrunch"]:after {
         background-size: 76px 11px;
         background-position: center 30px;
