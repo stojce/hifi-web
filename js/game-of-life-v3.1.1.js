@@ -95,11 +95,6 @@ var GOL = {
       columns: 75,
       rows: 92,
       cellSize: 4
-    },
-    {
-      columns: 28,
-      rows: 42,
-      cellSize: 8
     }
     ]
   },

@@ -36,8 +36,7 @@ body #navbar nav li a[href$='/press'] {
 }
 @media screen and (max-width: 530px) {
     #gofcanvas canvas {
-        width: 220px;
-        height: 200px;
+        visibility: hidden;
     }
 }
 

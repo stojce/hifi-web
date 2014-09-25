@@ -5,7 +5,9 @@ var press = {
 
     init: function() {
         var zoomLevel = press.zoomLevelForCurrentScreenSize();
-        press.initGameOfLife(zoomLevel);
+        if (zoomLevel) {
+            press.initGameOfLife(zoomLevel);
+        }
         window.addEventListener('resize', press.handleResize, false);
     },
 
@@ -19,20 +21,28 @@ var press = {
     handleResize: function() {
         var zoomLevel = press.zoomLevelForCurrentScreenSize();
         if (zoomLevel != press.zoomLevel) {
-            press.restartGameOfLife(zoomLevel);
+            if (!zoomLevel) {
+                press.stopGameOfLife();
+            } else {
+                press.restartGameOfLife(zoomLevel);
+            }
         }
     },
 
     restartGameOfLife: function(zoomLevel) {
-        GOL.handlers.buttons.clear();
+        press.stopGameOfLife();
         setTimeout(function() {
             GOL.autoplay = true;
             press.initGameOfLife(zoomLevel);
         }, 10);
     },
 
+    stopGameOfLife: function() {
+        GOL.handlers.buttons.clear();
+    },
+
     zoomLevelForCurrentScreenSize: function() {
-        return window.matchMedia('only screen and (max-width: 530px)').matches ? 4
+        return window.matchMedia('only screen and (max-width: 530px)').matches ? 0
               : window.matchMedia('only screen and (max-width: 770px)').matches ? 3
                 : 2;
     },
