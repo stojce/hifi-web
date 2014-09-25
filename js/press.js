@@ -28,7 +28,7 @@ var press = {
         setTimeout(function() {
             GOL.autoplay = true;
             press.initGameOfLife(zoomLevel);
-        }, 100);
+        }, 10);
     },
 
     zoomLevelForCurrentScreenSize: function() {
