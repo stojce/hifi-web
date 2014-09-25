@@ -80,6 +80,8 @@ h2,
 @media screen and (max-width: 770px) {
     #quotes ul {
         width: 820px;
+        animation: slidein-mobile 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
+        -webkit-animation: slidein-mobile 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
     }
 }
 #quotes,
@@ -145,48 +147,46 @@ h2,
         transform: translateX(0px);
     }
 }
-@media screen and (max-width: 770px) {
-    @keyframes slidein {
-        0% {
-            transform: translateX(0px);
-        }
-
-        47% {
-            transform: translateX(0px);
-        }
-
-        50% {
-            transform: translateX(-404px);
-        }
-
-        97% {
-            transform: translateX(-404px);
-        }
-
-        100% {
-            transform: translateX(0px);
-        }
+@keyframes slidein-mobile {
+    0% {
+        transform: translateX(0px);
     }
-    @-webkit-keyframes slidein {
-        0% {
-            transform: translateX(0px);
-        }
 
-        48% {
-            transform: translateX(0px);
-        }
+    47% {
+        transform: translateX(0px);
+    }
 
-        50% {
-            transform: translateX(-404px);
-        }
+    50% {
+        transform: translateX(-404px);
+    }
 
-        98% {
-            transform: translateX(-404px);
-        }
+    97% {
+        transform: translateX(-404px);
+    }
 
-        100% {
-            transform: translateX(0px);
-        }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes slidein-mobile {
+    0% {
+        transform: translateX(0px);
+    }
+
+    48% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-404px);
+    }
+
+    98% {
+        transform: translateX(-404px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
 
