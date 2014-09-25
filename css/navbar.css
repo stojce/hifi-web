@@ -113,12 +113,12 @@
     }
     
     #navbar h1 {
-        margin-top: 8px;
-        width: 140px;
+        margin-top: 18px;
+        width: 80px;
     }
     
     #logo img {
-        width: 120px;
+        width: 80px;
     }
     
     #navbar nav ul {
@@ -149,7 +149,7 @@
     }
     
     #logo img {
-        width: 80px;
+        width: 60px;
     }
     
     #navbar nav ul li:nth-child(n+2) {
