@@ -28,14 +28,37 @@ body #navbar nav li a[href$='/press'] {
     width: 400px;
     height: 300px;
 }
+@media screen and (max-width: 770px) {
+    #gofcanvas canvas {
+        width: 300px;
+        height: 220px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #gofcanvas canvas {
+        width: 220px;
+        height: 200px;
+    }
+}
 
 #container {
     position: static;
 }
 
-#main {
+body #main {
     position: relative;
     margin: -175px 58px 0;
+}
+@media screen and (max-width: 770px) {
+    body #main {
+        margin: -120px 10px 0;
+    }
+}
+@media screen and (max-width: 530px) {
+    body #main {
+        margin: -80px 10px 0;
+        padding: 0 10px;
+    }
 }
 
 #game-of-life {
@@ -65,7 +88,12 @@ h2,
 }
 @media screen and (max-width: 770px) {
     #quotes {
-        padding: 5px 0;
+        padding: 0 0 15px;
+        height: 90px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #quotes {
         height: 75px;
     }
 }
@@ -77,7 +105,7 @@ h2,
     animation: slidein 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
     -webkit-animation: slidein 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #quotes ul {
         width: 820px;
         animation: slidein-mobile 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
@@ -88,7 +116,7 @@ h2,
 #quotes li {
     width: 600px;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #quotes,
     #quotes li {
         width: 404px;
@@ -203,6 +231,12 @@ h2,
 }
 @media screen and (max-width: 770px) {
     #quotes blockquote {
+        font-size: 1.32em;
+        line-height: 1.3em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #quotes blockquote {
         font-size: 1em;
         line-height: 1em;
     }
@@ -230,7 +264,7 @@ h2,
     font-weight: normal;
     font-style: italic;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #quotes blockquote + cite {
         font-size: .9em;
     }
@@ -241,7 +275,11 @@ h2,
     margin-right: 5px;
 }
 
-#quotes,
+#main > h2:first-child {
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 0;
+}
+
 #references {
     border-top: 1px solid #dadada;
 }
@@ -259,8 +297,9 @@ h2,
     width: 100%;
     border-bottom: 1px solid #dadada;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #references ul {
+        border-bottom: 0 none;
         padding-bottom: 20px;
     }
 }
@@ -270,19 +309,24 @@ h2,
     border-color: #dadada;
     border-style: solid;
     border-width: 0px;
-    width: 267px;
+    width: 287px;
     text-align: center;
-    padding: 30px 15px;
+    padding: 30px 5px;
     vertical-align: top;
-    font-size: 1.1em;
+    font-size: .95em;
 }
 @media screen and (max-width: 770px) {
     #references li {
-        width: 130px;
+        width: 165px;
         padding: 10px 0;
-        font-size: .7em;
+        font-size: .6em;
         line-height: 1.1em;
         font-weight: normal;
+    }
+}
+@media screen and (max-width: 530px) {
+    #references li {
+        width: 130px;
     }
 }
 
@@ -291,12 +335,37 @@ h2,
         border-right-width: 1px;
     }
     #references li:nth-child(even) {
-        margin-left: -4px;
+        margin: 0 -4px;
     }
     #references li:nth-child(3),
     #references li:nth-child(4) {
         border-top-width: 1px;
         border-bottom-width: 1px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #references li:nth-child(3n+2) {
+        border-right-width: 1px;
+        border-left-width: 1px;
+        margin: 0 -4px;
+    }
+    #references li:nth-child(1),
+    #references li:nth-child(2),
+    #references li:nth-child(3) {
+        border-bottom-width: 1px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #references li:nth-child(3n+2) {
+        border-right-width: 0;
+        border-left-width: 0;
+        margin-left: -4px;
+        margin: 0;
+    }
+    #references li:nth-child(1),
+    #references li:nth-child(2),
+    #references li:nth-child(3) {
+        border-bottom-width: 0;
     }
 }
 
@@ -317,8 +386,8 @@ h2,
 }
 #references q[cite="cnet"] {
     /* text rag padding tweaks */
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #references q[cite="cnet"]:after {
     background-image: url("../img/press/cnet.svg");
@@ -326,11 +395,6 @@ h2,
     background-position: center 10px;
 }
 @media screen and (max-width: 770px) {
-    #references q[cite="cnet"] {
-        /* text rag padding tweaks */
-        padding-left: 0px;
-        padding-right: 0px;
-    }
     #references q[cite="cnet"]:after {
         background-size: 35px 35px;
         background-position: center 20px;
@@ -338,8 +402,8 @@ h2,
 }
 #references q[cite="new-scientist"] {
     /* text rag padding tweaks */
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #references q[cite="new-scientist"]:after {
     background-image: url("../img/press/new-scientist.png");
@@ -348,11 +412,6 @@ h2,
     opacity: 0.8;
 }
 @media screen and (max-width: 770px) {
-    #references q[cite="new-scientist"] {
-        /* text rag padding tweaks */
-        padding-left: 15px;
-        padding-right: 15px;
-    }
     #references q[cite="new-scientist"]:after {
         background-size: 75px 16px;
         background-position: center 30px;
@@ -365,15 +424,15 @@ h2,
     opacity: 0.8;
 }
 @media screen and (max-width: 770px) {
+    #references q[cite="mit-tech-review"] {
+        /* text rag padding tweaks */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     #references q[cite="mit-tech-review"]:after {
         background-size: 68px 36px;
         background-position: center 20px;
     }
-}
-#references q[cite="cnbc"] {
-    /* text rag padding tweaks */
-    padding-left: 10px;
-    padding-right: 10px;
 }
 #references q[cite="cnbc"]:after {
     background-image: url("../img/press/cnbc.svg");
@@ -383,8 +442,8 @@ h2,
 @media screen and (max-width: 770px) {
     #references q[cite="cnbc"] {
         /* text rag padding tweaks */
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #references q[cite="cnbc"]:after {
         background-size: 40px 30px;

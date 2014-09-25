@@ -81,23 +81,25 @@ var GOL = {
     schedule : false,
 
     schemes : [
-    // { columns : 100, rows : 48, cellSize : 8 },
     {
-      columns : 180,
-      rows : 86,
-      cellSize : 4
+      columns: 180,
+      rows: 86,
+      cellSize: 4
     },
-
     {
-      columns : 100,
-      rows : 125,
-      cellSize : 4
+      columns: 100,
+      rows: 125,
+      cellSize: 4
     },
-
     {
-      columns : 450,
-      rows : 216,
-      cellSize : 1
+      columns: 75,
+      rows: 92,
+      cellSize: 4
+    },
+    {
+      columns: 28,
+      rows: 42,
+      cellSize: 8
     }
     ]
   },
