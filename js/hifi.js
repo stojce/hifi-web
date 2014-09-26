@@ -8,7 +8,9 @@ var hifi = {
     
     init: function() {
         // proxima-nova fonts
-        Typekit.load();
+        if (typeof Typekit != 'undefined') {
+            Typekit.load();
+        }
         
         if (typeof hifi.current_view == 'undefined') {
             // no js behavior to be initialied, quiting...

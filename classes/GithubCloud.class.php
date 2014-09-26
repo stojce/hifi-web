@@ -103,7 +103,7 @@ class GithubCloud {
     protected function listRepoPullRequests($repo, $state = 'open') {
         try {
             list($owner, $repo) = explode('/', $repo);
-            $pullreqs = $this->client->api('pull_request')->all($owner, $repo, $state);
+            $pullreqs = $this->client->api('pull_request')->all($owner, $repo, array('state' => $state));
             return $pullreqs;
         } catch(Exception $e) {
             return false;

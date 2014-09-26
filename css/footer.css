@@ -81,7 +81,12 @@
         padding: 18px 0;
     }
 }
-
+@media screen and (max-width: 530px) {
+    #site-links ul + ul li a {
+        font-weight: normal;
+        font-size: .9em;
+    }
+}
 #site-links li.selected a,
 #site-links li.selected a > i {
     color: #3698bf;
@@ -101,6 +106,12 @@
     text-align: center;
     font-size: 16px;
     padding: 13px 0;
+}
+@media screen and (max-width: 530px) {
+    #site-links p {
+        font-size: 12px;
+        padding: 0;
+    }
 }
 
 #site-links p:last-child {
@@ -122,7 +133,7 @@
     border-right: none;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 770px) {
     #site-links a > img {
         display: inline;
     }

@@ -54,8 +54,8 @@ if (class_exists('View')) {
                 </a>
             </li>
             <li>
-                <a href="http://twitter.com/highfidelityinc" title="Twitter">
-                    Twitter
+                <a href="<?php echo $base_path; ?>code" title="Code">
+                    Code
                 </a>
             </li>
             <li>
