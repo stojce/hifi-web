@@ -457,6 +457,12 @@ h2,
         padding: 10px 0;
     }
 }
+@media screen and (max-width: 360px) {
+    #references li {
+        width: 150px;
+        padding: 0;
+    }
+}
 
 @media screen and (min-width: 771px) {
     #references li:nth-child(odd) {
@@ -575,6 +581,13 @@ h2,
         padding-right: 5px;
     }
 }
+@media screen and (max-width: 360px) {
+    #references q[cite="cnet"] {
+        /* text rag padding tweaks */
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 /* New Scientist block */
 #references q[cite="new-scientist"] {
@@ -604,6 +617,13 @@ h2,
         /* text rag padding tweaks */
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #references q[cite="new-scientist"] {
+        /* text rag padding tweaks */
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -644,6 +664,13 @@ h2,
         padding-right: 0;
     }
 }
+@media screen and (max-width: 360px) {
+    #references q[cite="mit-tech-review"] {
+        /* text rag padding tweaks */
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
 
 /* CNBC block */
 #references q[cite="cnbc"] {
@@ -672,6 +699,13 @@ h2,
         /* text rag padding tweaks */
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #references q[cite="cnbc"] {
+        /* text rag padding tweaks */
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -705,6 +739,13 @@ h2,
         padding-right: 0;
     }
 }
+@media screen and (max-width: 360px) {
+    #references q[cite="the-atlantic"] {
+        /* text rag padding tweaks */
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
 
 /* TechCrunch block */
 #references q[cite="techcrunch"] {
@@ -734,5 +775,12 @@ h2,
         /* text rag padding tweaks */
         padding-left: 0;
         padding-right: 0;
+    }
+}
+@media screen and (max-width: 360px) {
+    #references q[cite="techcrunch"] {
+        /* text rag padding tweaks */
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
