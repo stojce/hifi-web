@@ -24,13 +24,15 @@ var press = {
             if (!zoomLevel) {
                 press.stopGameOfLife();
             } else {
-                press.restartGameOfLife(zoomLevel);
+                press.restartGameOfLife(zoomLevel, press.zoomLevel);
             }
         }
     },
 
-    restartGameOfLife: function(zoomLevel) {
-        press.stopGameOfLife();
+    restartGameOfLife: function(zoomLevel, prevZoom) {
+        if (typeof prevZoom != 'undefined' && prevZoom) {
+            press.stopGameOfLife();
+        }
         setTimeout(function() {
             GOL.autoplay = true;
             press.initGameOfLife(zoomLevel);

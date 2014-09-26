@@ -113,11 +113,19 @@ h2,
 }
 @media screen and (max-width: 530px) {
     #quotes ul {
-        width: 820px;
+        width: 710px;
         animation: slidein-mobile 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
         -webkit-animation: slidein-mobile 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
     }
 }
+@media screen and (max-width: 360px) {
+    #quotes ul {
+        width: 510px;
+        animation: slidein-tiny 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
+        -webkit-animation: slidein-tiny 20s cubic-bezier(.14, .38, 0, 1.03) 0s infinite normal forwards;
+    }
+}
+
 #quotes,
 #quotes li {
     width: 600px;
@@ -131,7 +139,13 @@ h2,
 @media screen and (max-width: 530px) {
     #quotes,
     #quotes li {
-        width: 404px;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #quotes,
+    #quotes li {
+        width: 250px;
     }
 }
 
@@ -239,11 +253,11 @@ h2,
     }
 
     50% {
-        transform: translateX(-404px);
+        transform: translateX(-350px);
     }
 
     97% {
-        transform: translateX(-404px);
+        transform: translateX(-350px);
     }
 
     100% {
@@ -260,11 +274,53 @@ h2,
     }
 
     50% {
-        transform: translateX(-404px);
+        transform: translateX(-350px);
     }
 
     98% {
-        transform: translateX(-404px);
+        transform: translateX(-350px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes slidein-tiny {
+    0% {
+        transform: translateX(0px);
+    }
+
+    47% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-250px);
+    }
+
+    97% {
+        transform: translateX(-250px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes slidein-mobile {
+    0% {
+        transform: translateX(0px);
+    }
+
+    48% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-250px);
+    }
+
+    98% {
+        transform: translateX(-250px);
     }
 
     100% {
@@ -291,7 +347,13 @@ h2,
 }
 @media screen and (max-width: 530px) {
     #quotes blockquote {
-        font-size: 1em;
+        font-size: .9em;
+        line-height: 1em;
+    }
+}
+@media screen and (max-width: 360px) {
+    #quotes blockquote {
+        font-size: .8em;
         line-height: 1em;
     }
 }
@@ -320,7 +382,7 @@ h2,
 }
 @media screen and (max-width: 530px) {
     #quotes blockquote + cite {
-        font-size: .9em;
+        font-size: .7em;
     }
 }
 #quotes blockquote + cite:before {
@@ -380,7 +442,7 @@ h2,
 }
 @media screen and (max-width: 530px) {
     #references li {
-        width: 140px;
+        width: 100px;
         padding: 10px 0;
     }
 }
@@ -492,6 +554,13 @@ h2,
         padding-right: 30px;
     }
 }
+@media screen and (max-width: 530px) {
+    #references q[cite="cnet"] {
+        /* text rag padding tweaks */
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 
 /* New Scientist block */
 #references q[cite="new-scientist"] {
@@ -514,6 +583,13 @@ h2,
     #references q[cite="new-scientist"]:after {
         background-size: 75px 16px;
         background-position: center 30px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #references q[cite="new-scientist"] {
+        /* text rag padding tweaks */
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -547,6 +623,13 @@ h2,
         padding-right: 20px;
     }
 }
+@media screen and (max-width: 530px) {
+    #references q[cite="mit-tech-review"] {
+        /* text rag padding tweaks */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 /* CNBC block */
 #references q[cite="cnbc"] {
@@ -562,19 +645,19 @@ h2,
 @media screen and (max-width: 770px) {
     #references q[cite="cnbc"] {
         /* text rag padding tweaks */
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: 22px;
+        padding-right: 22px;
     }
     #references q[cite="cnbc"]:after {
         background-size: 40px 30px;
         background-position: center 20px;
     }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #references q[cite="cnbc"] {
         /* text rag padding tweaks */
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -601,6 +684,13 @@ h2,
         background-position: center 20px;
     }
 }
+@media screen and (max-width: 530px) {
+    #references q[cite="the-atlantic"] {
+        /* text rag padding tweaks */
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 /* TechCrunch block */
 #references q[cite="techcrunch"] {
@@ -617,18 +707,18 @@ h2,
 @media screen and (max-width: 770px) {
     #references q[cite="techcrunch"] {
         /* text rag padding tweaks */
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 21px;
+        padding-right: 21px;
     }
     #references q[cite="techcrunch"]:after {
         background-size: 76px 11px;
         background-position: center 30px;
     }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #references q[cite="techcrunch"] {
         /* text rag padding tweaks */
-        padding-left: 21px;
-        padding-right: 21px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
