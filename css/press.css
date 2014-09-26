@@ -307,7 +307,7 @@ h2,
         transform: translateX(0px);
     }
 }
-@-webkit-keyframes slidein-mobile {
+@-webkit-keyframes slidein-tiny {
     0% {
         transform: translateX(0px);
     }
