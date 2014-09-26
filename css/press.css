@@ -93,7 +93,8 @@ h2,
 }
 @media screen and (max-width: 530px) {
     #quotes {
-        height: 75px;
+        height: 85px;
+        padding: 5px 0;
     }
 }
 
@@ -353,7 +354,7 @@ h2,
 }
 @media screen and (max-width: 360px) {
     #quotes blockquote {
-        font-size: .8em;
+        font-size: .7em;
         line-height: 1em;
     }
 }
@@ -385,10 +386,20 @@ h2,
         font-size: .7em;
     }
 }
+@media screen and (max-width: 360px) {
+    #quotes blockquote + cite {
+        font-size: .55em;
+    }
+}
 #quotes blockquote + cite:before {
     content: '\2014';
     display: inline-block;
     margin-right: 5px;
+}
+@media screen and (max-width: 360px) {
+    #quotes blockquote + cite:before {
+        display: none;
+    }
 }
 
 #main > h2:first-child {
