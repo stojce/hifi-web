@@ -5,6 +5,7 @@ var press = {
 
     init: function() {
         var zoomLevel = press.zoomLevelForCurrentScreenSize();
+        press.zoomLevel = zoomLevel;
         if (zoomLevel) {
             press.initGameOfLife(zoomLevel);
         }
