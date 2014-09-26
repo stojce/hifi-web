@@ -532,6 +532,9 @@ h2,
 #references a q {
     color: #3698BF;
 }
+#references a:hover q {
+    color: #333;
+}
 #references a:hover q:after {
     opacity: .5;
 }
