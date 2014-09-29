@@ -2,7 +2,7 @@
 Contributors: Denis-de-Bernardy, Mike_Koepke
 Tags: author-image, author, semiologic
 Requires at least: 3.1
-Tested up to: 3.8
+Tested up to: 3.9
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -127,6 +127,11 @@ More than likely you have place the the_author_image function call outside of yo
 
 
 == Change Log ==
+
+= 4.7 =
+
+- Code refactoring
+- WP 3.9 compat
 
 = 4.6 =
 
