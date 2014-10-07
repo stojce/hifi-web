@@ -4,19 +4,22 @@ $last_video = $videos[0];
 
 $posts = View::read('posts');
 ?>
-<section role="main" id="main">
-  <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-  </iframe>
-  <ul>
-    <?php foreach($videos as $video): ?>
-    <li class="<?php echo $last_video == $video ? 'current' : ''; ?>">
-      <a href="<?php echo $video->url; ?>">
-        <img src="<?php echo $video->thumbnail_medium; ?>" title="<?php echo htmlspecialchars($video->title); ?>"/>
-      </a>
-    </li>
-    <?php endforeach; ?>
-  </ul>
-</section>
+<div id="video-container">
+    <section role="main" id="main">
+        <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+        <ul>
+            <?php foreach($videos as $video): ?>
+            <li class="<?php echo $last_video == $video ? 'current' : ''; ?>">
+            <a href="<?php echo $video->url; ?>">
+                <img src="<?php echo $video->thumbnail_medium; ?>" title="<?php echo htmlspecialchars($video->title); ?>"/>
+            </a>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </section>
+</div>
+<div id="container">
 <section id="blog">
   <article>
     <h3>Blog</h3>

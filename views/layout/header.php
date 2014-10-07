@@ -17,4 +17,3 @@
 </head>
 <body>
 <?php View::renderNavBar(); ?>
-<div id="container">

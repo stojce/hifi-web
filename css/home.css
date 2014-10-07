@@ -7,57 +7,40 @@ html body {
     color: #666;
 }
 
-header#navbar {
-    height: 642px;
-    background: #222;
-    border-bottom: 5px solid #3398cb;
-}
-@media screen and (max-width: 770px) {
-    header#navbar {
-        height: 500px;
-    }
-}
-
-header#navbar nav li {
-    border-right: 1px solid #424242;
-}
-
-header#navbar nav li a {
-    text-decoration: none;
-    color: #666666;
-    padding: 8px 14px;
-    display: inline-block;
-    font: bold 1.15em proxima-nova, sans-serif;
-    background: transparent none;
-}
-
-header#navbar nav li a:hover {
-    color: #ccc;
-}
-
-/* custom logo */
-header#navbar h1 img {
-    width: 109px;
-    margin: 2px 0 0 2px;
-}
-
 #container > section {
     margin-left: auto;
     margin-right: auto;
 }
 
-
-div#container {
-    max-width: 1008px;
+#video-container {
+    background: #333;
+    border-bottom: 5px solid #3398cb;
 }
+
+#video-container section {
+    width: 848px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
 #container > section:not(#main):not(#investors) {
     max-width: 715px;
 }
-@media screen and (max-width: 990px) {
-    div#container {
-        max-width: 715px;
-    }
+
+#main iframe {
+    width: 848px;
+    height: 475px;
 }
+
+#main ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 550px;
+    padding: 0 0 0 0px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 770px) {
     div#container {
         font-size: .7em;
@@ -67,88 +50,25 @@ div#container {
 section > article {
     padding-left: 7px;
 }
+
 @media screen and (max-width: 990px) {
     section > article {
         padding-left: 0;
     }
 }
 
-/* vimeo videos section */
-section#main {
-    position: absolute;
-    width: 100%;
-    margin-top: -547px; /* videos are placed over the navbar gray background */
-    text-align: center;
-}
-@media screen and (max-width: 990px) {
-    section#main {
-        margin-top: -497px; /* tweaking #main content be closer to the navbar when it's bigger */
-    }
-}
-@media screen and (max-width: 770px) {
-    section#main {
-        margin-top: -350px; /* tweaking #main content be closer to the navbar when it's bigger */
-    }
-}
-
-#main iframe,
-#main ul {
-    height: 489px;
-    display: inline-block;
-}
-#main iframe {
-    width: 871px;
-    margin-left: 4px;
-}
-@media screen and (max-width: 1090px) {
-    #main iframe,
-    #main ul {
-        height: 458px;
-    }
-    #main iframe {
-        width: 815px;
-    }
-}
-@media screen and (max-width: 990px) {
-    #main iframe,
-    #main ul {
-        height: 326px;
-    }
-    #main iframe {
-        width: 580px;
-    }
-}
-@media screen and (max-width: 770px) {
-    #main iframe,
-    #main ul {
-        height: 215px;
-    }
-    #main iframe {
-        width: 380px;
-    }
-}
-@media screen and (max-width: 530px) {
-    #main iframe,
-    #main ul {
-        height: 191px;
-    }
-    #main iframe {
-        width: 340px;
-    }
-}
-
-#main ul {
-    list-style-type: none;
-    margin: 0;
-    overflow-y: hidden;
-    width: 115px;
-    padding: 0 0 0 8px;
-}
 
 #main ul li {
-    border: 2px solid #666;
-    padding: 2px;
     margin-bottom: 5px;
+    width: 130px;
+    display: inline-block;
+    height: 90px;
+    border: 2px solid #666;
+}
+
+#main ul li img {
+    width: 130px;
+    height: 90px;
 }
 
 #main ul li.current {
@@ -157,10 +77,9 @@ section#main {
 }
 
 #main ul li.current:after {
-    content: "\f0da";
+    content: "\f0d8";
     display: block;
     left: 0px;
-    top: 35%;
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -168,6 +87,8 @@ section#main {
     position: absolute;
     color: #ccc;
     font-size: 2em;
+    bottom: -10px;
+    left: 43%;
 }
 
 #blog article {
@@ -762,5 +683,44 @@ article p a:hover {
     }
     #advisors > article > ul {
         margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #video-container section {
+        max-width: 545px;
+    }
+
+    #main iframe {
+        width: 545px;
+        height: 302px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    #video-container section {
+        max-width: 405px;
+    }
+
+    #main iframe {
+        width: 405px;
+        height: 236px;
+    }
+    
+    #main ul li {
+        width: 93px;
+        height: 80px;
+    }
+
+    #main ul li img {
+        width: 94px;
+        height: 80px;
+    }
+
+    #main ul {
+        width: 100%;
+    }
+    #main ul li.current:after {
+        left: 41%;
     }
 }

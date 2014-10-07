@@ -72,10 +72,9 @@ a.grey-link {
 }
 
 #container {
-    position: relative;
     margin: 0 auto;
-    width: 1080px;
-    max-width: 715px;
+    width: 960px;
+    margin-top: 30px;
 }
 
 em {
