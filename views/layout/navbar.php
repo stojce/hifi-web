@@ -1,4 +1,5 @@
-<?php 
+<?php
+$docs_url = 'http://docs.highfidelity.io'; 
 if (class_exists('View')) {
     $page = View::read('page');
     $base_path = './';
@@ -20,6 +21,9 @@ if (class_exists('View')) {
             </li>
             <li class="<?php echo ($page == 'code' ? 'selected' : ''); ?>">
                 <a href="<?php echo $base_path; ?>code" title="Code">Code</a><i></i>
+            </li>
+            <li>
+                <a href="<?php echo $docs_url; ?>" title="Docs">Docs</a><i></i>
             </li>
             <li>
                 <a href="<?php echo $base_path; ?>press" title="Press">Press</a><i></i>
