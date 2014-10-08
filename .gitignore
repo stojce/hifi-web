@@ -7,3 +7,4 @@ latestVersion.xml
 php.errors
 blog/wp-config.php
 blog/db-config.php
+/tmp
