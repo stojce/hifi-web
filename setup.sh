@@ -70,3 +70,6 @@ cp .htaccess-default .htaccess
 sed -i s/~unixusername/~$CURRENT_USER/g .htaccess
 sed -i s/sandboxdir/$SANDBOX_NAME/g .htaccess
 sed -i s/#RewriteBase/RewriteBase/g .htaccess
+
+cd blog/
+sh setup-wordpress.sh
