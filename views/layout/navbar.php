@@ -1,14 +1,13 @@
-<?php 
+<?php
+$docs_url = 'http://docs.highfidelity.io'; 
 if (class_exists('View')) {
     $page = View::read('page');
     $base_path = './';
     $worklist_url = WORKLIST_URL;
-    $docs_url = 'http://docs.highfidelity.io';
 } else {
     $page = 'blog';
     $base_path = site_url('/') . '../';
     $worklist_url = 'https://worklist.net/';
-    $docs_url = 'http://docs.highfidelity.io';
 }
 ?>
 <header id="navbar" role="banner">
