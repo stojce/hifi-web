@@ -198,8 +198,8 @@ article h3,
 
 #company h3 {
     font-size: 2.4em;
-    padding-right: 150px;
 }
+
 @media screen and (max-width: 770px) {
     #company h3 {
         font-size: 2.8em;
@@ -274,6 +274,7 @@ article p a:hover {
     #company p.lead + p + p:after {
         right: -685px;
         margin-top: -20px;
+        display: none;
     }
 }
 
@@ -515,6 +516,7 @@ article p a:hover {
 #investors > article li h3,
 #advisors > article li h3 {
     line-height: 120%;
+    margin-top: 10px;
 }
 
 #investors > article li h3,

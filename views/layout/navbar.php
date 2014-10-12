@@ -10,11 +10,21 @@ if (class_exists('View')) {
     $worklist_url = 'https://worklist.net/';
 }
 ?>
-<header id="navbar" role="banner">
-    <nav role="navigation">
-        <ul>
+<header id="navbar" class="navbar navbar-inverse navbar-static-top hifi-web-nav" id="top" role="banner">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".hifi-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="logo <?php echo ($page == 'home' ? 'selected' : ''); ?>" href="<?php echo $base_path; ?>" title="High Fidelity"></a>
+    </div>
+    <nav class="navbar-collapse hifi-navbar-collapse collapse" role="navigation">
+        <ul class="nav navbar-nav">
             <li id="logo" class="<?php echo ($page == 'home' ? 'selected' : ''); ?>">
-                <a href="<?php echo $base_path; ?>" title="High Fidelity"></a><i></i>
+                <a class="logo" href="<?php echo $base_path; ?>" title="High Fidelity"></a><i></i>
             </li>
             <li class="<?php echo ($page == 'alpha' ? 'selected' : ''); ?>">
                 <a href="<?php echo $base_path; ?>alpha" title="Alpha">Alpha</a><i></i>
@@ -38,8 +48,8 @@ if (class_exists('View')) {
                 <a href="<?php echo $base_path; ?>blog/" title="Blog">Blog</a>
             </li>
         </ul>
-
-      </nav>
+    </nav>
+  </div>
 </header>
 <?php if ($page != 'home') { ?>
     <div id="container">
