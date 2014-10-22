@@ -33,8 +33,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.technologyreview.com/view/527101/why-virtual-reality-will-compete-with-the-real-world/" target="_blank">
-                    <q cite="mit-tech-review">Why Virtual Reality Will Compete with the Real World</q>
+                <a href="http://www.technologyreview.com/featuredstory/531751/the-quest-to-put-more-reality-in-virtual-reality/" target="_blank">
+                    <q cite="mit-tech-review">The Quest to Put More Reality in Virtual Reality</q>
                 </a>
             </li>
             <li>
