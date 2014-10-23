@@ -152,6 +152,7 @@
 
 .cloud > h2 {
     margin-top: 15px;
+    word-wrap: break-word;
 }
 
 /**
@@ -323,4 +324,10 @@ canvas {
 
 #game-of-life {
     display: none;
+}
+
+@media screen and (max-width: 572px) {
+    .cloud > h2 {
+        font-size: 2em;
+    }
 }

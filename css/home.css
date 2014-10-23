@@ -808,6 +808,11 @@ article p a:hover {
     #investors > article > ul {
         280px;
     }
+
+    #investors,
+    advisors {
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 440px) {
