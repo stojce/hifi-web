@@ -116,6 +116,10 @@
     color: #3698bf;
 }
 
+#navbar nav li a:hover {
+    color: #666;
+}
+
 @media screen and (min-width: 768px) {
     #navbar nav ul {
         display: inline-block;
@@ -123,13 +127,10 @@
         position: relative;
         top: 20px;
     }
-
-    #navbar nav li a:hover {
-        color: #666;
-    }
 }
 
 @media screen and (max-width: 767px) {
+    
     #navbar li#logo,
     #navbar nav li i,
     #navbar nav.collapse {
@@ -142,24 +143,20 @@
 
     #navbar .navbar-toggle {
         margin-top: 14px;
+        margin-right: 20px;
     }
 
     #navbar nav li a {
         height: 21px;
         overflow: visible;
         line-height: 28px;
-        padding-right: 70%;
     }
 
     #navbar .navbar-header a.logo {
         display: block;
         left: 30px;
         top: 15px;
-    }
-
-    #navbar nav li:hover {
-        background: #666;
-        cursor: pointer;
+        position: absolute;
     }
 
     #navbar .navbar-header {
@@ -181,28 +178,12 @@
         float: none;
         text-align: left;
     }
-}
 
-@media screen and (max-width: 440px) {
-    #main iframe {
-        width: 348px;
-        height: 204px;
-    }
-
-    #main ul li img {
-        width: 78px;
-        height: 70px;
-    }
-
-    #main ul li {
-        width: 78px;
-        height: 70px;
-    }
-}
-
-@media screen and (max-width: 400px)
-    #main iframe {
-        width: 245px;
-        height: 153px;
+    #navbar nav ul {
+        margin-top: 10px;
+        float: left;
+        padding: 0px;
+        width: 30%;
+        margin-left: 0px;
     }
 }

@@ -392,7 +392,7 @@ article p a:hover {
     width: 134px;
     font-size: 0.5em;
     position: absolute;
-    left: 632px;
+    left: 46%;
     margin-top: -50px;
     line-height: 1.3em;
 }
@@ -404,6 +404,7 @@ article p a:hover {
 #team ul {
     list-style-type: none;
     margin: 0;
+    padding-left: 5px;
 }
 
 #team li {
@@ -702,6 +703,21 @@ article p a:hover {
 @media screen and (max-width: 572px) {
     #video-container section {
         max-width: 405px;
+        padding-top: 15px;
+    }
+
+    #team > article > h2 {
+        background: transparent url('../img/home/gg-bridge.svg') 160px center no-repeat;
+        background-size: 82px 79px;
+    }
+
+    #team > article > h2:after {
+        left: 145px;
+        margin-top: -54px;
+    }
+
+    #team li {
+        width: auto;
     }
 
     #main iframe {
@@ -720,9 +736,120 @@ article p a:hover {
     }
 
     #main ul {
-        width: 100%;
+        width: 99%;
     }
     #main ul li.current:after {
         left: 41%;
+    }
+
+    #company article:nth-child(2) h3:first-child:after {
+        display: none;
+    }
+
+    #company article:first-child p:last-child {
+        padding: 0px;
+    }
+
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        background-size: 298px 185px;
+    }
+
+    #investors > article li {
+        height: 130px;
+        padding: 19px 10px;
+        width: 130px;
+    }
+
+    #investors > article li h3 {
+        font-size: 24px;
+    }
+
+    #investors > article li:nth-child(5) p {
+        font-size: 20px;
+    }
+
+    #investors > article li:nth-child(2) {
+        left: 90px;
+    }
+
+    #investors > article li:nth-child(5) {
+        left: 172px;
+    }
+
+    #investors > article li:nth-child(4) {
+        left: 38px;
+    }
+
+    #investors > article li:nth-child(3) {
+        left: 256px;
+    }
+
+    #advisors > article li {
+        height: 160px;
+        width: 135px;
+    }
+
+    #advisors > article li img {
+        width: 135px;
+    }
+
+    #advisors > article li h3 {
+        font-size: 16px;
+    }
+
+    #advisors > article li:nth-child(2) {
+        left: 206px;
+    }
+
+    #advisors > article li:nth-child(3) {
+        left: 353px;
+    }
+
+    #investors > article > ul {
+        280px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #video-container section {
+        max-width: 348px;
+    }
+
+    #main iframe {
+        width: 348px;
+        height: 204px;
+    }
+
+    #main ul li,
+    #main ul li img {
+        width: 78px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   #video-container section {
+        max-width: 275px;
+    }
+
+   #main iframe {
+        width: 275px;
+        height: 153px;
+    }
+
+    #main ul li img,
+    #main ul li {
+        width: 62px;
+        height: 57px;
+    }
+
+    #container {
+        width: 295px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #blog article {
+        padding-left: 0px;
     }
 }

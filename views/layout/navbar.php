@@ -10,7 +10,7 @@ if (class_exists('View')) {
     $worklist_url = 'https://worklist.net/';
 }
 ?>
-<header id="navbar" class="navbar navbar-inverse navbar-static-top hifi-web-nav" id="top" role="banner">
+<header id="navbar" class="navbar navbar-static-top hifi-web-nav" id="top" role="banner">
   <div class="container-fluid">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".hifi-navbar-collapse">
@@ -38,7 +38,9 @@ if (class_exists('View')) {
             <li>
                 <a href="<?php echo $base_path; ?>press" title="Press">Press</a><i></i>
             </li>
-            <li>
+        </ul>
+        <ul class="nav navbar-nav ">
+             <li>
                 <a href="<?php echo $worklist_url; ?>" title="The Worklist">Worklist</a><i></i>
             </li>
             <li class="<?php echo ($page == 'jobs' ? 'selected' : ''); ?>">

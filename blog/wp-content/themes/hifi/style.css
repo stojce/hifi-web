@@ -603,11 +603,7 @@ cite:before {
     body {
         font-size: 14px;
     }
-    
-    #main {
-        margin-left: 10px;
-    }
-    
+ 
     #header-title,
     .entry_author_image {
         display: none;
@@ -1062,7 +1058,7 @@ cite:before {
 
 .related-articles article {
     cursor: pointer;
-    float: left;
+
     height: 150px;
     padding: 20px 50px 45px;
     border-bottom: 1px solid #CCCCCC;
