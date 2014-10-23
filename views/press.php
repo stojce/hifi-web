@@ -28,28 +28,28 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.theatlantic.com/technology/archive/2013/12/making-virtual-reality-less-virtual/282640/" target="_blank">
-                    <q cite="new-scientist">Making Virtual Reality Less Virtual</q>
-                </a>
-            </li>
-            <li>
                 <a href="http://www.newscientist.com/article/mg22229664.000-second-life-20-virtual-world-recreates-the-real-you.html#.VBCqH0iKyW4" target="_blank">
-                    <q cite="mit-tech-review">Second Life 2.0: Virtual world recreates the real you</q>
+                    <q cite="new-scientist">Second Life 2.0: Virtual world recreates the real you</q>
                 </a>
             </li>
             <li>
-                <a href="http://www.technologyreview.com/view/527101/why-virtual-reality-will-compete-with-the-real-world/" target="_blank">
-                    <q cite="cnbc">Why Virtual Reality Will Compete with the Real World</q>
+                <a href="http://www.technologyreview.com/featuredstory/531751/the-quest-to-put-more-reality-in-virtual-reality/" target="_blank">
+                    <q cite="mit-tech-review">The Quest to Put More Reality in Virtual Reality</q>
                 </a>
             </li>
             <li>
-                <a href="http://www.cnbc.com/id/101747980" target="_blank">
-                    <q cite="the-atlantic">Avatars make online conferencing easy</q>
+                <a href="http://www.cnbc.com/id/101747980" target="_blank" target="_blank">
+                    <q cite="cnbc">Avatars make online conferencing easy</q>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.theatlantic.com/technology/archive/2013/12/making-virtual-reality-less-virtual/282640/" target="_blank">
+                    <q cite="the-atlantic">Making Virtual Reality Less Virtual</q>
                 </a>
             </li>
             <li>
                 <a href="http://techcrunch.com/2013/04/19/true-ventures-backs-high-fidelity/" target="_blank">
-                    <q cite="techcrunch">Second Life Founder Philip Rosedale’s New Startup High Fidelity</q>
+                    <q cite="techcrunch">Second Life Founder Philip Rosedale's New Startup High Fidelity</q>
                 </a>
             </li>
         </ul>
