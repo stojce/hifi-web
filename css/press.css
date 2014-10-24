@@ -422,7 +422,6 @@ h2,
     margin: 0;
     padding: 0;
     width: 100%;
-    border-bottom: 1px solid #dadada;
 }
 @media screen and (max-width: 530px) {
     #references ul {
@@ -441,6 +440,7 @@ h2,
     padding: 30px 5px;
     vertical-align: top;
     font-size: .95em;
+    line-height: 1.1em;
 }
 @media screen and (max-width: 770px) {
     #references li {
@@ -453,13 +453,13 @@ h2,
 }
 @media screen and (max-width: 530px) {
     #references li {
-        width: 100px;
+        width: 120px;
         padding: 10px 0;
     }
 }
 @media screen and (max-width: 360px) {
     #references li {
-        width: 150px;
+        width: 120px;
         padding: 0;
     }
 }
@@ -584,16 +584,16 @@ h2,
 @media screen and (max-width: 360px) {
     #references q[cite="cnet"] {
         /* text rag padding tweaks */
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
 /* New Scientist block */
 #references q[cite="new-scientist"] {
     /* text rag padding tweaks */
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #references q[cite="new-scientist"]:after {
     background-image: url("../img/press/new-scientist.png");
@@ -622,8 +622,8 @@ h2,
 @media screen and (max-width: 360px) {
     #references q[cite="new-scientist"] {
         /* text rag padding tweaks */
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20;
+        padding-right: 10px;
     }
 }
 
@@ -667,8 +667,8 @@ h2,
 @media screen and (max-width: 360px) {
     #references q[cite="mit-tech-review"] {
         /* text rag padding tweaks */
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -704,8 +704,8 @@ h2,
 @media screen and (max-width: 360px) {
     #references q[cite="cnbc"] {
         /* text rag padding tweaks */
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -742,8 +742,8 @@ h2,
 @media screen and (max-width: 360px) {
     #references q[cite="the-atlantic"] {
         /* text rag padding tweaks */
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -780,7 +780,88 @@ h2,
 @media screen and (max-width: 360px) {
     #references q[cite="techcrunch"] {
         /* text rag padding tweaks */
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
+/*Full Press Section*/
+#references + .container {
+    display: table;
+    border-collapse: collapse;
+    text-align: left;
+    vertical-align: top;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.9;
+    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#references + .container a {
+    display: table-row;
+    color: #878787;
+    border-top: 1px solid #dadada;
+    line-height: 120%;
+}
+#references + .container a:hover {
+    color: #3698BF;
+}
+#references + .container a > div:first-child {
+    display: table-cell;
+    width: 70px;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+}
+#references + .container a > div:nth-child(2) {
+    display: table-cell;
+    text-align: left;
+    width: 385px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 120%;
+    vertical-align: top;
+}
+#references + .container a > div:nth-child(3) {
+    display: table-cell;
+    width: 130px;
+    vertical-align: top;
+    position: relative;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+@media #references + .container{
+    width: 100%;
+}
+@media screen and (max-width: 530px) {
+    #references + .container a {
+      font-size: .70em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #references + .container a > div:first-child {
+      width: 5%;
+      padding-right: 10px;
+    }
+} 
+@media screen and (max-width: 530px) {
+    #references + .container a > div:nth-child(2) {
+      padding-right: 2px;
+      width: 20%;
+    }
+} 
+@media screen and (max-width: 530px) {
+    #references + .container a > div:nth-child(3) {
+      position: absolute;
+      width: 10%;
+    }
+}     
