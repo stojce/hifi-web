@@ -605,7 +605,7 @@ cite:before {
     }
 
     .related-articles article {
-        float: none;
+        float: none !important;
         margin-bottom: 10px;
     }
  
