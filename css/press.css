@@ -55,7 +55,7 @@ body #main {
 }
 @media screen and (max-width: 530px) {
     body #main {
-        margin: -80px 10px 0;
+        margin: -80px -4px 0;
         padding: 0 10px;
     }
 }
