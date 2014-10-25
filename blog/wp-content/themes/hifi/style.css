@@ -598,16 +598,19 @@ cite:before {
     padding: 0;
 }
 
+
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
-    
-    #main {
-        margin-left: 10px;
+
+    .related-articles article {
+        float: none !important;
+        margin-bottom: 10px;
     }
-    
-    #header-title {
+ 
+    #header-title,
+    .entry_author_image {
         display: none;
     }
 
@@ -712,6 +715,49 @@ cite:before {
     #main + footer.related-articles section {
         font-size: 14px;
         line-height: 17px;
+    }
+
+    #main article iframe {
+        width: 500px;
+        height: 291px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #main article iframe {
+        width: 400px;
+        height: 234px;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    #main article iframe.youtube-player {
+        width: 400px;
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #main article iframe {
+        width: 330px;
+        height: 195px;
+    }
+
+    #main article iframe.youtube-player {
+        width: 324px;
+        height: 218px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main article iframe {
+       width: 268px;
+       height: 160px;
+    }
+
+    #main article iframe.youtube-player {
+        width: 270px;
+        height: 180px;
     }
 }
 

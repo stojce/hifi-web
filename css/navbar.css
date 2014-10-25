@@ -2,15 +2,22 @@
  * HighFidelity's navbar styling
  *
  * This file is assumed to be included on every HF page when using the
- * common layout. Each shared rule for the navbar should live here. 
- * 
+ * common layout. Each shared rule for the navbar should live here.
+ *
  * Page-specific styling on the navbar should be at their own styling file(s).
  *
  */
 
+* {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
 #navbar {
-    height: 60px;
     background: #333;
+    margin: 0px;
 }
 
 #navbar nav li a {
@@ -35,10 +42,14 @@
     vertical-align: top;
 }
 
-#logo a {
+#navbar nav {
+    background: none rgb(51, 51, 51);
+}
+
+#navbar a.logo {
     background: url("../img/hifi-logo-text-lightgrey.svg") !important;
     display: inline-block !important;
-    width: 134px;
+    width: 135px;
     height: 31px;
     background-repeat: no-repeat !important;
     background-size: 150px 116px !important;
@@ -47,22 +58,39 @@
     top: -5px;
 }
 
-#logo a:hover {
+.hifi-web-nav {
+    margin-bottom: 0;
+    background-color: #333333;
+    border-bottom: 0;
+}
+
+.hifi-web-nav .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+#navbar .navbar-header {
+    display: none;
+    min-height: 60px;
+}
+
+#navbar .container {
+    width: 100%;
+    padding: 0px;
+}
+
+#navbar a.logo:hover {
     background-image: url("../img/hifi-logo-text-drakgrey.svg") !important;
 }
 
-#logo.selected a,
-#logo.selected a:hover {
+#navbar .logo.selected,
+#navbar .logo.selected:hover {
     background-image: url("../img/hifi-logo-text-blue.svg") !important;
-}
-
-#navbar nav li a:hover {
-    color: #666;
 }
 
 #navbar {
     font-size: 14px;
     text-align: center;
+    min-height: 60px;
 }
 
 #navbar nav {
@@ -73,9 +101,9 @@
 }
 
 #navbar nav ul {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 0px;
+    margin-top: 0px;
+    float: none;
+    padding: 0px;
 }
 
 #navbar nav li {
@@ -88,19 +116,74 @@
     color: #3698bf;
 }
 
-@media screen and (max-width: 643px)  {
-    #navbar nav li a {
-        padding: 0px 10px 0px 10px !important;
-    }
+#navbar nav li a:hover {
+    color: #666;
+}
 
-    #logo a {
-        width: 20px;
+@media screen and (min-width: 768px) {
+    #navbar nav ul {
+        display: inline-block;
+        height: 27px;
+        position: relative;
+        top: 20px;
     }
 }
 
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 767px) {
+    
+    #navbar li#logo,
+    #navbar nav li i,
+    #navbar nav.collapse {
+        display: none;
+    }
+
+    #navbar a.logo {
+        width: 160px;
+    }
+
+    #navbar .navbar-toggle {
+        margin-top: 14px;
+        margin-right: 20px;
+    }
+
     #navbar nav li a {
-        padding: 0px 8px 0px 8px !important;
+        height: 21px;
+        overflow: visible;
+        line-height: 28px;
+    }
+
+    #navbar .navbar-header a.logo {
+        display: block;
+        left: 30px;
+        top: 15px;
+        position: absolute;
+    }
+
+    #navbar .navbar-header {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navbar .navbar-header,
+    #navbar nav.collapse.in,
+    #navbar nav.collapsing {
+        display: block;
+    }
+
+    #navbar .container-fluid {
+       padding: 0px;
+    }
+
+    #navbar nav li {
+        float: none;
+        text-align: left;
+    }
+
+    #navbar nav ul {
+        margin-top: 10px;
+        float: left;
+        padding: 0px;
+        width: 30%;
+        margin-left: 0px;
     }
 }
-

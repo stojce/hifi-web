@@ -359,3 +359,24 @@ footer#site-links p {
     border-left: 0 none;
 }
 
+@media screen and (max-width: 768px) {
+    form > fieldset:first-child {
+        width: calc(100% - 62px);
+        margin: 0px;
+    }
+
+    form > fieldset:last-child  {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    form > fieldset:last-child select {
+        width: 100%;
+    }
+
+    form > fieldset:last-child input {
+        width: calc(100% - 20px);
+    }
+}
+
