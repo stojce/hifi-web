@@ -603,6 +603,11 @@ cite:before {
     body {
         font-size: 14px;
     }
+
+    .related-articles article {
+        float: none;
+        margin-bottom: 10px;
+    }
  
     #header-title,
     .entry_author_image {
@@ -1058,7 +1063,7 @@ cite:before {
 
 .related-articles article {
     cursor: pointer;
-
+    float: left;
     height: 150px;
     padding: 20px 50px 45px;
     border-bottom: 1px solid #CCCCCC;
