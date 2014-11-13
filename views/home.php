@@ -228,9 +228,9 @@ $posts = View::read('posts');
       <li>
         <figure>
           <img src="img/team/sam.png" class="img-circle" alt="Sam Gateau" />
-          <h3>Sam Gateau</h3>
+          <h3>Samuel Gateau</h3>
           <p>
-            Minimalist Pixel-Pusher. 
+            Minimalist Pixel Pusher. 
           </p>
         </figure>
       </li>
