@@ -225,6 +225,15 @@ $posts = View::read('posts');
           </p>
         </figure>
       </li>
+      <li>
+        <figure>
+          <img src="img/team/sam.png" class="img-circle" alt="Sam Gateau" />
+          <h3>Sam Gateau</h3>
+          <p>
+            Minimalist Pixel-Pusher. 
+          </p>
+        </figure>
+      </li>
       <li id="youimg">
         <figure>
           <div class="img-circle"></div>
