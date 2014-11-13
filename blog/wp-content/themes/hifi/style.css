@@ -1140,6 +1140,7 @@ cite:before {
     font-size: 16px;
     padding: 10px 0 0 10px;
     font-family: proxima-nova, sans-serif;
+    margin-bottom: 10px;
 }
 #commentform input {
     font-weight: bold;

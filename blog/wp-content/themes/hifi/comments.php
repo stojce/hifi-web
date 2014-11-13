@@ -101,7 +101,7 @@ if ( post_password_required() ) { ?>
                                 <label for="author">Name:</label>
                                 <input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
                             </div>
-                        </li><br />
+                        </li>
 
                         <li>
                             <div class="control-group">
@@ -110,7 +110,7 @@ if ( post_password_required() ) { ?>
                             </div>
                         </li>
 
-                    </ul><br />
+                    </ul>
 
                 <?php endif; ?>
 
