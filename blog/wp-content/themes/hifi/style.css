@@ -1116,13 +1116,17 @@ cite:before {
 
 #comment-form-title {
     font-family: proxima-nova, sans-serif;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #707070;
 }
 
 
 #commentform label {
     color: #999999;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 #commentform input,
@@ -1132,10 +1136,14 @@ cite:before {
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: #333;
-    font-size: 18px;
-    padding: 10px;
+    color: #707070;
+    font-size: 16px;
+    padding: 10px 0 0 10px;
     font-family: proxima-nova, sans-serif;
+    margin-bottom: 10px;
+}
+#commentform input {
+    font-weight: bold;
 }
 
 #commentform input[type=text],
@@ -1146,9 +1154,9 @@ cite:before {
 }
 
 #commentform textarea {
-    max-width: 544px;
     height: 185px;
-    width: 100%;
+    margin-left: 40px;
+    width: 520px;
 }
 
 #cancel-comment-reply {
@@ -1163,7 +1171,6 @@ cite:before {
     float: right;
     text-decoration: underline;
     background-color: transparent;
-    font-weight: bold;
     padding-right: 0 !important;
 }
 

@@ -118,13 +118,11 @@ if ( post_password_required() ) { ?>
                     <div class="input">
                         <textarea name="comment" id="comment" placeholder="Your thoughts ..." tabindex="3"></textarea>
                     </div>
+                    <div class="form-actions">
+                        <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+                        <?php comment_id_fields(); ?>
+                    </div>
                 </div>
-
-                <div class="form-actions">
-                    <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
-                    <?php comment_id_fields(); ?>
-                </div>
-
                 <?php
                 //comment_form();
                 do_action('comment_form()', $post->ID);
