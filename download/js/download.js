@@ -40,7 +40,7 @@ $(function() {
         renderBuild('stackmanager', $(this).val());
     });
 
-    $.get('builds.xml', function(data) {
+    $.get('/builds.xml', function(data) {
         var projects = $($(data).find('project'));
         for (projectIndex = 0; projectIndex < projects.length; projectIndex++) {
             var project = $(projects[projectIndex]);
