@@ -1,0 +1,340 @@
+body {
+    font-family: proxima-nova, sans-serif;
+}
+
+header {
+    font-size: 14px;
+    text-align: center;
+    min-height: 60px;
+    background: #333;
+}
+
+#navbar,
+#inner-container {
+    width: 1015px;
+    margin: 0 auto;
+}
+
+header #navbar a.logo {
+    background: url(../images/hifi-logo-text-lightgrey.svg);
+    width: 150px;
+    height: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position-y: 15px;
+}
+
+#inner-container {
+    margin-top: 40px;
+    min-height: 410px;
+}
+
+#interface {
+    float: left;
+    min-height: 160px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 100%;
+}
+
+.interface:nth-child(2) {
+    border-radius: 0px 10px 0px 0px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 20px;
+    border-left: 1px solid #ccc;
+    min-height: 160px;
+    float: left;
+    width: calc(100% - 310px);
+}
+
+#stackmanager {
+    min-height: 160px;
+    border-left: 1px solid #ccc;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+}
+
+.interface:nth-child(1),
+.stackmanager:nth-child(1) {
+    float: left;
+    width: 305px;
+}
+
+.stackmanager:nth-child(2) {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 20px;
+    border-left: 1px solid #ccc;
+    min-height: 160px;
+    float: left;
+    width: calc(100% - 310px);
+}
+
+a#interface-logo {
+    background: url(../images/interface.svg);
+    width: 121px;
+    height: 124px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-left: 22px;
+    margin-top: 15px;
+}
+
+a#stackmanager-logo {
+    background: url(../images/stack-manager.svg);
+    width: 125px;
+    height: 121px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-left: 27px;
+    margin-top: 14px;
+}
+
+#interface  h2 {
+    margin-left: 40px;
+    margin-top: 55px;
+}
+
+#stackmanager h2 {
+    margin-top: 48px;
+    margin-left: 40px;
+    width: 92px;
+    text-align: right;
+}
+
+#stackmanager h2,
+#interface  h2 {
+    color: #0094b8;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+.chosen-container-single .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-single {
+    background: none !important;
+    box-shadow: none !important;
+    border-color: #ccc;
+}
+
+.chosen-container-active .chosen-single {
+    border-color: #ccc;
+}
+
+.chosen-container-single .chosen-single {
+    height: 33px;
+    line-height: 34px;
+}
+
+.chosen-results .highlighted {
+    background: none !important;
+    color: #0094b8 !important;
+}
+
+.chosen-container-single .chosen-single span {
+    color: #0094b8;
+    font-weight: bold;
+}
+
+.chosen-container .chosen-drop {
+    border-color: #ccc;
+}
+
+.chosen-search {
+    display: none;
+}
+
+select.choose-os {
+    width: 132px;
+    margin-top: 5px;
+}
+
+select.choose-build-version {
+    width: 225px;
+    margin-top: 5px;
+}
+
+.chosen-container-single .chosen-single div {
+    width: 20px;
+    line-height: 34px;
+}
+
+.chosen-container-single .chosen-single div b {
+    background: none transparent;
+    background-image: none !important;
+}
+
+.chosen-container-single .chosen-single div b:before {
+    font-family: FontAwesome;
+    content: "\f0d7";
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: #0094b8;
+}
+
+.chosen-container-single.chosen-with-drop .chosen-single div b:before {
+   content: "\f0d8";
+}
+
+div.choose-os-container {
+    width: 132px;
+    float: left;
+    margin-right: 15px;
+}
+
+.os-icon-mac.selected {
+    background: url(../images/choose-os-selected.svg) no-repeat;
+    background-position: 0px -1px;
+}
+
+.os-icon-linux.selected {
+    background: url(../images/choose-os-selected.svg) no-repeat;
+    background-position: -73px -2px;
+}
+
+.os-icon-windows.selected {
+    background: url(../images/choose-os-selected.svg) no-repeat;
+    background-position: -38px 0px;
+}
+
+.os-icon-mac {
+    background: url(../images/choose-os.svg) no-repeat;
+    background-position: 0px -1px;
+}
+
+.os-icon-linux {
+    background: url(../images/choose-os.svg) no-repeat;
+    background-position: -73px -2px;
+}
+
+.os-icon-windows {
+    background: url(../images/choose-os.svg) no-repeat;
+    background-position: -38px 0px;
+}
+
+.os-icon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-size: 93px !important;
+    margin-right: 10px;
+}
+
+#os-icon {
+    height: 25px;
+}
+
+.interface p,
+.stackmanager p {
+    margin-top: 9px;
+}
+
+.choose-os-container p,
+.choose-build-version-container p {
+    font-size: 13px;
+    line-height: 14px;
+    color: #666;
+}
+
+.choose-build-version-container p:nth-child(1) {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.release-notes {
+    clear: left;
+    padding-top: 10px;
+}
+
+.choose-build-version-container {
+    width: 225px;
+    float: left;
+    margin-right: 15px;
+}
+
+.download-container {
+    float: left;
+    margin-top: 27px;
+}
+
+.download-container a.download {
+    padding: 8px 12px 8px 12px;
+    border-radius: 5px;
+    background: #0094b8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+.release-notes ul {
+    padding-left: 15px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.release-notes ul li p {
+    font-size: 14px;
+    color: #666;
+    margin: 0px;
+    text-indent: -4px;
+}
+
+.chosen-container {
+    margin-top: 5px;
+}
+
+.download-container a.download:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1070px) {
+    #navbar,
+    #inner-container {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .interface:nth-child(1),
+    .stackmanager:nth-child(1),
+    .interface:nth-child(2),
+    .stackmanager:nth-child(2) {
+        width: 100%;
+    }
+
+    .interface:nth-child(2),
+    .stackmanager:nth-child(2) {
+        border-left: none;
+    }
+
+    #inner-container,
+    #navbar {
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width: 590px) {
+    div.choose-os-container,
+    .choose-build-version-container,
+    .download-container {
+        float: none;
+    }
+
+    .download-container {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
