@@ -56,6 +56,13 @@
     </section>
     <div class="container">
         <div>
+            <a href="https://gigaom.com/2014/11/18/the-gap-between-virtual-reality-and-sci-fi-is-shortening/" target="_blank">
+                <div>11/18/2014</div>
+                <div>The gap between virtual reality and sci-fi is shortening</div>
+                <div>GigaOm</div>
+            </a>
+        </div>
+        <div>
             <a href="http://www.cnet.com/news/philip-rosedales-second-life-with-high-fidelity/" target="_blank">
                 <div>8/28/2014</div>
                 <div>Philip Rosedale to keynote OpenSim conference</div>
