@@ -38,6 +38,9 @@ if (class_exists('View')) {
                 <li>
                     <a href="<?php echo $base_path; ?>press" title="Press">Press</a><i></i>
                 </li>
+                <li>
+                    <a href="<?php echo $base_path; ?>#advisors" title="Advisors">Advisors</a><i></i>
+                </li>
             </ul>
             <ul class="nav navbar-nav ">
                 <li>
