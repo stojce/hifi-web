@@ -239,8 +239,8 @@ $posts = View::read('posts');
           <h3>You?</h3>
           <p>
             You've dated SoLoMo, but you need something 
-            more. An OpenGL master; perhaps enamored by 
-            voxels and  L-systems. You love algorithms 
+            more. An OpenGL master; perhaps enamored of 
+            shaders and  L-systems. You love algorithms 
             and are not afraid of C. Is this you?
             <a href="mailto:<?php echo CONTACT_EMAIL_ADDRESS; ?>">Email us</a>.
           </p>
