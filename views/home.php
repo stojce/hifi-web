@@ -75,8 +75,7 @@ $posts = View::read('posts');
     <p>
       Virtual worlds servers using a spatial tree structure for storage are nested inside each other
       and dynamically assigned to handle content load. 3D content from multiple formats can be loaded
-      into the world and presented at multiple levels of detail and/or transformed into voxels to allow
-      for infinite draw distances.
+      into the world and presented at multiple levels of detail.
     </p>
     <h3>Audience scalability</h3>
     <p>
