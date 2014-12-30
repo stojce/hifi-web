@@ -62,11 +62,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
                 </li>
                 <li>
                     <span>
-                        Experience with voxel-based systems
-                    </span>
-                </li>
-                <li>
-                    <span>
                         Experience developing in Git environments
                     </span>
                 </li>
