@@ -69,7 +69,7 @@
                         <select class="choose-os">
                             <option value="mac">Mac OS X</option>
                             <option value="windows" selected='selected'>Windows</option>
-                            <option value="linux">Linux</option>
+                            <!-- <option value="linux">Linux</option> -->
                         </select>
                         <p class="build-time">Requires Mountain Lion(10.8) or newer</p>
                     </div>
