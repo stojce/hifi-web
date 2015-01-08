@@ -299,7 +299,7 @@ $posts = View::read('posts');
         </a>
       </li>
       <li>
-        <a target="_blank" href="http://profiles.ucsf.enu/adam.gazzaley">
+        <a target="_blank" href="http://profiles.ucsf.edu/adam.gazzaley">
           <figure>
             <img src="img/advisors/adam_gazzaley.jpg" alt="Adam Gazzaley" />
             <h3>Adam Gazzaley</h3>
@@ -307,7 +307,7 @@ $posts = View::read('posts');
         </a>
       </li>
       <li>
-        <a target="_blank" href="http://www.tonyparisi.com/">
+        <a target="_blank" href="http://www.tonyparisi.com">
           <figure>
             <img src="img/advisors/tonyparisi.jpg" alt="Tony Parisi" />
             <h3>Tony Parisi</h3>
