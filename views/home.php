@@ -174,15 +174,6 @@ $posts = View::read('posts');
       </li>
       <li>
         <figure>
-          <img src="img/team/andrzej.png" class="img-circle" alt="Andrzej Kapolka" />
-          <h3>Andrzej Kapolka</h3>
-          <p>
-              Former Puzzle Pirate and Spiral Knight.  Loves abstraction, reflection, and 3D geometry.  Pronounced 'Onjay.' 
-          </p>
-        </figure>
-      </li>
-      <li>
-        <figure>
           <img src="img/team/emily.png" class="img-circle" alt="Emily Donald" />
           <h3>Emily Donald</h3>
           <p>
