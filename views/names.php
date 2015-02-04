@@ -16,5 +16,7 @@
     the Place Name is determined by its owner.
   </p>
   <p>They cost $20/year</p>
-  <a href=''>Buy a Place Name</a>
+  <p>
+    <a href=''>Buy a Place Name</a>
+  </p>
 </div>
