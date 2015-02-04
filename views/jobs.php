@@ -7,7 +7,58 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <div role="main" id="main">
     <h2><strong>1.</strong> Full-time Jobs</h2>
     <article class="no-border-bottom radius-border-top">
+<<<<<<< Updated upstream
         <p class="lead">3D Graphics Engineer</p>
+=======
+        <p class="lead">Software Developer: Character Animation</p>
+        <p>
+            High Fidelity is breaking new ground using new and upcoming
+            hardware like HMD's, depth cameras, and hand/body trackers to
+            bring avatars to life with low-latency data streams.  We are
+            looking for a developer with passion, skills, and experience in
+            creating avatar characters with physics and animation driven by
+            these inputs. We want to enable people to shake hands across the
+            internet, read each other's body language, and sword fight. Is 
+            that too much to ask?
+        </p>
+        <div id="requirements">
+            <h3>Requirements</h3>
+            <ul>
+                <li>
+                    <span>
+                        Fluency in C++
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        A proven history working on character animation and physics
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Strong graphics math skills
+                    </span>
+                </li>
+            </ul>
+            <br/>
+            <h3>Bonus Points</h3>
+            <ul>
+                <li>
+                    <span>
+                        Experience with varied facial rigging techniques
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Real-time cloth and hair simulation
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="no-border-bottom no-border-top">
+        <p class="lead">Lead 3D Graphics Engineer</p>
+>>>>>>> Stashed changes
         <p>
             We're looking for a 3D graphics engineer to help build our virtual 
             world’s 3D graphics engine, working closely with us to create something 
@@ -106,6 +157,133 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
                 </li>
             </ul>
         </div>
+    </article>
+    <article class="no-border-bottom no-border-top">
+        <p class="lead">Software Developer: C++ Generalist</p>
+        <p>
+            An online shared Virtual Reality platform has a lot of moving
+            parts: high performance networking with low latency requirements
+            using connectionless protocols and dynamic broadcast trees; 3D audio,
+            including live mixing and room reflections; head-mounted displays;
+            head, body, and hand tracking hardware API's; Physics engines; high
+            end 3D rendering, including complex character avatars with both dynamic
+            and offline lighting.
+        </p>
+        <p>
+            We're looking for developers with a demonstrated ability to connect the
+            dots across multiple disciplines, a willingness to learn new things,
+            resilience, a curious personality, and great communication skills that
+            make you fun to work with.
+        </p>
+        <div id="requirements">
+            <h3>Requirements</h3>
+            <ul>
+                <li>
+                    <span>
+                        C++ fluency
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Esprit de corps
+                    </span>
+                </li>
+            </ul>
+            <br/>
+            <h3>Bonus Points</h3>
+            <ul>
+                <li>
+                    <span>
+                        Strong 3D math skills
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Javascript
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Git
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        A track record of working on similarly complex projects
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Ping-pong affinity
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="no-border-bottom no-border-top">
+        <p class="lead">Javascript Content Developer</p>
+        <p>
+            Interactive content inside High Fidelity is built using Javascript: from vehicles
+            to presentation tools, games, music, guns, ecosystems, paddle-ball...you name it.
+            Javascript is also used to extend  High Fidelity's UI itself, for  example, with
+            new in-world building tools.
+        </p>
+        <p>
+            We're looking for a San Francisco based javascript developer who wants to sit beside
+            us and use the latest features of High Fidelity to build interactive content that will
+            demonstrate the capabilities of an open virtual world.
+        </p>
+        <div id="requirements">
+            <h3>Requirements</h3>
+            <ul>
+                <li>
+                    <span>
+                        Solid experience with Javascript 
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        A portfolio: show us something amazing you've already built
+                    </span>
+                </li>
+            </ul>
+            <br/>
+            <h3>Bonus Points</h3>
+            <ul>
+                <li>
+                    <span>
+                        3D Math Experience
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        C++ experience
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Game development experience
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Virtual World content development experience
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Physics engine experience (Bullet, etc)
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Automata, emergent systems
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="no-border-bottom no-border-top">
         <div id="apply">
             <h3>Apply</h3>
             <p>
