@@ -420,7 +420,7 @@ var names = {
         });
     },
 
-    hasProfanity = function (word) {
+    hasProfanity: function (word) {
         var regex = new RegExp(names.profanity.join('|'));
         return word.search(regex) > -1;
     },
