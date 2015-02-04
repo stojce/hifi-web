@@ -7,9 +7,9 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <div role="main" id="main">
     <h2><strong>1.</strong> Full-time Jobs</h2>
     <article class="no-border-bottom radius-border-top">
-        <p class="lead">Lead 3D Graphics Engineer</p>
+        <p class="lead">3D Graphics Engineer</p>
         <p>
-            We're looking for a lead 3D graphics engineer to help build our virtual 
+            We're looking for a 3D graphics engineer to help build our virtual 
             world’s 3D graphics engine, working closely with us to create something 
             astonishing. We are creating an open source rendering engine that can 
             display a very large user-created environment at high FPS, using data 
