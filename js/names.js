@@ -3,369 +3,7 @@ var names = {
         unsupported_warning: false
     },
 
-    profanity: [
-        '2g1c',
-        '2 girls 1 cup',
-        'acrotomophilia',
-        'alabama hot pocket',
-        'alaskan pipeline',
-        'anal',
-        'anilingus',
-        'anus',
-        'arsehole',
-        'ass',
-        'asshole',
-        'assmunch',
-        'auto erotic',
-        'autoerotic',
-        'babeland',
-        'baby batter',
-        'baby juice',
-        'ball gag',
-        'ball gravy',
-        'ball kicking',
-        'ball licking',
-        'ball sack',
-        'ball sucking',
-        'bangbros',
-        'bareback',
-        'barely legal',
-        'barenaked',
-        'bastardo',
-        'bastinado',
-        'bbw',
-        'bdsm',
-        'beaver cleaver',
-        'beaver lips',
-        'bestiality',
-        'bi curious',
-        'big black',
-        'big breasts',
-        'big knockers',
-        'big tits',
-        'bimbos',
-        'birdlock',
-        'bitch',
-        'black cock',
-        'blonde action',
-        'blonde on blonde action',
-        'blowjob',
-        'blow job',
-        'blow your load',
-        'blue waffle',
-        'blumpkin',
-        'bollocks',
-        'bondage',
-        'boner',
-        'boob',
-        'boobs',
-        'booty call',
-        'brown showers',
-        'brunette action',
-        'bukkake',
-        'bulldyke',
-        'bullet vibe',
-        'bung hole',
-        'bunghole',
-        'busty',
-        'butt',
-        'buttcheeks',
-        'butthole',
-        'camel toe',
-        'camgirl',
-        'camslut',
-        'camwhore',
-        'carpet muncher',
-        'carpetmuncher',
-        'chocolate rosebuds',
-        'circlejerk',
-        'cleveland steamer',
-        'clit',
-        'clitoris',
-        'clover clamps',
-        'clusterfuck',
-        'cock',
-        'cocks',
-        'coprolagnia',
-        'coprophilia',
-        'cornhole',
-        'creampie',
-        'cum',
-        'cumming',
-        'cunnilingus',
-        'cunt',
-        'darkie',
-        'date rape',
-        'daterape',
-        'deep throat',
-        'deepthroat',
-        'dendrophilia',
-        'dick',
-        'dildo',
-        'dirty pillows',
-        'dirty sanchez',
-        'doggie style',
-        'doggiestyle',
-        'doggy style',
-        'doggystyle',
-        'dog style',
-        'dolcett',
-        'domination',
-        'dominatrix',
-        'dommes',
-        'donkey punch',
-        'double dong',
-        'double penetration',
-        'dp action',
-        'dry hump',
-        'dvda',
-        'eat my ass',
-        'ecchi',
-        'ejaculation',
-        'erotic',
-        'erotism',
-        'escort',
-        'ethical slut',
-        'eunuch',
-        'faggot',
-        'fecal',
-        'felch',
-        'fellatio',
-        'feltch',
-        'female squirting',
-        'femdom',
-        'figging',
-        'fingerbang',
-        'fingering',
-        'fisting',
-        'foot fetish',
-        'footjob',
-        'frotting',
-        'fuck',
-        'fuck buttons',
-        'fudge packer',
-        'fudgepacker',
-        'futanari',
-        'gang bang',
-        'gay sex',
-        'genitals',
-        'giant cock',
-        'girl on',
-        'girl on top',
-        'girls gone wild',
-        'goatcx',
-        'goatse',
-        'gokkun',
-        'golden shower',
-        'goodpoop',
-        'goo girl',
-        'goregasm',
-        'grope',
-        'group sex',
-        'g-spot',
-        'guro',
-        'hand job',
-        'handjob',
-        'hard core',
-        'hardcore',
-        'hentai',
-        'homoerotic',
-        'honkey',
-        'hooker',
-        'hot carl',
-        'hot chick',
-        'how to kill',
-        'how to murder',
-        'huge fat',
-        'humping',
-        'incest',
-        'intercourse',
-        'jack off',
-        'jail bait',
-        'jailbait',
-        'jelly donut',
-        'jerk off',
-        'jigaboo',
-        'jiggaboo',
-        'jiggerboo',
-        'jizz',
-        'juggs',
-        'kike',
-        'kinbaku',
-        'kinkster',
-        'kinky',
-        'knobbing',
-        'leather restraint',
-        'leather straight jacket',
-        'lemon party',
-        'lolita',
-        'lovemaking',
-        'make me come',
-        'male squirting',
-        'masturbate',
-        'menage a trois',
-        'milf',
-        'missionary position',
-        'motherfucker',
-        'mound of venus',
-        'mr hands',
-        'muff diver',
-        'muffdiving',
-        'nambla',
-        'nawashi',
-        'negro',
-        'neonazi',
-        'nigga',
-        'nigger',
-        'nig nog',
-        'nimphomania',
-        'nipple',
-        'nipples',
-        'nsfw images',
-        'nude',
-        'nudity',
-        'nympho',
-        'nymphomania',
-        'octopussy',
-        'omorashi',
-        'one cup two girls',
-        'one guy one jar',
-        'orgasm',
-        'orgy',
-        'paedophile',
-        'panties',
-        'panty',
-        'pedobear',
-        'pedophile',
-        'pegging',
-        'penis',
-        'phone sex',
-        'piece of shit',
-        'pissing',
-        'piss pig',
-        'pisspig',
-        'playboy',
-        'pleasure chest',
-        'pole smoker',
-        'ponyplay',
-        'poof',
-        'poon',
-        'poontang',
-        'punany',
-        'poop chute',
-        'poopchute',
-        'porn',
-        'porno',
-        'pornography',
-        'prince albert piercing',
-        'pthc',
-        'pubes',
-        'pussy',
-        'queaf',
-        'raghead',
-        'raging boner',
-        'rape',
-        'raping',
-        'rapist',
-        'rectum',
-        'reverse cowgirl',
-        'rimjob',
-        'rimming',
-        'rosy palm',
-        'rosy palm and her 5 sisters',
-        'rusty trombone',
-        'sadism',
-        'santorum',
-        'scat',
-        'schlong',
-        'scissoring',
-        'semen',
-        'sex',
-        'sexo',
-        'sexy',
-        'shaved beaver',
-        'shaved pussy',
-        'shemale',
-        'shibari',
-        'shit',
-        'shota',
-        'shrimping',
-        'skeet',
-        'slanteye',
-        'slut',
-        's&m',
-        'smut',
-        'snatch',
-        'snowballing',
-        'sodomize',
-        'sodomy',
-        'spic',
-        'splooge',
-        'splooge moose',
-        'spooge',
-        'spread legs',
-        'spunk',
-        'strap on',
-        'strapon',
-        'strappado',
-        'strip club',
-        'style doggy',
-        'suck',
-        'sucks',
-        'suicide girls',
-        'sultry women',
-        'swastika',
-        'swinger',
-        'tainted love',
-        'taste my',
-        'tea bagging',
-        'threesome',
-        'throating',
-        'tied up',
-        'tight white',
-        'tit',
-        'tits',
-        'titties',
-        'titty',
-        'tongue in a',
-        'topless',
-        'tosser',
-        'towelhead',
-        'tranny',
-        'tribadism',
-        'tub girl',
-        'tubgirl',
-        'tushy',
-        'twat',
-        'twink',
-        'twinkie',
-        'two girls one cup',
-        'undressing',
-        'upskirt',
-        'urethra play',
-        'urophilia',
-        'vagina',
-        'venus mound',
-        'vibrator',
-        'violet blue',
-        'violet wand',
-        'vorarephilia',
-        'voyeur',
-        'vulva',
-        'wank',
-        'wetback',
-        'wet dream',
-        'white power',
-        'women rapping',
-        'wrapping men',
-        'wrinkled starfish',
-        'xx',
-        'xxx',
-        'yaoi',
-        'yellow showers',
-        'yiffy',
-        'zoophilia'
-    ],
+    profanity: [],
 
     MAX_TEXT_HEIGHT: 30,
     MAX_PLACE_NAMES: 25,
@@ -379,44 +17,42 @@ var names = {
     tagCloud: null,
 
     init: function () {
-        tagCloud = new TagCloud(
-            document.getElementById('canvas'),
-            names.TAG_START_DIST,
-            names.TAG_MARGIN,
-            names.TAG_PADDING,
-            names.TAG_COLOUR
-        );
-
-        names.displayNewPlaceNames();
-        setInterval(names.displayNewPlaceNames, 10000);
+        names.loadProfanity(function() {
+            tagCloud = new TagCloud(
+                $('#recentnames > canvas')[0],
+                names.TAG_START_DIST,
+                names.TAG_MARGIN,
+                names.TAG_PADDING,
+                names.TAG_COLOUR
+            );
+            names.displayNewPlaceNames();
+        });
     },
 
-    // Uses ajax to retrieve new Place Names
     displayNewPlaceNames: function () {
         var url = 'https://metaverse.highfidelity.io/api/v1/new_place_names';
-
         $.getJSON(url, function (data) {
-                var placeNames = String(data['data']['new_place_names']).split(',');
-                placeNames.shuffle();
-                if (placeNames.length > names.MAX_PLACE_NAMES) {
-                    placeNames.slice(0, names.MAX_PLACE_NAMES);
+            var placeNames = String(data['data']['new_place_names']).split(',');
+            placeNames.shuffle();
+            if (placeNames.length > names.MAX_PLACE_NAMES) {
+                placeNames.slice(0, names.MAX_PLACE_NAMES);
+            }
+
+            tagCloud.clear();
+
+            var tmp, textHeight;
+            for (var i = 0; i < placeNames.length; i++) {
+                tmp = i / placeNames.length;
+                if (tmp < 0.2) {
+                    textHeight = Math.round(names.MAX_TEXT_HEIGHT * 0.8);
+                } else if (tmp < 0.4) {
+                    textHeight = Math.round(names.MAX_TEXT_HEIGHT * 0.6);
+                } else {
+                    textHeight = Math.round(names.MAX_TEXT_HEIGHT * 0.4);
                 }
-
-                tagCloud.clear();
-
-                var tmp, textHeight;
-                for (var i = 0; i < placeNames.length; i++) {
-                    tmp = i / placeNames.length;
-                    if (tmp < 0.2) {
-                        textHeight = Math.round(names.MAX_TEXT_HEIGHT * 0.8);
-                    } else if (tmp < 0.4) {
-                        textHeight = Math.round(names.MAX_TEXT_HEIGHT * 0.6);
-                    } else {
-                        textHeight = Math.round(names.MAX_TEXT_HEIGHT * 0.4);
-                    }
-
-                    tagCloud.createTag(placeNames[i], textHeight);
-                }
+                tagCloud.createTag(placeNames[i], textHeight);
+            }
+            setTimeout(names.displayNewPlaceNames, 10000);
         });
     },
 
@@ -425,16 +61,25 @@ var names = {
         return word.search(regex) > -1;
     },
 
+    loadProfanity: function(fAfter) {
+        $.get('./profanity.txt', function(data) {
+            names.profanity = data.split("\n");
+            if (fAfter) {
+                fAfter();
+            }
+        });
+    },
+
     isCompatible: function () {
         return true;
     }
 };
 
-/******************** Extending Array ********************/
-
-// Compares two arrays
-// Returns true if equal
-// false otherwise
+/**
+ * Compares two arrays
+ * Returns true if equal
+ * false otherwise
+ */
 Array.prototype.equals = function (array) {
     if (!array) {
         return false;
@@ -450,9 +95,11 @@ Array.prototype.equals = function (array) {
         }
     }
     return true;
-}
+};
 
-// Randomly resorts array
+/**
+ * Randomly resorts array
+ */
 Array.prototype.shuffle = function () {
     var j, tmp;
     for (var i = 0; i < this.length; i++) {
@@ -466,18 +113,19 @@ Array.prototype.shuffle = function () {
             this[i] = tmp;
         }
     }
-}
+};
 
-//Returns the last element of an array
+/**
+ * Returns the last element of an array
+ */
 Array.prototype.last = function () {
     if (this.length == 0) {
         return null;
     }
     return this[this.length - 1];
-}
+};
 
 /******************** Tag ********************/
-
 function Tag (tagCloud, text, textHeight, pos) {
     this.tagCloud = tagCloud;
     this.text = text;
@@ -488,19 +136,23 @@ function Tag (tagCloud, text, textHeight, pos) {
         tagCloud.context.font = textHeight + 'px proxima-nova, sans-serif';
     }
     this.textWidth = tagCloud.context.measureText(text).width;
-}
+};
 
-// Returns the angle in radians from Tag to pos
+/**
+ * Returns the angle in radians from Tag to pos
+ */
 Tag.prototype.getAngleTo = function (pos) {
     var x = this.pos[0] - pos[0];
     var y = this.pos[1] - pos[1];
 
     return Math.atan2(y, x);
-}
+};
 
-// Checks this Tag against another Tag
-// Returns true if collision is detected
-// false otherwise
+/**
+ * Checks this Tag against another Tag
+ * Returns true if collision is detected
+ * false otherwise
+ */
 Tag.prototype.hasCollision = function (tag) {
     // Find distance in the y between center of this and center of supplied placename
     var yDist = Math.abs(this.pos[1] - tag.pos[1]);
@@ -523,10 +175,12 @@ Tag.prototype.hasCollision = function (tag) {
     }
     // Otherwise no collision
     return false;
-}
+};
 
-// Returns coordinates of top left corner and bottom right corner (Canvas origin is top left)
-// as array [topLeftX, topLeftY, BottomRightX, BottomRightY]
+/**
+ * Returns coordinates of top left corner and bottom right corner (Canvas origin is top left)
+ * as array [topLeftX, topLeftY, BottomRightX, BottomRightY]
+ */
 Tag.prototype.getBoundingBox = function () {
     var box = [
         Math.floor(this.pos[0] - (this.textWidth / 2 + this.tagCloud.tagPadding[0])),
@@ -536,10 +190,9 @@ Tag.prototype.getBoundingBox = function () {
     ];
 
     return box;
-}
+};
 
 /******************** TagCloud ********************/
-
 function TagCloud (canvas, tagStartDist, tagMargin, tagPadding, tagColour) {
     this.canvas = canvas;
     this.tagStartDist = tagStartDist;
@@ -565,7 +218,7 @@ function TagCloud (canvas, tagStartDist, tagMargin, tagPadding, tagColour) {
 
     this.context.textAlign = 'center';
     this.context.textBaseline = 'middle';
-}
+};
 
 TagCloud.prototype.clear = function () {
     //Clear the canvas
@@ -575,7 +228,7 @@ TagCloud.prototype.clear = function () {
     while (this.tags.length != 0) {
         this.tags.pop();
     }
-}
+};
 
 TagCloud.prototype.createTag = function (text, textHeight) {
     if (names.hasProfanity(text)) {
@@ -601,7 +254,7 @@ TagCloud.prototype.createTag = function (text, textHeight) {
     }
     this.drawTag(tag);
     this.tags.push(tag);
-}
+};
 
 TagCloud.prototype.applyGravity = function (tag) {
     var dist = 32;
@@ -644,9 +297,12 @@ TagCloud.prototype.applyGravity = function (tag) {
             bouncing = false;
         }
     } while (stillMoving && !bouncing);
-}
-// Attempts to move Tag dist in axis direction (0=x, 1=y)
-// Fails if the move would cause collision
+};
+
+/**
+ * Attempts to move Tag dist in axis direction (0=x, 1=y)
+ * Fails if the move would cause collision
+ */
 TagCloud.prototype.moveTag = function (tag, axis, dist) {
     // No point wasting processor time if dist is zero
     if (dist == 0) {
@@ -662,7 +318,7 @@ TagCloud.prototype.moveTag = function (tag, axis, dist) {
         return false;
     }
     return true;
-}
+};
 
 TagCloud.prototype.hasCollision = function (tag) {
     for (var i = 0; i < this.tags.length; i++) {
@@ -671,9 +327,11 @@ TagCloud.prototype.hasCollision = function (tag) {
         }
     }
     return false;
-}
+};
 
-// Draws Tag on canvas
+/**
+ * Draws Tag on canvas
+ */
 TagCloud.prototype.drawTag = function (tag) {
     // Radius of corners
     var radius = 3;
@@ -711,4 +369,4 @@ TagCloud.prototype.drawTag = function (tag) {
     this.context.lineTo(box[0], box[1] + radius);
     this.context.arcTo(box[0], box[1], box[0] + radius, box[1], radius);
     this.context.stroke();
-}
+};

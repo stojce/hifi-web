@@ -1,5 +1,5 @@
 <section id="recentnames">
-  <canvas id='canvas' width='700' height='300'></canvas>
+  <canvas width='700' height='300'></canvas>
 </section>
 <div role='main' id='main'>
   <img src='img/names.png' alt="Image describing Place Names">
