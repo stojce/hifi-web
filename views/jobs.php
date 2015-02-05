@@ -106,7 +106,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         </div>
     </article>
     <article class="no-border-bottom no-border-top">
-        <p class="lead">Software Developer: C++ Generalist</p>
+        <p class="lead">C++ Generalist</p>
         <p>
             An online shared Virtual Reality platform has a lot of moving
             parts: high performance networking with low latency requirements
@@ -167,7 +167,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         </div>
     </article>
     <article class="no-border-bottom no-border-top">
-        <p class="lead">Software Developer: <br />Character Animation</p>
+        <p class="lead">Character Animation Engineer</p>
         <p>
             High Fidelity is breaking new ground using new and upcoming
             hardware like HMD's, depth cameras, and hand/body trackers to
