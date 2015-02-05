@@ -116,7 +116,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
                     </span>
                 </li>
             </ul>
-            <br/>
             <h3>Professional Qualities</h3>
             <ul>
                 <li>
