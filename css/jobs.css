@@ -58,6 +58,10 @@ div#main > article p.lead {
     margin-bottom: 22px;
 }
 
+div#main > article li {
+    margin-bottom: 5px;
+}
+
 #voxel-sketch {
     margin: 30px 0 20px;
 }
@@ -165,10 +169,6 @@ div#main > article.get-our-attention span.strong {
      */
     #particle-system {
         display: none;
-    }
-    
-    div#main > article li {
-        margin-bottom: 5px;
     }
     
     div#main > article {
