@@ -22,7 +22,6 @@
 
 #navbar nav li a {
     text-decoration: none;
-    color: #b2b2b2;
     display: inline-block;
     font: bold 15px proxima-nova, sans-serif;
     background: transparent none;
@@ -31,6 +30,7 @@
     overflow: hidden;
     height: 31px;
     vertical-align: top;
+    color: #ccc;
 }
 
 #navbar nav li i {
@@ -110,11 +110,12 @@
 #navbar nav li {
     float: left ;
     list-style-type: none;
+    border-color: #dadada;
 }
 
 #navbar nav li.selected a,
 #navbar nav li a:active {
-    color: #3698bf;
+    color: #535353;
 }
 
 #navbar nav li a:hover {

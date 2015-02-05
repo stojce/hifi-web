@@ -293,19 +293,6 @@ body #navbar {
     position: relative;
 }
 
-body #navbar nav li {
-    border-color: #dadada;
-}
-
-body #navbar nav li a {
-    background: none transparent;
-    color: #ccc;
-}
-
-body #navbar nav li a[href$='/code'] {
-    color: #535353;
-}
-
 canvas {
     margin-top: -145px;
     width: 100%;
