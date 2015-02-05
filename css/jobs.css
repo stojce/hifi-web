@@ -59,7 +59,7 @@ div#main > article p.lead {
 }
 
 #main > article:not(h2 + article) p.lead {
-    padding-top: 1em;
+    padding-top: 1.5em;
 }
 
 div#main > article li {
