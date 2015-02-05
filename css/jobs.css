@@ -41,7 +41,6 @@ div#main > h2 > strong {
 }
 
 div#main > article h3 {
-    font-family: proxima-nova, sans-serif;
     font-size: 22px;
     line-height: 1em;
 }
@@ -51,9 +50,13 @@ div#main > article p.lead {
     color: #3398cb;
 }
 
+div#main > article h3,
+div#main > article p.lead {
+    font-family: Quadon-Bold, Georgia, 'Times New Roman';
+}
+
 div#main > article p.lead {
     font-size: 35px;
-    font-family: inherit;
     font-weight: normal;
     line-height: 1.20em;
     margin-bottom: 22px;
@@ -65,10 +68,6 @@ div#main > article p.lead {
 
 #requirements{
     margin-top: -11px;
-}
-
-#apply {
-    margin-top: 55px;
 }
 
 #requirements > ul {
@@ -115,6 +114,7 @@ div#main #jobs {
 
 div#main > article.no-border-bottom {
     border-bottom: none;
+    padding-bottom: 25px;
 }
 
 div#main > article.line-border-top {
@@ -123,6 +123,7 @@ div#main > article.line-border-top {
 
 div#main > article.no-border-top {
     border-top: none;
+    padding-top: 15px;
 }
 
 div#main > article.radius-border-top {
