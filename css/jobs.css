@@ -35,11 +35,6 @@ div#main > h3 {
     text-align: center;    
 }
 
-div#main > h2 > strong {
-    color: #3398cb;
-    font-family: proxima-nova, sans-serif;
-}
-
 div#main > article h3 {
     font-size: 22px;
     line-height: 1em;
@@ -50,6 +45,7 @@ div#main > article p.lead {
     color: #3398cb;
 }
 
+div#main > h2,
 div#main > article h3,
 div#main > article p.lead {
     font-family: Quadon-Bold, Georgia, 'Times New Roman';
