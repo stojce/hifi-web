@@ -7,52 +7,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <div role="main" id="main">
     <h2>Full-time Jobs</h2>
     <article class="no-border-bottom radius-border-top">
-        <p class="lead">Software Developer: <br />Character Animation</p>
-        <p>
-            High Fidelity is breaking new ground using new and upcoming
-            hardware like HMD's, depth cameras, and hand/body trackers to
-            bring avatars to life with low-latency data streams.  We are
-            looking for a developer with passion, skills, and experience in
-            creating avatar characters with physics and animation driven by
-            these inputs. We want to enable people to shake hands across the
-            internet, read each other's body language, and sword fight. Is 
-            that too much to ask?
-        </p>
-        <div id="requirements">
-            <h3>Requirements</h3>
-            <ul>
-                <li>
-                    <span>
-                        Fluency in C++
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        A proven history working on character animation and physics
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        Strong graphics math skills
-                    </span>
-                </li>
-            </ul>
-            <h3>Bonus Points</h3>
-            <ul>
-                <li>
-                    <span>
-                        Experience with varied facial rigging techniques
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        Real-time cloth and hair simulation
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </article>
-    <article class="no-border-bottom no-border-top">
         <p class="lead">3D Graphics Engineer</p>
         <p>
             We're looking for a 3D graphics engineer to help build our virtual 
@@ -207,6 +161,52 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
                 <li>
                     <span>
                         Ping-pong affinity
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="no-border-bottom no-border-top">
+        <p class="lead">Software Developer: <br />Character Animation</p>
+        <p>
+            High Fidelity is breaking new ground using new and upcoming
+            hardware like HMD's, depth cameras, and hand/body trackers to
+            bring avatars to life with low-latency data streams.  We are
+            looking for a developer with passion, skills, and experience in
+            creating avatar characters with physics and animation driven by
+            these inputs. We want to enable people to shake hands across the
+            internet, read each other's body language, and sword fight. Is 
+            that too much to ask?
+        </p>
+        <div id="requirements">
+            <h3>Requirements</h3>
+            <ul>
+                <li>
+                    <span>
+                        Fluency in C++
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        A proven history working on character animation and physics
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Strong graphics math skills
+                    </span>
+                </li>
+            </ul>
+            <h3>Bonus Points</h3>
+            <ul>
+                <li>
+                    <span>
+                        Experience with varied facial rigging techniques
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        Real-time cloth and hair simulation
                     </span>
                 </li>
             </ul>
