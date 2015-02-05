@@ -37,11 +37,12 @@ div#main > h3 {
 
 div#main > article h3 {
     font-size: 22px;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 div#main > article p em,
 div#main > article p.lead {
+    padding-top: 1em;
     color: #3398cb;
 }
 
