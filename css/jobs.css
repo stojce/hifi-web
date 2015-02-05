@@ -58,7 +58,7 @@ div#main > article p.lead {
     margin-bottom: 22px;
 }
 
-#main > article:not(h2 + article) p.lead {
+#main > article + article > p.lead {
     padding-top: 1.5em;
 }
 
