@@ -5,7 +5,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 ?>
 <section id="particle-system"></section>
 <div role="main" id="main">
-    <h2><strong>1.</strong> Full-time Jobs</h2>
+    <h2>Full-time Jobs</h2>
     <article class="no-border-bottom radius-border-top">
         <p class="lead">Software Developer: <br />Character Animation</p>
         <p>
@@ -298,7 +298,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         can login to Hifi. Then, take a look at <a href="https://worklist.net">Worklist</a> and see if there's a job you can do
         to show us your work skills.</p>
     </article>
-    <h2><strong>2.</strong> Contract jobs</h2>
+    <h2>Contract jobs</h2>
     <article class="no-border-bottom radius-border-top">
         <p class="lead">Raconteur</p>
             <p>
