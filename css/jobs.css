@@ -42,7 +42,6 @@ div#main > article h3 {
 
 div#main > article p em,
 div#main > article p.lead {
-    padding-top: 1em;
     color: #3398cb;
 }
 
@@ -59,9 +58,13 @@ div#main > article p.lead {
     margin-bottom: 22px;
 }
 
+#main > article:not(h2 + article) p.lead {
+    padding-top: 1em;
+}
+
 div#main > article li {
     margin-bottom: 8px;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 #voxel-sketch {
