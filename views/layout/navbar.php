@@ -56,7 +56,7 @@ if (class_exists('View')) {
         </nav>
     </div>
 </header>
-<?php if ($page != 'home') { ?>
+<?php if ($page != 'home' && $page != 'names') { ?>
     <div id="container">
 <?php } ?>
 
