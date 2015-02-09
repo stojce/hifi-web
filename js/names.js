@@ -1,6 +1,6 @@
 var names = {
     SHOWN_PLACES_COUNT: 23,
-    RESORT_INTERVAL: 1, // seconds
+    RESORT_INTERVAL: 10, // seconds
     UPDATE_INTERVAL: 300, // seconds
 
     options: {

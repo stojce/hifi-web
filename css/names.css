@@ -9,9 +9,6 @@
  */
 #recentnames {
     text-align: center;
-}
-
-#recentnames {
     padding: 26px;
     margin-bottom: 17px;
     width: 800px;
@@ -87,7 +84,6 @@
 #recentnames > ul > li:nth-child(5),
 #recentnames > ul > li:nth-child(9),
 #recentnames > ul > li:nth-child(18),
-#recentnames > ul > li:nth-child(20),
 #recentnames > ul > li:nth-child(21) {
     font-size: .9em;
     padding: .1em 0;
