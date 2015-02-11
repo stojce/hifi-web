@@ -67,21 +67,21 @@ body > #container,
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    height: 240px;
+    height: 238px;
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul {
-        height: 185px;
+        height: 183px;
     }
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul {
-        height: 120px;
+        height: 118px;
     }
 }
 @media screen and (max-width: 530px) {
     #placenames > article:first-child ul {
-        height: 65px;
+        height: 63px;
     }
 }
 
