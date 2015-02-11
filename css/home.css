@@ -165,11 +165,19 @@ body > #container,
 #placenames > article:first-child ul li h4 {
     margin: .3em 0 0;
     color: #0f9abb;
+    font-weight: bold;
 }
 #placenames > article:first-child ul li p {
     margin: 0;
-    color: #969696;
     line-height: 1.2em;
+}
+
+#placenames > article:first-child ul li p:last-child {
+    color: #333333;
+}
+
+#placenames > article:first-child ul li p:last-child {
+    color: #969696;
 }
 
 #placenames > article:first-child ul > li:nth-child(5) {
@@ -636,7 +644,7 @@ body > #container,
 
 #placenames > article > form fieldset > p {
     margin: 0;
-    padding: 0 5em 0 10em;
+    padding: 0 4.5em 0 9.5em;
 }
 @media screen and (max-width: 1090px) {
     #placenames > article > form fieldset > p {
