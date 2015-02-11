@@ -246,26 +246,6 @@ div#main > article li {
     color: #000;
 }
 
-body > .modal {
-    border-radius: 0;
-    border: 0 none;
-    box-shadow: none;
-    padding: 15px 50px;
-    width: 375px;
-    margin-left: -240px;
-    font-family: Helvetica, arial;
-    color: #555;
-}
-
-body > .modal + .modal-backdrop {
-    background-color: #CCCCCC;
-}
-
-body > .modal p,
-body > .modal li {
-    font-size: 1.2em;
-}
-
 /**
  * Responsive sizes
  */
