@@ -34,7 +34,7 @@ var home = {
 
             }
         });
-        $('#downloadfade, #downloadfade button.close').bind('click', function(event) {
+        $('#downloadfade, #downloadfade button.close span').bind('click', function(event) {
             if (this == event.target) {
                 $(this).parents('form').removeClass('submitted');
                 return false;
