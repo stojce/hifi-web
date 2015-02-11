@@ -329,38 +329,38 @@
       <ul>
         <li
           data-0="left: 2000px; transform:rotate(-90deg);"
-          data-4620="left: 2000px; transform:rotate(-90deg);"
-          data-5020="left: -80px; transform:rotate(-4deg);">
+          data-4320="left: 2000px; transform:rotate(-90deg);"
+          data-4720="left: -80px; transform:rotate(-4deg);">
           <h3>True Ventures</h3>
         </li>
         <li
           data-0="left: 2000px; transform:rotate(90deg); margin-top: 5px;"
-          data-4660="left: 2000px; transform:rotate(90deg); margin-top: 5px;"
-          data-5060="left: 135px; transform:rotate(5deg);">
+          data-4360="left: 2000px; transform:rotate(90deg); margin-top: 5px;"
+          data-4760="left: 135px; transform:rotate(5deg);">
           <h3>Vulcan Capital</h3>
         </li>
         <li
           data-0="left: 2000px; transform:rotate(160deg); margin-top: 11px;"
-          data-4600="left: 2000px; transform:rotate(160deg); margin-top: 11px;"
-          data-5000="left: 355px; transform:rotate(2deg);">
+          data-4300="left: 2000px; transform:rotate(160deg); margin-top: 11px;"
+          data-4700="left: 355px; transform:rotate(2deg);">
           <h3>Kapor Capital</h3>
         </li>
         <li
           data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-4670="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-5070="left: -93px; transform:rotate(0deg);">
+          data-4370="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
+          data-4770="left: -93px; transform:rotate(0deg);">
           <h3>Google Ventures</h3>
         </li>
         <li
           data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-4740="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-5140="left: 126px; transform:rotate(4deg);">
+          data-4440="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
+          data-4840="left: 126px; transform:rotate(4deg);">
           <h3>Linden Lab</h3>
         </li>
         <li
           data-0="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-          data-4780="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-          data-5180="left: 340px; transform:rotate(0deg);">
+          data-4480="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
+          data-4880="left: 340px; transform:rotate(0deg);">
           <p>And an intriguing assortment of forward-looking angels.</p>
         </li>
       </ul>
