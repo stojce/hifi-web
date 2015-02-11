@@ -1004,6 +1004,11 @@ article p a {
     background-size: 82px 79px;
     text-align: center;
 }
+@media screen and (max-width: 970px) {
+    #team > article > h2 {
+        background-position: 470px center;
+    }
+}
 @media screen and (max-width: 770px) {
     #team > article > h2 {
         background-position: 300px center;
@@ -1023,12 +1028,24 @@ article p a {
     font-family: proxima-nova, sans-serif;
     text-align: right;
 }
+@media screen and (max-width: 970px) {
+    #team > article > h2:before {
+        font-size: .6em;
+        width: 120px;
+    }
+}
 @media screen and (max-width: 770px) {
     #team > article > h2:before {
         font-size: .7em;
         width: 100px;
     }
 }
+@media screen and (max-width: 530px) {
+    #team > article > h2:before {
+        display: none;
+    }
+}
+
 #team h3 + p {
     font-family: proxima-nova, sans-serif;
 }
