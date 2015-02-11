@@ -67,21 +67,21 @@ body > #container,
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    height: 238px;
+    height: 236px;
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul {
-        height: 183px;
+        height: 181px;
     }
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul {
-        height: 118px;
+        height: 116px;
     }
 }
 @media screen and (max-width: 530px) {
     #placenames > article:first-child ul {
-        height: 63px;
+        height: 61px;
     }
 }
 
@@ -172,11 +172,12 @@ body > #container,
     line-height: 1.2em;
 }
 
-#placenames > article:first-child ul li p:last-child {
+#placenames > article:first-child ul li h4 + p {
     color: #333333;
 }
 
-#placenames > article:first-child ul li p:last-child {
+#placenames > article:first-child ul li a,
+#placenames > article:first-child ul li a > p:last-child {
     color: #969696;
 }
 
