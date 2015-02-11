@@ -157,7 +157,7 @@ body > #container,
 
 #placenames > article:first-child ul li h4,
 #placenames > article:first-child ul li p {
-    font-size: 1.1em;
+    font-size: 1em;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -611,7 +611,7 @@ body > #container,
     border-color: #0f9abb;
 }
 
-#placenames > article > form fieldset > button[type="submit"] {
+#placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
     padding: .2em 1.2em .3em;
     margin-left: .8em;
 }
@@ -715,12 +715,22 @@ form.submitted #downloadfade {
     -webkit-box-shadow: 4px 4px 13px 0px #999999;
     -moz-box-shadow: 4px 4px 13px 0px #999999;
     box-shadow: 4px 4px 13px 0px #999999;
+    position: relative;
 }
 @media screen and (max-width: 770px) {
     #downloadfade > div {
         width: 280px;
     }
 }
+
+#downloadfade button.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1em;
+}
+
+
 #downloadfade p {
     font-size: 1.3em;
     line-height: 1.2em;
@@ -757,7 +767,7 @@ form.submitted #downloadfade {
 }
 
 #downloadfade input + button {
-    padding-top: .5em;
+    padding: .3em 1.9em;
 }
 @media screen and (max-width: 770px) {
     #downloadfade input + button {
@@ -1029,10 +1039,6 @@ article p a {
     #team li:nth-child(2n+1) {
         margin-right: 7%;
     }
-}
-
-#team li:last-child {
-    width: 75%;
 }
 
 #team figure {

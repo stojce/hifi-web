@@ -34,9 +34,10 @@ var home = {
 
             }
         });
-        $('#downloadfade').bind('click', function(event) {
+        $('#downloadfade, #downloadfade button.close').bind('click', function(event) {
             if (this == event.target) {
                 $(this).parents('form').removeClass('submitted');
+                return false;
             }
         });
 
@@ -53,12 +54,12 @@ var home = {
             $('#placenames').addClass('expanded');
         });
 
-        $('#placenames ul > li > a > img').bind('click', function(event) {
-            var parent = $(this).parent('a');
+        $('#placenames ul > li > a').bind('click', function(event) {
+            event.preventDefault();
             var options = {
-                img: $(this).attr('src'),
-                bigImg: $(this).attr('src').replace('/small/', '/'),
-                url: parent.attr('href')
+                img: $('img', this).attr('src'),
+                bigImg: $('img', this).attr('src').replace('/small/', '/'),
+                url: $(this).attr('href')
             };
             Utils.parseMustache('place-modal', options, function(parsed) {
                 $('body').append(parsed);
