@@ -7,7 +7,7 @@
         <img src="img/home/places/small/Free.jpg" />
         <h4>Free</h4>
         <p>Old-time factory.</p>
-        <p>operated by High Fidelity</p>
+        <p>Operated by Judas</p>
       </a>
     </li>
     <li>
@@ -15,7 +15,7 @@
         <img src="img/home/places/small/Heron.jpg" />
         <h4>Heron</h4>
         <p>Country Home.</p>
-        <p>operated by High Fidelity</p>
+        <p>Operated by OmegaHeron</p>
       </a>
     </li>
     <li>
@@ -23,7 +23,7 @@
         <img src="img/home/places/small/Ireland.png" />
         <h4>Ireland</h4>
         <p>Space shuttle pub.</p>
-        <p>operated by Judas</p>
+        <p>Operated by Derric Foggarty</p>
       </a>
     </li>
     <li>
@@ -31,7 +31,7 @@
         <img src="img/home/places/small/Openvue.jpg" />
         <h4>Openvue</h4>
         <p>Open Virtual University of Edinburgh.</p>
-        <p>operated by OmegaHeron</p>
+        <p>Operated by Ai_Austin</p>
       </a>
     </li>
     <li>
@@ -44,7 +44,7 @@
         <img src="img/home/places/small/porto.jpg" />
         <h4>Porto</h4>
         <p>Mountain hideaway.</p>
-        <p>operated by OmegaHeron</p>
+        <p>Operated by High Fidelity</p>
       </a>
     </li>
     <li>
@@ -52,7 +52,7 @@
         <img src="img/home/places/small/rivenglen.jpg" />
         <h4>Rivenglen</h4>
         <p>Mead for my men!</p>
-        <p>operated by OmegaHeron</p>
+        <p>Operated by High Fidelity</p>
       </a>
     </li>
     <li>
@@ -60,7 +60,7 @@
         <img src="img/home/places/small/Venice.png" />
         <h4>Venice</h4>
         <p>Italian gem.</p>
-        <p>operated by OmegaHeron</p>
+        <p>Operated by Chris</p>
       </a>
     </li>
     <li>
@@ -68,7 +68,7 @@
         <img src="img/home/places/small/adriania.jpg" />
         <h4>Adriania</h4>
         <p>Town center of Adriania.</p>
-        <p>operated by OmegaHeron</p>
+        <p>Operated by Adrian</p>
       </a>
     </li>
   </ul>
@@ -124,6 +124,7 @@
       </fieldset>
       <div id="downloadfade">
         <div>
+          <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <p>
             Coming very soon! Give us your email and we'll get in touch
             when Interface, Stack Manager and Place Names are available.
