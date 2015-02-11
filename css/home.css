@@ -316,7 +316,10 @@ body > #container,
 
 #placenames h3,
 #company article:first-child h3,
-#team h2 {
+#team h2,
+#investors h2,
+#advisors h2 {
+    text-align: center;
     color: #333;
     font-size: 2.5em;
     font-weight: normal;
@@ -990,38 +993,61 @@ article p a {
 }
 
 /* Team section styling */
+#team {
+    position: relative;
+}
+
 #team > article > h2 {
     border-bottom: 1px solid #DADADA;
-    background: transparent url('../img/home/gg-bridge.svg') 420px center no-repeat;
+    background: transparent url('../img/home/gg-bridge.svg') 700px center no-repeat;
     padding-top: 70px;
     background-size: 82px 79px;
+    text-align: center;
+}
+@media screen and (max-width: 970px) {
+    #team > article > h2 {
+        background-position: 470px center;
+    }
 }
 @media screen and (max-width: 770px) {
     #team > article > h2 {
-        background-position: 250px center;
+        background-position: 300px center;
     }
 }
 
-#team > article > h2:after {
-    content: "We are located in San Francisco";
-    color: #ccc;
+#team > article > h2:before {
+    content: "We are located in San Francisco.";
+    color: #CCCCCC;
     display: block;
     width: 150px;
     font-size: 0.5em;
     position: absolute;
-    left: 46%;
-    margin-top: -50px;
-    margin-left: 191px;
+    right: 10px;
+    margin-top: -20px;
     line-height: 1.3em;
+    font-family: proxima-nova, sans-serif;
+    text-align: right;
 }
-@media screen and (max-width: 770px) {
-    #team > article > h2:after {
-        left: 38%;
+@media screen and (max-width: 970px) {
+    #team > article > h2:before {
+        font-size: .6em;
         width: 120px;
     }
 }
+@media screen and (max-width: 770px) {
+    #team > article > h2:before {
+        font-size: .7em;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #team > article > h2:before {
+        display: none;
+    }
+}
+
 #team h3 + p {
-    font-family: proxima-nova, sans-serif;    
+    font-family: proxima-nova, sans-serif;
 }
 
 #team ul {
@@ -1031,14 +1057,14 @@ article p a {
 }
 
 #team li {
-    width: 43%;
+    width: 40%;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 5px;
     min-height: 90px;
 }
 #team li:nth-child(2n+1) {
-    margin-right: 10%;
+    margin-right: 19%;
 }
 @media screen and (max-width: 770px) {
     #team li {
@@ -1107,6 +1133,10 @@ article p a {
 #investors {
     background: transparent url(../img/home/flocking-investor-bg.jpg) center center no-repeat;
     background-size: contain;
+}
+
+#advisors h2 {
+    border-bottom: 1px solid #dadada;
 }
 
 #investors > article,
