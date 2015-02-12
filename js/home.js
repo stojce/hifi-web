@@ -26,12 +26,10 @@ var home = {
 
         $('#placenames ul').scrollTop(0);
 
-        $('#placenames form button[type="submit"], #placenames a[href="./subscribe"]').click(function (event) {
+        $('#placenames form button[type="submit"], #placenames a[href="./subscribe"]').bind('click', function (event) {
             if ($(this).attr('name') != 'subscribe' || $(this).attr('href') == './subscribe') {
                 $('#placenames form').addClass('submitted');
                 return false;
-            } else {
-
             }
         });
         $('#downloadfade, #downloadfade button.close, #downloadfade button.close span').bind('click', function(event) {
@@ -50,7 +48,7 @@ var home = {
             }
         });
 
-        $('#placenames > article:first-child ul > li:nth-child(5)').click(function (event) {
+        $('#placenames > article:first-child ul > li:nth-child(5)').bind('click', function (event) {
             $('#placenames').addClass('expanded');
         });
 
@@ -98,11 +96,11 @@ var home = {
         var ua = navigator.userAgent;
         var appVersion = navigator.appVersion;
         if (ua.match("Win")) {
-            $('#placenames form select').val('exe');
+            $('#placenames form select').val('exe').change();
             return;
         }
         if (ua.match("Mac")) {
-            $('#placenames form select').val('pkg');
+            $('#placenames form select').val('pkg').change();
             return;
         }
         /*
