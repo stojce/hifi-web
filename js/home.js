@@ -77,6 +77,7 @@ var home = {
 
     refreshRequirements: function() {
         $('#placenames select').each(function () {
+            $(this).trigger('chosen:updated');
             var value = $(this).val();
             var text = (value.match(/pkg|exe/i) ? $('h4', $(this).parent()).text() : '') + (
                 value.match(/pkg/i)
@@ -87,7 +88,7 @@ var home = {
                             : ''
                     )
             );
-            $('p', $(this).parent()).html(text);        
+            $('p', $(this).parent()).html(text);
         });
     },
 
