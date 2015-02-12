@@ -197,8 +197,8 @@
             <h3>Ryan Karpf</h3>
             <p>
               Design-minded. Thinks MVP has too 
-              many letters. Loves Syd Mead and 
-              making fresh pasta.
+              many letters.
+              Loves Syd Mead and making fresh pasta.
             </p>
           </figure>
         </li>
@@ -218,7 +218,8 @@
             <img src="img/team/grayson.gif" class="img-circle" alt="Grayson Stebbins" />
             <h3>Grayson Stebbins</h3>
             <p>
-              Designer &amp; generalist. Amateur carpenter. 
+              Designer &amp; generalist. <br />
+              Amateur carpenter. <br />
               Analog, digital, universal.
             </p>
           </figure>
@@ -240,8 +241,8 @@
             <h3>Stephen Birarda</h3>
             <p>
               Constant refactorer. Believes that 
-              programming is art. Obsessive hockey 
-              fan, secret ping pong champion.
+              programming is art. <br />
+              Obsessive hockey fan, secret ping pong champion.
             </p>
           </figure>
         </li>
@@ -263,7 +264,7 @@
             <p>
               Manages office systems to make life easier. 
               Fast talker, avid learner, novice 
-              salsa dancer, <br/>and great cook. 
+              salsa dancer, and great cook. 
             </p>
           </figure>
         </li>

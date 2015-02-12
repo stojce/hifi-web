@@ -1140,10 +1140,16 @@ article p a {
     list-style-type: none;
     margin: 0;
     padding-left: 5px;
+    padding-right: 5em;
+}
+@media screen and (max-width: 530px) {
+    #team ul {
+        padding-right: 1em;
+    }
 }
 
 #team li {
-    width: 40%;
+    width: 37%;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 5px;
