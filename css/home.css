@@ -52,6 +52,12 @@ body > #container,
         padding-right: 45px;
     }
 }
+@media screen and (max-width: 530px) {
+    #container article > * {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 #placenames {
     margin: 0 auto;
@@ -293,6 +299,12 @@ body > #container,
 #place-modal .modal-footer > p a {
     font-family: proxima-nova, sans-serif;
 }
+@media screen and (max-width: 1090px) {
+    #place-modal .modal-footer > p,
+    #place-modal .modal-footer > p a {
+        font-size: .7em;
+    }
+}
 
 #place-modal .modal-footer > p {
     text-align: center;
@@ -446,6 +458,11 @@ body > #container,
         background-position: 90% center;
     }
 }
+@media screen and (max-width: 530px) {
+    #placenames > article > form fieldset:first-child {
+        background-image: none;
+    }
+}
 
 #placenames > article > form fieldset:nth-child(2) {
     background-image: url(../img/home/stack-manager.svg);
@@ -453,6 +470,11 @@ body > #container,
 @media screen and (max-width: 770px) {
     #placenames > article > form fieldset:nth-child(2) {
         background-position: 10% center;
+    }
+}
+@media screen and (max-width: 530px) {
+    #placenames > article > form fieldset:nth-child(2) {
+        background-image: none;
     }
 }
 
@@ -481,6 +503,14 @@ body > #container,
     #placenames > article > form fieldset:first-child > div {
         float: left;
         margin-left: 10%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #placenames > article > form fieldset:first-child > div,
+    #placenames > article > form fieldset:nth-child(2) > div {
+        width: 100%;
+        float: none;
+        margin: 1em 5em;
     }
 }
 
@@ -731,7 +761,13 @@ form.submitted #downloadfade {
 }
 @media screen and (max-width: 770px) {
     #downloadfade > div {
+        margin-top: 25%;
         width: 280px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #downloadfade > div {
+        width: 200px;
     }
 }
 
@@ -741,7 +777,11 @@ form.submitted #downloadfade {
     top: 0;
     margin: 1em;
 }
-
+@media screen and (max-width: 530px) {
+    #downloadfade button.close {
+        margin: .5em;
+    }
+}
 
 #downloadfade p {
     font-size: 1.3em;
@@ -762,8 +802,8 @@ form.submitted #downloadfade {
 }
 @media screen and (max-width: 770px) {
     #downloadfade input {
-        margin-right: -6.5em;
-        padding: .5em 1em;
+        margin-right: -6.7em;
+        padding: .7em 0 .7em 1em;
     }
 }
 
@@ -851,6 +891,11 @@ article h3 {
         padding-right: 45px;
     }
 }
+@media screen and (max-width: 530px) {
+    #company p.lead {
+        padding: 5px 30px;
+    }
+}
 
 #company p.lead,
 article p {
@@ -899,6 +944,11 @@ article p a {
         padding-right: 45px;
     }
 }
+@media screen and (max-width: 530px) {
+    #company p.lead + p {
+        padding-right: 30px;
+    }
+}
 
 #company p.lead + p + p {
     padding-right: 275px;
@@ -906,6 +956,11 @@ article p a {
 @media screen and (max-width: 770px) {
     #company p.lead + p + p {
         padding-right: 170px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #company p.lead + p + p {
+        padding-right: 30px;
     }
 }
 
@@ -919,7 +974,7 @@ article p a {
 }
 @media screen and (max-width: 530px) {
     #company article:nth-child(2) h3:first-child {
-        padding-right: 50px;
+        padding-right: 0px;
     }
 }
 
@@ -934,6 +989,11 @@ article p a {
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:first-child + p {
         padding-right: 50px
+    }
+}
+@media screen and (max-width: 530px) {
+    #company article:nth-child(2) h3:first-child + p {
+        padding-right: 30px
     }
 }
 
@@ -954,6 +1014,11 @@ article p a {
         background-position: 45px bottom;
     }
 }
+@media screen and (max-width: 770px) {
+    #company article:nth-child(2) h3:first-child:after {
+        background-image: none;
+    }
+}
 
 #company article:nth-child(2) h3:nth-child(3) + p {
     padding-right: 160px;
@@ -968,6 +1033,14 @@ article p a {
         background-size: 400px 248px;
     }
 }
+@media screen and (max-width: 530px) {
+    #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-bottom: 15px;
+        padding-right: 100px;
+        background-size: 100px 62px;
+        background-position: right 15px;
+    }
+}
 
 #company article:nth-child(2) h3:nth-child(5) + p {
     padding-right: 140px;
@@ -979,6 +1052,13 @@ article p a {
     #company article:nth-child(2) h3:nth-child(5) + p {
         padding-bottom: 198px;
         background-size: 400px 188px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        padding-bottom: 15px;
+        background-image: none;
+        padding-right: 30px;
     }
 }
 
@@ -1012,6 +1092,12 @@ article p a {
 @media screen and (max-width: 770px) {
     #team > article > h2 {
         background-position: 300px center;
+    }
+}
+@media screen and (max-width: 530px) {
+    #team > article > h2 {
+        background-image: none;
+        padding-top: 1em;
     }
 }
 
@@ -1054,10 +1140,16 @@ article p a {
     list-style-type: none;
     margin: 0;
     padding-left: 5px;
+    padding-right: 5em;
+}
+@media screen and (max-width: 530px) {
+    #team ul {
+        padding-right: 1em;
+    }
 }
 
 #team li {
-    width: 40%;
+    width: 37%;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 5px;
@@ -1093,10 +1185,23 @@ article p a {
     height: 90px;   
 }
 
-#team h3, 
+@media screen and (max-width: 530px) {
+    #team img,
+    #youimg figure > div {
+        display: none;
+    }
+}
+
+#team h3,
 #team figure > p {
     margin-left: 100px;
     margin-top: 5px;
+}
+@media screen and (max-width: 530px) {
+    #team h3,
+    #team figure > p {
+        margin-left: 0px;
+    }
 }
 
 #team h3 {
@@ -1198,7 +1303,6 @@ article p a {
 }
 
 #investors > article li p {
-    padding-top: 0.8em;
     font-family: proxima-nova, sans-serif;
     color: #333333;
     font-size: 0.75em;
@@ -1212,6 +1316,12 @@ article p a {
         font-size: 4.5em;
     }
 }
+@media screen and (max-width: 530px) {
+    #investors > article li h3 {
+        font-size: 6.5em;
+    }
+}
+
 #advisors > article li a > figure {
     margin: 0;
 }
@@ -1290,6 +1400,11 @@ article p a {
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(6) p {
         font-size: 2.7em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(6) p {
+        font-size: 3.5em;
     }
 }
 
@@ -1372,70 +1487,14 @@ article p a {
     }
 }
 
-@media screen and (max-width: 572px) {
-    #investors > article li {
-        height: 130px;
-        padding: 19px 10px;
-        width: 130px;
-    }
-
-    #investors > article li h3 {
-        font-size: 24px;
-    }
-
-    #investors > article li:nth-child(5) p {
-        font-size: 20px;
-    }
-
-    #investors > article li:nth-child(2) {
-        left: 90px;
-    }
-
-    #investors > article li:nth-child(5) {
-        left: 172px;
-    }
-
-    #investors > article li:nth-child(4) {
-        left: 38px;
-    }
-
-    #investors > article li:nth-child(3) {
-        left: 256px;
-    }
-
-    #advisors > article li {
-        height: 160px;
-        width: 135px;
-    }
-
-    #advisors > article li img {
-        width: 135px;
-    }
-
-    #advisors > article li h3 {
-        font-size: 16px;
-    }
-
-    #advisors > article li:nth-child(2) {
-        left: 206px;
-    }
-
-    #advisors > article li:nth-child(3) {
-        left: 353px;
-    }
-
-    #investors > article > ul {
-        280px;
-    }
-
-    #investors,
-    advisors {
-        overflow: hidden;
+@media screen and (max-width: 530px) {
+    #investors > article > ul,
+    #advisors > article > ul {
+        -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+        -o-transform: scale(.5);
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
     }
 }
 
-@media screen and (max-width: 400px) {
-    #container {
-        width: 295px;
-    }
-}
