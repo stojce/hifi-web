@@ -1323,6 +1323,24 @@ article p a {
     padding: 10px;
     width: 200px;
 }
+@media screen and (max-width: 770px) {
+    #advisors > article li {
+        height: 180px;
+        padding: 10px;
+        width: 149px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li {
+        height: 150px;
+        padding: 5px;
+        width: 126px;
+    }
+}
+
+#advisors > article li img {
+    max-width: 100%;
+}
 
 
 #investors > article li h3,
@@ -1539,7 +1557,7 @@ html.skrollr #investors > article li:nth-child(6) {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(6) {
         left: 215px;
-        margin-top: 120px;
+        margin-top: 130px;
     }
 }
 
@@ -1564,13 +1582,24 @@ html.skrollr #investors > article li:nth-child(6) {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(6) p {
         font-size: 2em;
-        padding: 1.5em 0 0;
+        padding: .8em 0 0;
     }
 }
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
     left: 55px;
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(1) {
+        margin-top: 35px;
+        left: 15px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(1) {
+        left: -10px;
+    }
 }
 
 #advisors > article li:nth-child(2) {
@@ -1583,6 +1612,17 @@ html.skrollr #investors > article li:nth-child(6) {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(2) {
+        margin-top: 70px;
+        left: 170px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(2) {
+        left: 115px;
+    }
+}
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
@@ -1593,6 +1633,17 @@ html.skrollr #investors > article li:nth-child(6) {
     -o-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(3) {
+        margin-top: 55px;
+        left: 335px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(3) {
+        left: 245px;
+    }
 }
 
 #investors > article > ul {
@@ -1610,7 +1661,12 @@ html.skrollr #investors > article li:nth-child(6) {
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
         margin-top: -30px;
-        height: 250px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #advisors > article > ul {
+        height: 270px;
     }
 }
 
@@ -1633,32 +1689,11 @@ html.skrollr #investors > article > ul {
     overflow: hidden;
 }
 
+/*
 @media screen and (max-width: 770px) {
-    #investors > article > ul,
-    #advisors > article > ul {
-        /*
-        -moz-transform: scale(.6);
-        -ms-transform: scale(.6);
-        -o-transform: scale(.6);
-        -webkit-transform: scale(.6);
-        transform: scale(.6);
-        */
-    }
     #investors > article > ul {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 530px) {
-    #investors > article > ul,
-    #advisors > article > ul {
-        /*
-        -moz-transform: scale(.5);
-        -ms-transform: scale(.5);
-        -o-transform: scale(.5);
-        -webkit-transform: scale(.5);
-        transform: scale(.5);
-        */
-    }
-}
-
+*/
