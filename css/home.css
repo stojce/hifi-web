@@ -652,6 +652,16 @@ article h3 {
     padding-right: 5px;
     margin-top: -1px;
 }
+@media screen and (max-width: 1090px) {
+    #placenames > article > form .chosen-container-single .chosen-single div {
+        margin-top: -3px;
+    }
+}
+@media screen and (max-width: 990px) {
+    #placenames > article > form .chosen-container-single .chosen-single div {
+        margin-top: -1px;
+    }
+}
 
 #placenames > article > form .chosen-container-single .chosen-single div:after {
     content: '\f0d7';
