@@ -139,11 +139,6 @@ article h3 {
     }
 }
 
-#placenames > article:first-child ul > li img,
-#placenames > article:first-child ul > li:nth-child(5) {
-    border: 1px solid #666666;
-}
-
 #placenames > article:first-child ul > li img {
     height: 170px;
 }
