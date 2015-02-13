@@ -5,7 +5,7 @@ var home = {
         unsupported_warning: true
     },
 
-    PARALLAX_MIN_WIDTH: 770,
+    PARALLAX_MIN_WIDTH: 991,
     skrollr: null,
 
     processedDevices: [],

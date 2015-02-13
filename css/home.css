@@ -32,6 +32,23 @@ body > #container,
     }
 }
 
+article p strong {
+    font-size: .95em;
+}
+
+article {
+    font-family: proxima-nova, sans-serif;
+    margin: 3.3em 15px 0;
+    padding-bottom: .7em;
+}
+
+article h2,
+article h3 {
+    font-family: Quadon-Bold, Georgia, serif;
+    font-weight: normal;
+}
+
+
 #container > section {
     margin-left: auto;
     margin-right: auto;
@@ -120,11 +137,6 @@ body > #container,
     #placenames > article:first-child ul > li {
         margin: 1px;
     }
-}
-
-#placenames > article:first-child ul > li img,
-#placenames > article:first-child ul > li:nth-child(5) {
-    border: 1px solid #666666;
 }
 
 #placenames > article:first-child ul > li img {
@@ -339,12 +351,17 @@ body > #container,
 
 #placenames h3,
 #company article:first-child h3 {
-    margin-bottom: .4em;
+    margin-bottom: .2em;
     text-align: center;
 }
 
-#openvr h3 {
-    padding: 0 6.5em;
+#openvr h3, {
+    margin-bottom: -25px;
+}
+
+#openvr h3,
+#openvr + article h3 {
+    padding: .5em 6.5em;
 }
 @media screen and (max-width: 530px) {
     #openvr h3 {
@@ -356,7 +373,7 @@ body > #container,
     text-align: center;
     font-family: proxima-nova, sans-serif;
     font-size: 1.7em;
-    padding: 1em 0 0;
+    padding: 0;
 }
 
 #openvr ul,
@@ -366,10 +383,12 @@ body > #container,
 }
 
 #openvr ul li {
-    padding-top: 2.5em;
-    padding-bottom: .8em;
-    background-position: center 15px;
+    padding-top: 3em;
+    padding-bottom: .2em;
+    background-position: center .3em;
     background-repeat: no-repeat;
+    line-height: 1.2em;
+    margin-bottom: .5em;
 }
 @media screen and (max-width: 1090px) {
     #openvr ul li {
@@ -389,26 +408,31 @@ body > #container,
     padding-right: 13em;
     padding-left: 13em;
     background-image: url(../img/home/deploy.svg);
-    background-size: 32px 32px;
+    background-size: 50px 50px;
 }
 #openvr ul li:nth-child(2) {
     padding-right: 9.5em;
     padding-left: 9.5em;
     background-image: url(../img/home/interact.svg);
-    background-size: 48px 48px;
+    background-size: 90px 90px;
+    padding-top: 4.2em;
 }
 #openvr ul li:last-child {
+    padding-top: 4.4em;
     padding-right: 14.3em;
     padding-left: 14.3em;
     background-image: url(../img/home/share.svg);
-    background-size: 48px 48px;
+    background-size: 80px 80px;
+    background-position-y: 1em;
 }
 @media screen and (max-width: 770px) {
     #openvr ul li:first-child,
     #openvr ul li:nth-child(2),
     #openvr ul li:last-child {
+        padding-top: 50px;
         padding-right: 0;
         padding-left: 0;
+        background-size: 50px 50px;
     }
 }
 
@@ -628,6 +652,16 @@ body > #container,
     padding-right: 5px;
     margin-top: -1px;
 }
+@media screen and (max-width: 1090px) {
+    #placenames > article > form .chosen-container-single .chosen-single div {
+        margin-top: -3px;
+    }
+}
+@media screen and (max-width: 990px) {
+    #placenames > article > form .chosen-container-single .chosen-single div {
+        margin-top: -1px;
+    }
+}
 
 #placenames > article > form .chosen-container-single .chosen-single div:after {
     content: '\f0d7';
@@ -636,7 +670,7 @@ body > #container,
 
 #placenames > article > form .chosen-container .chosen-results li.highlighted {
     background: #0f9abb none;
-    color: #d3d3d3;
+    color: #ffffff;
 }
 
 #placenames > article > form button[type="submit"] {
@@ -761,7 +795,6 @@ form.submitted #downloadfade {
 }
 @media screen and (max-width: 770px) {
     #downloadfade > div {
-        margin-top: 25%;
         width: 280px;
     }
 }
@@ -795,15 +828,15 @@ form.submitted #downloadfade {
 }
 
 #downloadfade input {
-    padding: .45em;
+    padding: 6px;
     width: calc(100% - 2em);
-    margin-right: -7.5em;
+    margin-right: -111px;
     font-size: 1.1em;
+    height: 22px;
 }
 @media screen and (max-width: 770px) {
     #downloadfade input {
-        margin-right: -6.7em;
-        padding: .7em 0 .7em 1em;
+        margin-right: -81px;
     }
 }
 
@@ -819,11 +852,13 @@ form.submitted #downloadfade {
 }
 
 #downloadfade input + button {
-    padding: .3em 1.9em;
+    padding: 0;
+    width: 100px;
+    height: 26px;
 }
 @media screen and (max-width: 770px) {
     #downloadfade input + button {
-        padding: .3em 1em;
+        width: 70px;
     }
 }
 
@@ -840,21 +875,6 @@ form.submitted #downloadfade {
 
 #company h3 {
     font-family: Quadon-Bold, Georgia, serif;
-}
-
-article p strong {
-    font-size: .95em;
-}
-
-article {
-    margin: 25px 15px;
-    font-family: proxima-nova, sans-serif;
-}
-
-article h2,
-article h3 {
-    font-family: Quadon-Bold, Georgia, serif;
-    font-weight: normal;
 }
 
 #company {
@@ -912,7 +932,7 @@ article p {
 
 article h3,
 article p a {
-    color: #3398CB;
+    color: #0f9abb;
 }
 
 #company p.lead:after {
@@ -920,17 +940,30 @@ article p a {
     display: block;
     position: absolute;
     background: url(../img/home/priovr-hand-v3-duotone.png) no-repeat center center;
-    right: -520px;
-    width: 800px;
-    height: 473px;
+    background-size: contain;
+    right: 0;
+    margin-top: 150px;
+    width: 696px;
+    height: 403px;
+}
+@media screen and (max-width: 1920px) {
+    #company p.lead:after {
+        width: 532px;
+        height: 308px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    #company p.lead:after {
+        margin-top: 180px;
+        width: 409px;
+        height: 236px;
+    }
 }
 @media screen and (max-width: 990px) {
     #company p.lead:after {
-        right: -660px;
-    }
-}
-@media screen and (max-width: 770px) {
-    #company p.lead:after {
+        background-image: none;
+        width: 0;
+        height: 0;
         display: none;
     }
 }
@@ -951,7 +984,7 @@ article p a {
 }
 
 #company p.lead + p + p {
-    padding-right: 275px;
+    padding-right: 280px;
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p + p {
@@ -1271,7 +1304,17 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #investors > article li {
-        top: -60px;
+        top: 35px;
+        height: 95px;
+        padding: 19px 33px;
+        width: 99px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li {
+        height: 84px;
+        padding: 6px 10px;
+        width: 100px;
     }
 }
 
@@ -1280,6 +1323,25 @@ article p a {
     padding: 10px;
     width: 200px;
 }
+@media screen and (max-width: 770px) {
+    #advisors > article li {
+        height: 180px;
+        padding: 10px;
+        width: 149px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li {
+        height: 150px;
+        padding: 5px;
+        width: 126px;
+    }
+}
+
+#advisors > article li img {
+    max-width: 100%;
+}
+
 
 #investors > article li h3,
 #advisors > article li h3 {
@@ -1305,11 +1367,15 @@ article p a {
 #investors > article li p {
     font-family: proxima-nova, sans-serif;
     color: #333333;
-    font-size: 0.75em;
 }
 
 #investors > article li h3 {
-    font-size: 3em;
+    font-size: 3.3em;
+}
+@media screen and (max-width: 990px) {
+    #investors > article li h3 {
+        font-size: 4.6em;
+    }
 }
 @media screen and (max-width: 770px) {
     #investors > article li h3 {
@@ -1318,7 +1384,7 @@ article p a {
 }
 @media screen and (max-width: 530px) {
     #investors > article li h3 {
-        font-size: 6.5em;
+        font-size: 4em;
     }
 }
 
@@ -1326,19 +1392,39 @@ article p a {
     margin: 0;
 }
 
+/**
+ * First investor card
+ */
 #investors > article li:nth-child(1) {
     z-index: 200;
-    left: -80px;
+    left: 20px;
     -moz-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     -o-transform: rotate(-4deg);
     -webkit-transform: rotate(-4deg);
     transform: rotate(-4deg);
 }
+html.skrollr #investors > article li:nth-child(1) {
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(1) {
+        left: 30px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(1) {
+        left: -10px;
+        margin-top: 30px;
+    }
+}
 
+/**
+ * 2nd investor card
+ */
 #investors > article li:nth-child(2) {
     z-index: 199;
-    left: 135px;
+    left: 235px;
     margin-top: 5px;
     -moz-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
@@ -1346,10 +1432,27 @@ article p a {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
+html.skrollr #investors > article li:nth-child(2) {
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(2) {
+        left: 175px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(2) {
+        left: 104px;
+        margin-top: 35px;
+    }
+}
 
+/**
+ * 3rd investor card
+ */
 #investors > article li:nth-child(3) {
     z-index: 198;
-    left: 355px;
+    left: 455px;
     margin-top: 11px;
     -moz-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
@@ -1357,60 +1460,146 @@ article p a {
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
 }
+html.skrollr #investors > article li:nth-child(3) {
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(3) {
+        left: 325px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(3) {
+        margin-top: 41px;
+        left: 218px;
+    }
+}
 
+/**
+ * 4th investor card
+ */
 #investors > article li:nth-child(4) {
     z-index: 197;
-    left: -93px;
-    margin-top: 181px;
+    left: 27px;
+    margin-top: 185px;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
+html.skrollr #investors > article li:nth-child(4) {
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(4) {
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(4) {
+        margin-top: 125px;
+        left: -13px;
+    }
+}
 
+/**
+ * 5th investor card
+ */
 #investors > article li:nth-child(5) {
     z-index: 196;
-    left: 126px;
-    margin-top: 181px;
+    left: 226px;
+    margin-top: 185px;
     -moz-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     -o-transform: rotate(4deg);
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
 }
+html.skrollr #investors > article li:nth-child(5) {
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(5) {
+        left: 166px;
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(5) {
+        left: 100px;
+        margin-top: 125px;
+    }
+}
 
+/**
+ * 6th investor card
+ */
 #investors > article li:nth-child(6) {
     z-index: 195;
-    left: 340px;
-    margin-top: 196px;
-    padding: 24px 19px 10px 25px;
-    width: 190px;
+    left: 440px;
+    margin-top: 200px;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
+html.skrollr #investors > article li:nth-child(6) {
+    left: 0;
+}
+@media screen and (max-width: 770px) {
+    #investors > article li:nth-child(6) {
+        left: 320px;
+        margin-top: 140px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article li:nth-child(6) {
+        left: 215px;
+        margin-top: 130px;
+    }
+}
 
 #investors > article li:nth-child(6) p {
-    font-size: 2em;
-    line-height: 1.2em;
+    font-size: 1.7em;
+    line-height: 1.4em;
+    padding: 1.1em 0;
+}
+@media screen and (max-width: 990px) {
+    #investors > article li:nth-child(6) p {
+        font-size: 2.2em;
+        line-height: 1.3em;
+        padding: 1em 0;
+    }
 }
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(6) p {
-        font-size: 2.7em;
+        font-size: 2.1em;
+        padding: .5em 0 0;
     }
 }
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(6) p {
-        font-size: 3.5em;
+        font-size: 2em;
+        padding: .8em 0 0;
     }
 }
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
     left: 55px;
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(1) {
+        margin-top: 35px;
+        left: 15px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(1) {
+        left: -10px;
+    }
 }
 
 #advisors > article li:nth-child(2) {
@@ -1423,6 +1612,17 @@ article p a {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(2) {
+        margin-top: 70px;
+        left: 170px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(2) {
+        left: 115px;
+    }
+}
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
@@ -1433,6 +1633,17 @@ article p a {
     -o-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(3) {
+        margin-top: 55px;
+        left: 335px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(3) {
+        left: 245px;
+    }
 }
 
 #investors > article > ul {
@@ -1450,7 +1661,12 @@ article p a {
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
         margin-top: -30px;
-        height: 250px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #advisors > article > ul {
+        height: 270px;
     }
 }
 
@@ -1464,37 +1680,20 @@ article p a {
 }
 
 #investors > article > ul {
+    padding: 0;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-    margin-left: 88px;
+}
+html.skrollr #investors > article > ul {
+    overflow: hidden;
 }
 
+/*
 @media screen and (max-width: 770px) {
-    #investors > article > ul,
-    #advisors > article > ul {
-        -moz-transform: scale(.65);
-        -ms-transform: scale(.65);
-        -o-transform: scale(.65);
-        -webkit-transform: scale(.65);
-        transform: scale(.65);
-    }
     #investors > article > ul {
-        margin-left: 0px;
-    }
-    #advisors > article > ul {
-        margin-left: -100px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 530px) {
-    #investors > article > ul,
-    #advisors > article > ul {
-        -moz-transform: scale(.5);
-        -ms-transform: scale(.5);
-        -o-transform: scale(.5);
-        -webkit-transform: scale(.5);
-        transform: scale(.5);
-    }
-}
-
+*/
