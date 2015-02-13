@@ -8,12 +8,17 @@
  *
  */
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
-    overflow-x: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-style: normal;
     font-weight: normal;

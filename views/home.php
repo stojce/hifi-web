@@ -328,41 +328,45 @@
   <section id="investors">
     <article>
       <h2>Investors</h2>
-      <ul>
+      <ul data-0="width: 100%;"
+          data-4000="width: 100%;"
+          data-4100="width: 300%"
+          data-5000="width: 300%"
+          data-5100="width: 100%;">
         <li
-          data-0="left: 2000px; transform:rotate(-90deg);"
-          data-4320="left: 2000px; transform:rotate(-90deg);"
-          data-4720="left: -80px; transform:rotate(-4deg);">
+          data-0="transform: rotate(-10deg) translateX(2000px);"
+          data-4320="transform: rotate(-10deg) translateX(2000px);"
+          data-4720="transform: rotate(-4deg) translateX(20px);">
           <h3>True Ventures</h3>
         </li>
         <li
-          data-0="left: 2000px; transform:rotate(90deg); margin-top: 5px;"
-          data-4360="left: 2000px; transform:rotate(90deg); margin-top: 5px;"
-          data-4760="left: 135px; transform:rotate(5deg);">
+          data-0="transform:rotate(10deg) translateX(2000px);"
+          data-4360="transform:rotate(10deg) translateX(2000px);"
+          data-4760="transform:rotate(5deg) translateX(235px);">
           <h3>Vulcan Capital</h3>
         </li>
         <li
-          data-0="left: 2000px; transform:rotate(160deg); margin-top: 11px;"
-          data-4300="left: 2000px; transform:rotate(160deg); margin-top: 11px;"
-          data-4700="left: 355px; transform:rotate(2deg);">
+          data-0="transform:rotate(8deg) translateX(2000px);"
+          data-4300="transform:rotate(8deg) translateX(2000px);"
+          data-4700="transform:rotate(2deg) translateX(455px);">
           <h3>Kapor Capital</h3>
         </li>
         <li
-          data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-4370="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-4770="left: -93px; transform:rotate(0deg);">
+          data-0="transform:rotate(-4deg) translateX(2000px);"
+          data-4370="transform:rotate(-4deg) translateX(2000px);"
+          data-4770="transform:rotate(0deg) translateX(7px);">
           <h3>Google Ventures</h3>
         </li>
         <li
-          data-0="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-4440="left: 2000px; transform:rotate(-160deg); margin-top: 185px;"
-          data-4840="left: 126px; transform:rotate(4deg);">
+          data-0="transform:rotate(-4deg) translateX(2000px);"
+          data-4440="transform:rotate(-4deg) translateX(2000px);"
+          data-4840="transform:rotate(4deg) translateX(226px);">
           <h3>Linden Lab</h3>
         </li>
         <li
-          data-0="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-          data-4480="left: 2000px; transform:rotate(-160deg); margin-top: 200px;"
-          data-4880="left: 340px; transform:rotate(0deg);">
+          data-0="transform:rotate(-3deg) translateX(2000px);"
+          data-4480="transform:rotate(-3deg) translateX(2000px);"
+          data-4880="transform:rotate(0deg) translateX(440px);">
           <p>And an intriguing assortment of forward-looking angels.</p>
         </li>
       </ul>
