@@ -8,9 +8,10 @@ var home = {
     processedDevices: [],
 
     init: function() {
-        $('#placenames select').bind('change', home.refreshRequirements).chosen({
-            disable_search_threshold: 100
-        });
+        $('#placenames select').bind('change', home.refreshRequirements).chosen({isable_search_threshold: 100});
+        window.addEventListener('resize', function() {
+            $('#placenames select').chosen('destroy').chosen({disable_search_threshold: 100});
+        }, false);
         home.suggestPackage();
         home.refreshRequirements();
 

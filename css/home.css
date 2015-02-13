@@ -41,6 +41,11 @@ article {
     margin: 3.3em 15px 0;
     padding-bottom: .7em;
 }
+@media screen and (max-width: 530px) {
+    article {
+        margin: 3.3em 0 0;
+    }
+}
 
 article h2,
 article h3 {
@@ -77,7 +82,7 @@ article h3 {
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul {
-        height: 116px;
+        height: 114px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -318,6 +323,7 @@ article h3 {
 
 #placenames h3,
 #company article:first-child h3,
+#company h2,
 #team h2,
 #investors h2,
 #advisors h2 {
@@ -437,10 +443,15 @@ article h3 {
     }
 }
 @media screen and (max-width: 530px) {
-    #openvr ul li:first-child,
-    #openvr ul li:nth-child(2),
+    #openvr ul li:first-child {
+        background-size: 30px 30px;
+    }
+    #openvr ul li:nth-child(2) {
+        background-position-y: 1em;
+        background-size: 43px 43px;
+    }
     #openvr ul li:last-child {
-        padding-top: 40px;
+        background-size: 33px 33px;
     }
 }
 
@@ -466,7 +477,7 @@ article h3 {
     background-size: 120px 120px;
     padding: 1.5em 0 2.9em;
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 990px) {
     #placenames > article > form fieldset {
         background-size: 90px 90px;
     }
@@ -606,6 +617,16 @@ article h3 {
 #placenames > article > form select {
     width: 130px;
 }
+@media screen and (max-width: 990px) {
+    #placenames > article > form select {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #placenames > article > form select {
+        width: 130px;
+    }
+}
 
 #placenames > article > form .chosen-container {
     font-size: 1em;
@@ -699,6 +720,11 @@ article h3 {
 #placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
     padding: .4em 1.2em .4em;
     margin-left: .8em;
+}
+@media screen and (max-width: 770px) {
+    #placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
+        padding: .1em 1.2em .2em;
+    }
 }
 
 #placenames > article > form fieldset > div > .chosen-single,
@@ -883,29 +909,37 @@ form.submitted #downloadfade {
     color: #333333;
 }
 
+#company {
+    margin-top: 4em;
+}
+
 #company h3 {
     font-family: Quadon-Bold, Georgia, serif;
-}
-
-#company {
-    margin-top: 0;
-}
-
-#company h3 {
     font-size: 2.4em;
-    padding-left: 3.8em;
+    padding-left: 4em;
 }
-
+@media screen and (max-width: 990px) {
+    #company h3 {
+        padding-left: 4.6em;
+   }
+}
 @media screen and (max-width: 770px) {
     #company h3 {
         font-size: 2.8em;
         line-height: 1.1em;
         padding-right: 55px;
-    }
+        padding-left: 2.5em;
+   }
+}
+@media screen and (max-width: 530px) {
+    #company h3 {
+        font-size: 2.5em;
+        padding-left: 1.8em;
+   }
 }
 
 #company p.lead {
-    padding: 2.5em 5em 0 3.4em;
+    padding: 2.1em 5em 0 3.4em;
     margin-left: 56px;
     margin-right: 56px;
     margin-top: 15px;
@@ -922,7 +956,7 @@ form.submitted #downloadfade {
 }
 @media screen and (max-width: 530px) {
     #company p.lead {
-        padding: 5px 30px;
+        padding: 2em 30px;
     }
 }
 
@@ -932,9 +966,21 @@ form.submitted #downloadfade {
     margin-bottom: 1.8em;
     padding-left: 5.7em;
 }
+@media screen and (max-width: 990px) {
+    #company p {
+        padding-left: 6.5em;
+    }
+}
 @media screen and (max-width: 770px) {
-    #company {
+    #company p {
         font-size: 2em;
+        padding-left: 3.5em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #company p {
+        font-size: 1.8em;
+        padding-left: 2.5em;
     }
 }
 
@@ -993,6 +1039,11 @@ article p a {
 
 #company p.lead + p + p {
     padding-right: 13em;
+}
+@media screen and (max-width: 990px) {
+    #company p.lead + p + p {
+        padding-right: 2.5em;
+    }
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p + p {
@@ -1076,6 +1127,11 @@ article p a {
     background: transparent url(../img/home/svo.svg) no-repeat center bottom;
     background-size: 630px 390px;
 }
+@media screen and (max-width: 990px) {
+    #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-right: 60px;
+    }
+}
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(3) + p {
         padding-bottom: 258px;
@@ -1085,10 +1141,11 @@ article p a {
 }
 @media screen and (max-width: 530px) {
     #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-top: 190px;
         padding-bottom: 15px;
-        padding-right: 100px;
-        background-size: 100px 62px;
-        background-position: right 15px;
+        padding-right: 0;
+        background-size: 300px 186px;
+        background-position: center top;
     }
 }
 
@@ -1114,7 +1171,7 @@ article p a {
     #company article:nth-child(2) h3:nth-child(5) + p {
         padding-bottom: 15px;
         background-image: none;
-        padding-right: 30px;
+        padding-right: 0px;
     }
 }
 
@@ -1144,27 +1201,29 @@ article p a {
 
 #team > article > h2 {
     border-bottom: 1px solid #DADADA;
-    background: transparent url('../img/home/gg-bridge.svg') 700px center no-repeat;
+    background: transparent url('../img/home/gg-bridge.svg') 435px 25px no-repeat;
     padding-top: 70px;
     background-size: 82px 79px;
     text-align: center;
-    margin-left: 3.5em;
+    margin-right: 3.8em;
 }
 @media screen and (max-width: 990px) {
     #team > article > h2 {
-        background-position: 470px center;
+        background-position: 385px center;
         margin-left: 0;
     }
 }
 @media screen and (max-width: 770px) {
     #team > article > h2 {
-        background-position: 300px center;
+        background-position: 267px 38px;
+        background-size: 50px 48px;
     }
 }
 @media screen and (max-width: 530px) {
     #team > article > h2 {
         background-image: none;
         padding-top: 1em;
+        margin-right: 0;
     }
 }
 
@@ -1175,7 +1234,7 @@ article p a {
     width: 150px;
     font-size: 0.5em;
     position: absolute;
-    right: 10px;
+    right: 9em;
     margin-top: -20px;
     line-height: 1.3em;
     font-family: proxima-nova, sans-serif;
@@ -1185,12 +1244,14 @@ article p a {
     #team > article > h2:before {
         font-size: .6em;
         width: 120px;
+        right: 8em;
     }
 }
 @media screen and (max-width: 770px) {
     #team > article > h2:before {
-        font-size: .7em;
+        font-size: .6em;
         width: 100px;
+        right: 8em;
     }
 }
 @media screen and (max-width: 530px) {
@@ -1308,7 +1369,14 @@ article p a {
 
 #advisors h2 {
     border-bottom: 1px solid #dadada;
+    margin: 1.1em 0 1.5em;
 }
+@media screen and (max-width: 530px) {
+    #advisors h2 {
+        margin: 0;
+    }
+}
+
 
 #investors > article,
 #advisors > article {
@@ -1445,7 +1513,7 @@ article p a {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(1) {
         left: -10px;
-        margin-top: 30px;
+        margin-top: 0;
     }
 }
 
@@ -1470,7 +1538,7 @@ article p a {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(2) {
         left: 104px;
-        margin-top: 35px;
+        margin-top: 5px;
     }
 }
 
@@ -1494,7 +1562,7 @@ article p a {
 }
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(3) {
-        margin-top: 41px;
+        margin-top: 11px;
         left: 218px;
     }
 }
@@ -1519,7 +1587,7 @@ article p a {
 }
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(4) {
-        margin-top: 125px;
+        margin-top: 95px;
         left: -13px;
     }
 }
@@ -1546,7 +1614,7 @@ article p a {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(5) {
         left: 100px;
-        margin-top: 125px;
+        margin-top: 95px;
     }
 }
 
@@ -1572,7 +1640,7 @@ article p a {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(6) {
         left: 215px;
-        margin-top: 130px;
+        margin-top: 100px;
     }
 }
 
@@ -1669,9 +1737,14 @@ article p a {
         height: 350px;
     }
 }
+@media screen and (max-width: 530px) {
+    #investors > article > ul {
+        height: 280px;
+    }
+}
 
 #advisors > article > ul {
-    height: 350px;
+    height: 376px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
@@ -1679,18 +1752,23 @@ article p a {
         height: 350px;
     }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #advisors > article > ul {
         height: 270px;
     }
 }
 
 #investors > article > h2 {
-    margin-bottom: 63px;
+    margin: 2em 0 1em;
 }
 @media screen and (max-width: 770px) {
     #investors > article > h2 {
         margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article > h2 {
+        margin-bottom: 0;
     }
 }
 

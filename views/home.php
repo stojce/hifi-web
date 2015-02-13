@@ -139,7 +139,7 @@
 <div id="container">
   <section id="company">
     <article>
-      <h3>The company</h3>
+      <h2>The company</h2>
       <p class="lead">
         We believe that both the hardware and the internet infrastructure <strong>are now available
         to give people around the world access to an interconnected Metaverse</strong> that will offer
