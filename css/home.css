@@ -31,6 +31,12 @@ body > #container,
         width: 350px;
     }
 }
+@media screen and (max-width: 360px) {
+    body > #container,
+    #placenames {
+        width: 280px;
+    }
+}
 
 article p strong {
     font-size: .95em;
@@ -90,6 +96,11 @@ article h3 {
         height: 61px;
     }
 }
+@media screen and (max-width: 360px) {
+    #placenames > article:first-child ul {
+        height: 46px;
+    }
+}
 
 #placenames.expanded > article:first-child ul {
     height: 480px;
@@ -108,6 +119,11 @@ article h3 {
 @media screen and (max-width: 530px) {
     #placenames.expanded > article:first-child ul {
         height: 130px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #placenames.expanded > article:first-child ul {
+        height: 92px;
     }
 }
 
@@ -152,6 +168,12 @@ article h3 {
     #placenames > article:first-child ul > li h4,
     #placenames > article:first-child ul > li p {
         display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    #placenames > article:first-child ul > li img {
+        height: 45px;
+        width: 55px;
     }
 }
 
@@ -209,7 +231,12 @@ article h3 {
         height: calc(61px - 1.4em);
     }
 }
-
+@media screen and (max-width: 530px) {
+    #placenames > article:first-child ul > li:nth-child(5) {
+        width: 20px;
+        height: calc(45px - 1.4em);
+    }
+}
 #placenames.expanded > article:first-child ul > li:nth-child(5) {
     opacity: 0;
     visibility: hidden;
@@ -231,9 +258,17 @@ article h3 {
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul > li:nth-child(5) > a {
-        transform: rotate(90deg) translate(55%, 135%)(55%);
+        transform: rotate(90deg) translate(55%, 135%);
         -webkit-transform: rotate(90deg) translate(55%, 135%);
         width: 200%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #placenames > article:first-child ul > li:nth-child(5) > a {
+        transform: rotate(90deg) translate(71%, 61%);
+        -webkit-transform: rotate(90deg) translate(71%, 61%);
+        width: 110%;
+        font-size: .6em;
     }
 }
 
@@ -355,12 +390,17 @@ article h3 {
         padding: .5em 3.5em;
     }
 }
+@media screen and (max-width: 360px) {
+    #openvr h3 {
+        padding: .5em 1.5em;
+    }
+}
 #openvr + article h3 {
-    padding: .5em 6.5em .1em;
+    padding: .5em 0 .1em;
 }
 @media screen and (max-width: 530px) {
     #openvr + article h3 {
-        padding: .5em 3.5em;
+        padding: .5em 0;
     }
 }
 
@@ -625,6 +665,11 @@ article h3 {
 @media screen and (max-width: 770px) {
     #placenames > article > form select {
         width: 130px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #placenames > article > form select {
+        width: 100px;
     }
 }
 
@@ -937,6 +982,11 @@ form.submitted #downloadfade {
         padding-left: 1.8em;
    }
 }
+@media screen and (max-width: 360px) {
+    #company h3 {
+        padding-left: .2em;
+   }
+}
 
 #company p.lead {
     padding: 2.1em 5em 0 3.4em;
@@ -957,6 +1007,11 @@ form.submitted #downloadfade {
 @media screen and (max-width: 530px) {
     #company p.lead {
         padding: 2em 30px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #company p.lead {
+        padding: 2em 1.5em 0 .3em;
     }
 }
 
@@ -981,6 +1036,11 @@ form.submitted #downloadfade {
     #company p {
         font-size: 1.8em;
         padding-left: 2.5em;
+    }
+}
+@media screen and (max-width: 360px) {
+    #company p {
+        padding-left: .3em;
     }
 }
 
@@ -1143,7 +1203,7 @@ article p a {
     #company article:nth-child(2) h3:nth-child(3) + p {
         padding-top: 190px;
         padding-bottom: 15px;
-        padding-right: 0;
+        padding-right: .5em;
         background-size: 300px 186px;
         background-position: center top;
     }
@@ -1171,7 +1231,12 @@ article p a {
     #company article:nth-child(2) h3:nth-child(5) + p {
         padding-bottom: 15px;
         background-image: none;
-        padding-right: 0px;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 530px) {
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        padding-right: .8em;
     }
 }
 
@@ -1282,16 +1347,29 @@ article p a {
     margin-bottom: 1.3em;
     min-height: 90px;
 }
-#team li:nth-child(2n+1) {
-    margin-right: 7.5%;
-}
 @media screen and (max-width: 770px) {
     #team li {
         margin-bottom: 5px;
         width: 46%;
     }
+}
+@media screen and (max-width: 530px) {
+    #team li {
+        width: 40%;
+    }
+}
+#team li:nth-child(2n+1) {
+    margin-right: 7.5%;
+}
+@media screen and (max-width: 770px) {
     #team li:nth-child(2n+1) {
         margin-right: 7%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #team li:nth-child(2n+1) {
+        margin-right: 3%;
+        margin-right: 5%;
     }
 }
 
@@ -1418,6 +1496,13 @@ article p a {
         width: 100px;
     }
 }
+@media screen and (max-width: 360px) {
+    #investors > article li {
+        height: 67px;
+        padding: 6px 10px;
+        width: 80px;
+    }
+}
 
 #advisors > article li {
     height: 240px;    
@@ -1436,6 +1521,13 @@ article p a {
         height: 150px;
         padding: 5px;
         width: 126px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li {
+        height: 120px;
+        padding: 5px;
+        width: 100px;
     }
 }
 
@@ -1464,6 +1556,11 @@ article p a {
         font-size: 2.3em;
     }
 }
+@media screen and (max-width: 360px) {
+    #advisors > article li h3 {
+        font-size: 2em;
+    }
+}
 
 #investors > article li p {
     font-family: proxima-nova, sans-serif;
@@ -1486,6 +1583,11 @@ article p a {
 @media screen and (max-width: 530px) {
     #investors > article li h3 {
         font-size: 4em;
+    }
+}
+@media screen and (max-width: 360px) {
+    #investors > article li h3 {
+        font-size: 3em;
     }
 }
 
@@ -1516,7 +1618,11 @@ article p a {
         margin-top: 0;
     }
 }
-
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(1) {
+        margin-top: 1em;
+    }
+}
 /**
  * 2nd investor card
  */
@@ -1539,6 +1645,12 @@ article p a {
     #investors > article li:nth-child(2) {
         left: 104px;
         margin-top: 5px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(2) {
+        left: 83px;
+        margin-top: 1.2em;
     }
 }
 
@@ -1566,6 +1678,12 @@ article p a {
         left: 218px;
     }
 }
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(3) {
+        margin-top: 1.4em;
+        left: 176px;
+    }
+}
 
 /**
  * 4th investor card
@@ -1588,6 +1706,12 @@ article p a {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(4) {
         margin-top: 95px;
+        left: -13px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(4) {
+        margin-top: 14em;
         left: -13px;
     }
 }
@@ -1617,6 +1741,12 @@ article p a {
         margin-top: 95px;
     }
 }
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(5) {
+        left: 85px;
+        margin-top: 14em;
+    }
+}
 
 /**
  * 6th investor card
@@ -1643,7 +1773,12 @@ article p a {
         margin-top: 100px;
     }
 }
-
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(6) {
+        left: 180px;
+        margin-top: 15em;
+    }
+}
 #investors > article li:nth-child(6) p {
     font-size: 1.7em;
     line-height: 1.4em;
@@ -1666,6 +1801,11 @@ article p a {
     #investors > article li:nth-child(6) p {
         font-size: 2em;
         padding: .8em 0 0;
+    }
+}
+@media screen and (max-width: 360px) {
+    #investors > article li:nth-child(6) p {
+        font-size: 1.6em;
     }
 }
 
@@ -1706,6 +1846,12 @@ article p a {
         left: 115px;
     }
 }
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(2) {
+        margin-top: 50px;
+        left: 95px;
+    }
+}
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
@@ -1726,6 +1872,11 @@ article p a {
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(3) {
         left: 245px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(3) {
+        left: 196px;
     }
 }
 
