@@ -3,7 +3,6 @@
 require_once('config.php');
 
 View::write('page', 'home');
-View::addScript('js/skrollr.js');
 View::addScript('js/home.js');
 View::addStyle('css/home.css');
 

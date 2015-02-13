@@ -41,6 +41,11 @@ article {
     margin: 3.3em 15px 0;
     padding-bottom: .7em;
 }
+@media screen and (max-width: 530px) {
+    article {
+        margin: 3.3em 0 0;
+    }
+}
 
 article h2,
 article h3 {
@@ -52,28 +57,6 @@ article h3 {
 #container > section {
     margin-left: auto;
     margin-right: auto;
-}
-
-@media screen and (max-width: 990px) {
-    section > article {
-        padding-left: 0;
-    }
-}
-#container article > * {
-    padding-left: 110px;
-    padding-right: 110px;
-}
-@media screen and (max-width: 770px) {
-    #container article > * {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-}
-@media screen and (max-width: 530px) {
-    #container article > * {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
 }
 
 #placenames {
@@ -94,12 +77,12 @@ article h3 {
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul {
-        height: 181px;
+        height: 178px;
     }
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul {
-        height: 116px;
+        height: 114px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -340,6 +323,7 @@ article h3 {
 
 #placenames h3,
 #company article:first-child h3,
+#company h2,
 #team h2,
 #investors h2,
 #advisors h2 {
@@ -355,16 +339,26 @@ article h3 {
     text-align: center;
 }
 
+#openvr {
+    margin-bottom: -20px;
+}
+
 #openvr h3, {
     margin-bottom: -25px;
 }
 
-#openvr h3,
-#openvr + article h3 {
+#openvr h3 {
     padding: .5em 6.5em;
 }
 @media screen and (max-width: 530px) {
-    #openvr h3,
+    #openvr h3 {
+        padding: .5em 3.5em;
+    }
+}
+#openvr + article h3 {
+    padding: .5em 6.5em .1em;
+}
+@media screen and (max-width: 530px) {
     #openvr + article h3 {
         padding: .5em 3.5em;
     }
@@ -423,8 +417,20 @@ article h3 {
     padding-right: 14.3em;
     padding-left: 14.3em;
     background-image: url(../img/home/share.svg);
-    background-size: 80px 80px;
+    background-size: 71px 71px;
     background-position-y: 1em;
+}
+@media screen and (max-width: 990px) {
+    #openvr ul li:first-child {
+        background-size: 42px 42px;
+    }
+    #openvr ul li:nth-child(2) {
+        background-position-y: 1em;
+        background-size: 55px 55px;
+    }
+    #openvr ul li:last-child {
+        background-size: 45px 45px;
+    }
 }
 @media screen and (max-width: 770px) {
     #openvr ul li:first-child,
@@ -437,10 +443,15 @@ article h3 {
     }
 }
 @media screen and (max-width: 530px) {
-    #openvr ul li:first-child,
-    #openvr ul li:nth-child(2),
+    #openvr ul li:first-child {
+        background-size: 30px 30px;
+    }
+    #openvr ul li:nth-child(2) {
+        background-position-y: 1em;
+        background-size: 43px 43px;
+    }
     #openvr ul li:last-child {
-        padding-top: 40px;
+        background-size: 33px 33px;
     }
 }
 
@@ -464,9 +475,9 @@ article h3 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 120px 120px;
-    padding: 2em 0;
+    padding: 1.5em 0 2.9em;
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 990px) {
     #placenames > article > form fieldset {
         background-size: 90px 90px;
     }
@@ -513,6 +524,7 @@ article h3 {
 #placenames > article > form fieldset:nth-child(3) {
     border-style: dashed;
     border-top-width: 0;
+    padding: 2.4em 0;
 }
 
 #placenames > article > form fieldset + fieldset {
@@ -559,8 +571,8 @@ article h3 {
 
 #placenames > article > form fieldset:first-child > div:before {
     content: 'Get the client, go places';
-    width: 65%;
-    margin-left: -118%;
+    width: 67%;
+    margin-left: -120%;
 }
 @media screen and (max-width: 990px) {
     #placenames > article > form fieldset:first-child > div:before {
@@ -582,9 +594,8 @@ article h3 {
 }
 
 #placenames > article > form fieldset h4 {
-    padding-top: .2em;
     font-size: 2.3em;
-    margin-bottom: .1em
+    margin: .1em 0 .1em .205em;
 }
 
 #placenames > article > form fieldset p {
@@ -604,18 +615,29 @@ article h3 {
 }
 
 #placenames > article > form select {
-    width: 110px;
+    width: 130px;
+}
+@media screen and (max-width: 990px) {
+    #placenames > article > form select {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #placenames > article > form select {
+        width: 130px;
+    }
 }
 
 #placenames > article > form .chosen-container {
     font-size: 1em;
+    margin: .1em 0 0 .3em;
 }
 
 #placenames > article > form .chosen-single {
     background: none transparent;
     color: #0f9abb;
     font-weight: bold;
-    padding: 4px 0 4px 15px;
+    padding: 4px 0 7px 15px;
 }
 @media screen and (max-width: 1090px) {
     #placenames > article > form .chosen-single {
@@ -696,8 +718,13 @@ article h3 {
 }
 
 #placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
-    padding: .2em 1.2em .3em;
+    padding: .4em 1.2em .4em;
     margin-left: .8em;
+}
+@media screen and (max-width: 770px) {
+    #placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
+        padding: .1em 1.2em .2em;
+    }
 }
 
 #placenames > article > form fieldset > div > .chosen-single,
@@ -714,13 +741,14 @@ article h3 {
 #placenames > article > form fieldset > div:before,
 #placenames > article > form fieldset > p {
     font-size: 2.2em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     font-family: Quadon-Bold;
 }
 
 #placenames > article > form fieldset > p {
     margin: 0;
-    padding: 0 4.5em 0 9.5em;
+    padding: 0 5em 0 9em;
+    line-height: 1.3em
 }
 @media screen and (max-width: 1090px) {
     #placenames > article > form fieldset > p {
@@ -753,7 +781,7 @@ article h3 {
     height: 90px;
     padding: 10px 0;
     position: absolute;
-    margin-left: -110px;
+    margin-left: -120px;
     margin-top: -6px;
 }
 @media screen and (max-width: 990px) {
@@ -881,30 +909,37 @@ form.submitted #downloadfade {
     color: #333333;
 }
 
+#company {
+    margin-top: 4em;
+}
+
 #company h3 {
     font-family: Quadon-Bold, Georgia, serif;
-}
-
-#company {
-    margin-top: 5em;
-}
-
-#company h3 {
     font-size: 2.4em;
+    padding-left: 4em;
 }
-
+@media screen and (max-width: 990px) {
+    #company h3 {
+        padding-left: 4.6em;
+   }
+}
 @media screen and (max-width: 770px) {
     #company h3 {
         font-size: 2.8em;
         line-height: 1.1em;
         padding-right: 55px;
-    }
+        padding-left: 2.5em;
+   }
+}
+@media screen and (max-width: 530px) {
+    #company h3 {
+        font-size: 2.5em;
+        padding-left: 1.8em;
+   }
 }
 
 #company p.lead {
-    padding-top: 15px;
-    padding-right: 59px;
-    padding-left: 54px;
+    padding: 2.1em 5em 0 3.4em;
     margin-left: 56px;
     margin-right: 56px;
     margin-top: 15px;
@@ -921,20 +956,31 @@ form.submitted #downloadfade {
 }
 @media screen and (max-width: 530px) {
     #company p.lead {
-        padding: 5px 30px;
+        padding: 2em 30px;
     }
 }
 
-#company p.lead,
-article p {
-    font-size: 1.8em;
+#company p {
+    font-size: 1.7em;
     line-height: 1.5em;
-    margin-bottom: 25px;
+    margin-bottom: 1.8em;
+    padding-left: 5.7em;
+}
+@media screen and (max-width: 990px) {
+    #company p {
+        padding-left: 6.5em;
+    }
 }
 @media screen and (max-width: 770px) {
-    #company p.lead,
-    article p {
+    #company p {
         font-size: 2em;
+        padding-left: 3.5em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #company p {
+        font-size: 1.8em;
+        padding-left: 2.5em;
     }
 }
 
@@ -978,7 +1024,7 @@ article p a {
 
 #company p.lead + p {
     position: relative;
-    padding-right: 122px;
+    padding-right: 6.2em;
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p {
@@ -992,7 +1038,12 @@ article p a {
 }
 
 #company p.lead + p + p {
-    padding-right: 280px;
+    padding-right: 13em;
+}
+@media screen and (max-width: 990px) {
+    #company p.lead + p + p {
+        padding-right: 2.5em;
+    }
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p + p {
@@ -1005,8 +1056,13 @@ article p a {
     }
 }
 
+#company p:last-child {
+    margin-bottom: 1.4em;
+}
+
 #company article:nth-child(2) h3:first-child {
-    padding-right: 200px;
+    padding-right: 7em;
+    margin-bottom: .7em;
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:first-child {
@@ -1020,11 +1076,11 @@ article p a {
 }
 
 #company article:nth-child(2) h3:first-child + p {
-    padding-right: 315px
+    padding-right: 14em
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
     #company article:nth-child(2) h3:first-child + p {
-        padding-right: 115px
+        padding-right: 6.5em;
     }    
 }
 @media screen and (max-width: 770px) {
@@ -1061,11 +1117,20 @@ article p a {
     }
 }
 
+#company article:nth-child(2) h3:nth-child(3) {
+    margin-top: 2.5em;
+}
+
 #company article:nth-child(2) h3:nth-child(3) + p {
     padding-right: 160px;
-    padding-bottom: 400px;
+    padding-bottom: 468px;
     background: transparent url(../img/home/svo.svg) no-repeat center bottom;
     background-size: 630px 390px;
+}
+@media screen and (max-width: 990px) {
+    #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-right: 60px;
+    }
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(3) + p {
@@ -1076,18 +1141,25 @@ article p a {
 }
 @media screen and (max-width: 530px) {
     #company article:nth-child(2) h3:nth-child(3) + p {
+        padding-top: 190px;
         padding-bottom: 15px;
-        padding-right: 100px;
-        background-size: 100px 62px;
-        background-position: right 15px;
+        padding-right: 0;
+        background-size: 300px 186px;
+        background-position: center top;
     }
 }
 
 #company article:nth-child(2) h3:nth-child(5) + p {
     padding-right: 140px;
-    padding-bottom: 306px;
-    background: transparent url(../img/home/scalability.svg) no-repeat center bottom;
-    background-size: 630px 296px;
+    padding-bottom: 300px;
+    background: transparent url(../img/home/scalability.svg) no-repeat 135px 143px;
+    background-size: 600px 282px;
+}
+@media screen and (max-width: 990px) {
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        background-position: center 120px;
+        background-size: 450px 212px;
+    }
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(5) + p {
@@ -1099,7 +1171,7 @@ article p a {
     #company article:nth-child(2) h3:nth-child(5) + p {
         padding-bottom: 15px;
         background-image: none;
-        padding-right: 30px;
+        padding-right: 0px;
     }
 }
 
@@ -1116,29 +1188,42 @@ article p a {
 /* Team section styling */
 #team {
     position: relative;
+    padding: 0 0 0 9.2em;
+}
+@media screen and (max-width: 990px) {
+    #team {
+        padding: 0;
+    }
+}
+#team > article {
+    margin-top: -2em;
 }
 
 #team > article > h2 {
     border-bottom: 1px solid #DADADA;
-    background: transparent url('../img/home/gg-bridge.svg') 700px center no-repeat;
+    background: transparent url('../img/home/gg-bridge.svg') 435px 25px no-repeat;
     padding-top: 70px;
     background-size: 82px 79px;
     text-align: center;
+    margin-right: 3.8em;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
     #team > article > h2 {
-        background-position: 470px center;
+        background-position: 385px center;
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 770px) {
     #team > article > h2 {
-        background-position: 300px center;
+        background-position: 267px 38px;
+        background-size: 50px 48px;
     }
 }
 @media screen and (max-width: 530px) {
     #team > article > h2 {
         background-image: none;
         padding-top: 1em;
+        margin-right: 0;
     }
 }
 
@@ -1149,22 +1234,24 @@ article p a {
     width: 150px;
     font-size: 0.5em;
     position: absolute;
-    right: 10px;
+    right: 9em;
     margin-top: -20px;
     line-height: 1.3em;
     font-family: proxima-nova, sans-serif;
     text-align: right;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
     #team > article > h2:before {
         font-size: .6em;
         width: 120px;
+        right: 8em;
     }
 }
 @media screen and (max-width: 770px) {
     #team > article > h2:before {
-        font-size: .7em;
+        font-size: .6em;
         width: 100px;
+        right: 8em;
     }
 }
 @media screen and (max-width: 530px) {
@@ -1180,8 +1267,7 @@ article p a {
 #team ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 5px;
-    padding-right: 5em;
+    padding: 2em 5em 0 0;
 }
 @media screen and (max-width: 530px) {
     #team ul {
@@ -1190,14 +1276,14 @@ article p a {
 }
 
 #team li {
-    width: 37%;
+    width: 41%;
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 5px;
+    margin-bottom: 1.3em;
     min-height: 90px;
 }
 #team li:nth-child(2n+1) {
-    margin-right: 19%;
+    margin-right: 7.5%;
 }
 @media screen and (max-width: 770px) {
     #team li {
@@ -1283,7 +1369,14 @@ article p a {
 
 #advisors h2 {
     border-bottom: 1px solid #dadada;
+    margin: 1.1em 0 1.5em;
 }
+@media screen and (max-width: 530px) {
+    #advisors h2 {
+        margin: 0;
+    }
+}
+
 
 #investors > article,
 #advisors > article {
@@ -1412,9 +1505,6 @@ article p a {
     -webkit-transform: rotate(-4deg);
     transform: rotate(-4deg);
 }
-html.skrollr #investors > article li:nth-child(1) {
-    left: 0;
-}
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(1) {
         left: 30px;
@@ -1423,7 +1513,7 @@ html.skrollr #investors > article li:nth-child(1) {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(1) {
         left: -10px;
-        margin-top: 30px;
+        margin-top: 0;
     }
 }
 
@@ -1440,9 +1530,6 @@ html.skrollr #investors > article li:nth-child(1) {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
-html.skrollr #investors > article li:nth-child(2) {
-    left: 0;
-}
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(2) {
         left: 175px;
@@ -1451,7 +1538,7 @@ html.skrollr #investors > article li:nth-child(2) {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(2) {
         left: 104px;
-        margin-top: 35px;
+        margin-top: 5px;
     }
 }
 
@@ -1468,9 +1555,6 @@ html.skrollr #investors > article li:nth-child(2) {
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
 }
-html.skrollr #investors > article li:nth-child(3) {
-    left: 0;
-}
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(3) {
         left: 325px;
@@ -1478,7 +1562,7 @@ html.skrollr #investors > article li:nth-child(3) {
 }
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(3) {
-        margin-top: 41px;
+        margin-top: 11px;
         left: 218px;
     }
 }
@@ -1496,9 +1580,6 @@ html.skrollr #investors > article li:nth-child(3) {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-html.skrollr #investors > article li:nth-child(4) {
-    left: 0;
-}
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(4) {
         margin-top: 120px;
@@ -1506,7 +1587,7 @@ html.skrollr #investors > article li:nth-child(4) {
 }
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(4) {
-        margin-top: 125px;
+        margin-top: 95px;
         left: -13px;
     }
 }
@@ -1524,9 +1605,6 @@ html.skrollr #investors > article li:nth-child(4) {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
 }
-html.skrollr #investors > article li:nth-child(5) {
-    left: 0;
-}
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(5) {
         left: 166px;
@@ -1536,7 +1614,7 @@ html.skrollr #investors > article li:nth-child(5) {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(5) {
         left: 100px;
-        margin-top: 125px;
+        margin-top: 95px;
     }
 }
 
@@ -1553,9 +1631,6 @@ html.skrollr #investors > article li:nth-child(5) {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
 }
-html.skrollr #investors > article li:nth-child(6) {
-    left: 0;
-}
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(6) {
         left: 320px;
@@ -1565,7 +1640,7 @@ html.skrollr #investors > article li:nth-child(6) {
 @media screen and (max-width: 530px) {
     #investors > article li:nth-child(6) {
         left: 215px;
-        margin-top: 130px;
+        margin-top: 100px;
     }
 }
 
@@ -1662,9 +1737,14 @@ html.skrollr #investors > article li:nth-child(6) {
         height: 350px;
     }
 }
+@media screen and (max-width: 530px) {
+    #investors > article > ul {
+        height: 280px;
+    }
+}
 
 #advisors > article > ul {
-    height: 350px;
+    height: 376px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
@@ -1672,18 +1752,23 @@ html.skrollr #investors > article li:nth-child(6) {
         height: 350px;
     }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 530px) {
     #advisors > article > ul {
         height: 270px;
     }
 }
 
 #investors > article > h2 {
-    margin-bottom: 63px;
+    margin: 2em 0 1em;
 }
 @media screen and (max-width: 770px) {
     #investors > article > h2 {
         margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #investors > article > h2 {
+        margin-bottom: 0;
     }
 }
 
@@ -1693,15 +1778,3 @@ html.skrollr #investors > article li:nth-child(6) {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
 }
-html.skrollr #investors > article > ul {
-    overflow: hidden;
-}
-
-/*
-@media screen and (max-width: 770px) {
-    #investors > article > ul {
-        width: 100%;
-    }
-}
-
-*/

@@ -5,22 +5,13 @@ var home = {
         unsupported_warning: true
     },
 
-    PARALLAX_MIN_WIDTH: 991,
-    skrollr: null,
-
     processedDevices: [],
 
     init: function() {
-        // let's delay parallax initialization a bit in order to let it calculate 
-        // the content height better once it's fully loaded
-        setTimeout(function() {
-            home.initParallax();
-            window.addEventListener('resize', home.handleResize, false);
-        }, 2000);
-
-        $('#placenames select').bind('change', home.refreshRequirements).chosen({
-            disable_search_threshold: 100
-        });
+        $('#placenames select').bind('change', home.refreshRequirements).chosen({isable_search_threshold: 100});
+        window.addEventListener('resize', function() {
+            $('#placenames select').chosen('destroy').chosen({disable_search_threshold: 100});
+        }, false);
         home.suggestPackage();
         home.refreshRequirements();
 
@@ -120,45 +111,6 @@ var home = {
             return;
         }
         */
-    },
-
-    initParallax: function() {
-        if (!skrollr) {
-            return;
-        }
-        if ($(window).outerWidth() >= home.PARALLAX_MIN_WIDTH) {
-            home.startParallax();
-        }
-    },
-
-    /**
-    * Starts parallax scrolling and do some previous needed dom changes
-    */
-    startParallax: function() {
-        if (home.skrollr) {
-            return;
-        }
-        home.skrollr = skrollr.init();
-    },
-
-    /**
-    * Destroys changes/resources made by startParallax
-    */
-    stopParallax: function() {
-        if (home.skrollr) {
-            home.skrollr.destroy();
-        }
-        home.skrollr = null;
-    },
-    /**
-    * Parallax scrolling tweaks on resize, it's actually re-starting
-    */
-    handleResize: function() {
-        if ($(window).outerWidth() < home.PARALLAX_MIN_WIDTH) {
-            home.stopParallax();
-        } else {
-            home.startParallax();
-        }
     },
 
     isCompatible: function() {
