@@ -130,7 +130,7 @@
             when Interface, Stack Manager and Place Names are available.
           </p>
           <input type="email" name="EMAIL" placeholder="your@email.com" required />
-          <button type="submit" name="subscribe">Sign Up</button>
+          <button type="submit" name="subscribe">Sign up</button>
         </div>
       </div>
     </form>
