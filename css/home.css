@@ -820,13 +820,13 @@ form.submitted #downloadfade {
 #downloadfade input {
     padding: 6px;
     width: calc(100% - 2em);
-    margin-right: -112px;
+    margin-right: -111px;
     font-size: 1.1em;
     height: 22px;
 }
 @media screen and (max-width: 770px) {
     #downloadfade input {
-        margin-right: -82px;
+        margin-right: -81px;
     }
 }
 
