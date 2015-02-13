@@ -364,8 +364,9 @@ article h3 {
     padding: .5em 6.5em;
 }
 @media screen and (max-width: 530px) {
-    #openvr h3 {
-        padding: 0 3.5em;
+    #openvr h3,
+    #openvr + article h3 {
+        padding: .5em 3.5em;
     }
 }
 
@@ -432,7 +433,14 @@ article h3 {
         padding-top: 50px;
         padding-right: 0;
         padding-left: 0;
-        background-size: 50px 50px;
+        background-size: 32px 32px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #openvr ul li:first-child,
+    #openvr ul li:nth-child(2),
+    #openvr ul li:last-child {
+        padding-top: 40px;
     }
 }
 
