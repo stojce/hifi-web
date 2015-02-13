@@ -818,15 +818,15 @@ form.submitted #downloadfade {
 }
 
 #downloadfade input {
-    padding: .45em;
+    padding: 6px;
     width: calc(100% - 2em);
-    margin-right: -7.5em;
+    margin-right: -112px;
     font-size: 1.1em;
+    height: 22px;
 }
 @media screen and (max-width: 770px) {
     #downloadfade input {
-        margin-right: -6.7em;
-        padding: .7em 0 .7em 1em;
+        margin-right: -82px;
     }
 }
 
@@ -842,11 +842,13 @@ form.submitted #downloadfade {
 }
 
 #downloadfade input + button {
-    padding: .3em 1.9em;
+    padding: 0;
+    width: 100px;
+    height: 26px;
 }
 @media screen and (max-width: 770px) {
     #downloadfade input + button {
-        padding: .3em 1em;
+        width: 70px;
     }
 }
 
