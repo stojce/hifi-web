@@ -54,28 +54,6 @@ article h3 {
     margin-right: auto;
 }
 
-@media screen and (max-width: 990px) {
-    section > article {
-        padding-left: 0;
-    }
-}
-#container article > * {
-    padding-left: 110px;
-    padding-right: 110px;
-}
-@media screen and (max-width: 770px) {
-    #container article > * {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-}
-@media screen and (max-width: 530px) {
-    #container article > * {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
 #placenames {
     margin: 0 auto;
 }
@@ -94,7 +72,7 @@ article h3 {
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul {
-        height: 181px;
+        height: 178px;
     }
 }
 @media screen and (max-width: 770px) {
@@ -355,16 +333,26 @@ article h3 {
     text-align: center;
 }
 
+#openvr {
+    margin-bottom: -20px;
+}
+
 #openvr h3, {
     margin-bottom: -25px;
 }
 
-#openvr h3,
-#openvr + article h3 {
+#openvr h3 {
     padding: .5em 6.5em;
 }
 @media screen and (max-width: 530px) {
-    #openvr h3,
+    #openvr h3 {
+        padding: .5em 3.5em;
+    }
+}
+#openvr + article h3 {
+    padding: .5em 6.5em .1em;
+}
+@media screen and (max-width: 530px) {
     #openvr + article h3 {
         padding: .5em 3.5em;
     }
@@ -423,8 +411,20 @@ article h3 {
     padding-right: 14.3em;
     padding-left: 14.3em;
     background-image: url(../img/home/share.svg);
-    background-size: 80px 80px;
+    background-size: 71px 71px;
     background-position-y: 1em;
+}
+@media screen and (max-width: 990px) {
+    #openvr ul li:first-child {
+        background-size: 42px 42px;
+    }
+    #openvr ul li:nth-child(2) {
+        background-position-y: 1em;
+        background-size: 55px 55px;
+    }
+    #openvr ul li:last-child {
+        background-size: 45px 45px;
+    }
 }
 @media screen and (max-width: 770px) {
     #openvr ul li:first-child,
@@ -464,7 +464,7 @@ article h3 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 120px 120px;
-    padding: 2em 0;
+    padding: 1.5em 0 2.9em;
 }
 @media screen and (max-width: 1090px) {
     #placenames > article > form fieldset {
@@ -513,6 +513,7 @@ article h3 {
 #placenames > article > form fieldset:nth-child(3) {
     border-style: dashed;
     border-top-width: 0;
+    padding: 2.4em 0;
 }
 
 #placenames > article > form fieldset + fieldset {
@@ -559,8 +560,8 @@ article h3 {
 
 #placenames > article > form fieldset:first-child > div:before {
     content: 'Get the client, go places';
-    width: 65%;
-    margin-left: -118%;
+    width: 67%;
+    margin-left: -120%;
 }
 @media screen and (max-width: 990px) {
     #placenames > article > form fieldset:first-child > div:before {
@@ -582,9 +583,8 @@ article h3 {
 }
 
 #placenames > article > form fieldset h4 {
-    padding-top: .2em;
     font-size: 2.3em;
-    margin-bottom: .1em
+    margin: .1em 0 .1em .205em;
 }
 
 #placenames > article > form fieldset p {
@@ -604,18 +604,19 @@ article h3 {
 }
 
 #placenames > article > form select {
-    width: 110px;
+    width: 130px;
 }
 
 #placenames > article > form .chosen-container {
     font-size: 1em;
+    margin: .1em 0 0 .3em;
 }
 
 #placenames > article > form .chosen-single {
     background: none transparent;
     color: #0f9abb;
     font-weight: bold;
-    padding: 4px 0 4px 15px;
+    padding: 4px 0 7px 15px;
 }
 @media screen and (max-width: 1090px) {
     #placenames > article > form .chosen-single {
@@ -696,7 +697,7 @@ article h3 {
 }
 
 #placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
-    padding: .2em 1.2em .3em;
+    padding: .4em 1.2em .4em;
     margin-left: .8em;
 }
 
@@ -714,13 +715,14 @@ article h3 {
 #placenames > article > form fieldset > div:before,
 #placenames > article > form fieldset > p {
     font-size: 2.2em;
-    line-height: 1.2em;
+    line-height: 1.4em;
     font-family: Quadon-Bold;
 }
 
 #placenames > article > form fieldset > p {
     margin: 0;
-    padding: 0 4.5em 0 9.5em;
+    padding: 0 5em 0 9em;
+    line-height: 1.3em
 }
 @media screen and (max-width: 1090px) {
     #placenames > article > form fieldset > p {
@@ -753,7 +755,7 @@ article h3 {
     height: 90px;
     padding: 10px 0;
     position: absolute;
-    margin-left: -110px;
+    margin-left: -120px;
     margin-top: -6px;
 }
 @media screen and (max-width: 990px) {
@@ -886,11 +888,12 @@ form.submitted #downloadfade {
 }
 
 #company {
-    margin-top: 5em;
+    margin-top: 0;
 }
 
 #company h3 {
     font-size: 2.4em;
+    padding-left: 3.8em;
 }
 
 @media screen and (max-width: 770px) {
@@ -902,9 +905,7 @@ form.submitted #downloadfade {
 }
 
 #company p.lead {
-    padding-top: 15px;
-    padding-right: 59px;
-    padding-left: 54px;
+    padding: 2.5em 5em 0 3.4em;
     margin-left: 56px;
     margin-right: 56px;
     margin-top: 15px;
@@ -925,15 +926,14 @@ form.submitted #downloadfade {
     }
 }
 
-#company p.lead,
-article p {
-    font-size: 1.8em;
+#company p {
+    font-size: 1.7em;
     line-height: 1.5em;
-    margin-bottom: 25px;
+    margin-bottom: 1.8em;
+    padding-left: 5.7em;
 }
 @media screen and (max-width: 770px) {
-    #company p.lead,
-    article p {
+    #company {
         font-size: 2em;
     }
 }
@@ -978,7 +978,7 @@ article p a {
 
 #company p.lead + p {
     position: relative;
-    padding-right: 122px;
+    padding-right: 6.2em;
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p {
@@ -992,7 +992,7 @@ article p a {
 }
 
 #company p.lead + p + p {
-    padding-right: 280px;
+    padding-right: 13em;
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p + p {
@@ -1005,8 +1005,13 @@ article p a {
     }
 }
 
+#company p:last-child {
+    margin-bottom: 1.4em;
+}
+
 #company article:nth-child(2) h3:first-child {
-    padding-right: 200px;
+    padding-right: 7em;
+    margin-bottom: .7em;
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:first-child {
@@ -1020,11 +1025,11 @@ article p a {
 }
 
 #company article:nth-child(2) h3:first-child + p {
-    padding-right: 315px
+    padding-right: 14em
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
     #company article:nth-child(2) h3:first-child + p {
-        padding-right: 115px
+        padding-right: 6.5em;
     }    
 }
 @media screen and (max-width: 770px) {
@@ -1061,9 +1066,13 @@ article p a {
     }
 }
 
+#company article:nth-child(2) h3:nth-child(3) {
+    margin-top: 2.5em;
+}
+
 #company article:nth-child(2) h3:nth-child(3) + p {
     padding-right: 160px;
-    padding-bottom: 400px;
+    padding-bottom: 468px;
     background: transparent url(../img/home/svo.svg) no-repeat center bottom;
     background-size: 630px 390px;
 }
@@ -1085,9 +1094,15 @@ article p a {
 
 #company article:nth-child(2) h3:nth-child(5) + p {
     padding-right: 140px;
-    padding-bottom: 306px;
-    background: transparent url(../img/home/scalability.svg) no-repeat center bottom;
-    background-size: 630px 296px;
+    padding-bottom: 300px;
+    background: transparent url(../img/home/scalability.svg) no-repeat 135px 143px;
+    background-size: 600px 282px;
+}
+@media screen and (max-width: 990px) {
+    #company article:nth-child(2) h3:nth-child(5) + p {
+        background-position: center 120px;
+        background-size: 450px 212px;
+    }
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:nth-child(5) + p {
@@ -1116,6 +1131,15 @@ article p a {
 /* Team section styling */
 #team {
     position: relative;
+    padding: 0 0 0 9.2em;
+}
+@media screen and (max-width: 990px) {
+    #team {
+        padding: 0;
+    }
+}
+#team > article {
+    margin-top: -2em;
 }
 
 #team > article > h2 {
@@ -1124,10 +1148,12 @@ article p a {
     padding-top: 70px;
     background-size: 82px 79px;
     text-align: center;
+    margin-left: 3.5em;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
     #team > article > h2 {
         background-position: 470px center;
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 770px) {
@@ -1155,7 +1181,7 @@ article p a {
     font-family: proxima-nova, sans-serif;
     text-align: right;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
     #team > article > h2:before {
         font-size: .6em;
         width: 120px;
@@ -1180,8 +1206,7 @@ article p a {
 #team ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 5px;
-    padding-right: 5em;
+    padding: 2em 5em 0 0;
 }
 @media screen and (max-width: 530px) {
     #team ul {
@@ -1190,14 +1215,14 @@ article p a {
 }
 
 #team li {
-    width: 37%;
+    width: 41%;
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 5px;
+    margin-bottom: 1.3em;
     min-height: 90px;
 }
 #team li:nth-child(2n+1) {
-    margin-right: 19%;
+    margin-right: 7.5%;
 }
 @media screen and (max-width: 770px) {
     #team li {
