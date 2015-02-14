@@ -117,9 +117,13 @@ article > p {
 article > p a,
 article > p a:hover {
     color: #0f96b7;
+}
+
+article > p a[href],
+article > p a[href]:hover {
     font-weight: bold;
 }
 
-article > p a:hover {
+article > p a[href]:hover {
     text-decoration: underline;
 }
