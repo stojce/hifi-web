@@ -14,6 +14,21 @@ article > h2 {
     background-size: contain;
     color: #0f96b7;
 }
+@media screen and (max-width: 770px) {
+    article > h2 {
+        padding: 26px 0 220px;
+    }
+}
+@media screen and (max-width: 530px) {
+    article > h2 {
+        padding: 6px 0 200px;
+    }
+}
+@media screen and (max-width: 530px) {
+    article > h2 {
+        padding: 6px 0 150px;
+    }
+}
 
 article > h2,
 article > ol li:before,
@@ -45,10 +60,34 @@ article > ol li {
     counter-increment: step-counter;
     text-align: center;
 }
+@media screen and (max-width: 990px) {
+    article > ol li {
+        width: 140px;
+        padding: 50px 10px 40px;
+    }
+}
+@media screen and (max-width: 770px) {
+    article > ol li {
+        width: 95px;
+        padding: 150px 10px 0px;
+    }
+}
+@media screen and (max-width: 530px) {
+    article > ol li {
+        width: 60px;
+        padding: 115px 5px 0px;
+        line-height: .8em;
+    }
+}
+@media screen and (max-width: 320px) {
+    article > ol li {
+        width: 45px;
+    }
+}
 
 article > ol li:before {
     content: counter(step-counter);
-    margin: 35px auto 0;
+    margin: -60px auto 0;
     display: block;
     width: 56px;
     height: 56px;
@@ -58,19 +97,52 @@ article > ol li:before {
     vertical-align: middle;
     text-align: center;
     transform: translateY(100px);
-    margin-top: -60px;
     color: #ffffff;
     font-size: 2.3em;
 }
-
+@media screen and (max-width: 990px) {
+    article > ol li:before {
+        margin: 5px auto 0;
+    }
+}
+@media screen and (max-width: 770px) {
+    article > ol li:before {
+        margin: -130px auto 0;
+        font-size: 1.8em;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 530px) {
+    article > ol li:before {
+        margin: -115px auto 39px;
+        font-size: 1.5em;
+        padding: 10px 0;
+        width: 32px;
+        height: 32px;
+    }
+}
 article > ol li + li {
     margin-left: 10px;
 }
-
+@media screen and (max-width: 530px) {
+    article > ol li + li {
+        margin-left: 2px;
+    }
+}
 
 article > ol li:nth-child(1) {
     background-image: url(../img/creating/get-fbx.svg);
     background-position: center 1.7em;
+}
+@media screen and (max-width: 770px) {
+    article > ol li:nth-child(1) {
+        background-position: center .6em;
+    }
+}
+@media screen and (max-width: 530px) {
+    article > ol li:nth-child(1) {
+        background-position: center 2em;
+    }
 }
 
 article > ol li:nth-child(2) {
@@ -78,15 +150,43 @@ article > ol li:nth-child(2) {
     background-size: 92px;
     background-position: center 4.1em;
 }
+@media screen and (max-width: 990px) {
+    article > ol li:nth-child(2) {
+        background-position: center 2.5em;
+    }
+}
+@media screen and (max-width: 770px) {
+    article > ol li:nth-child(2) {
+        background-position: center 1.7em;
+        background-size: 50px;
+    }
+}
 
 article > ol li:nth-child(3) {
     background-image: url(../img/creating/edit.svg);
+    background-position: center top;
+}
+@media screen and (max-width: 770px) {
+    article > ol li:nth-child(3) {
+        background-size: 100px;
+    }
 }
 
 article > ol li:nth-child(4) {
     background-image: url(../img/creating/place.svg);
     background-size: 92px;
     background-position: center 2.5em;
+}
+@media screen and (max-width: 990px) {
+    article > ol li:nth-child(4) {
+        background-position: center .8em;
+    }
+}
+@media screen and (max-width: 770px) {
+    article > ol li:nth-child(4) {
+        background-position: center .3em;
+        background-size: 60px;
+    }
 }
 
 article > ol li a,
@@ -97,6 +197,16 @@ article > p {
 article > ol li a {
     font-weight: bold;
     font-size: 1.5em;
+}
+@media screen and (max-width: 770px) {
+    article > ol li a {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 530px) {
+    article > ol li a {
+        font-size: .8em;
+    }
 }
 
 article > ol li a,
@@ -112,6 +222,12 @@ article > p {
     max-width: 442px;
     margin: 0 auto 1em;
     font-size: 1.3em;
+}
+@media screen and (max-width: 530px) {
+    article > p {
+        font-size: 1em;
+        padding: .3em 1em;
+    }
 }
 
 article > p a,
