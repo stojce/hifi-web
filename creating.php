@@ -1,7 +1,7 @@
 <?php
 require_once('config.php');
 
-View::$title = 'High Fidelity code';
+View::$title = 'High Fidelity creating';
 View::write('page', 'creating');
 
 View::addStyle('css/creating.css');
