@@ -1277,7 +1277,7 @@ article p a {
     position: relative;
     padding: 0 0 0 9.2em;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 770px) {
     #team {
         padding: 0;
     }
@@ -1302,15 +1302,15 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #team > article > h2 {
-        background-position: 267px 38px;
+        background-position: 307px 38px;
         background-size: 50px 48px;
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 530px) {
     #team > article > h2 {
         background-image: none;
         padding-top: 1em;
-        margin-right: 0;
     }
 }
 
@@ -1338,7 +1338,7 @@ article p a {
     #team > article > h2:before {
         font-size: .6em;
         width: 100px;
-        right: 8em;
+        right: 4em;
     }
 }
 @media screen and (max-width: 530px) {
