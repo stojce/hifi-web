@@ -458,17 +458,18 @@ article h3 {
     padding-left: 14.3em;
     background-image: url(../img/home/share.svg);
     background-size: 71px 71px;
-    background-position-y: 1em;
+    background-position: center top;
 }
 @media screen and (max-width: 990px) {
     #openvr ul li:first-child {
         background-size: 42px 42px;
     }
     #openvr ul li:nth-child(2) {
-        background-position-y: 1em;
+        background-position: center 1em;
         background-size: 55px 55px;
     }
     #openvr ul li:last-child {
+        background-position: center 1em;
         background-size: 45px 45px;
     }
 }
@@ -479,19 +480,30 @@ article h3 {
         padding-top: 50px;
         padding-right: 0;
         padding-left: 0;
+        background-position: center 10px;
+    }
+    #openvr ul li:first-child {
+        background-size: 22px 22px;
+    }
+    #openvr ul li:nth-child(2) {
         background-size: 32px 32px;
+
+    }
+    #openvr ul li:last-child {
+        background-size: 28px 28px;
     }
 }
 @media screen and (max-width: 530px) {
     #openvr ul li:first-child {
-        background-size: 30px 30px;
+        background-size: 24px 24px;
+        background-position: center 15px;
     }
     #openvr ul li:nth-child(2) {
-        background-position-y: 1em;
-        background-size: 43px 43px;
+        background-size: 40px 40px;
+        background-position: center 5px;
     }
     #openvr ul li:last-child {
-        background-size: 33px 33px;
+        background-size: 30px 30px;
     }
 }
 
@@ -646,6 +658,11 @@ article h3 {
 @media screen and (max-width: 770px) {
     #placenames > article > form fieldset p {
         font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #placenames > article > form fieldset p {
+        font-size: 1.3em;
     }
 }
 
@@ -1056,14 +1073,14 @@ article p a {
     background: url(../img/home/priovr-hand-v3-duotone.png) no-repeat center center;
     background-size: contain;
     right: 0;
-    margin-top: 150px;
+    margin-top: 190px;
     width: 696px;
     height: 403px;
 }
 @media screen and (max-width: 1920px) {
     #company p.lead:after {
-        width: 532px;
-        height: 308px;
+        width: 400px;
+        height: 232px;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -1107,7 +1124,7 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #company p.lead + p + p {
-        padding-right: 170px;
+        padding-right: 50px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -1159,10 +1176,15 @@ article p a {
     display: block;
     position: absolute;
     background: url(../img/home/avatar-eye-contact.svg) no-repeat center center;
-    margin-top: 16px;
+    margin-top: 23px;
     width: 728px;
     height: 109px;
     margin-left: -100px;
+}
+@media screen and (max-width: 990px) {
+    #company article:nth-child(2) h3:first-child:after {
+        margin-top: 18px;
+    }
 }
 @media screen and (max-width: 770px) {
     #company article:nth-child(2) h3:first-child:after {
