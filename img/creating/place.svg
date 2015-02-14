@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 94.2 86.5" enable-background="new 0 0 94.2 86.5" xml:space="preserve">
+<g>
+	<g>
+		<line fill="none" stroke="#666666" stroke-miterlimit="10" x1="46.9" y1="22.4" x2="46.9" y2="4.4"/>
+		<g>
+			<polygon fill="#666666" points="49.9,5.3 46.9,0 43.8,5.3 			"/>
+		</g>
+		<line fill="none" stroke="#666666" stroke-miterlimit="10" x1="90.4" y1="79.4" x2="75.1" y2="70.6"/>
+		<g>
+			<polygon fill="#666666" points="91.1,76.3 94.2,81.6 88.1,81.6 			"/>
+		</g>
+		<line fill="none" stroke="#666666" stroke-miterlimit="10" x1="3.8" y1="79.4" x2="18.5" y2="71"/>
+		<g>
+			<polygon fill="#666666" points="6.1,81.6 0,81.6 3,76.3 			"/>
+		</g>
+		<path stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" d="M60,31"/>
+		<path stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" d="M33.7,76.7"/>
+		<path stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" d="M33.7,31"/>
+		<path stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" d="M73.2,38.6"/>
+		<path stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" d="M46.9,53.8"/>
+		<line fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x1="46.9" y1="84.3" x2="46.9" y2="53.8"/>
+		<g id="punto_de_control_5_">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="23.4,71 18.5,71 18.5,66.2 23.4,66.2 			"/>
+		</g>
+		<g id="punto_de_control_4_">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="75.1,71 70.3,71 70.3,66.2 75.1,66.2 			"/>
+		</g>
+		<g id="punto_de_control_1_">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="23.4,41.9 18.5,41.9 18.5,37 23.4,37 			"/>
+		</g>
+		<g id="punto_de_control_3_">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="75.1,41.9 70.3,41.9 70.3,37 75.1,37 			"/>
+		</g>
+		<g id="punto_de_control_6_">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="49.3,27.3 44.4,27.3 44.4,22.4 49.3,22.4 			"/>
+		</g>
+		<g id="punto_de_control_2_">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="49.3,55.6 44.4,55.6 44.4,50.7 49.3,50.7 			"/>
+		</g>
+		<g id="punto_de_control">
+			<polygon fill="none" stroke="#666666" stroke-miterlimit="10" points="49.3,86 44.4,86 44.4,81.2 49.3,81.2 			"/>
+		</g>
+		<polygon fill="#666666" points="33.9,31.5 46.2,38.6 33.9,45.6 23.4,39.6 23.4,37.6 23.4,37.6 		"/>
+		<polygon fill="#666666" points="44.4,27.3 49.3,27.3 49.3,25.4 59.1,31.1 46.8,38.1 34.6,31.1 44.4,25.4 		"/>
+		<polyline fill="#666666" points="70.3,39.6 59.7,45.6 47.5,38.6 59.7,31.5 70.3,37.6 		"/>
+		<polygon fill="#666666" points="46.8,39 59.1,46.1 49.3,51.7 49.3,50.7 44.4,50.7 44.4,51.7 34.6,46.1 		"/>
+		<polyline fill="#666666" points="72.6,41.9 72.6,53.8 60.4,60.9 60.4,46.8 70.3,41 		"/>
+		<polygon fill="#666666" points="70.3,70 60.4,75.7 60.4,61.6 72.6,54.5 72.6,66.2 70.3,66.2 		"/>
+		<polygon fill="#666666" points="49.3,55.6 49.3,53.1 59.7,47.1 59.7,61.3 47.5,68.3 47.4,55.6 		"/>
+		<polygon fill="#666666" points="47.5,69.1 59.7,62 59.7,76.1 49.3,82.1 49.3,81.2 47.5,81.2 		"/>
+		<polygon fill="#666666" points="33.3,46.8 23.4,41 23.4,41.9 21.1,41.9 21.1,53.8 33.3,60.9 		"/>
+		<polygon fill="#666666" points="33.3,61.7 21.1,54.6 21.1,66.2 23.4,66.2 23.4,70 33.3,75.8 		"/>
+		<polygon fill="#666666" points="44.4,53.2 34,47.1 34,61.3 46.2,68.4 46.3,55.6 44.4,55.6 		"/>
+		<polygon fill="#666666" points="46.2,69.1 34,62 34,76.2 44.4,82.2 44.4,81.2 46.2,81.2 		"/>
+	</g>
+</g>
+</svg>

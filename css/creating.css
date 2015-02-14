@@ -1,0 +1,125 @@
+body > #container {
+    margin: 0;
+    width: 100%;
+}
+
+article {
+    padding-bottom: 4em;
+}
+
+article > h2 {
+    margin-top: 0;
+    padding: 80px 0 352px;
+    background: #303030 url(../img/creating/floating-island.png) no-repeat center top;
+    background-size: contain;
+    color: #0f96b7;
+}
+
+article > h2,
+article > ol li:before,
+article > p a[name] {
+    font-family: Quadon-Bold, Georgia, serif;
+    font-weight: normal;    
+}
+
+article > h2,
+article > h2 + ol {
+    text-align: center;
+    width: 100%;
+}
+
+article > ol {
+    padding: 0;
+    margin: -5em 0 5em;
+    list-style-type: none;
+}
+
+article > ol li {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 194px;
+    border: 1px solid #c8c8c8;
+    padding: 150px 10px 44px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    counter-increment: step-counter;
+    text-align: center;
+}
+
+article > ol li:before {
+    content: counter(step-counter);
+    margin: 35px auto 0;
+    display: block;
+    width: 56px;
+    height: 56px;
+    padding: 5px 0;
+    border-radius: 28px;
+    background-color: #0f96b7;
+    vertical-align: middle;
+    text-align: center;
+    transform: translateY(100px);
+    margin-top: -60px;
+    color: #ffffff;
+    font-size: 2.3em;
+}
+
+article > ol li + li {
+    margin-left: 10px;
+}
+
+
+article > ol li:nth-child(1) {
+    background-image: url(../img/creating/get-fbx.svg);
+    background-position: center 1.7em;
+}
+
+article > ol li:nth-child(2) {
+    background-image: url(../img/creating/host-fbx.svg);
+    background-size: 92px;
+    background-position: center 4.1em;
+}
+
+article > ol li:nth-child(3) {
+    background-image: url(../img/creating/edit.svg);
+}
+
+article > ol li:nth-child(4) {
+    background-image: url(../img/creating/place.svg);
+    background-size: 92px;
+    background-position: center 2.5em;
+}
+
+article > ol li a,
+article > p {
+    font-family: proxima-nova, sans-serif;
+}
+
+article > ol li a {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+article > ol li a,
+article > ol li a:hover {
+    color: #666666;
+}
+
+article > ol li a:hover {
+    text-decoration: underline;
+}
+
+article > p {
+    max-width: 442px;
+    margin: 0 auto 1em;
+    font-size: 1.3em;
+}
+
+article > p a,
+article > p a:hover {
+    color: #0f96b7;
+    font-weight: bold;
+}
+
+article > p a:hover {
+    text-decoration: underline;
+}
