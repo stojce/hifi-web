@@ -198,6 +198,11 @@ article > ol li a {
     font-weight: bold;
     font-size: 1.5em;
 }
+@media screen and (max-width: 990px) {
+    article > ol li a {
+        font-size: 1.3em;
+    }
+}
 @media screen and (max-width: 770px) {
     article > ol li a {
         font-size: 1em;
