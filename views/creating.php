@@ -8,7 +8,7 @@
   </ol>
   <p>
     <a name="fbx">1.</a>
-    Buy or create, then bring your FBX into High Fidelity.
+    Buy or build, then bring your FBX into High Fidelity.
     <a href="http://mixamo.com">Mixamo</a>,
     the <a href="https://www.assetstore.unity3d.com/en/">Unity Asset Store</a>,
     <a href="http://www.daz3d.com/">Daz3D</a> and numerous other sources are great 
