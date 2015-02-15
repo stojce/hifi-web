@@ -200,7 +200,7 @@ article > ol li a {
 }
 @media screen and (max-width: 990px) {
     article > ol li a {
-        font-size: 1.3em;
+        font-size: 1.15em;
     }
 }
 @media screen and (max-width: 770px) {
