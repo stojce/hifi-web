@@ -26,20 +26,17 @@ if (class_exists('View')) {
                 <li id="logo" class="<?php echo ($page == 'home' ? 'selected' : ''); ?>">
                     <a class="logo" href="<?php echo $base_path; ?>" title="High Fidelity"></a><i></i>
                 </li>
-                <li class="<?php echo ($page == 'alpha' ? 'selected' : ''); ?>">
-                    <a href="<?php echo $base_path; ?>alpha" title="Alpha">Alpha</a><i></i>
-                </li>
                 <li class="<?php echo ($page == 'code' ? 'selected' : ''); ?>">
                     <a href="<?php echo $base_path; ?>code" title="Code">Code</a><i></i>
                 </li>
                 <li>
                     <a href="<?php echo $docs_url; ?>" title="Docs">Docs</a><i></i>
                 </li>
-                <li>
-                    <a href="<?php echo $base_path; ?>press" title="Press">Press</a><i></i>
+                <li class="<?php echo ($page == 'creating' ? 'selected' : ''); ?>">
+                    <a href="<?php echo $base_path; ?>creating" title="Creating">Creating</a><i></i>
                 </li>
-                <li>
-                    <a href="<?php echo $base_path; ?>#advisors" title="Advisors">Advisors</a><i></i>
+                <li class="<?php echo ($page == 'press' ? 'selected' : ''); ?>">
+                    <a href="<?php echo $base_path; ?>press" title="Press">Press</a><i></i>
                 </li>
             </ul>
             <ul class="nav navbar-nav ">

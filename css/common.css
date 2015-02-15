@@ -8,12 +8,17 @@
  *
  */
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
     margin-right: 0;
-    overflow-x: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-style: normal;
     font-weight: normal;
@@ -244,35 +249,6 @@ div#main > article li {
 
 #supported-browsers li a {
     color: #000;
-}
-
-body > .modal {
-    border-radius: 0;
-    border: 0 none;
-    box-shadow: none;
-    padding: 15px 50px;
-    width: 375px;
-    margin-left: -240px;
-    font-family: Helvetica, arial;
-    color: #555;
-}
-
-body > .modal + .modal-backdrop {
-    background-color: #CCCCCC;
-}
-
-body > .modal p,
-body > .modal li {
-    font-size: 1.2em;
-}
-
-/**
- * Responsive sizes
- */
-@media screen and (max-width: 1090px) {
-    #container {
-        width: 950px;
-    }
 }
 
 @media screen and (max-width: 970px) {    
