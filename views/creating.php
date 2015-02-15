@@ -1,7 +1,7 @@
 <article>
   <h2>Creating</h2>
   <ol>
-    <li><a href="#fbx">Buy/Build a FBX</a></li>
+    <li><a href="#fbx">Buy/Build an FBX</a></li>
     <li><a href="#host">Host your FBX</a></li>
     <li><a href="#load">Load a script</a></li>
     <li><a href="#place">Place content</a></li>
