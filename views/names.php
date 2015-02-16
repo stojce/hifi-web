@@ -10,6 +10,6 @@
       the Place Name is determined by its owner.
     </p>
     <p>
-      <a href=''>Buy a Place Name</a>
+      <a href='#'>Buy a Place Name</a>
     </p>
   </div>
