@@ -320,10 +320,11 @@ article > ol li a {
 article > ol li a,
 article > ol li a:hover {
     color: #666666;
+    text-decoration: none;
 }
 
 article > ol li a:hover {
-    text-decoration: underline;
+    cursor: default;
 }
 
 article > p {
