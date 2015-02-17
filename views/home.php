@@ -241,7 +241,7 @@
             <h3>Stephen Birarda</h3>
             <p>
               Constant refactorer. Believes that 
-              programming is art. <br />
+              programming is art.
               Obsessive hockey fan, secret ping pong champion.
             </p>
           </figure>

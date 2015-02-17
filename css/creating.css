@@ -279,25 +279,25 @@ article > p {
 
 article > ol li a {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.35em;
     width: 160px;
     left: 17px;
-    top: 6.8em;
+    top: 7.5em;
 }
 @media screen and (max-width: 990px) {
     article > ol li a {
-        font-size: 1.05em;
+        font-size: 1em;
         width: 114px;
         left: 13px;
-        top: 6.7em;
+        top: 7.4em;
     }
 }
 @media screen and (max-width: 770px) {
     article > ol li a {
-        font-size: .8em;
+        font-size: .65em;
         width: 75px;
         left: 10px;
-        top: 6em;
+        top: 7.3em;
     }
 }
 @media screen and (max-width: 530px) {
@@ -305,7 +305,7 @@ article > ol li a {
         font-size: .6em;
         width: 44px;
         left: 8px;
-        top: 5em;
+        top: 4.6em;
     }
 }
 @media screen and (max-width: 320px) {
