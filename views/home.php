@@ -270,6 +270,16 @@
         </li>
         <li>
           <figure>
+            <img src="img/team/clement.png" class="img-circle" alt="Clement Brisset" />
+            <h3>Clement Brisset</h3>
+            <p>
+              Pool shark that fights the French stereotypes. Can solve a Rubik's Cube blindfolded.<br />
+              Science = Awesome. 
+            </p>
+          </figure>
+        </li>
+        <li>
+          <figure>
             <img src="img/team/andrew.png" class="img-circle" alt="Andrew Meadows" />
             <h3>Andrew Meadows</h3>
             <p>
