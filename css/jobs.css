@@ -78,20 +78,20 @@ div#main > article li {
     margin: 30px 0 20px;
 }
 
-#requirements{
+.requirements {
     margin-top: -11px;
 }
 
-#requirements > ul {
+.requirements > ul {
     margin-left: 0px;
     color: #3398cb;
 }
 
-#requirements > ul > li {
+.requirements > ul > li {
     font-size: 0.75em !important;
 }
 
-#requirements > ul > li > span {
+.requirements > ul > li > span {
     font-family: proxima-nova, sans-serif !important;
 }
 
@@ -214,7 +214,7 @@ div#main > article.get-our-attention span.strong {
         margin-bottom: 10px;
     }
 
-    #requirements > ul > li {
+    .requirements > ul > li {
         font-size: 1em !important;
     }
 
@@ -251,4 +251,78 @@ div#main > article.get-our-attention span.strong {
     div#main #jobs {
         width: 100%;
     }
+}
+
+/* navigatin links effects */
+#joblist a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+}
+
+#joblist a:hover,
+#joblist a:focus {
+    outline: none;
+}
+
+/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+#joblist a {
+    line-height: 44px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+
+#joblist a span {
+    position: relative;
+    display: inline-block;
+    padding: 0 14px;
+    background: #3698BF;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#joblist a span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3698BF;
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+#joblist a:hover span,
+#joblist a:focus span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+}
+
+#joblist a:hover span::before,
+#joblist a:focus span::before {
+    background: #3698BF;
 }

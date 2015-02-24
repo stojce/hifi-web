@@ -4,6 +4,12 @@ $tweetStrJob1 = urlencode('@highfidelityinc is working on building a new virtual
 $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and they need a Marketing Coordinator! Check out http://highfidelity.io/jobs #jobs #marketing');
 ?>
 <section id="particle-system"></section>
+<nav id="joblist">
+  <a href="#3d-graphics-engineer"><span data-hover="3D Graphics Engineer">3D Graphics Engineer</span></a>
+  <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
+  <a href="#character-animation-engineer"><span data-hover="C++ Generalist">Character Animation Engineer</span></a>
+  <a href="#javascript-content-developer"><span data-hover="Javascript Content Developer">Javascript Content Developer</span></a>
+</nav>
 <div role="main" id="main">
   <h2>Full-time Jobs</h2>
   <article class="no-border-bottom radius-border-top">
@@ -15,7 +21,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       display a very large user-created environment at high FPS, using data 
       streaming at low latency from multiple simultaneous servers.
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Skills / Requirements</h3>
       <ul>
         <li>
@@ -122,7 +128,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       resilience, a curious personality, and great communication skills that
       make you fun to work with.
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Requirements</h3>
       <ul>
         <li>
@@ -178,7 +184,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       internet, read each other's body language, and sword fight. Is 
       that too much to ask?
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Requirements</h3>
       <ul>
         <li>
@@ -225,7 +231,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       us and use the latest features of High Fidelity to build interactive content that will
       demonstrate the capabilities of an open virtual world.
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Requirements</h3>
       <ul>
         <li>
