@@ -319,6 +319,16 @@
             </p>
           </figure>
         </li>
+        <li>
+          <figure>
+            <img src="img/team/seth.png" class="img-circle" alt="Seth Alves" />
+            <h3>Seth Alves</h3>
+            <p>
+              Videogame aficionado, Computer Programmer,
+              Skeptical of technology. Bicycles in traffic.
+            </p>
+          </figure>
+        </li>
         <li id="youimg">
           <figure>
             <div class="img-circle"></div>
