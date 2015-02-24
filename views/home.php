@@ -241,7 +241,7 @@
             <h3>Stephen Birarda</h3>
             <p>
               Constant refactorer. Believes that 
-              programming is art. <br />
+              programming is art.
               Obsessive hockey fan, secret ping pong champion.
             </p>
           </figure>
@@ -265,6 +265,16 @@
               Manages office systems to make life easier. 
               Fast talker, avid learner, novice 
               salsa dancer, and great cook. 
+            </p>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/clement.png" class="img-circle" alt="Clement Brisset" />
+            <h3>Cl&eacute;ment Brisset</h3>
+            <p>
+              Pool shark that fights the French stereotypes. Can solve a Rubik's Cube blindfolded.<br />
+              Science = Awesome. 
             </p>
           </figure>
         </li>
