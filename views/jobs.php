@@ -7,7 +7,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <div role="main" id="main">
   <h2>Full-time Jobs</h2>
   <article class="no-border-bottom radius-border-top">
-    <p class="lead">3D Graphics Engineer</p>
+    <p class="lead"><a name="3d-graphics-engineer">3D Graphics Engineer</a></p>
     <p>
       We're looking for a 3D graphics engineer to help build our virtual 
       world’s 3D graphics engine, working closely with us to create something 
@@ -106,7 +106,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </div>
   </article>
   <article class="no-border-bottom no-border-top">
-    <p class="lead">C++ Generalist</p>
+    <p class="lead"><a name="cpp-generalist">C++ Generalist</a></p>
     <p>
       An online shared Virtual Reality platform has a lot of moving
       parts: high performance networking with low latency requirements
@@ -167,7 +167,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </div>
   </article>
   <article class="no-border-bottom no-border-top">
-    <p class="lead">Character Animation Engineer</p>
+    <p class="lead"><a name="character-animation-engineer">Character Animation Engineer</a></p>
     <p>
       High Fidelity is breaking new ground using new and upcoming
       hardware like HMD's, depth cameras, and hand/body trackers to
@@ -213,7 +213,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     </div>
   </article>
   <article class="no-border-bottom no-border-top">
-    <p class="lead">Javascript Content Developer</p>
+    <p class="lead"><a name="javascript-content-developer">Javascript Content Developer</a></p>
     <p>
       Interactive content inside High Fidelity is built using Javascript: from vehicles
       to presentation tools, games, music, guns, ecosystems, paddle-ball...you name it.
