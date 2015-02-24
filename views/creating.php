@@ -9,9 +9,9 @@
   <p>
     <a name="fbx">1.</a>
     Buy or build, then bring your FBX into High Fidelity.
-    <a href="http://mixamo.com">Mixamo</a>,
-    the <a href="https://www.assetstore.unity3d.com/en/">Unity Asset Store</a>,
-    <a href="http://www.daz3d.com/">Daz3D</a> and numerous other sources are great 
+    <a target="_blank" href="http://mixamo.com">Mixamo</a>,
+    the <a target="_blank" href="https://www.assetstore.unity3d.com/en/">Unity Asset Store</a>,
+    <a target="_blank" href="http://www.daz3d.com/">Daz3D</a> and numerous other sources are great 
     places to start. Once you have the FBX you can rig it up as well.
   </p>
   <p>
@@ -23,7 +23,7 @@
   <p>
     <a name="load">3.</a>
     Launch Interface and load 
-    <a href="http://hifi-public.s3.amazonaws.com/scripts/editEntities.js">editEntities.js</a>
+    <a target="_blank" href="http://hifi-public.s3.amazonaws.com/scripts/editEntities.js">editEntities.js</a>
     or grow your own script — all of our scripts are JavaScript-based and easily edited.
   </p>
     <p>
