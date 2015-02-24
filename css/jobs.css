@@ -47,8 +47,15 @@ div#main > article p.lead {
 
 div#main > h2,
 div#main > article h3,
-div#main > article p.lead {
+div#main > article p.lead,
+div#main > article p.lead > a {
     font-family: Quadon-Bold, Georgia, 'Times New Roman';
+}
+
+div#main > article p.lead > a {
+    text-decoration: none;
+    cursor: default;
+    font-weight: normal;
 }
 
 div#main > article p.lead {
