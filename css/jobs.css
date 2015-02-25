@@ -40,6 +40,7 @@ div#main h2 {
 div#main > article h3 {
     font-size: .6em;
     line-height: 1.2em;
+    margin-bottom: 0;
 }
 
 div#main > article p {
@@ -92,7 +93,7 @@ div#main > article li > span {
 .requirements > ul {
     margin-left: 0px;
     color: #3398cb;
-    padding-left: .25em;
+    padding-left: 0;
 }
 
 .requirements > ul > li {
@@ -102,7 +103,6 @@ div#main > article li > span {
 .requirements > ul > li > span {
     font-family: proxima-nova, sans-serif !important;
     font-size: .8em;
-    margin-left: -.4em;
 }
 
 div#main > article p em {
