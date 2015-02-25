@@ -31,7 +31,7 @@ var jobs = {
         jobs.renderer = new THREE.WebGLRenderer({ antialias : true });
         jobs.renderer.setSize($('#particle-system').innerWidth(), $('#particle-system').innerHeight());
         $('#particle-system').append(jobs.renderer.domElement);
-        jobs.renderer.setClearColor(0xffffff, 1.0);
+        jobs.renderer.setClearColor(0x333333, 1.0);
         jobs.renderer.clear();    
         jobs.scene = new THREE.Scene();
     
