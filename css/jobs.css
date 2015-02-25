@@ -4,7 +4,7 @@
 
 /* bg is a particle system, we don't need to inherit from common.cs */
 html > body {
-    background: #ffffff none;
+    background: #333333 none;
 }
 
 #particle-system {
@@ -18,7 +18,7 @@ html > body {
 }
 
 div#main > article {
-    padding: 46px 62px;
+    padding: 1.4em 3.3em 1.4em 2.3em;
 }
 
 body h1 {
@@ -38,7 +38,12 @@ div#main h2 {
 }
 
 div#main > article h3 {
-    font-size: 22px;
+    font-size: .6em;
+    line-height: 1.2em;
+}
+
+div#main > article p {
+    font-size: .65em;
     line-height: 1.2em;
 }
 
@@ -64,12 +69,16 @@ div#main > article p.lead {
     font-size: 35px;
     font-weight: normal;
     line-height: 1.20em;
-    margin-bottom: 22px;
+    margin-bottom: .4em;
 }
 
 div#main > article li {
     margin-bottom: 8px;
     line-height: 1.2em;
+}
+
+div#main > article li > span {
+    font-family: proxima-nova, sans-serif;
 }
 
 #voxel-sketch {
@@ -83,6 +92,7 @@ div#main > article li {
 .requirements > ul {
     margin-left: 0px;
     color: #3398cb;
+    padding-left: .25em;
 }
 
 .requirements > ul > li {
@@ -91,6 +101,8 @@ div#main > article li {
 
 .requirements > ul > li > span {
     font-family: proxima-nova, sans-serif !important;
+    font-size: .8em;
+    margin-left: -.4em;
 }
 
 div#main > article p em {
