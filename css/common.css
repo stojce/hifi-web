@@ -204,11 +204,6 @@ div#main > article li {
     #main > article ul {
         font-size: 1em;
     }
-    
-    div#requirements, 
-    div#apply {
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width: 770px) {
