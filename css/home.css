@@ -457,7 +457,7 @@ article h3 {
     padding-left: 14.3em;
     background-image: url(../img/home/share.svg);
     background-size: 71px 71px;
-    background-position: center top;
+    background-position: center .8em;
 }
 @media screen and (max-width: 990px) {
     #openvr ul li:first-child {
@@ -802,8 +802,8 @@ article h3 {
 #placenames > article > form fieldset > div:before,
 #placenames > article > form fieldset > p {
     font-size: 2.2em;
-    line-height: 1.4em;
-    font-family: Quadon-Bold;
+    line-height: 1.3em;
+    font-family: Quadon-Bold, Georgia, serif;
 }
 
 #placenames > article > form fieldset > p {
@@ -1204,7 +1204,7 @@ article p a {
 
 #company article:nth-child(2) h3:nth-child(3) + p {
     padding-right: 160px;
-    padding-bottom: 468px;
+    padding-bottom: 400px;
     background: transparent url(../img/home/svo.svg) no-repeat center bottom;
     background-size: 630px 390px;
 }
@@ -1292,10 +1292,12 @@ article p a {
     background-size: 82px 79px;
     text-align: center;
     margin-right: 3.8em;
+    padding-bottom: 15px;
 }
 @media screen and (max-width: 990px) {
     #team > article > h2 {
-        background-position: 385px center;
+        background-size: 70px 67px;
+        background-position: 300px center;
         margin-left: 0;
     }
 }
@@ -1469,6 +1471,7 @@ article p a {
 #advisors h2 {
     border-bottom: 1px solid #dadada;
     margin: 1.1em 0 1.5em;
+    padding-bottom: 15px;
 }
 @media screen and (max-width: 530px) {
     #advisors h2 {
