@@ -123,9 +123,14 @@ var jobs = {
     handleLinkClick: function(e) {
         e.preventDefault();
         e.stopPropagation();
-        jobs.destroyParticleSystem(function() {
-            window.location = e.currentTarget.href;
-        });
+        if ($(this).is('#joblist a')) {
+            var anchor = $(this).attr('href').substring(1);
+            window.scrollTo(0, $('a[name="' + anchor + '"]').offset().top);
+        } else {
+            jobs.destroyParticleSystem(function() {
+                window.location = e.currentTarget.href;
+            });
+        }
         return false;
     },
 
