@@ -45,9 +45,10 @@ var jobs = {
         jobs.particles = new THREE.Geometry();
         var pMaterial = new THREE.ParticleBasicMaterial({
             color: 0xFFFFFF,
-            size: 1,
+            size: .65,
             vertexColors: true,
-            transparent: true
+            transparent: true,
+            opacity: .7
         });
         
         var colors = [];

@@ -21,18 +21,20 @@ div#main > article {
     padding: 46px 62px;
 }
 
-div#main > h2 {
-    font-size: 1.8em;
+body h1 {
+    text-align: center;
+    color: #3698BF;
+    margin-top: 2.1em;
+}
+
+div#main h2 {
+    font-size: .6em;
     line-height: 1.3em;
     margin-bottom: 5px;
     font-weight: normal;
-    margin-top: 45px;
+    margin-top: 0;
     color: #333;
-}
-
-div#main > h2,
-div#main > h3 {
-    text-align: center;    
+    font-family: proxima-nova, sans-serif;
 }
 
 div#main > article h3 {
@@ -45,7 +47,7 @@ div#main > article p.lead {
     color: #3398cb;
 }
 
-div#main > h2,
+body h1,
 div#main > article h3,
 div#main > article p.lead,
 div#main > article p.lead > a {
@@ -63,10 +65,6 @@ div#main > article p.lead {
     font-weight: normal;
     line-height: 1.20em;
     margin-bottom: 22px;
-}
-
-#main > article + article > p.lead {
-    padding-top: 1.5em;
 }
 
 div#main > article li {
@@ -140,6 +138,7 @@ div#main > article.no-border-top {
 div#main > article.radius-border-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-top: 1.5em;
 }
 
 div#main > article.radius-border-bottom{
@@ -151,7 +150,7 @@ div#main > article.get-our-attention {
     background-color: #f2f2f2;
     background: #f2f2f2;
     padding: 50px 75px 9px 75px;
-    border-top: none;
+    border-top: 1px solid #d3d3d3;
 }
 
 div#main > article.get-our-attention p:first-child {
@@ -190,10 +189,6 @@ div#main > article.get-our-attention span.strong {
         padding: 35px 55px;
     }
     
-    div#main > h2 {
-        font-size: 1.2em;
-    }
-
     div#main > article p.lead {
         font-size: 40px;
         line-height: 1.10em;
@@ -228,11 +223,6 @@ div#main > article.get-our-attention span.strong {
         padding: 15px 25px;
     }
     
-    div#main > h2 {
-        font-size: 1em;
-        margin-top: 5px;
-    }
-    
     div#main > article li {
         margin-bottom: 3px;
     }
@@ -253,18 +243,29 @@ div#main > article.get-our-attention span.strong {
     }
 }
 
-/* navigatin links effects */
+/**
+ * 3d rotating boxes with jobs list as page navigation links
+ */
+#joblist {
+    padding: 0 5em;
+    text-align: center;
+    margin-bottom: 6.5em;
+}
+
 #joblist a {
     position: relative;
     display: inline-block;
-    margin: 15px 25px;
+    margin: .3em;
     outline: none;
     color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 400;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    font-size: 1.35em;
+    font-size: 1em;
+    letter-spacing: .005em;
+    font-family: proxima-nova, sans-serif;
+    padding: 0;
 }
 
 #joblist a:hover,
@@ -272,9 +273,8 @@ div#main > article.get-our-attention span.strong {
     outline: none;
 }
 
-/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
 #joblist a {
-    line-height: 44px;
+    line-height: 1.8em;
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
     perspective: 1000px;
@@ -283,7 +283,6 @@ div#main > article.get-our-attention span.strong {
 #joblist a span {
     position: relative;
     display: inline-block;
-    padding: 0 14px;
     background: #3698BF;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -315,6 +314,13 @@ div#main > article.get-our-attention span.strong {
     transform-origin: 50% 0;
 }
 
+#joblist a span,
+#joblist a span::before {
+    padding: 0 .5em;
+    border-radius: 5px;
+}
+
+
 #joblist a:hover span,
 #joblist a:focus span {
     -webkit-transform: rotateX(90deg) translateY(-22px);
@@ -325,4 +331,33 @@ div#main > article.get-our-attention span.strong {
 #joblist a:hover span::before,
 #joblist a:focus span::before {
     background: #3698BF;
+}
+
+
+/**
+ * jobs page footer customization
+ */
+footer#site-links ul {
+    background: -moz-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 1)), color-stop(75%, rgba(51, 51, 51, 1)), color-stop(100%, rgba(51, 51, 51, 0)));
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: -o-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#00333333', GradientType=0);
+}
+
+footer#site-links a > i,
+footer#site-links a > img {
+    color: #cccccc;
+}
+
+footer#site-links li a:hover,
+footer#site-links li a:hover > i {
+    color: #999999;
+}
+
+footer#site-links ul,
+footer#site-links ul li {
+    border-color: #999999;
 }
