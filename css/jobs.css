@@ -57,6 +57,12 @@ div#main > article p {
     font-size: .65em;
     line-height: 1.2em;
 }
+@media screen and (max-width: 530px) {
+    div#main > article p {
+        font-size: .8em;
+        line-height: 1.2em;
+    }
+}
 
 div#main > article p em,
 div#main > article p.lead {
@@ -82,10 +88,33 @@ div#main > article p.lead {
     line-height: 1.20em;
     margin-bottom: .4em;
 }
+@media screen and (max-width: 770px) {
+    div#main > article p.lead {
+        font-size: 1.4em;
+        line-height: 1.10em;
+    }
+}
+@media screen and (max-width: 530px) {
+    div#main > article p.lead {
+        font-size: 1.2em;
+        line-height: 1em;
+    }
+}
 
 div#main > article li {
-    margin-bottom: 8px;
+    margin-bottom: .1em;
     line-height: 1.2em;
+}
+@media screen and (max-width: 770px) {
+    div#main > article li {
+        margin-bottom: .05em;
+        line-height: 1em;
+    }
+}
+@media screen and (max-width: 530px) {
+    div#main > article li {
+        margin-bottom: 0;
+    }
 }
 
 div#main > article li > span {
@@ -299,19 +328,10 @@ div#main > article.get-our-attention span.strong {
         display: none;
     }
     
-    div#main > article li {
-        margin-bottom: 5px;
-    }
-
     div#main > article {
         padding: 35px 55px;
     }
     
-    div#main > article p.lead {
-        font-size: 1.4em;
-        line-height: 1.10em;
-    }
-
     #voxel-sketch {
         float: right;
         margin: 5px;
@@ -339,14 +359,6 @@ div#main > article.get-our-attention span.strong {
 @media screen and (max-width: 530px) {
     div#main > article {
         padding: 15px 25px;
-    }
-    
-    div#main > article li {
-        margin-bottom: 3px;
-    }
-   
-    div#main > article p.lead {
-        line-height: 1.10em;
     }
     
     #voxel-sketch {
@@ -493,4 +505,5 @@ footer#site-links a:hover > svg {
 footer#site-links ul,
 footer#site-links ul li {
     border-color: #999999;
+    opacity: .6;
 }
