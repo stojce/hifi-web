@@ -13,9 +13,11 @@ article > h2 {
     background: #303030 url(../img/creating/floating-island.png) no-repeat center top;
     background-size: contain;
     color: #0f96b7;
+    font-size: 36px;
 }
 @media screen and (max-width: 770px) {
     article > h2 {
+        font-size: 1.8em;
         padding: 26px 0 220px;
     }
 }
