@@ -105,6 +105,8 @@ div#main > article p.lead {
 div#main > article li {
     margin-bottom: .1em;
     line-height: 1.2em;
+    list-style-type: none;
+    position: relative;
 }
 @media screen and (max-width: 770px) {
     div#main > article li {
@@ -122,6 +124,18 @@ div#main > article li > span {
     font-family: proxima-nova, sans-serif;
 }
 
+div#main > article li > span:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #3698BF;
+    border-radius: 2px;
+    position: absolute;
+    display: block;
+    margin-left: -.6em;
+    margin-top: .6em;
+}
+
 #voxel-sketch {
     margin: 30px 0 20px;
 }
@@ -133,7 +147,7 @@ div#main > article li > span {
 .requirements > ul {
     margin-left: 0px;
     color: #3398cb;
-    padding-left: .7em;
+    padding-left: .4em;
 }
 
 .requirements > ul > li {
