@@ -192,6 +192,16 @@ div#main > article p em {
 #main #jobs ul {
     margin-top: 15px;
 }
+@media screen and (max-width: 770px) {
+    #main #jobs ul {
+        padding-left: 1em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #main #jobs ul {
+        padding-left: 0;
+    }
+}
 
 #main #jobs ul > li {
     list-style-type: none;
@@ -210,6 +220,11 @@ div#main > article p em {
     display: inline-block;
     width: 9999px;
     font-weight: normal;
+}
+@media screen and (max-width: 770px) {
+    #main #jobs a {
+        font-size: .7em;
+    }
 }
 
 #main #jobs a:after {
@@ -255,6 +270,11 @@ div#main > article p em {
     color: #000000;
 }
 
+#jobs > span:first-child{
+    font-size: 1.2em;
+    color: #3698BF;
+}
+
 @media screen and (max-width: 770px) {
     #main #jobs {
         font-size: 15px;
@@ -262,7 +282,7 @@ div#main > article p em {
 
     #main #jobs ul,
     #main #jobs ul > li {
-        margin: 0 0 5px 0;
+        margin: 0;
         font-size: 1.1em;
     }
 }
@@ -321,11 +341,6 @@ div#main > article.get-our-attention p:first-child {
 
 div#main > article.get-our-attention span.strong {
     font-weight: 800;
-}
-
-#jobs > span:first-child{
-    font-size: 22px;
-    color: #3698BF;
 }
 
 #apply {
