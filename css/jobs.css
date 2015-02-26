@@ -132,8 +132,8 @@ div#main > article li > span:before {
     border-radius: 2px;
     position: absolute;
     display: block;
-    margin-left: -.6em;
-    margin-top: .6em;
+    margin-left: -.7em;
+    margin-top: .65em;
 }
 
 #voxel-sketch {
@@ -145,9 +145,9 @@ div#main > article li > span:before {
 }
 
 .requirements > ul {
-    margin-left: 0px;
+    margin-left: 0;
     color: #3398cb;
-    padding-left: .4em;
+    padding-left: 0;
 }
 
 .requirements > ul > li {
