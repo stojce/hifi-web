@@ -79,16 +79,16 @@ article h3 {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    height: 236px;
+    height: 215px;
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul {
-        height: 178px;
+        height: 162px;
     }
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul {
-        height: 114px;
+        height: 107px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -103,17 +103,17 @@ article h3 {
 }
 
 #placenames.expanded > article:first-child ul {
-    height: 480px;
+    height: 430px;
     transition: height .3s ease-out;
 }
 @media screen and (max-width: 990px) {
     #placenames.expanded > article:first-child ul {
-        height: 370px;
+        height: 324px;
     }
 }
 @media screen and (max-width: 770px) {
     #placenames.expanded > article:first-child ul {
-        height: 240px;
+        height: 214px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -193,10 +193,6 @@ article h3 {
 #placenames > article:first-child ul li p {
     margin: 0;
     line-height: 1.2em;
-}
-
-#placenames > article:first-child ul li h4 + p {
-    color: #333333;
 }
 
 #placenames > article:first-child ul li a,
