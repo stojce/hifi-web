@@ -130,7 +130,7 @@ div#main > article li > span:before {
     content: '';
     width: 4px;
     height: 4px;
-    background-color: #3698BF;
+    background-color: #333333;
     border-radius: 2px;
     position: absolute;
     display: block;
