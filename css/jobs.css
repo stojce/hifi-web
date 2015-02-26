@@ -39,8 +39,8 @@ body h1 {
 
 div#main h2 {
     font-size: .6em;
-    line-height: 1.3em;
-    margin-bottom: 5px;
+    line-height: 1em;
+    margin-bottom: 0;
     font-weight: normal;
     margin-top: 0;
     color: #333;
