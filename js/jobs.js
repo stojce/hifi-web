@@ -121,17 +121,12 @@ var jobs = {
      * leaving the page, it avoids a flashing issue being shown on some browsers
      */
     handleLinkClick: function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        if ($(this).is('#joblist a')) {
-            var anchor = $(this).attr('href').substring(1);
-            window.scrollTo(0, $('a[name="' + anchor + '"]').offset().top);
-        } else {
+        if (!$(this).is('#joblist a')) {
             jobs.destroyParticleSystem(function() {
                 window.location = e.currentTarget.href;
             });
+            return false;
         }
-        return false;
     },
 
     /**
