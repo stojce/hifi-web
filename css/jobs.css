@@ -51,6 +51,9 @@ div#main > article h3 {
     font-size: .6em;
     line-height: 1.2em;
     margin-bottom: 0;
+    color: #3698bf;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
 }
 
 div#main > article p {
@@ -71,7 +74,6 @@ div#main > article p.lead {
 }
 
 body h1,
-div#main > article h3,
 div#main > article p.lead,
 div#main > article p.lead > a {
     font-family: Quadon-Bold, Georgia, 'Times New Roman';
@@ -146,8 +148,8 @@ div#main > article li > span:before {
 
 .requirements > ul {
     margin-left: 0;
-    color: #3398cb;
-    padding-left: 0;
+    color: #333333;
+    padding-left: .5em;
 }
 
 .requirements > ul > li {
@@ -349,6 +351,29 @@ div#main > article.get-our-attention span.strong {
 
 div#main > article h3 + p {
     margin-top: .3em;
+}
+
+#main article > a.tweetthis {
+    color: #666666;
+    font-size: .6em;
+    position: absolute;
+    text-decoration: none;
+    font-weight: normal;
+    bottom: 2em;
+    right: 5%;
+}
+
+#main article > a.tweetthis:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#main article > a.tweetthis:hover i {
+    text-decoration: none;
+}
+
+#main article > a.tweetthis:active {
+    color: #3698bf;
 }
 
 /**

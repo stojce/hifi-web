@@ -122,29 +122,6 @@ div#main > article li {
     margin-bottom: 15px;    
 }
 
-#main article > a.tweetthis {
-    color: #262626;
-    font-size: .6em;
-    position: absolute;
-    text-decoration: none;
-    font-weight: normal;
-    bottom: 2em;
-    right: 5%;
-}
-
-#main article > a.tweetthis:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#main article > a.tweetthis:hover i {
-    text-decoration: none;
-}
-
-#main article > a.tweetthis:active {
-    color: #3698bf;
-}
-
 #main > article a {
     color: #3698bf;
     text-decoration: underline;
