@@ -485,7 +485,8 @@ footer#site-links a > svg {
 }
 
 footer#site-links li a:hover,
-footer#site-links li a:hover > i {
+footer#site-links li a:hover > i,
+footer#site-links a:hover > svg {
     color: #999999;
 }
 
