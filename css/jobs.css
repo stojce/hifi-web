@@ -98,7 +98,7 @@ div#main > article li > span {
 .requirements > ul {
     margin-left: 0px;
     color: #3398cb;
-    padding-left: 0;
+    padding-left: .7em;
 }
 
 .requirements > ul > li {
@@ -378,7 +378,7 @@ div#main > article.get-our-attention span.strong {
 #joblist a {
     position: relative;
     display: inline-block;
-    margin: .3em;
+    margin: .3em .2em;
     outline: none;
     color: #fff;
     text-decoration: none;

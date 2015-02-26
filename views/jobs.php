@@ -16,7 +16,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 
 <div role="main" id="main">
   <article class="no-border-bottom radius-border-top">
-    <h2>Full-time</h2>
     <p class="lead"><a name="3d-graphics-engineer">3D Graphics Engineer</a></p>
     <p>
       We're looking for a 3D graphics engineer to help build our virtual 
