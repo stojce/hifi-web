@@ -328,8 +328,12 @@ div#main > article.get-our-attention span.strong {
     color: #3698BF;
 }
 
-#apply > h3 {
-    margin-top: 0;
+#apply {
+    margin-top: -20px;
+}
+
+div#main > article h3 + p {
+    margin-top: .3em;
 }
 
 /**
