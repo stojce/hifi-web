@@ -31,7 +31,7 @@ var jobs = {
         jobs.renderer = new THREE.WebGLRenderer({ antialias : true });
         jobs.renderer.setSize($('#particle-system').innerWidth(), $('#particle-system').innerHeight());
         $('#particle-system').append(jobs.renderer.domElement);
-        jobs.renderer.setClearColor(0xffffff, 1.0);
+        jobs.renderer.setClearColor(0x333333, 1.0);
         jobs.renderer.clear();    
         jobs.scene = new THREE.Scene();
     
@@ -45,9 +45,10 @@ var jobs = {
         jobs.particles = new THREE.Geometry();
         var pMaterial = new THREE.ParticleBasicMaterial({
             color: 0xFFFFFF,
-            size: 1,
+            size: .65,
             vertexColors: true,
-            transparent: true
+            transparent: true,
+            opacity: .7
         });
         
         var colors = [];
@@ -122,9 +123,14 @@ var jobs = {
     handleLinkClick: function(e) {
         e.preventDefault();
         e.stopPropagation();
-        jobs.destroyParticleSystem(function() {
-            window.location = e.currentTarget.href;
-        });
+        if ($(this).is('#joblist a')) {
+            var anchor = $(this).attr('href').substring(1);
+            window.scrollTo(0, $('a[name="' + anchor + '"]').offset().top);
+        } else {
+            jobs.destroyParticleSystem(function() {
+                window.location = e.currentTarget.href;
+            });
+        }
         return false;
     },
 

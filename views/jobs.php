@@ -4,8 +4,17 @@ $tweetStrJob1 = urlencode('@highfidelityinc is working on building a new virtual
 $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and they need a Marketing Coordinator! Check out http://highfidelity.io/jobs #jobs #marketing');
 ?>
 <section id="particle-system"></section>
+<h1>Jobs</h1>
+<nav id="joblist">
+  <a href="#3d-graphics-engineer"><span data-hover="3D Graphics Engineer">3D Graphics Engineer</span></a>
+  <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
+  <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
+  <a href="#javascript-content-developer"><span data-hover="Javascript Content Developer">Javascript Content Developer</span></a>
+  <br />
+  <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
+</nav>
+
 <div role="main" id="main">
-  <h2>Full-time Jobs</h2>
   <article class="no-border-bottom radius-border-top">
     <p class="lead"><a name="3d-graphics-engineer">3D Graphics Engineer</a></p>
     <p>
@@ -15,7 +24,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       display a very large user-created environment at high FPS, using data 
       streaming at low latency from multiple simultaneous servers.
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Skills / Requirements</h3>
       <ul>
         <li>
@@ -122,7 +131,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       resilience, a curious personality, and great communication skills that
       make you fun to work with.
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Requirements</h3>
       <ul>
         <li>
@@ -178,7 +187,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       internet, read each other's body language, and sword fight. Is 
       that too much to ask?
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Requirements</h3>
       <ul>
         <li>
@@ -225,7 +234,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
       us and use the latest features of High Fidelity to build interactive content that will
       demonstrate the capabilities of an open virtual world.
     </p>
-    <div id="requirements">
+    <div class="requirements">
       <h3>Requirements</h3>
       <ul>
         <li>
@@ -298,9 +307,9 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     can login to Hifi. Then, take a look at <a href="https://worklist.net">Worklist</a> and see if there's a job you can do
     to show us your work skills.</p>
   </article>
-  <h2>Contract jobs</h2>
   <article class="no-border-bottom radius-border-top">
-    <p class="lead">Raconteur</p>
+    <h2>Contract</h2>
+    <p class="lead"><a name="raconteur">Raconteur</a></p>
       <p>
       High Fidelity seeks a master storyteller with a broad command of social media tools to engage customers and
       recruits.

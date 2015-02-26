@@ -26,7 +26,7 @@ body {
 
 #main ol span,
 #main ul span {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: normal;
     color: #333333;
@@ -122,29 +122,6 @@ div#main > article li {
     margin-bottom: 15px;    
 }
 
-#main article > a.tweetthis {
-    color: #262626;
-    font-size: .6em;
-    position: absolute;
-    text-decoration: none;
-    font-weight: normal;
-    bottom: 2em;
-    right: 5%;
-}
-
-#main article > a.tweetthis:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#main article > a.tweetthis:hover i {
-    text-decoration: none;
-}
-
-#main article > a.tweetthis:active {
-    color: #3698bf;
-}
-
 #main > article a {
     color: #3698bf;
     text-decoration: underline;
@@ -158,81 +135,6 @@ div#main > article li {
 
 #main > article a:active {
     color: #333333;
-}
-
-/* jobs list */
-#main #jobs {
-    font-size: 18px;
-    font-family: proxima-nova, sans-serif;
-    font-weight: bold;
-}
-
-
-#main #jobs ul {
-    margin-top: 15px;
-}
-
-#main #jobs ul > li {
-    list-style-type: none;
-    border-top: 1px solid #cccccc;
-    margin: 0 0 5px -25px;
-    padding: 0;
-    overflow-x: hidden;
-    position: relative;
-    line-height: 1.5em;
-}
-
-
-#main #jobs a {
-    text-decoration: none;
-    font-size: .9em;
-    color: #3698bf;
-    display: inline-block;
-    width: 9999px;
-    font-weight: normal;
-}
-
-#main #jobs a:after {
-    content: '';
-    float: right;
-    width: 100px;
-    right: 0px;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1);
-}
-
-#main #jobs a:hover {
-    text-decoration: underline;
-}
-
-#main #jobs ul > li:last-child {
-    margin-bottom: 40px; 
-}
-
-#main #jobs ul > li:last-child a {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-#main #jobs ul > li:last-child a:hover {
-    text-decoration: none;
-}
-
-#main #jobs a:hover {
-    text-decoration: underline;
-}
-
-#main #jobs a:active,
-#main #jobs ul > li:last-child a:active {
-    color: #000000;
 }
 
 #supported-browsers {
@@ -251,7 +153,7 @@ div#main > article li {
     color: #000;
 }
 
-@media screen and (max-width: 970px) {    
+@media screen and (max-width: 970px) {
     #main > article {
         font-size: 1.65em;
     }
@@ -278,11 +180,6 @@ div#main > article li {
     #main > article ol,
     #main > article ul {
         font-size: 1em;
-    }
-    
-    div#requirements, 
-    div#apply {
-        margin-top: 20px;
     }
 }
 
@@ -315,16 +212,6 @@ div#main > article li {
         font-size: 1em;
     }
     
-    #main #jobs {
-        font-size: 15px;
-    }
-    
-    #main #jobs ul,
-    #main #jobs ul > li {
-        margin: 0 0 5px 0;
-        font-size: 1.1em;
-    }
-    
     #container {
         width: calc(100% - 62px);
     }
@@ -352,15 +239,6 @@ div#main > article li {
     
     #main > article p {
         margin-bottom: 10px;
-    }
-    
-    #main #jobs {
-        font-size: 13px;
-    }
-    
-    #main #jobs ul,
-    #main #jobs ul > li {
-        margin: 0;
     }
     
     #container {

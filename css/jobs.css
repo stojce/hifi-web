@@ -4,7 +4,7 @@
 
 /* bg is a particle system, we don't need to inherit from common.cs */
 html > body {
-    background: #ffffff none;
+    background: #333333 none;
 }
 
 #particle-system {
@@ -17,27 +17,55 @@ html > body {
     z-index: -1;
 }
 
+header#navbar {
+    opacity: .9;
+    background-color: transparent;
+}
+
 div#main > article {
-    padding: 46px 62px;
+    padding: 1.4em 3.3em 1.4em 2.3em;
 }
 
-div#main > h2 {
-    font-size: 1.8em;
-    line-height: 1.3em;
-    margin-bottom: 5px;
+body h1 {
+    text-align: center;
+    color: #3698BF;
+    margin-top: 2.1em;
+}
+@media screen and (max-width: 770px) {
+    body h1 {
+        margin-top: 1.3em;
+    }
+}
+
+div#main h2 {
+    font-size: .6em;
+    line-height: 1em;
+    margin-bottom: 0;
     font-weight: normal;
-    margin-top: 45px;
+    margin-top: 0;
     color: #333;
-}
-
-div#main > h2,
-div#main > h3 {
-    text-align: center;    
+    font-family: proxima-nova, sans-serif;
 }
 
 div#main > article h3 {
-    font-size: 22px;
+    font-size: .6em;
     line-height: 1.2em;
+    margin-bottom: 0;
+    color: #3698bf;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+}
+
+div#main > article p {
+    font-size: .65em;
+    line-height: 1.2em;
+    margin-bottom: 1.5em;
+}
+@media screen and (max-width: 530px) {
+    div#main > article p {
+        font-size: .8em;
+        line-height: 1.2em;
+    }
 }
 
 div#main > article p em,
@@ -45,8 +73,7 @@ div#main > article p.lead {
     color: #3398cb;
 }
 
-div#main > h2,
-div#main > article h3,
+body h1,
 div#main > article p.lead,
 div#main > article p.lead > a {
     font-family: Quadon-Bold, Georgia, 'Times New Roman';
@@ -62,37 +89,76 @@ div#main > article p.lead {
     font-size: 35px;
     font-weight: normal;
     line-height: 1.20em;
-    margin-bottom: 22px;
+    margin-bottom: .4em;
 }
-
-#main > article + article > p.lead {
-    padding-top: 1.5em;
+@media screen and (max-width: 770px) {
+    div#main > article p.lead {
+        font-size: 1.4em;
+        line-height: 1.10em;
+    }
+}
+@media screen and (max-width: 530px) {
+    div#main > article p.lead {
+        font-size: 1.2em;
+        line-height: 1em;
+    }
 }
 
 div#main > article li {
-    margin-bottom: 8px;
+    margin-bottom: .1em;
     line-height: 1.2em;
+    list-style-type: none;
+    position: relative;
+}
+@media screen and (max-width: 770px) {
+    div#main > article li {
+        margin-bottom: .05em;
+        line-height: 1em;
+    }
+}
+@media screen and (max-width: 530px) {
+    div#main > article li {
+        margin-bottom: 0;
+    }
+}
+
+div#main > article li > span {
+    font-family: proxima-nova, sans-serif;
+}
+
+div#main > article li > span:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #333333;
+    border-radius: 2px;
+    position: absolute;
+    display: block;
+    margin-left: -.7em;
+    margin-top: .65em;
 }
 
 #voxel-sketch {
     margin: 30px 0 20px;
 }
 
-#requirements{
+.requirements {
     margin-top: -11px;
 }
 
-#requirements > ul {
-    margin-left: 0px;
-    color: #3398cb;
+.requirements > ul {
+    margin-left: 0;
+    color: #333333;
+    padding-left: .5em;
 }
 
-#requirements > ul > li {
+.requirements > ul > li {
     font-size: 0.75em !important;
 }
 
-#requirements > ul > li > span {
+.requirements > ul > li > span {
     font-family: proxima-nova, sans-serif !important;
+    font-size: .8em;
 }
 
 div#main > article p em {
@@ -118,6 +184,122 @@ div#main > article p em {
     margin-top: 30px;
 }
 
+/* jobs list */
+#main #jobs {
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+}
+
+#main #jobs ul {
+    margin-top: 15px;
+}
+@media screen and (max-width: 770px) {
+    #main #jobs ul {
+        padding-left: 1em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #main #jobs ul {
+        padding-left: 0;
+    }
+}
+
+#main #jobs ul > li {
+    list-style-type: none;
+    border-top: 1px solid #cccccc;
+    margin: 0 0 5px -25px;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.5em;
+}
+
+#main #jobs a {
+    text-decoration: none;
+    font-size: .9em;
+    color: #3698bf;
+    display: inline-block;
+    width: 9999px;
+    font-weight: normal;
+}
+@media screen and (max-width: 770px) {
+    #main #jobs a {
+        font-size: .7em;
+    }
+}
+
+#main #jobs a:after {
+    content: '';
+    float: right;
+    width: 100px;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: -moz-linear-gradient(left, rgba(235, 235, 235, 0) 0%, rgba(235, 235, 235, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(235, 235, 235, 0)), color-stop(100%, rgba(235, 235, 235, 1)));
+    background: -webkit-linear-gradient(left, rgba(235, 235, 235, 0) 0%,rgba(235, 235, 235, 1) 100%);
+    background: -o-linear-gradient(left, rgba(235, 235, 235, 0) 0%,rgba(235, 235, 235, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(235, 235, 235, 0) 0%,rgba(235, 235, 235, 1) 100%);
+    background: linear-gradient(to right, rgba(235, 235, 235, 0) 0%,rgba(235, 235, 235, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ebebeb', endColorstr='#ebebeb',GradientType=1);
+}
+
+#main #jobs a:hover {
+    text-decoration: underline;
+}
+
+#main #jobs ul > li:last-child {
+    margin-bottom: 40px;
+}
+
+#main #jobs ul > li:last-child a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#main #jobs ul > li:last-child a:hover {
+    text-decoration: none;
+}
+
+#main #jobs a:hover {
+    text-decoration: underline;
+}
+
+#main #jobs a:active,
+#main #jobs ul > li:last-child a:active {
+    color: #000000;
+}
+
+#jobs > span:first-child{
+    font-size: 1.2em;
+    color: #3698BF;
+}
+
+@media screen and (max-width: 770px) {
+    #main #jobs {
+        font-size: 15px;
+    }
+
+    #main #jobs ul,
+    #main #jobs ul > li {
+        margin: 0;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #main #jobs {
+        font-size: 13px;
+    }
+
+    #main #jobs ul,
+    #main #jobs ul > li {
+        margin: 0;
+    }
+}
+
 div#main #jobs {
     margin-top: 40px;
     width: 450px;
@@ -140,6 +322,7 @@ div#main > article.no-border-top {
 div#main > article.radius-border-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-top: 1.5em;
 }
 
 div#main > article.radius-border-bottom{
@@ -151,7 +334,7 @@ div#main > article.get-our-attention {
     background-color: #f2f2f2;
     background: #f2f2f2;
     padding: 50px 75px 9px 75px;
-    border-top: none;
+    border-top: 1px solid #d3d3d3;
 }
 
 div#main > article.get-our-attention p:first-child {
@@ -162,13 +345,35 @@ div#main > article.get-our-attention span.strong {
     font-weight: 800;
 }
 
-#jobs > span:first-child{
-    font-size: 22px;
-    color: #3698BF;
+#apply {
+    margin-top: -20px;
 }
 
-#apply > h3 {
-    margin-top: 0;
+div#main > article h3 + p {
+    margin-top: .3em;
+}
+
+#main article > a.tweetthis {
+    color: #666666;
+    font-size: .6em;
+    position: absolute;
+    text-decoration: none;
+    font-weight: normal;
+    bottom: 2em;
+    right: 5%;
+}
+
+#main article > a.tweetthis:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#main article > a.tweetthis:hover i {
+    text-decoration: none;
+}
+
+#main article > a.tweetthis:active {
+    color: #3698bf;
 }
 
 /**
@@ -182,23 +387,10 @@ div#main > article.get-our-attention span.strong {
         display: none;
     }
     
-    div#main > article li {
-        margin-bottom: 5px;
-    }
-
     div#main > article {
         padding: 35px 55px;
     }
     
-    div#main > h2 {
-        font-size: 1.2em;
-    }
-
-    div#main > article p.lead {
-        font-size: 40px;
-        line-height: 1.10em;
-    }
-
     #voxel-sketch {
         float: right;
         margin: 5px;
@@ -214,7 +406,7 @@ div#main > article.get-our-attention span.strong {
         margin-bottom: 10px;
     }
 
-    #requirements > ul > li {
+    .requirements > ul > li {
         font-size: 1em !important;
     }
 
@@ -228,20 +420,6 @@ div#main > article.get-our-attention span.strong {
         padding: 15px 25px;
     }
     
-    div#main > h2 {
-        font-size: 1em;
-        margin-top: 5px;
-    }
-    
-    div#main > article li {
-        margin-bottom: 3px;
-    }
-   
-    div#main > article p.lead {
-        font-size: 32px;
-        line-height: 1.10em;
-    }
-    
     #voxel-sketch {
         float: right;
         margin: 5px;
@@ -251,4 +429,140 @@ div#main > article.get-our-attention span.strong {
     div#main #jobs {
         width: 100%;
     }
+}
+
+/**
+ * 3d rotating boxes with jobs list as page navigation links
+ */
+#joblist {
+    padding: 0 5em;
+    text-align: center;
+    margin-bottom: 6.5em;
+}
+@media screen and (max-width: 770px) {
+    #joblist {
+        margin-bottom: 2.5em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #joblist {
+        padding: 0 1em;
+    }
+}
+@media screen and (max-width: 360px) {
+    #joblist {
+        padding: 0;
+    }
+}
+
+#joblist a {
+    position: relative;
+    display: inline-block;
+    margin: .3em .2em;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1em;
+    letter-spacing: .005em;
+    font-family: proxima-nova, sans-serif;
+    padding: 0;
+}
+
+#joblist a:hover,
+#joblist a:focus {
+    outline: none;
+}
+
+#joblist a {
+    line-height: 1.8em;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+
+#joblist a span {
+    position: relative;
+    display: inline-block;
+    background: #3698BF;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#joblist a span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3698BF;
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+#joblist a span,
+#joblist a span::before {
+    padding: 0 .5em;
+    border-radius: 5px;
+}
+
+
+#joblist a:hover span,
+#joblist a:focus span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+}
+
+#joblist a:hover span::before,
+#joblist a:focus span::before {
+    background: #3698BF;
+}
+
+
+/**
+ * jobs page footer customization
+ */
+footer#site-links ul {
+    background: -moz-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 1)), color-stop(75%, rgba(51, 51, 51, 1)), color-stop(100%, rgba(51, 51, 51, 0)));
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: -o-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 0%, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#00333333', GradientType=0);
+}
+
+footer#site-links a > i,
+footer#site-links a > svg {
+    color: #cccccc;
+}
+
+footer#site-links li a:hover,
+footer#site-links li a:hover > i,
+footer#site-links a:hover > svg {
+    color: #999999;
+}
+
+footer#site-links ul,
+footer#site-links ul li {
+    border-color: #999999;
+    opacity: .6;
 }

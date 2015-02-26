@@ -19,7 +19,9 @@ if (class_exists('View')) {
             </li>
             <li>
                 <a target="_blank" href="https://worklist.net" title="Worklist">
-                    <img src="<?php echo $base_path; ?>img/wl-logo.svg">
+                    <svg viewBox="0 0 40 30">
+                        <use xlink:href="<?php echo $base_path; ?>img/wl-logo.svg#logo"></use>
+                    </svg>
                     <span>Worklist</span>
                 </a>
             </li>
