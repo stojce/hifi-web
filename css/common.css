@@ -176,7 +176,7 @@ div#main > article li {
     color: #000;
 }
 
-@media screen and (max-width: 970px) {    
+@media screen and (max-width: 970px) {
     #main > article {
         font-size: 1.65em;
     }

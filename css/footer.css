@@ -28,7 +28,6 @@
     list-style-type: none;
     margin: -1px auto 0;
     padding: 0;
-    border-top: 1px solid #dadada;
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(75%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
@@ -37,13 +36,12 @@
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
 }
+#site-links ul + ul {
+    border-top: 1px solid #dadada;
+}
 @media screen and (max-width: 530px) {
     #site-links ul {
         width: 328px;
-    }
-    #site-links ul,
-    #site-links ul + ul {
-        margin: 0 auto;
     }
 }
 
@@ -51,6 +49,7 @@
     display: inline-block;
     text-align: center;
     border-right: 1px solid #dadada;
+    vertical-align: middle;
 }
 
 #site-links li a {
@@ -119,14 +118,21 @@
 }
 
 #site-links a > i,
-#site-links a > img {
+#site-links a > svg {
     color: #262626;
     display: block;
-    padding-bottom: 8px;
     margin: 0 auto;
     font-size: 1.6em;
     width: 32px;
     height: 28px;
+}
+
+#site-links a > i {
+    padding-bottom: 8px;
+}
+
+#site-links a > svg {
+    fill: currentColor;
 }
 
 #site-links ul li:last-child {
@@ -134,7 +140,7 @@
 }
 
 @media screen and (max-width: 770px) {
-    #site-links a > img {
+    #site-links a > svg {
         display: inline;
     }
 
