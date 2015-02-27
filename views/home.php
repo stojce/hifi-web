@@ -6,7 +6,6 @@
       <a href="hifi://Free">
         <img src="img/home/places/small/Free.jpg" />
         <h4>Free</h4>
-        <p>Operated by Judas</p>
         <p>Old-time factory.</p>
       </a>
     </li>
@@ -14,7 +13,6 @@
       <a href="hifi://Heron">
         <img src="img/home/places/small/Heron.jpg" />
         <h4>Heron</h4>
-        <p>Operated by OmegaHeron</p>
         <p>Country Home.</p>
       </a>
     </li>
@@ -22,7 +20,6 @@
       <a href="hifi://Ireland">
         <img src="img/home/places/small/Ireland.png" />
         <h4>Ireland</h4>
-        <p>Operated by Derric Foggarty</p>
         <p>Space shuttle pub.</p>
       </a>
     </li>
@@ -30,7 +27,6 @@
       <a href="hifi://Openvue">
         <img src="img/home/places/small/Openvue.jpg" />
         <h4>Openvue</h4>
-        <p>Operated by Ai_Austin</p>
         <p>Open Virtual University of Edinburgh.</p>
       </a>
     </li>
@@ -43,7 +39,6 @@
       <a href="hifi://porto">
         <img src="img/home/places/small/porto.jpg" />
         <h4>Porto</h4>
-        <p>Operated by High Fidelity</p>
         <p>Mountain hideaway.</p>
       </a>
     </li>
@@ -51,7 +46,6 @@
       <a href="hifi://rivenglen">
         <img src="img/home/places/small/rivenglen.jpg" />
         <h4>Rivenglen</h4>
-        <p>Operated by High Fidelity</p>
         <p>Mead for my men!</p>
       </a>
     </li>
@@ -59,7 +53,6 @@
       <a href="hifi://Venice">
         <img src="img/home/places/small/Venice.png" />
         <h4>Venice</h4>
-        <p>Operated by Chris</p>
         <p>Italian gem.</p>
       </a>
     </li>
@@ -67,7 +60,6 @@
       <a href="hifi://Adriania">
         <img src="img/home/places/small/adriania.jpg" />
         <h4>Adriania</h4>
-        <p>Operated by Adrian</p>
         <p>Town center of Adriania.</p>
       </a>
     </li>
