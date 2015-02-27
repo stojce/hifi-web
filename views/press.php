@@ -48,13 +48,20 @@
                 </a>
             </li>
             <li>
-                <a href="http://techcrunch.com/2013/04/19/true-ventures-backs-high-fidelity/" target="_blank">
-                    <q cite="techcrunch">Second Life Founder Philip Rosedale's New Startup High Fidelity</q>
+                <a href="http://techcrunch.com/2015/02/25/high-fidelity-raises-11m-to-build-deployable-virtual-worlds/" target="_blank">
+                    <q cite="techcrunch">High Fidelity Raises $11M To Build Deployable Virtual Worlds</q>
                 </a>
             </li>
         </ul>
     </section>
     <div class="container">
+        <div>
+            <a href="http://techcrunch.com/2015/02/25/high-fidelity-raises-11m-to-build-deployable-virtual-worlds/" target="_blank">
+                <div>2/26/2015</div>
+                <div>High Fidelity Raises $11M To Build Deployable Virtual Worlds</div>
+                <div>TechCrunch</div>
+            </a>
+        </div>
         <div>
             <a href="https://gigaom.com/2014/11/18/the-gap-between-virtual-reality-and-sci-fi-is-shortening/" target="_blank">
                 <div>11/18/2014</div>
