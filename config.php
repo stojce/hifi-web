@@ -17,7 +17,7 @@ defineOnce('WORKLIST_URL', 'https://dev.worklist.net/worklist/');
 defineOnce('CONTACT_EMAIL_ADDRESS', 'contact@highfidelity.io');
 defineOnce('MC_ACCOUNT_ID', '6fed7d4aeb9076c82690f8f02');
 defineOnce('MC_LIST_ID', '340beb1967');
-defineOnce('SUBSCRIBE_URL', sprintf("https://highfidelity.us2.list-manage2.com/subscribe/post?u=%s&id=%s", MC_ACCOUNT_ID, MC_LIST_ID));
+defineOnce('SUBSCRIBE_URL', sprintf("http://highfidelity.us2.list-manage2.com/subscribe/post?u=%s&id=%s", MC_ACCOUNT_ID, MC_LIST_ID));
 
 defineOnce('JOBLIST_FEEDS_URL', WORKLIST_URL . 'feeds');
 defineOnce('JOBLIST_PROJECTS', 'JoTester,korderotest1');
