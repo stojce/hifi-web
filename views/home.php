@@ -1,68 +1,26 @@
+<?php $i = 0; ?>
 <section id="placenames">
   <article>
-  <h3>Up &amp running now</h3>
+  <h3>Up &amp; running now</h3>
   <ul>
-    <li>
-      <a href="hifi://Free">
-        <img src="img/home/places/small/Free.jpg" />
-        <h4>Free</h4>
-        <p>Old-time factory.</p>
-      </a>
-    </li>
-    <li>
-      <a href="hifi://Heron">
-        <img src="img/home/places/small/Heron.jpg" />
-        <h4>Heron</h4>
-        <p>Country Home.</p>
-      </a>
-    </li>
-    <li>
-      <a href="hifi://Ireland">
-        <img src="img/home/places/small/Ireland.png" />
-        <h4>Ireland</h4>
-        <p>Space shuttle pub.</p>
-      </a>
-    </li>
-    <li>
-      <a href="hifi://Openvue">
-        <img src="img/home/places/small/Openvue.jpg" />
-        <h4>Openvue</h4>
-        <p>Open Virtual University of Edinburgh.</p>
-      </a>
-    </li>
-    <li>
-      <a href="#moreplaces">
-        Show more
-      </a>
-    </li>
-    <li>
-      <a href="hifi://porto">
-        <img src="img/home/places/small/porto.jpg" />
-        <h4>Porto</h4>
-        <p>Mountain hideaway.</p>
-      </a>
-    </li>
-    <li>
-      <a href="hifi://rivenglen">
-        <img src="img/home/places/small/rivenglen.jpg" />
-        <h4>Rivenglen</h4>
-        <p>Mead for my men!</p>
-      </a>
-    </li>
-    <li>
-      <a href="hifi://Venice">
-        <img src="img/home/places/small/Venice.png" />
-        <h4>Venice</h4>
-        <p>Italian gem.</p>
-      </a>
-    </li>
-    <li>
-      <a href="hifi://Adriania">
-        <img src="img/home/places/small/adriania.jpg" />
-        <h4>Adriania</h4>
-        <p>Town center of Adriania.</p>
-      </a>
-    </li>
+    <?php foreach(View::read('places') as $place): $i++; ?>
+      <li>
+        <a href="<?php echo htmlentities($place->address) ?>">
+          <img
+            src="<?php echo htmlentities($place->previews->thumbnail) ?>"
+            hdsrc="<?php echo htmlentities($place->previews->lobby) ?>" />
+          <h4><?php echo htmlspecialchars($place->name) ?></h4>
+          <p><?php echo htmlspecialchars($place->description) ?></p>
+        </a>
+      </li>
+      <?php if ($i == 4): ?>
+        <li>
+          <a href="#moreplaces">
+            Show more
+          </a>
+        </li>
+      <?php endif; ?>
+    <?php endforeach; ?>
   </ul>
   </article>
   <article id="openvr">

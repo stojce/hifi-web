@@ -43,11 +43,11 @@ var home = {
             $('#placenames').addClass('expanded');
         });
 
-        $('#placenames ul > li > a').bind('click', function(event) {
+        $('#placenames ul > li > a[href^="hifi://"]').bind('click', function(event) {
             event.preventDefault();
             var options = {
                 img: $('img', this).attr('src'),
-                bigImg: $('img', this).attr('src').replace('/small/', '/'),
+                bigImg: $('img', this).attr('hdsrc'),
                 url: $(this).attr('href')
             };
             Utils.parseMustache('place-modal', options, function(parsed) {
