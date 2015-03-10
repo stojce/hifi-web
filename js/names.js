@@ -86,7 +86,7 @@ var names = {
             return false;
         }
         names.updating = true;
-        var url = 'https://metaverse.highfidelity.io/api/v1/new_place_names';
+        var url = 'https://metaverse.highfidelity.io/api/v1/stats/places/new_names';
         $.getJSON(url, function (json) {
             var updated_places = json.data.new_place_names;
             if (diff = names.needsUpdate(updated_places)) {
