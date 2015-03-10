@@ -7,8 +7,8 @@
       <li>
         <a href="<?php echo htmlentities($place->address) ?>">
           <img
-            src="<?php echo htmlentities($place->previews->thumbnail) ?>"
-            hdsrc="<?php echo htmlentities($place->previews->lobby) ?>" />
+           src="<?php echo htmlentities($place->previews->thumbnail) ?>"
+           hdsrc="<?php echo htmlentities($place->previews->lobby) ?>" />
           <h4><?php echo htmlspecialchars($place->name) ?></h4>
           <p><?php echo htmlspecialchars($place->description) ?></p>
         </a>
