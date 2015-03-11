@@ -69,7 +69,7 @@
       </fieldset>
       <fieldset>
         <p>
-          <a href="./subscribe">Get a name</a>, mark your piece of the Metaverse
+          <a href="./subscribe">Register a place name</a> for your domain
         </p>
       </fieldset>
       <div id="downloadfade">
