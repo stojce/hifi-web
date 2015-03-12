@@ -15,8 +15,6 @@ var home = {
         home.suggestPackage();
         home.refreshRequirements();
 
-        $('#placenames ul').scrollTop(0);
-
         $('#placenames form button[type="submit"], #placenames a[href="./subscribe"]').bind('click', function (event) {
             if ($(this).attr('name') != 'subscribe' || $(this).attr('href') == './subscribe') {
                 $('#placenames form').addClass('submitted');
@@ -37,10 +35,6 @@ var home = {
                 ).insertAfter('#placenames form input + button');
                 return false;
             }
-        });
-
-        $('#placenames > article:first-child ul > li:nth-child(5)').bind('click', function (event) {
-            $('#placenames').addClass('expanded');
         });
 
         $('#placenames ul > li > a[href^="hifi://"]').bind('click', function(event) {
