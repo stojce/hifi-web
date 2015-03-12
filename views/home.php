@@ -21,7 +21,7 @@
       </li>
     </ul>
     <p>
-      There are <?php echo View::read('onlinedomains') ?> domains now.
+      There are <?php echo View::read('onlinedomains') ?> domains online now.
     </p>
   </article>
   <article id="openvr">
