@@ -24,65 +24,64 @@
 </header>
 <div id="container">
     <div id="inner-container">
-            <div id="interface">
-                <div class="interface">
-                    <h2>Interface</h2>
-                    <a id="interface-logo"></a>
-                </div>
-                <div class="interface">
-                    <div  class="choose-os-container">
-                        <div id="os-icon">
-                            <a class="os-icon os-icon-mac selected"></a>
-                            <a class="os-icon os-icon-windows"></a>
-                            <a class="os-icon os-icon-linux"></a>
-                        </div>
-                        <select class="choose-os">
-                            <option value="mac" selected='selected'>Mac OS X</option>
-                            <option value="windows">Windows</option>
-                           <!-- <option value="linux">Linux</option> -->
-                        </select>
-                        <p>Requires Mountain Lion(10.8) or newer</p>
-                    </div>
-                     <div  class="choose-build-version-container">
-                        <p>Select build</p>
-                        <div id="choose-build-version-interface"></div>
-                        <p class="build-time"></p>
-                    </div>
-                    <div  class="download-container">
-                        <a class="download">Download</a>
-                    </div>
-                    <div class="release-notes"></div>
-                </div>
+        <div id="interface">
+            <div class="interface">
+                <h2>Interface</h2>
+                <a id="interface-logo"></a>
             </div>
-            <div id="stackmanager">
-                <div class="stackmanager">
-                    <h2>Stack Manager</h2>
-                    <a id="stackmanager-logo"></a>
+            <div class="interface">
+                <div  class="choose-os-container">
+                    <div id="os-icon">
+                        <a class="os-icon os-icon-mac selected"></a>
+                        <a class="os-icon os-icon-windows"></a>
+                        <a class="os-icon os-icon-linux"></a>
+                    </div>
+                    <select class="choose-os">
+                        <option value="mac" selected='selected'>Mac OS X</option>
+                        <option value="windows">Windows</option>
+                       <!-- <option value="linux">Linux</option> -->
+                    </select>
+                    <p>Requires Mountain Lion(10.8) or newer</p>
                 </div>
-                <div class="stackmanager">
-                    <div  class="choose-os-container">
-                        <div id="os-icon">
-                            <a class="os-icon os-icon-mac"></a>
-                            <a class="os-icon os-icon-windows selected"></a>
-                            <a class="os-icon os-icon-linux"></a>
-                        </div>
-                        <select class="choose-os">
-                            <option value="mac">Mac OS X</option>
-                            <option value="windows" selected='selected'>Windows</option>
-                            <!-- <option value="linux">Linux</option> -->
-                        </select>
-                        <p class="build-time">Requires Mountain Lion(10.8) or newer</p>
-                    </div>
-                     <div  class="choose-build-version-container">
-                        <p>Select build</p>
-                        <div id="choose-build-version-stackmanager"></div>
-                        <p></p>
-                    </div>
-                    <div  class="download-container">
-                        <a class="download">Download</a>
-                    </div>
-                    <div class="release-notes"></div>
+                 <div  class="choose-build-version-container">
+                    <p>Select build</p>
+                    <div id="choose-build-version-interface"></div>
+                    <p class="build-time"></p>
                 </div>
+                <div  class="download-container">
+                    <a class="download">Download</a>
+                </div>
+                <div class="release-notes"></div>
+            </div>
+        </div>
+        <div id="stackmanager">
+            <div class="stackmanager">
+                <h2>Stack Manager</h2>
+                <a id="stackmanager-logo"></a>
+            </div>
+            <div class="stackmanager">
+                <div  class="choose-os-container">
+                    <div id="os-icon">
+                        <a class="os-icon os-icon-mac"></a>
+                        <a class="os-icon os-icon-windows selected"></a>
+                        <a class="os-icon os-icon-linux"></a>
+                    </div>
+                    <select class="choose-os">
+                        <option value="mac">Mac OS X</option>
+                        <option value="windows" selected='selected'>Windows</option>
+                        <!-- <option value="linux">Linux</option> -->
+                    </select>
+                    <p class="build-time">Requires Mountain Lion(10.8) or newer</p>
+                </div>
+                 <div  class="choose-build-version-container">
+                    <p>Select build</p>
+                    <div id="choose-build-version-stackmanager"></div>
+                    <p></p>
+                </div>
+                <div  class="download-container">
+                    <a class="download">Download</a>
+                </div>
+                <div class="release-notes"></div>
             </div>
         </div>
     </div>
