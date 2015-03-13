@@ -19,21 +19,21 @@ var download = {
     },
 
     initDropdowns: function() {
-        $('.interface .choose-os').chosen().change(function() {
+        $('.interface .choose-os').bind('change', function() {
             $('.interface .os-icon').removeClass('selected');
             $('.interface .os-icon-' + $(this).val()).addClass('selected');
             $('.interface .choose-os-container p').text(download.os_message[$(this).val()]);
             download.renderBuild('interface', $(this).val());
             $(this).trigger('chosen:updated');
-        });
+        }).chosen();
 
-        $('.stackmanager .choose-os').chosen().change(function() {
+        $('.stackmanager .choose-os').bind('change', function() {
             $('.stackmanager .os-icon').removeClass('selected');
             $('.stackmanager .os-icon-' + $(this).val()).addClass('selected');
             $('.stackmanager .choose-os-container p').text(download.os_message[$(this).val()]);
             download.renderBuild('stackmanager', $(this).val());
             $(this).trigger('chosen:updated');
-        });
+        }).chosen();
     },
 
     getBuilds: function(fAfter) {
