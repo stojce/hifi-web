@@ -6,6 +6,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <section id="particle-system"></section>
 <h1>Jobs</h1>
 <nav id="joblist">
+  <a href="#physics-engineer"><span data-hover="Physics Engineer">Physics Enginee<r/span></a>
   <a href="#3d-graphics-engineer"><span data-hover="3D Graphics Engineer">3D Graphics Engineer</span></a>
   <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
@@ -16,7 +17,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 
 <div role="main" id="main">
   <article class="no-border-bottom radius-border-top">
-    <p class="lead"><a name="cpp-generalist">Physics Engineer</a></p>
+    <p class="lead"><a name="physics-engineer">Physics Engineer</a></p>
     <p>
       How do you simulate rigid body collisions in a VR environment containing
       too many objects to be simulated by any one CPU at one time, using multiple
