@@ -2,10 +2,14 @@
 
 require_once('config.php');
 
-$places = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/places?flag=homepage'));
+$context = stream_context_create(array(
+    'http'=>array('header' => "User-Agent: hifi-web\r\n")
+));
+
+$places = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/places?flag=homepage', false, $context));
 View::write('places', array_slice($places->data->places, 0, 7));
 
-$domains = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/stats/domains'));
+$domains = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/stats/domains', false, $context));
 View::write('onlinedomains', $domains->data->num_online);
 
 

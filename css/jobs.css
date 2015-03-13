@@ -307,7 +307,7 @@ div#main #jobs {
 
 div#main > article.no-border-bottom {
     border-bottom: none;
-    padding-bottom: 5px;
+    padding-bottom: 1.5em;
 }
 
 div#main > article.line-border-top {

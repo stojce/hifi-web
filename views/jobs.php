@@ -6,6 +6,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <section id="particle-system"></section>
 <h1>Jobs</h1>
 <nav id="joblist">
+  <a href="#physics-engineer"><span data-hover="Physics Engineer">Physics Engineer</span></a>
   <a href="#3d-graphics-engineer"><span data-hover="3D Graphics Engineer">3D Graphics Engineer</span></a>
   <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
@@ -16,6 +17,104 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 
 <div role="main" id="main">
   <article class="no-border-bottom radius-border-top">
+    <p class="lead"><a name="physics-engineer">Physics Engineer</a></p>
+    <p>
+      How do you simulate rigid body collisions in a VR environment containing
+      too many objects to be simulated by any one CPU at one time, using multiple
+      overlapping simulations running on many client machines? In a shared VR
+      environment where two or more people are playing a game like ping pong or
+      sword fighting, how do you minimize the latency between action and apparent
+      reaction, while keeping the outcome very similar for all participants? If
+      these questions are interesting and relevant for you, we'd love to talk.
+    </p>
+    <div class="requirements">
+      <h3>Skills / Requirements</h3>
+      <ul>
+        <li>
+          <span>
+            Experience with using a physics engine for simulation or games (e.g. Bullet, Havok, ODE)
+          </span>
+        </li>
+        <li>
+          <span>
+            Fluent in C++
+          </span>
+        </li>
+        <li>
+          <span>
+            Dangerous 3D math skills
+          </span>
+        </li>
+      </ul>
+      <h3>Bonus Points</h3>
+      <ul>
+        <li>
+          <span>
+            Javascript
+          </span>
+        </li>
+        <li>
+          <span>
+            Loves quaternions
+          </span>
+        </li>
+        <li>
+          <span>
+            Wrote your own physics engine
+          </span>
+        </li>
+        <li>
+          <span>
+            Deep OpenGL experience
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with physics on the GPU
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with low-latency networking
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience developing in Git environments
+          </span>
+        </li>
+      </ul>
+      <h3>Professional Qualities</h3>
+      <ul>
+        <li>
+          <span>
+            Ability to switch between different projects quickly and easily while rapidly prototyping
+          </span>
+        </li>
+        <li>
+          <span>
+            Autonomous in setting work priorities within product plans
+          </span>
+        </li>
+        <li>
+          <span>
+            Comfortable as both perpetrator and victim of rigorous code reviews
+          </span>
+        </li>
+        <li>
+          <span>
+            Appetite for sharing technical knowledge with other engineers
+          </span>
+        </li>
+        <li>
+          <span>
+            Good at explaining, good at thinking out loud, hard to frustrate, and fun to work with
+          </span>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="no-border-bottom no-border-top">
     <p class="lead"><a name="3d-graphics-engineer">3D Graphics Engineer</a></p>
     <p>
       We're looking for a 3D graphics engineer to help build our virtual 
