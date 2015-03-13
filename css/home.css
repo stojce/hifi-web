@@ -175,25 +175,25 @@ article h3 {
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul > li:nth-child(8) > a {
-        padding: 4.7em 2.3em;
+        padding: 8.7em 1.3em .7em 1em;
         width: calc(154px - 4.6em);
     }
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul > li:nth-child(8) > a {
-        padding: 4.9em 2em;
+        padding: 8.9em 1.2em .9em .8em;
         width: calc(107px - 4em);
     }
 }
 @media screen and (max-width: 530px) {
     #placenames > article:first-child ul > li:nth-child(8) > a {
-        padding: 3.25em 1.8em;
+        padding: 6.25em 2.8em .25em .8em;
         width: calc(75px - 3.6em);
     }
 }
 @media screen and (max-width: 360px) {
     #placenames > article:first-child ul > li:nth-child(8) > a {
-        padding: 2.25em 1em;
+        padding: 4.25em 1.6em .25em .4em;
         width: calc(55px - 2em);
     }
 }
