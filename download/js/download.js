@@ -107,16 +107,13 @@ var download = {
         var appVersion = navigator.appVersion;
         if (ua.match("Win")) {
             $('.choose-os').val('windows');
-            return;
         }
         if (ua.match("Mac")) {
             $('.choose-os').val('mac');
-            return;
         }
         /*
         if (ua.match("Linux") || appVersion.match("X11")) {
             $('.choose-os').val('linux').change();
-            return;
         }
         */
         $('.choose-os').change();
