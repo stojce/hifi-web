@@ -3,7 +3,11 @@
 require_once('config.php');
 
 $places = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/places?flag=homepage'));
-View::write('places', array_slice($places->data->places, 0, 8));
+View::write('places', array_slice($places->data->places, 0, 7));
+
+$domains = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/stats/domains'));
+View::write('onlinedomains', $domains->data->num_online);
+
 
 View::write('page', 'home');
 View::addScript('js/home.js');

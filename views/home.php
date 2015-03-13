@@ -1,27 +1,28 @@
 <?php $i = 0; ?>
 <section id="placenames">
   <article>
-  <h3>Up &amp; running now</h3>
-  <ul>
-    <?php foreach(View::read('places') as $place): $i++; ?>
-      <li>
-        <a href="<?php echo htmlentities($place->address) ?>">
-          <img
-           src="<?php echo htmlentities($place->previews->thumbnail) ?>"
-           hdsrc="<?php echo htmlentities($place->previews->lobby) ?>" />
-          <h4><?php echo htmlspecialchars($place->name) ?></h4>
-          <p><?php echo htmlspecialchars($place->description) ?></p>
-        </a>
-      </li>
-      <?php if ($i == 4): ?>
+    <h3>Up &amp; running now</h3>
+    <ul>
+      <?php foreach(View::read('places') as $place): $i++; ?>
         <li>
-          <a href="#moreplaces">
-            Show more
+          <a href="<?php echo htmlentities($place->address) ?>">
+            <img
+             src="<?php echo htmlentities($place->previews->thumbnail) ?>"
+             hdsrc="<?php echo htmlentities($place->previews->lobby) ?>" />
+            <h4><?php echo htmlspecialchars($place->name) ?></h4>
+            <p><?php echo htmlspecialchars($place->description) ?></p>
           </a>
         </li>
-      <?php endif; ?>
-    <?php endforeach; ?>
-  </ul>
+      <?php endforeach; ?>
+      <li>
+        <a href="http://metaverse.highfidelity.io/">
+          See more
+        </a>
+      </li>
+    </ul>
+    <p>
+      There are <?php echo View::read('onlinedomains') ?> domains online now.
+    </p>
   </article>
   <article id="openvr">
     <h3>Open Source software for shared Virtual Reality</h3>
