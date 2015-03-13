@@ -6,7 +6,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <section id="particle-system"></section>
 <h1>Jobs</h1>
 <nav id="joblist">
-  <a href="#physics-engineer"><span data-hover="Physics Engineer">Physics Enginee<r/span></a>
+  <a href="#physics-engineer"><span data-hover="Physics Engineer">Physics Engineer</span></a>
   <a href="#3d-graphics-engineer"><span data-hover="3D Graphics Engineer">3D Graphics Engineer</span></a>
   <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
