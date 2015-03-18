@@ -53,7 +53,7 @@ class Jetpack_Photon {
 
 		// Images in post content and galleries
 		add_filter( 'the_content', array( __CLASS__, 'filter_the_content' ), 999999 );
-		add_filter( 'get_post_gallery', array( __CLASS__, 'filter_the_content' ), 999999 );
+		add_filter( 'get_post_galleries', array( __CLASS__, 'filter_the_galleries' ), 999999 );
 
 		// Core image retrieval
 		add_filter( 'image_downsize', array( $this, 'filter_image_downsize' ), 10, 3 );
@@ -303,7 +303,7 @@ class Jetpack_Photon {
 						$new_tag = preg_replace( '#(?<=\s)(width|height)=["|\']?[\d%]+["|\']?\s?#i', '', $new_tag );
 
 						// Tag an image for dimension checking
-						$new_tag = preg_replace( '#(\s?/)?>(</a>)?$#i', ' data-recalc-dims="1"\1>\2', $new_tag );
+						$new_tag = preg_replace( '#(\s?/)?>(\s*</a>)?$#i', ' data-recalc-dims="1"\1>\2', $new_tag );
 
 						// Replace original tag with modified version
 						$content = str_replace( $tag, $new_tag, $content );
@@ -317,6 +317,29 @@ class Jetpack_Photon {
 		}
 
 		return $content;
+	}
+
+	public static function filter_the_galleries( $galleries ) {
+		if ( empty( $galleries ) || ! is_array( $galleries ) ) {
+			return $galleries;
+		}
+
+		// Pass by reference, so we can modify them in place.
+		foreach ( $galleries as &$this_gallery ) {
+			if ( is_string( $this_gallery ) ) {
+				$this_gallery = self::filter_the_content( $this_gallery );
+		// LEAVING COMMENTED OUT as for the moment it doesn't seem
+		// necessary and I'm not sure how it would propagate through.
+		//	} elseif ( is_array( $this_gallery )
+		//	           && ! empty( $this_gallery['src'] )
+		//	           && ! empty( $this_gallery['type'] )
+		//	           && in_array( $this_gallery['type'], array( 'rectangle', 'square', 'circle' ) ) ) {
+		//		$this_gallery['src'] = array_map( 'jetpack_photon_url', $this_gallery['src'] );
+			}
+		}
+		unset( $this_gallery ); // break the reference.
+
+		return $galleries;
 	}
 
 	/**
@@ -372,18 +395,17 @@ class Jetpack_Photon {
 
 				// Check specified image dimensions and account for possible zero values; photon fails to resize if a dimension is zero.
 				if ( 0 == $image_args['width'] || 0 == $image_args['height'] ) {
-					if ( 0 == $image_args['width'] && 0 < $image_args['height'] )
+					if ( 0 == $image_args['width'] && 0 < $image_args['height'] ) {
 						$photon_args['h'] = $image_args['height'];
-					elseif ( 0 == $image_args['height'] && 0 < $image_args['width'] )
+					} elseif ( 0 == $image_args['height'] && 0 < $image_args['width'] ) {
 						$photon_args['w'] = $image_args['width'];
+					}
 				} else {
-					if( 'resize' == $transform ) {
+					if ( ( 'resize' === $transform ) && $image_meta = wp_get_attachment_metadata( $attachment_id ) ) {
 						// Lets make sure that we don't upscale images since wp never upscales them as well
-						$image_meta = wp_get_attachment_metadata( $attachment_id );
-						
 						$smaller_width  = ( ( $image_meta['width']  < $image_args['width']  ) ? $image_meta['width']  : $image_args['width']  );
 						$smaller_height = ( ( $image_meta['height'] < $image_args['height'] ) ? $image_meta['height'] : $image_args['height'] );
-						
+
 						$photon_args[ $transform ] = $smaller_width . ',' . $smaller_height;
 					} else {
 						$photon_args[ $transform ] = $image_args['width'] . ',' . $image_args['height'];
@@ -589,6 +611,6 @@ class Jetpack_Photon {
 	 * @return null
 	 */
 	public function action_wp_enqueue_scripts() {
-		wp_enqueue_script( 'jetpack-photon', plugins_url( 'modules/photon/photon.js', __FILE__ ), array( 'jquery' ), 20130122, true );
+		wp_enqueue_script( 'jetpack-photon', plugins_url( 'modules/photon/photon.js', JETPACK__PLUGIN_FILE ), array( 'jquery' ), 20130122, true );
 	}
 }
