@@ -323,15 +323,15 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
   <article class="no-border-bottom no-border-top">
     <p class="lead"><a name="javascript-content-developer">Javascript Content Developer</a></p>
     <p>
-      Interactive content inside High Fidelity is built using Javascript: from vehicles
-      to presentation tools, games, music, guns, ecosystems, paddle-ball...you name it.
-      Javascript is also used to extend  High Fidelity's UI itself, for  example, with
-      new in-world building tools.
+      The early users of the High Fidelity platform build 3D models and make the environment 
+      interactive using Javascript. They often push the boundaries of what is possible within 
+      VR and look to the company for technical guidance. 
     </p>
     <p>
-      We're looking for a San Francisco based javascript developer who wants to sit beside
-      us and use the latest features of High Fidelity to build interactive content that will
-      demonstrate the capabilities of an open virtual world.
+      We're looking for a San Francisco based developer to sit beside us and use the latest 
+      features of High Fidelity to build great interactive content. We want you to demonstrate 
+      the capabilities of an open virtual world to our users, and help them in building their 
+      own interactive content.
     </p>
     <div class="requirements">
       <h3>Requirements</h3>
@@ -346,19 +346,24 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
             A portfolio: show us something amazing you've already built
           </span>
         </li>
+        <li>
+          <span>
+            Comfortable with 3D model formats
+          </span>
+        </li>
+        <li>
+          <span>
+            Strong interest in helping out users
+          </span>
+        </li>
+        <li>
+          <span>
+            Ability to articulate and prioritize user requirements/feature requests
+          </span>
+        </li>
       </ul>
       <h3>Bonus Points</h3>
       <ul>
-        <li>
-          <span>
-            3D Math Experience
-          </span>
-        </li>
-        <li>
-          <span>
-            C++ experience
-          </span>
-        </li>
         <li>
           <span>
             Game development experience
@@ -367,16 +372,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         <li>
           <span>
             Virtual World content development experience
-          </span>
-        </li>
-        <li>
-          <span>
-            Physics engine experience (Bullet, etc)
-          </span>
-        </li>
-        <li>
-          <span>
-            Automata, emergent systems
           </span>
         </li>
       </ul>
