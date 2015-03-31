@@ -62,6 +62,9 @@ var download = {
                                     "version" : $(buildVersions[buildIndex]).find('version').text(),
                                     "url" : $(buildVersions[buildIndex]).find('url').text(),
                                     "time" : $(buildVersions[buildIndex]).find('timestamp').text(),
+                                    "sha": $(buildVersions[buildIndex]).find('sha').text(),
+                                    "pull_request": $(buildVersions[buildIndex]).find('pull_request').text(),
+                                    "is_stable": $(buildVersions[buildIndex]).find('is_stable').text(),
                                     "notes" : notesHtml
                         };
                        download.projectsData[$(project).attr('name')][$(platform).attr('name')][buildIndex] = build;
@@ -87,7 +90,7 @@ var download = {
                     $('#' + project).find('.release-notes').html("<b>Release notes</b>" + builds[index]['notes']);
                 }
             }
-            html += "<option " + (index == 0 ?  " selected= \"selected\"" : " ")  + " value=\"" + index + "\">" + builds[index]['version'] + (index == 0 ? " (latest)" : "") + "</option>";
+            html += "<option " + (index == 0 ?  " selected= \"selected\"" : " ")  + " value=\"" + index + "\">" + builds[index]['version'] + (index == 0 ? " (latest)" : "") + (builds[index]['is_stable'] == 'yes' ? " - stable" : "")  + "</option>";
         }
         html += "</select>";
         $('.' + project + ' #choose-build-version-' + project).html(html);
