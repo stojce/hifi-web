@@ -1,5 +1,6 @@
 <?php
-$docs_url = 'http://docs.highfidelity.io'; 
+$docs_url = 'http://docs.highfidelity.io';
+$download_url = 'https://highfidelity.io/download'
 if (class_exists('View')) {
     $page = View::read('page');
     $base_path = './';
@@ -25,6 +26,9 @@ if (class_exists('View')) {
             <ul class="nav navbar-nav">
                 <li id="logo" class="<?php echo ($page == 'home' ? 'selected' : ''); ?>">
                     <a class="logo" href="<?php echo $base_path; ?>" title="High Fidelity"></a><i></i>
+                </li>
+                <li>
+                    <a href="<?php echo $download_url; ?>" title="Download">Download</a><i></i>
                 </li>
                 <li class="<?php echo ($page == 'code' ? 'selected' : ''); ?>">
                     <a href="<?php echo $base_path; ?>code" title="Code">Code</a><i></i>
