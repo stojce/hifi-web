@@ -43,12 +43,12 @@
     <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
       <fieldset>
         <div>
-          <a class='download-btn' href="/download'">Download</a>
+          <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
       <fieldset>
         <div>
-          <a class='download-btn' href="/download'">Download</a>
+          <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
       <fieldset>
