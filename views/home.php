@@ -43,19 +43,17 @@
     <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
       <fieldset>
         <div>
-          <h4>Interface</h4>
-          <button onclick="window.location.href='/download'">Download</button>
+          <a class='download-btn' href="/download'">Download</a>
         </div>
       </fieldset>
       <fieldset>
         <div>
-          <h4>Stack Manager</h4>
-          <button onclick="window.location.href='/download'">Download</button>
+          <a class='download-btn' href="/download'">Download</a>
         </div>
       </fieldset>
       <fieldset>
         <p>
-          <a href="https://metaverse.highfidelity.com/signup">Create an account</a>
+          <a class='account-link' href="https://metaverse.highfidelity.com/signup">Create an account</a>
         </p>
       </fieldset>
     </form>

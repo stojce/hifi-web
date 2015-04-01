@@ -696,38 +696,44 @@ article h3 {
     color: #ffffff;
 }
 
-#placenames > article > form button[type="submit"] {
+#placenames > article > form a.download-btn {
     background: none #0f9abb;
     border: 1px solid #0f9abb;
     color: #ffffff;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: 2.5em;
+    padding: 7px 10px;
 }
 
-#placenames > article > form div > button[type="submit"]:focus {
+#placenames > article > form div > a.download-btn:focus {
     background: none #ffffff;
     color: #0f9abb;
     border-color: #0f9abb;
 }
 
-#placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
+#placenames > article > form fieldset:not(:nth-child(3)) a.download-btn {
     padding: .4em 1.2em .4em;
     margin-left: .8em;
 }
 @media screen and (max-width: 770px) {
-    #placenames > article > form fieldset:not(:nth-child(3)) button[type="submit"] {
+    #placenames > article > form fieldset:not(:nth-child(3)) a.download-btn {
         padding: .1em 1.2em .2em;
     }
 }
 
 #placenames > article > form fieldset > div > .chosen-single,
-#placenames > article > form fieldset > div > button[type="submit"] {
+#placenames > article > form fieldset > div > a.account-link {
     font-size: 1.1em;
 }
+
 @media screen and (max-width: 770px) {
     #placenames > article > form fieldset > div > .chosen-single,
-    #placenames > article > form fieldset > div > button[type="submit"] {
+    #placenames > article > form fieldset > div > a.download-btn {
         font-size: 1.8em;
+        margin-top: 1.5em;
     }
 }
 
@@ -759,16 +765,18 @@ article h3 {
     }
 }
 
-#placenames > article > form fieldset > p > a {
+#placenames > article > form fieldset > p > a.account-link {
     color: #0f9abb;
-}
-#placenames > article > form fieldset > p > a:hover {
     text-decoration: underline;
 }
 
-#placenames > article > form fieldset > p > a:before {
+#placenames > article > form fieldset > p > a.account-link:hover {
+    text-decoration: underline;
+    color: #333333;
+}
+
+#placenames > article > form fieldset > p > a.account-link:before {
     content: '\00a0';
-    background: url(../img/home/place-names.svg) center center no-repeat;
     background-size: 90px 90px;
     width: 90px;
     height: 90px;
@@ -778,13 +786,13 @@ article h3 {
     margin-top: -6px;
 }
 @media screen and (max-width: 990px) {
-    #placenames > article > form fieldset > p > a:before {
+    #placenames > article > form fieldset > p > a.account-link:before {
         background-size: 70px 70px;
         background-position: center top;
     }
 }
 @media screen and (max-width: 770px) {
-    #placenames > article > form fieldset > p > a:before {
+    #placenames > article > form fieldset > p > a.account-link:before {
         background-size: 50px 50px;
         background-position: center center;
         width: 60px;
