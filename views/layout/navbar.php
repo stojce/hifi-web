@@ -1,6 +1,6 @@
 <?php
-$docs_url = 'http://docs.highfidelity.io';
-$download_url = 'https://highfidelity.io/download';
+$docs_url = 'http://docs.highfidelity.com';
+$download_url = 'https://highfidelity.com/download';
 if (class_exists('View')) {
     $page = View::read('page');
     $base_path = './';
