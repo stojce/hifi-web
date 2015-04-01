@@ -40,50 +40,22 @@
   </article>
   <article>
     <h3>Getting started</h3>
-    <form action="<?php echo SUBSCRIBE_URL; ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
       <fieldset>
         <div>
-          <h4>Interface</h4>
-          <select name="interface-pkg">
-            <option value="pkg">Mac OS X</option>
-            <option value="exe">Windows</option>
-          </select>
-          <button type="submit" name="getinterface">Download</button>
-          <p></p>
+          <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
       <fieldset>
         <div>
-          <h4>Stack Manager</h4>
-          <select name="stackmanager-pkg">
-            <option value="pkg">Mac OS X</option>
-            <option value="exe">Windows</option>
-            <!--
-            <option value="deb">Linux (.deb)</option>
-            <option value="rpm">Linux (.rpm)</option>
-            <option value="tgz">Linux/Unix (.tgz)</option>
-            -->
-          </select>
-          <button type="submit" name="getstackmanager">Download</button>
-          <p></p>
+          <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
       <fieldset>
         <p>
-          <a href="./subscribe">Register a place name</a> for your domain
+          <a class='account-link' href="https://metaverse.highfidelity.com/signup">Create an account</a>
         </p>
       </fieldset>
-      <div id="downloadfade">
-        <div>
-          <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <p>
-            Coming very soon! Give us your email and we'll get in touch
-            when Interface, Stack Manager and Place Names are available.
-          </p>
-          <input type="email" name="EMAIL" placeholder="your@email.com" required />
-          <button type="submit" name="subscribe">Sign up</button>
-        </div>
-      </div>
     </form>
   </article>
 </section>
