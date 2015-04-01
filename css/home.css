@@ -708,6 +708,12 @@ article h3 {
     padding: 7px 10px;
 }
 
+@media screen and (max-width: 990px) {
+    #placenames > article > form a.download-btn {
+        top: 1.8em;
+    }
+}
+
 #placenames > article > form div > a.download-btn:focus {
     background: none #ffffff;
     color: #0f9abb;
