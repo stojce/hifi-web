@@ -3,7 +3,7 @@
   <article>
     <h3>Up &amp; running now</h3>
     <p class='online-domain-count'>
-      There are <?php echo View::read('onlinedomains') ?> domains online now.
+      <?php echo View::read('onlinedomains') ?> domains online
     </p>
     <ul>
       <?php foreach(View::read('places') as $place): $i++; ?>
@@ -27,12 +27,12 @@
   <article>
     <h3>Getting started</h3>
     <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-      <fieldset>
+      <fieldset class="download-software">
         <div>
           <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="download-software">
         <div>
           <a class='download-btn' href="/download">Download</a>
         </div>

@@ -493,21 +493,26 @@ article h3 {
 #placenames > article > form fieldset:nth-child(2) {
     background-image: url(../img/home/stack-manager.svg);
 }
+
+#placenames > article > form fieldset:nth-child(3) {
+    border-style: dashed;
+    border-top-width: 0;
+    padding: 2.4em 0;
+}
+
 @media screen and (max-width: 770px) {
     #placenames > article > form fieldset:nth-child(2) {
         background-position: 10% center;
+    }
+    
+    #placenames > article > form fieldset:nth-child(3) {
+        border-top-width: 1px;
     }
 }
 @media screen and (max-width: 530px) {
     #placenames > article > form fieldset:nth-child(2) {
         background-image: none;
     }
-}
-
-#placenames > article > form fieldset:nth-child(3) {
-    border-style: dashed;
-    border-top-width: 0;
-    padding: 2.4em 0;
 }
 
 #placenames > article > form fieldset + fieldset {
@@ -714,6 +719,12 @@ article h3 {
     }
 }
 
+@media screen and (max-width: 770px) {
+    #placenames > article > form fieldset.download-software {
+        display: none;
+    }
+}
+
 #placenames > article > form div > a.download-btn:focus {
     background: none #ffffff;
     color: #0f9abb;
@@ -767,7 +778,7 @@ article h3 {
 }
 @media screen and (max-width: 530px) {
     #placenames > article > form fieldset > p {
-        padding: 0 3em 0 8em;
+        padding: 0 3em 0 7em;
     }
 }
 
