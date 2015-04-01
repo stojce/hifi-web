@@ -204,7 +204,7 @@ article h3 {
     font-family: FontAwesome;
 }
 
-#placenames > article:first-child ul + p {
+#placenames > article p.online-domain-count {
     text-align: center;
     display: inline-block;
     width: 45%;

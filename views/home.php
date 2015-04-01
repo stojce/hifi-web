@@ -2,6 +2,9 @@
 <section id="placenames">
   <article>
     <h3>Up &amp; running now</h3>
+    <p class='online-domain-count'>
+      There are <?php echo View::read('onlinedomains') ?> domains online now.
+    </p>
     <ul>
       <?php foreach(View::read('places') as $place): $i++; ?>
         <li>
@@ -20,22 +23,17 @@
         </a>
       </li>
     </ul>
-    <p>
-      There are <?php echo View::read('onlinedomains') ?> domains online now.
-    </p>
   </article>
   <article>
     <h3>Getting started</h3>
     <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
       <fieldset>
         <div>
-          <h4>Interface</h4>
           <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
       <fieldset>
         <div>
-          <h4>Stack Manager</h4>
           <a class='download-btn' href="/download">Download</a>
         </div>
       </fieldset>
