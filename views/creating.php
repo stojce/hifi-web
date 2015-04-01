@@ -23,16 +23,16 @@
   <p>
     <a name="load">3.</a>
     Launch Interface and load 
-    <a target="_blank" href="http://hifi-public.s3.amazonaws.com/scripts/editEntities.js">editEntities.js</a>
+    <a target="_blank" href="http://hifi-public.s3.amazonaws.com/scripts/edit.js">edit.js</a>
     or grow your own script — all of our scripts are JavaScript-based and easily edited.
   </p>
     <p>
     <a name="place">4.</a>
-    If you’re using editEntities, click the cloud on the right to place your model into the
+    If you’re using edit.js, click the cloud on the right to place your model into the
     metaverse.
   </p>
   <p>
     <strong>Questions?</strong>
-    <a href="http://docs.highfidelity.io">Check out our documentation</a>
+    <a href="http://docs.highfidelity.com">Check out our documentation</a>
   </p>
 </article>
