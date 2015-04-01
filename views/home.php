@@ -18,7 +18,7 @@
         </li>
       <?php endforeach; ?>
       <li>
-        <a href="http://metaverse.highfidelity.io/">
+        <a href="http://metaverse.highfidelity.com/">
           See more
         </a>
       </li>
