@@ -204,7 +204,7 @@ article h3 {
     font-family: FontAwesome;
 }
 
-#placenames > article:first-child ul + p {
+#placenames > article p.online-domain-count {
     text-align: center;
     display: inline-block;
     width: 45%;
@@ -706,6 +706,12 @@ article h3 {
     position: relative;
     top: 2.5em;
     padding: 7px 10px;
+}
+
+@media screen and (max-width: 990px) {
+    #placenames > article > form a.download-btn {
+        top: 1.8em;
+    }
 }
 
 #placenames > article > form div > a.download-btn:focus {

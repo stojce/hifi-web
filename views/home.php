@@ -2,6 +2,9 @@
 <section id="placenames">
   <article>
     <h3>Up &amp; running now</h3>
+    <p class='online-domain-count'>
+      There are <?php echo View::read('onlinedomains') ?> domains online now.
+    </p>
     <ul>
       <?php foreach(View::read('places') as $place): $i++; ?>
         <li>
@@ -18,23 +21,6 @@
         <a href="http://metaverse.highfidelity.io/">
           See more
         </a>
-      </li>
-    </ul>
-    <p>
-      There are <?php echo View::read('onlinedomains') ?> domains online now.
-    </p>
-  </article>
-  <article id="openvr">
-    <h3>Open Source software for shared Virtual Reality</h3>
-    <ul>
-      <li>
-        Deploy a shared virtual space as easily as deploying a website
-      </li>
-      <li>
-        Build complex interactive experiences using standard formats, tools and languages
-      </li>
-      <li>
-        Share computers and scale to huge audiences
       </li>
     </ul>
   </article>
@@ -57,6 +43,20 @@
         </p>
       </fieldset>
     </form>
+  </article>
+  <article id="openvr">
+    <h3>Open Source software for shared Virtual Reality</h3>
+    <ul>
+      <li>
+        Deploy a shared virtual space as easily as deploying a website
+      </li>
+      <li>
+        Build complex interactive experiences using standard formats, tools and languages
+      </li>
+      <li>
+        Share computers and scale to huge audiences
+      </li>
+    </ul>
   </article>
 </section>
 <div id="container">
