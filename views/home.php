@@ -252,6 +252,16 @@
             </p>
           </figure>
         </li>
+        <li>
+          <figure>
+            <img src="img/team/brad-davis.png" class="img-circle" alt="Bradley Austin Davis" />
+            <h3>Bradley Austin Davis</h3>
+            <p>
+              Has trouble passing the Turing test. VR, rendering, cryptography.
+              Writes about Oculus. Understudy to the great/powerful Oz.
+            </p>
+          </figure>
+        </li>
         <li id="youimg">
           <figure>
             <div class="img-circle"></div>
