@@ -1,7 +1,7 @@
 <?php $i = 0; ?>
 <section id="placenames">
   <article>
-    <h3>Up &amp; running now</h3>
+    <h3>Open Source software for shared Virtual Reality</h3>
     <p class='online-domain-count'>
       <?php echo View::read('onlinedomains') ?> domains online
     </p>
@@ -45,7 +45,6 @@
     </form>
   </article>
   <article id="openvr">
-    <h3>Open Source software for shared Virtual Reality</h3>
     <ul>
       <li>
         Deploy a shared virtual space as easily as deploying a website
