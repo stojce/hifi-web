@@ -137,17 +137,6 @@
         </li>
         <li>
           <figure>
-            <img src="img/team/grayson.gif" class="img-circle" alt="Grayson Stebbins" />
-            <h3>Grayson Stebbins</h3>
-            <p>
-              Designer &amp; generalist. <br />
-              Amateur carpenter. <br />
-              Analog, digital, universal.
-            </p>
-          </figure>
-        </li>
-        <li>
-          <figure>
             <img src="img/team/leo.gif" class="img-circle" alt="Leonardo Murillo" />
             <h3>Leonardo Murillo</h3>
             <p>
