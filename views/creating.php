@@ -9,7 +9,7 @@
   <p>
     <a name="fbx">1.</a>
     Buy or build, then bring your FBX into High Fidelity.
-    <a target="_blank" href="http://mixamo.com">Mixamo</a>,
+    <a target="_blank" href="http://info.mixamo.com/creating-avatars-for-high-fidelity">Mixamo</a>,
     the <a target="_blank" href="https://www.assetstore.unity3d.com/en/">Unity Asset Store</a>,
     <a target="_blank" href="http://www.daz3d.com/">Daz3D</a> and numerous other sources are great 
     places to start. Once you have the FBX you can rig it up as well.
