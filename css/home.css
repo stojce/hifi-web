@@ -9,7 +9,7 @@ html body {
 
 body > #container,
 #placenames {
-    width: 960px;
+    width: 894px;
 }
 @media screen and (max-width: 990px) {
     body > #container,
@@ -81,7 +81,12 @@ article h3 {
 
 #placenames > article:first-child {
     border: 1px dashed #e5e5e5;
-    margin-bottom: 6em;
+    margin-bottom: 6.35em;
+    margin-top: 2.7em;
+}
+
+#placenames > article:first-child h3 {
+    margin-top: .9em;
 }
 
 #placenames > article:first-child ul {
@@ -90,11 +95,11 @@ article h3 {
     padding: 0;
     text-align: center;
     overflow: hidden;
-    height: 432px;
+    height: 461px;
     transition: height .3s ease-out;
 }
 #placenames.expanded > article:first-child ul {
-    height: 864px;
+    height: 922px;
 }
 @media screen and (max-width: 990px) {
     #placenames > article:first-child ul {
@@ -131,9 +136,15 @@ article h3 {
 
 #placenames > article:first-child ul > li {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 3px;
     vertical-align: top;
     text-align: left;
+    height: 227px;
+}
+@media screen and (max-width: 990px) {
+    #placenames > article:first-child ul > li {
+        height: auto;
+    }
 }
 @media screen and (max-width: 770px) {
     #placenames > article:first-child ul > li {
@@ -209,7 +220,7 @@ article h3 {
     border: 0 none;
     color: #ffffff;
     background: none #0f9abb;
-    padding: .5em 1em;
+    padding: .4em 1.1em;
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 5px;
@@ -223,6 +234,8 @@ article h3 {
     text-align: center;
     font-weight: bold;
     color: #333333;
+    font-size: 1.15em;
+    margin-bottom: 1em;
 }
 
 #place-modal .modal-dialog {
@@ -312,8 +325,10 @@ article h3 {
 
 #placenames h3,
 #company article:first-child h3 {
-    margin-bottom: .2em;
+    margin-bottom: .1em;
     text-align: center;
+    font-size: 2.4em;
+    letter-spacing: -.04em;
 }
 
 #openvr {
@@ -462,11 +477,13 @@ article h3 {
     display: inline-block;
     color: #ffffff;
     background: none #0f9abb;
-    padding: 1em 2em;
+    padding: .8em 2.15em;
     font-weight: bold;
     font-size: 1.4em;
     border-radius: 5px;
-    max-width: 15%;
+    max-width: 14%;
+    margin: .5em 0 0 .25em;
+    line-height: 1.4em;
 }
 @media screen and (max-width: 530px) {
     #placenames > article:first-child + article > a {
