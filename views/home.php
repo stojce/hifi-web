@@ -3,7 +3,7 @@
   <article>
     <h3>Open Source software for shared Virtual Reality</h3>
     <p class='online-domain-count'>
-      <?php echo View::read('onlinedomains') ?> domains online
+      There are <?php echo View::read('onlinedomains') ?> domains online now.
     </p>
     <ul>
       <?php foreach(View::read('places') as $place): $i++; ?>
@@ -17,32 +17,13 @@
           </a>
         </li>
       <?php endforeach; ?>
-      <li>
-        <a href="http://metaverse.highfidelity.com/">
-          See more
-        </a>
-      </li>
     </ul>
+    <button>See more places</button>
   </article>
   <article>
-    <h3>Getting started</h3>
-    <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-      <fieldset class="download-software">
-        <div>
-          <a class='download-btn' href="/download">Download</a>
-        </div>
-      </fieldset>
-      <fieldset class="download-software">
-        <div>
-          <a class='download-btn' href="/download">Download</a>
-        </div>
-      </fieldset>
-      <fieldset>
-        <p>
-          <a class='account-link' href="https://metaverse.highfidelity.com/signup">Create an account</a>
-        </p>
-      </fieldset>
-    </form>
+    <h3>We are now open for <a href="https://highfidelity.com/blog/2015/04/high-fidelity-open-alpha/">Alpha use</a></h3>
+    <a href="./download">Download the installers</a>
+    <a href="https://metaverse.highfidelity.com/signup">Create an account</a>
   </article>
   <article id="openvr">
     <ul>

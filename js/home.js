@@ -37,6 +37,10 @@ var home = {
             }
         });
 
+        $('#placenames > article:first-child ul + button').bind('click', function (event) {
+            $('#placenames').addClass('expanded');
+        });
+
         $('#placenames ul > li > a[href^="hifi://"]').bind('click', function(event) {
             event.preventDefault();
             var options = {
