@@ -17,17 +17,6 @@
           </a>
         </li>
       <?php endforeach; ?>
-      <?php foreach(View::read('places') as $place): $i++; ?>
-        <li>
-          <a href="<?php echo htmlentities($place->address) ?>">
-            <img
-             src="<?php echo htmlentities($place->previews->thumbnail) ?>"
-             hdsrc="<?php echo htmlentities($place->previews->lobby) ?>" />
-            <h4><?php echo htmlspecialchars($place->name) ?></h4>
-            <p><?php echo htmlspecialchars($place->description) ?></p>
-          </a>
-        </li>
-      <?php endforeach; ?>
     </ul>
     <button>See more places</button>
   </article>
