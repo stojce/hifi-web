@@ -1050,29 +1050,29 @@ article p a {
 }
 
 #advisors > article li {
-    height: 240px;    
+    height: 182px;
     padding: 10px;
-    width: 200px;
+    width: 160px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li {
-        height: 180px;
+        height: 144px;
         padding: 10px;
-        width: 149px;
+        width: 119px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li {
-        height: 150px;
+        height: 120px;
         padding: 5px;
-        width: 126px;
+        width: 101px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li {
-        height: 120px;
+        height: 96px;
         padding: 5px;
-        width: 100px;
+        width: 80px;
     }
 }
 
@@ -1101,9 +1101,14 @@ article p a {
         font-size: 2.3em;
     }
 }
+@media screen and (max-width: 530px) {
+    #advisors > article li h3 {
+        font-size: 1.8em;
+    }
+}
 @media screen and (max-width: 360px) {
     #advisors > article li h3 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 }
 
@@ -1356,23 +1361,28 @@ article p a {
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
-    left: 55px;
+    left: 5px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(1) {
         margin-top: 35px;
-        left: 15px;
+        left: -15px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(1) {
-        left: -10px;
+        left: 60px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(1) {
+        left: 40px;
     }
 }
 
 #advisors > article li:nth-child(2) {
     z-index: 200;
-    left: 245px;
+    left: 175px;
     margin-top: 35px;
     -moz-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
@@ -1382,25 +1392,26 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(2) {
-        margin-top: 70px;
-        left: 170px;
+        margin-top: 60px;
+        left: 120px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(2) {
-        left: 115px;
+        margin-top: 45px;
+        left: 173px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(2) {
         margin-top: 50px;
-        left: 95px;
+        left: 130px;
     }
 }
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
-    left: 455px;
+    left: 360px;
     margin-top: 20px;
     -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
@@ -1411,17 +1422,48 @@ article p a {
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(3) {
         margin-top: 55px;
-        left: 335px;
+        left: 245px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(3) {
-        left: 245px;
+        margin-top: 166px;
+        left: 54px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(3) {
-        left: 196px;
+        margin-top: 143px;
+        left: 35px;
+    }
+}
+
+#advisors > article li:nth-child(4) {
+    z-index: 200;
+    left: 530px;
+    margin-top: 5px;
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(4) {
+        margin-top: 40px;
+        left: 370px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(4) {
+        margin-top: 175px;
+        left: 168px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(4) {
+        margin-top: 157px;
+        left: 120px;
     }
 }
 
@@ -1440,17 +1482,17 @@ article p a {
 }
 
 #advisors > article > ul {
-    height: 376px;
+    height: 346px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
         margin-top: -30px;
-        height: 350px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article > ul {
-        height: 270px;
+        height: 330px;
     }
 }
 
