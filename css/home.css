@@ -1053,10 +1053,11 @@ article p a {
     height: 182px;
     padding: 10px;
     width: 160px;
+    font-size: 11px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li {
-        height: 144px;
+        height: 135px;
         padding: 10px;
         width: 119px;
     }
@@ -1065,14 +1066,13 @@ article p a {
     #advisors > article li {
         height: 120px;
         padding: 5px;
-        width: 101px;
+        width: 105px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li {
         height: 96px;
-        padding: 5px;
-        width: 80px;
+        width: 84px;
     }
 }
 
@@ -1082,33 +1082,33 @@ article p a {
 
 
 #investors > article li h3,
-#advisors > article li h3 {
-    line-height: 120%;
-    margin-top: 10px;
-}
-
-#investors > article li h3,
 #investors > article li:nth-child(6) p {
     font-family: Quadon-Bold, Georgia, serif;
     font-weight: normal;
 }
 
 #advisors > article li h3 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
     font-size: 1.5em;
+    margin: 0;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li h3 {
-        font-size: 2.3em;
+        font-size: 1.15em;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li h3 {
-        font-size: 1.8em;
+        left: 5px;
+        bottom: 5px;
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li h3 {
-        font-size: 1.6em;
+       font-size: .8em;
     }
 }
 
@@ -1118,6 +1118,8 @@ article p a {
 }
 
 #investors > article li h3 {
+    line-height: 120%;
+    margin-top: 10px;
     font-size: 3.3em;
 }
 @media screen and (max-width: 990px) {
