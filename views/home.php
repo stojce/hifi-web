@@ -231,6 +231,15 @@
             </p>
           </figure>
         </li>
+        <li>
+          <figure>
+            <img src="img/team/eric.png" class="img-circle" alt="Eric Levin" />
+            <h3>Eric Levin</h3>
+            <p>
+              Loves creative coding, yoga, and hiking.
+            </p>
+          </figure>
+        </li>
         <li id="youimg">
           <figure>
             <div class="img-circle"></div>
@@ -297,6 +306,14 @@
             <figure>
               <img src="img/advisors/tonyparisi.jpg" alt="Tony Parisi" />
               <h3>Tony Parisi</h3>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://mrl.nyu.edu/~perlin/">
+            <figure>
+              <img src="img/advisors/ken_perlin.png" alt="Ken Perlin" />
+              <h3>Ken Perlin</h3>
             </figure>
           </a>
         </li>

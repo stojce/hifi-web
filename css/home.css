@@ -1050,29 +1050,29 @@ article p a {
 }
 
 #advisors > article li {
-    height: 240px;    
+    height: 182px;
     padding: 10px;
-    width: 200px;
+    width: 160px;
+    font-size: 11px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li {
-        height: 180px;
+        height: 135px;
         padding: 10px;
-        width: 149px;
+        width: 119px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li {
-        height: 150px;
+        height: 120px;
         padding: 5px;
-        width: 126px;
+        width: 105px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li {
-        height: 120px;
-        padding: 5px;
-        width: 100px;
+        height: 96px;
+        width: 84px;
     }
 }
 
@@ -1082,28 +1082,33 @@ article p a {
 
 
 #investors > article li h3,
-#advisors > article li h3 {
-    line-height: 120%;
-    margin-top: 10px;
-}
-
-#investors > article li h3,
 #investors > article li:nth-child(6) p {
     font-family: Quadon-Bold, Georgia, serif;
     font-weight: normal;
 }
 
 #advisors > article li h3 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
     font-size: 1.5em;
+    margin: 0;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li h3 {
-        font-size: 2.3em;
+        font-size: 1.15em;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li h3 {
+        left: 5px;
+        bottom: 5px;
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li h3 {
-        font-size: 2em;
+       font-size: .8em;
     }
 }
 
@@ -1113,6 +1118,8 @@ article p a {
 }
 
 #investors > article li h3 {
+    line-height: 120%;
+    margin-top: 10px;
     font-size: 3.3em;
 }
 @media screen and (max-width: 990px) {
@@ -1356,23 +1363,28 @@ article p a {
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
-    left: 55px;
+    left: 5px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(1) {
         margin-top: 35px;
-        left: 15px;
+        left: -15px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(1) {
-        left: -10px;
+        left: 60px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(1) {
+        left: 40px;
     }
 }
 
 #advisors > article li:nth-child(2) {
     z-index: 200;
-    left: 245px;
+    left: 175px;
     margin-top: 35px;
     -moz-transform: rotate(5deg);
     -ms-transform: rotate(5deg);
@@ -1382,25 +1394,26 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(2) {
-        margin-top: 70px;
-        left: 170px;
+        margin-top: 60px;
+        left: 120px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(2) {
-        left: 115px;
+        margin-top: 45px;
+        left: 173px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(2) {
         margin-top: 50px;
-        left: 95px;
+        left: 130px;
     }
 }
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
-    left: 455px;
+    left: 360px;
     margin-top: 20px;
     -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
@@ -1411,17 +1424,48 @@ article p a {
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(3) {
         margin-top: 55px;
-        left: 335px;
+        left: 245px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(3) {
-        left: 245px;
+        margin-top: 166px;
+        left: 54px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(3) {
-        left: 196px;
+        margin-top: 143px;
+        left: 35px;
+    }
+}
+
+#advisors > article li:nth-child(4) {
+    z-index: 200;
+    left: 530px;
+    margin-top: 5px;
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(4) {
+        margin-top: 40px;
+        left: 370px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(4) {
+        margin-top: 175px;
+        left: 168px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(4) {
+        margin-top: 157px;
+        left: 120px;
     }
 }
 
@@ -1440,17 +1484,17 @@ article p a {
 }
 
 #advisors > article > ul {
-    height: 376px;
+    height: 346px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
         margin-top: -30px;
-        height: 350px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article > ul {
-        height: 270px;
+        height: 330px;
     }
 }
 
