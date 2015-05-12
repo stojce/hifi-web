@@ -470,6 +470,11 @@ div#main > article h3 + p {
     font-family: proxima-nova, sans-serif;
     padding: 0;
 }
+@media screen and (max-width: 770px) {
+    #joblist {
+      font-size: .85em;
+    }
+}
 
 #joblist a:hover,
 #joblist a:focus {
