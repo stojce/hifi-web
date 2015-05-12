@@ -6,12 +6,12 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 <section id="particle-system"></section>
 <h1>Jobs</h1>
 <nav id="joblist">
-  <a href="#visual-designer"><span data-hover="Visual Designer">Visual Designer</span></a>
-  <a href="#devops-engineer"><span data-hover="DevOps Engineer">DevOps Engineer</span></a>
   <a href="#physics-engineer"><span data-hover="Physics Engineer">Physics Engineer</span></a>
   <a href="#3d-graphics-engineer"><span data-hover="3D Graphics Engineer">3D Graphics Engineer</span></a>
   <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
+  <a href="#devops-engineer"><span data-hover="DevOps Engineer">DevOps Engineer</span></a>
+  <a href="#visual-designer"><span data-hover="Visual Designer">Visual Designer</span></a>
   <a href="#javascript-content-developer"><span data-hover="Javascript Content Developer">Javascript Content Developer</span></a>
   <br />
   <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
@@ -19,193 +19,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
 
 <div role="main" id="main">
   <article class="no-border-bottom radius-border-top">
-    <p class="lead"><a name="visual-designer">Visual Designer</a></p>
-    <p>
-      High Fidelity is building a broad range of components to support great VR
-      experiences, ranging from an interface for Head-Mounted Displays to a web-based
-      UGC marketplace. We’re looking for an experienced designer to make these pieces
-      easy to understand, beautiful, and fast.
-    </p>
-    <p>
-      The lead visual designer will also create a range of marketing materials including
-      flyers, posters, banner ads, slide presentations, videos, emails and social media
-      pages along with company logos and iconography.The ideal candidate can give examples
-      of having influenced the trajectory and success of a product directly through their
-      design work.
-    </p>
-    <div class="requirements">
-      <h3>Skills / Requirements</h3>
-      <ul>
-        <li>
-          <span>
-            5+ years experience working with companies designing everything from print pieces
-            to interactive experiences
-          </span>
-        </li>
-        <li>
-          <span>
-            Portfolio demonstrating a range of styles arrived at by both research and intuition
-          </span>
-        </li>
-        <li>
-          <span>
-            Exemplary time management skills
-          </span>
-        </li>
-        <li>
-          <span>
-            Capable of working on multiple projects in parallel
-          </span>
-        </li>
-        <li>
-          <span>
-            Self-directed and comfortable working under varying degrees of ambiguity
-          </span>
-        </li>
-      </ul>
-      <h3>Professional Qualities</h3>
-      <ul>
-        <li>
-          <span>
-            Uncontainable excitement around VR and a tendency to bore other people at parties
-            talking about it
-          </span>
-        </li>
-      </ul>
-    </div>
-  </article>
-  <article class="no-border-bottom no-border-top">
-    <p class="lead"><a name="devops-engineer">DevOps Engineer</a></p>
-    <p>
-      We’re looking for a unique blend of talents to help us design, develop and provision
-      cross platform infrastructure for building, testing and running our open source virtual
-      reality platform. If you’re a fast learner, passionate about cloud environments and continuous
-      integration, and comfortable with cross platform application releasing, keep reading.
-    </p>
-    <div class="requirements">
-      <h3>Skills / Requirements</h3>
-      <ul>
-        <li>
-          <span>
-            AWS Cloud expertise (EC2, RDS, Route53, S3)
-          </span>
-        </li>
-        <li>
-          <span>
-            Demonstrable experience writing automated deployment and configuration
-            management scripts
-          </span>
-        </li>
-        <li>
-          <span>
-            Experience building C++/Qt code, and supporting multi-platform development
-            and release environments
-          </span>
-        </li>
-        <li>
-          <span>
-            Experience with Continuous Integration systems
-          </span>
-        </li>
-        <li>
-          <span>
-            Experience with application release packaging and distribution on Linux, OS X
-            and Windows
-          </span>
-        </li>
-        <li>
-          <span>
-            Strong Linux experience
-          </span>
-        </li>
-        <li>
-          <span>
-            Experience supporting Windows and OS X
-          </span>
-        </li>
-        <li>
-          <span>
-            Strong Python, Ruby on Rails and PHP skills
-          </span>
-        </li>
-        <li>
-          <span>
-            Understanding of C++ code, dynamic libraries, linking, compiling and other processes
-            associated with building and releasing binary GUI and console applications
-          </span>
-        </li>
-        <li>
-          <span>
-            Firm understanding of network concepts, and the ability to diagnose and troubleshoot
-            connectivity issues
-          </span>
-        </li>
-      </ul>
-      <h3>Bonus Points</h3>
-      <ul>
-        <li>
-          <span>
-            Ansible specific experience
-          </span>
-        </li>
-        <li>
-          <span>
-            Experience implementing and managing cross platform Jenkins build farms
-          </span>
-        </li>
-        <li>
-          <span>
-            Experience with database administration on both MySQL and PostgreSQL
-          </span>
-        </li>
-        <li>
-          <span>
-            Ubuntu specific skills
-          </span>
-        </li>
-      </ul>
-      <h3>Professional Qualities</h3>
-      <ul>
-        <li>
-          <span>
-            Fast learner
-          </span>
-        </li>
-        <li>
-          <span>
-            Constant researcher
-          </span>
-        </li>
-        <li>
-          <span>
-            Able to effectively deal with rapidly changing priorities and requirements
-          </span>
-        </li>
-        <li>
-          <span>
-            Self-motivated, and always knowing what needs to get done
-          </span>
-        </li>
-        <li>
-          <span>
-            Effective communicator, maintaining open communication with other DevOps team members
-            as well as development staff
-          </span>
-        </li>
-        <li>
-          <span>
-            Capable of translating development requirements into systems and infrastructure
-          </span>
-        </li>
-        <li>
-          <span>
-            Ruthless automator
-          </span>
-        </li>
-      </ul>
-    </div>
-  </article>
-  <article class="no-border-bottom no-border-top">
     <p class="lead"><a name="physics-engineer">Physics Engineer</a></p>
     <p>
       How do you simulate rigid body collisions in a VR environment containing
@@ -504,6 +317,193 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         <li>
           <span>
             Real-time cloth and hair simulation
+          </span>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="no-border-bottom no-border-top">
+    <p class="lead"><a name="devops-engineer">DevOps Engineer</a></p>
+    <p>
+      We’re looking for a unique blend of talents to help us design, develop and provision
+      cross platform infrastructure for building, testing and running our open source virtual
+      reality platform. If you’re a fast learner, passionate about cloud environments and continuous
+      integration, and comfortable with cross platform application releasing, keep reading.
+    </p>
+    <div class="requirements">
+      <h3>Skills / Requirements</h3>
+      <ul>
+        <li>
+          <span>
+            AWS Cloud expertise (EC2, RDS, Route53, S3)
+          </span>
+        </li>
+        <li>
+          <span>
+            Demonstrable experience writing automated deployment and configuration
+            management scripts
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience building C++/Qt code, and supporting multi-platform development
+            and release environments
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with Continuous Integration systems
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with application release packaging and distribution on Linux, OS X
+            and Windows
+          </span>
+        </li>
+        <li>
+          <span>
+            Strong Linux experience
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience supporting Windows and OS X
+          </span>
+        </li>
+        <li>
+          <span>
+            Strong Python, Ruby on Rails and PHP skills
+          </span>
+        </li>
+        <li>
+          <span>
+            Understanding of C++ code, dynamic libraries, linking, compiling and other processes
+            associated with building and releasing binary GUI and console applications
+          </span>
+        </li>
+        <li>
+          <span>
+            Firm understanding of network concepts, and the ability to diagnose and troubleshoot
+            connectivity issues
+          </span>
+        </li>
+      </ul>
+      <h3>Bonus Points</h3>
+      <ul>
+        <li>
+          <span>
+            Ansible specific experience
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience implementing and managing cross platform Jenkins build farms
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with database administration on both MySQL and PostgreSQL
+          </span>
+        </li>
+        <li>
+          <span>
+            Ubuntu specific skills
+          </span>
+        </li>
+      </ul>
+      <h3>Professional Qualities</h3>
+      <ul>
+        <li>
+          <span>
+            Fast learner
+          </span>
+        </li>
+        <li>
+          <span>
+            Constant researcher
+          </span>
+        </li>
+        <li>
+          <span>
+            Able to effectively deal with rapidly changing priorities and requirements
+          </span>
+        </li>
+        <li>
+          <span>
+            Self-motivated, and always knowing what needs to get done
+          </span>
+        </li>
+        <li>
+          <span>
+            Effective communicator, maintaining open communication with other DevOps team members
+            as well as development staff
+          </span>
+        </li>
+        <li>
+          <span>
+            Capable of translating development requirements into systems and infrastructure
+          </span>
+        </li>
+        <li>
+          <span>
+            Ruthless automator
+          </span>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="no-border-bottom no-border-top">
+    <p class="lead"><a name="visual-designer">Visual Designer</a></p>
+    <p>
+      High Fidelity is building a broad range of components to support great VR
+      experiences, ranging from an interface for Head-Mounted Displays to a web-based
+      UGC marketplace. We’re looking for an experienced designer to make these pieces
+      easy to understand, beautiful, and fast.
+    </p>
+    <p>
+      The lead visual designer will also create a range of marketing materials including
+      flyers, posters, banner ads, slide presentations, videos, emails and social media
+      pages along with company logos and iconography.The ideal candidate can give examples
+      of having influenced the trajectory and success of a product directly through their
+      design work.
+    </p>
+    <div class="requirements">
+      <h3>Skills / Requirements</h3>
+      <ul>
+        <li>
+          <span>
+            5+ years experience working with companies designing everything from print pieces
+            to interactive experiences
+          </span>
+        </li>
+        <li>
+          <span>
+            Portfolio demonstrating a range of styles arrived at by both research and intuition
+          </span>
+        </li>
+        <li>
+          <span>
+            Exemplary time management skills
+          </span>
+        </li>
+        <li>
+          <span>
+            Capable of working on multiple projects in parallel
+          </span>
+        </li>
+        <li>
+          <span>
+            Self-directed and comfortable working under varying degrees of ambiguity
+          </span>
+        </li>
+      </ul>
+      <h3>Professional Qualities</h3>
+      <ul>
+        <li>
+          <span>
+            Uncontainable excitement around VR and a tendency to bore other people at parties
+            talking about it
           </span>
         </li>
       </ul>
