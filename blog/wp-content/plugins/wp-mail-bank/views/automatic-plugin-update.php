@@ -58,6 +58,7 @@ else
 			</div>
 		</form>
 		<script type="text/javascript">
+		
 			function mail_bank_autoupdate(control)
 			{
 				var mail_bank_updates = jQuery(control).val();
@@ -65,6 +66,7 @@ else
 				{
 				});
 			}
+			
 		</script>
 	<?php
 	}

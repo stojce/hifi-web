@@ -3,13 +3,13 @@ switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
-		break;
+	break;
 	case "editor":
 		$user_role_permission = "publish_pages";
-		break;
+	break;
 	case "author":
 		$user_role_permission = "publish_posts";
-		break;
+	break;
 }
 
 if (!current_user_can($user_role_permission))
