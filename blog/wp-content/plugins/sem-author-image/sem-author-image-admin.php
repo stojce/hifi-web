@@ -6,14 +6,67 @@
  **/
 
 class author_image_admin {
-    /**
-     * constructor
-     */
+	/**
+	 * Plugin instance.
+	 *
+	 * @see get_instance()
+	 * @type object
+	 */
+	protected static $instance = NULL;
+
+	/**
+	 * URL to this plugin's directory.
+	 *
+	 * @type string
+	 */
+	public $plugin_url = '';
+
+	/**
+	 * Path to this plugin's directory.
+	 *
+	 * @type string
+	 */
+	public $plugin_path = '';
+
+	/**
+	 * Access this plugin’s working instance
+	 *
+	 * @wp-hook plugins_loaded
+	 * @return  object of this class
+	 */
+	public static function get_instance()
+	{
+		NULL === self::$instance and self::$instance = new self;
+
+		return self::$instance;
+	}
+
+
+	/**
+	 * Constructor.
+	 *
+	 *
+	 */
+
 	public function __construct() {
-        add_action('edit_user_profile', array($this, 'edit_image'));
+		$this->plugin_url    = plugins_url( '/', __FILE__ );
+		$this->plugin_path   = plugin_dir_path( __FILE__ );
+
+		$this->init();
+    }
+
+
+	/**
+	 * init()
+	 *
+	 * @return void
+	 **/
+	function init() {
+		// more stuff: register actions and filters
+		add_action('edit_user_profile', array($this, 'edit_image'));
         add_action('show_user_profile', array($this, 'edit_image'));
         add_action('profile_update', array($this, 'save_image'));
-    }
+	}
 
     /**
 	 * edit_image()
@@ -97,7 +150,7 @@ class author_image_admin {
       		. '<th><label for="sem_aboutme_page">About Me Page</label></th>'
       		. '<td>'
       		. '<input type="text" name="sem_aboutme_page" id="sem_aboutme_page" value="' . esc_attr( get_the_author_meta( 'sem_aboutme_page', $author_id ) ) .'" class="regular-text" /><br />'
-      	    . '<span class="description">Please enter an alternate About Me page for the image' . "'s url.</span>"
+      	    . '<span class="description">Please enter an alternate About Me page full url for the image' . "'s url.</span>"
       		. '</td>'
       		. '</tr>';
 
@@ -218,11 +271,11 @@ class author_image_admin {
 		delete_transient('author_image_cache');
 		delete_user_meta($user_ID, 'author_image_cache');
 
-	    update_user_meta( $user_ID, 'sem_aboutme_page', $_POST['sem_aboutme_page'] );
+		$about_url = sanitize_text_field($_POST['sem_aboutme_page']);
+		update_user_meta( $user_ID, 'sem_aboutme_page', $about_url );
 		
 		return $user_ID;
 	} # save_image()
 } # author_image_admin
 
-
-$author_image_admin = new author_image_admin();
+$author_image_admin = author_image_admin::get_instance();
