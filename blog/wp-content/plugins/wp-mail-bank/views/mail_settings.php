@@ -4,13 +4,13 @@ switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
-		break;
+	break;
 	case "editor":
 		$user_role_permission = "publish_pages";
-		break;
+	break;
 	case "author":
 		$user_role_permission = "publish_posts";
-		break;
+	break;
 }
 
 if (!current_user_can($user_role_permission))
@@ -239,6 +239,7 @@ else
 	}
 ?>
 <script>
+
 jQuery(document).ready(function()
 {
 	backup_rdl();
@@ -246,6 +247,7 @@ jQuery(document).ready(function()
 	smtp_username();
 
 });
+
 jQuery("#ux_frm_email").validate
 ({	
 	rules:
@@ -337,14 +339,16 @@ jQuery("#ux_frm_email").validate
 		});
 	}
 });
+
 function message_close()
 {
 	jQuery("#message").css("display", "none");
 }
- function backup_rdl ()
- {
- 	var value = jQuery("#ux_rdl_on").prop("checked");
- 	if(value == false)
+
+function backup_rdl ()
+{
+	var value = jQuery("#ux_rdl_on").prop("checked");
+	if(value == false)
 	{
 		jQuery("#ux_smtp_host").css("display","block");
 	}
@@ -352,8 +356,9 @@ function message_close()
 	{
 		jQuery("#ux_smtp_host").css("display","none");
 	}
- }
- function show_return_path()
+}
+
+function show_return_path()
 {
 	if(jQuery("#ux_chk_return_path").prop("checked") == "0")
 	{
@@ -364,10 +369,11 @@ function message_close()
 		jQuery("#return_path").css("display","none");
 	}
 }
- function smtp_username ()
- {
- 	var value = jQuery("#ux_rdl_authentication_use").prop("checked");
- 	if(value == false)
+
+function smtp_username ()
+{
+	var value = jQuery("#ux_rdl_authentication_use").prop("checked");
+	if(value == false)
 	{
 		jQuery("#ux_smtp").css("display","none");
 	}
@@ -375,5 +381,5 @@ function message_close()
 	{
 		jQuery("#ux_smtp").css("display","block");
 	}
- }
+}
 </script>

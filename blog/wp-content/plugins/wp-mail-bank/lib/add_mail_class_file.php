@@ -3,13 +3,13 @@ switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
-		break;
+	break;
 	case "editor":
 		$user_role_permission = "publish_pages";
-		break;
+	break;
 	case "author":
 		$user_role_permission = "publish_posts";
-		break;
+	break;
 }
 if (!current_user_can($user_role_permission))
 {
@@ -17,17 +17,21 @@ if (!current_user_can($user_role_permission))
 }
 else
 {
-	class save_data
+	if(!class_exists("save_data"))
 	{
-		function insert_data($tbl, $data)
+		class save_data
 		{
-			global $wpdb;
-			$wpdb->insert($tbl,$data);
-		}
-		function update_data($tbl,$data,$where)
-		{
-			global $wpdb;
-			$wpdb->update($tbl,$data,$where);
+			function insert_data($tbl, $data)
+			{
+				global $wpdb;
+				$wpdb->insert($tbl,$data);
+			}
+			
+			function update_data($tbl,$data,$where)
+			{
+				global $wpdb;
+				$wpdb->update($tbl,$data,$where);
+			}
 		}
 	}
 	if(isset($_REQUEST["param"]))

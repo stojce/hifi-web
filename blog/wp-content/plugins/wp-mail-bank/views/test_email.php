@@ -3,13 +3,13 @@ switch($role)
 {
 	case "administrator":
 		$user_role_permission = "manage_options";
-		break;
+	break;
 	case "editor":
 		$user_role_permission = "publish_pages";
-		break;
+	break;
 	case "author":
 		$user_role_permission = "publish_posts";
-		break;
+	break;
 }
 
 if (!current_user_can($user_role_permission))
@@ -20,7 +20,7 @@ else
 {
 	$admin_email = get_option( 'admin_email' );
 	?>
-	<form id="ux_frm_test_email" class="layout-form" style="max-width:1000px";>
+	<form id="ux_frm_test_email" class="layout-form" style="max-width:1000px;">
 		<div class="fluid-layout">
 			<div id="ux_test_mail" style="display: block">
 				<div class="layout-span12 responsive">
