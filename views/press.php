@@ -56,6 +56,13 @@
     </section>
     <div class="container">
         <div>
+            <a href="http://www.cctv-america.com/2015/05/08/virtual-reality-startups-take-users-to-another-dimension" target="_blank">
+                <div>5/8/2015</div>
+                <div>Virtual reality startups take users to another dimension</div>
+                <div>CCTV America</div>
+            </a>
+        </div>
+        <div>
             <a href="http://techcrunch.com/2015/02/25/high-fidelity-raises-11m-to-build-deployable-virtual-worlds/" target="_blank">
                 <div>2/26/2015</div>
                 <div>High Fidelity Raises $11M To Build Deployable Virtual Worlds</div>
