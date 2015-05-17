@@ -225,6 +225,17 @@ article h3 {
     font-size: 1.2em;
     border-radius: 5px;
 }
+#metaverse {
+    margin-top: -2em;
+    transform: translateY(1.8em);
+    border: 0 none;
+    color: #ffffff;
+    background: none #0f9abb;
+    padding: .4em 1.1em;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
 
 #placenames.expanded > article:first-child ul + button {
     display: none;
