@@ -1061,34 +1061,34 @@ article p a {
 }
 
 #advisors > article li {
-    height: 182px;
+    height: 261px;
     padding: 10px;
-    width: 160px;
+    width: 218px;
     font-size: 11px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li {
-        height: 135px;
-        padding: 10px;
-        width: 119px;
+        height: 183px;
+        width: 153px;
+        padding: 7px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li {
-        height: 120px;
+        height: 128px;
         padding: 5px;
-        width: 105px;
+        width: 107px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li {
-        height: 96px;
-        width: 84px;
+        height: 102px;
+        width: 86px;
     }
 }
 
 #advisors > article li img {
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -1101,25 +1101,28 @@ article p a {
 #advisors > article li h3 {
     position: absolute;
     left: 10px;
-    bottom: 10px;
-    font-size: 1.5em;
+    bottom: 22px;
+    font-size: 1.85em;
     margin: 0;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li h3 {
-        font-size: 1.15em;
+        font-size: 1.3em;
+        left: 7px;
+        bottom: 15px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li h3 {
+        font-size: .9em;
         left: 5px;
-        bottom: 5px;
-        font-size: 1em;
+        bottom: 11px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li h3 {
-       font-size: .8em;
+        font-size: .7em;
+        bottom: 9px;
     }
 }
 
@@ -1374,58 +1377,58 @@ article p a {
 
 #advisors > article li:nth-child(1) {
     z-index: 199;
-    left: 5px;
+    left: 16px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(1) {
-        margin-top: 35px;
-        left: -15px;
+        left: 11px;
+        margin-top: 26px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(1) {
-        left: 60px;
+        left: 8px;
+        margin-top: 46px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(1) {
-        left: 40px;
+        left: 6px;
     }
 }
 
 #advisors > article li:nth-child(2) {
     z-index: 200;
-    left: 175px;
-    margin-top: 35px;
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
+    left: 223px;
+    margin-top: 38px;
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(2) {
-        margin-top: 60px;
-        left: 120px;
+        left: 156px;
+        margin-top: 43px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(2) {
-        margin-top: 45px;
-        left: 173px;
+        left: 109px;
+        margin-top: 63px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(2) {
-        margin-top: 50px;
-        left: 130px;
+        left: 87px;
     }
 }
 
 #advisors > article li:nth-child(3) {
     z-index: 199;
-    left: 360px;
-    margin-top: 20px;
+    left: 450px;
+    margin-top: 16px;
     -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
     -o-transform: rotate(-2deg);
@@ -1434,27 +1437,26 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(3) {
-        margin-top: 55px;
-        left: 245px;
+        left: 315px;
+        margin-top: 36px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(3) {
-        margin-top: 166px;
-        left: 54px;
+        left: 221px;
+        margin-top: 56px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(3) {
-        margin-top: 143px;
-        left: 35px;
+        left: 177px;
     }
 }
 
 #advisors > article li:nth-child(4) {
     z-index: 200;
-    left: 530px;
-    margin-top: 5px;
+    left: 97px;
+    margin-top: 292px;
     -moz-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     -o-transform: rotate(2deg);
@@ -1463,20 +1465,49 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #advisors > article li:nth-child(4) {
-        margin-top: 40px;
-        left: 370px;
+        left: 76px;
+        margin-top: 224px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article li:nth-child(4) {
-        margin-top: 175px;
-        left: 168px;
+        left: 53px;
+        margin-top: 190px;
     }
 }
 @media screen and (max-width: 360px) {
     #advisors > article li:nth-child(4) {
-        margin-top: 157px;
-        left: 120px;
+        left: 42px;
+        margin-top: 167px;
+    }
+}
+
+#advisors > article li:nth-child(5) {
+    z-index: 200;
+    left: 333px;
+    margin-top: 298px;
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+@media screen and (max-width: 770px) {
+    #advisors > article li:nth-child(5) {
+        left: 242px;
+        margin-top: 227px;
+    }
+}
+@media screen and (max-width: 530px) {
+    #advisors > article li:nth-child(5) {
+        left: 169px;
+        margin-top: 193px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #advisors > article li:nth-child(5) {
+        left: 135px;
+        margin-top: 170px;
     }
 }
 
@@ -1495,17 +1526,17 @@ article p a {
 }
 
 #advisors > article > ul {
-    height: 346px;
+    height: 715px;
 }
 @media screen and (max-width: 770px) {
     #advisors > article > ul {
         margin-top: -30px;
-        height: 300px;
+        height: 500px;
     }
 }
 @media screen and (max-width: 530px) {
     #advisors > article > ul {
-        height: 330px;
+        height: 350px;
     }
 }
 

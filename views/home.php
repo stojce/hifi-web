@@ -319,6 +319,14 @@
             </figure>
           </a>
         </li>
+        <li>
+          <a target="_blank" href="https://comm.stanford.edu/faculty-bailenson/">
+            <figure>
+              <img src="img/advisors/jeremy_bailenson.png" alt="Jeremy Bailenson" />
+              <h3>Jeremy Bailenson</h3>
+            </figure>
+          </a>
+        </li>
       </ul>
     </article>
   </section>
