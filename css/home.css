@@ -1121,7 +1121,7 @@ article p a {
 }
 @media screen and (max-width: 360px) {
     #advisors > article li h3 {
-       font-size: .7em;
+        font-size: .7em;
         bottom: 9px;
     }
 }
