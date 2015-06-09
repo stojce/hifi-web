@@ -56,6 +56,13 @@
     </section>
     <div class="container">
         <div>
+            <a href="http://www.technologyreview.com/emtech/digital/15/video/watch/philip-rosedale-high-fidelity-gets-virtually-real/" target="_blank">
+                <div>6/1/2015</div>
+                <div>The Quest to Put More Reality in Virtual Reality</div>
+                <div>MIT Technology Review</div>
+            </a>
+        </div>
+        <div>
             <a href="http://www.cctv-america.com/2015/05/08/virtual-reality-startups-take-users-to-another-dimension" target="_blank">
                 <div>5/8/2015</div>
                 <div>Virtual reality startups take users to another dimension</div>
