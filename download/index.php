@@ -23,13 +23,19 @@
     </nav>
 </header>
 <div id="container">
+	<div id="changelog-container">
+		<div id="changelog-close"></div>
+		<div id="changelog-title">Changelog</div>
+		<div id="changelog-contents">
+		</div>
+	</div>
     <div id="inner-container">
         <div id="interface">
-            <div class="interface">
+            <div class="interface" id="interface-logo">
                 <h2>Interface</h2>
                 <a id="interface-logo"></a>
             </div>
-            <div class="interface">
+            <div class="interface" id="interface-details">
                 <div  class="choose-os-container">
                     <div id="os-icon">
                         <a class="os-icon os-icon-mac selected"></a>
@@ -48,10 +54,11 @@
                     <div id="choose-build-version-interface"></div>
                     <p class="build-time"></p>
                 </div>
-                <div  class="download-container">
+                <div class="download-container">
                     <a class="download">Download</a>
                 </div>
                 <div class="release-notes"></div>
+                <div id="changelog-link">Changelog</div>
             </div>
         </div>
         <div id="stackmanager">

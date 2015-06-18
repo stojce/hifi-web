@@ -15,6 +15,81 @@ header {
     margin: 0 auto;
 }
 
+#changelog-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40%;
+	right: 0;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 1000;
+	-webkit-box-shadow: -4px 3px 7px -1px rgba(0,0,0,0.42);
+	-moz-box-shadow: -4px 3px 7px -1px rgba(0,0,0,0.42);
+	box-shadow: -4px 3px 7px -1px rgba(0,0,0,0.42);
+	display: none;
+}
+
+#changelog-close {
+	background: url(../images/close-changelog.svg) no-repeat;
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+	float: right;
+	margin: 10px 30px;
+	cursor: pointer;
+}
+
+#changelog-title {
+	margin: 15px 50px;
+	float: left;
+	color: #0094B8;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#changelog-contents {
+	position: absolute;
+	  top: 80px;
+	  left: 35px;
+	  right: 30px;
+	  bottom: 30px;
+	  overflow: scroll;
+}
+
+.changelog-item {
+	margin-top: 15px;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 5px 15px;
+}
+
+.changelog-item:nth-child(even) {
+	background-color: rgba(0,0,0,0.05);
+}
+
+.changelog-item h1 {
+	color: #0094B8;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.changelog-item h2 {
+	color: #0094B8;
+	font-size: 14px;
+	margin: 4px 0 8px 0;
+}
+
+.changelog-item ul {
+	list-style-type: none;
+}
+
+.no-margin {
+	border: none !important;
+}
+
 header #navbar a.logo {
     background: url(../images/hifi-logo-text-lightgrey.svg);
     width: 150px;
@@ -279,6 +354,13 @@ div.choose-os-container {
     line-height: 35px;
 }
 
+#changelog-link {
+	float: left;
+	margin-bottom: 10px;
+	color: #0094B8;
+	font-weight: bold;
+	cursor: pointer;
+}
 .release-notes ul {
     padding-left: 15px;
     font-size: 10px;

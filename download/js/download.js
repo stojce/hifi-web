@@ -11,6 +11,21 @@ var download = {
         if (typeof Typekit != 'undefined') {
             Typekit.load();
         }
+        
+        $('#changelog-link').bind('click', function() {
+        	$('#changelog-container').show();
+        	$('#stackmanager').hide();
+        	$('#interface-details').hide();
+        	$('#interface').addClass("no-margin");
+        });
+        
+        $('#changelog-close').bind('click', function() {
+        	$('#changelog-container').hide();
+        	$('#stackmanager').show();
+        	$('#interface-details').show();
+        	$('#interface').removeClass("no-margin");
+        });
+        
         download.getBuilds(function() {
             download.initDropdowns();
             download.suggestPackage();
@@ -24,6 +39,7 @@ var download = {
             $('.interface .os-icon-' + $(this).val()).addClass('selected');
             $('.interface .choose-os-container p').text(download.os_message[$(this).val()]);
             download.renderBuild('interface', $(this).val());
+            download.renderChangeLog('interface', $(this).val());
             $(this).trigger('chosen:updated');
         }).chosen();
 
@@ -102,6 +118,25 @@ var download = {
                 $('#' + project).find('.release-notes').html("<b>Release notes</b>" + builds[$(this).val()]['notes']);
             }
         });
+    },
+    
+    renderChangeLog: function(project, platform) {
+    	$('#changelog-contents').empty();
+    	var builds = download.projectsData[project][platform];
+    	for (var index in builds) {
+    		var html = '<div class="changelog-item">';
+    		html += '<h1>' + builds[index]['version'] + ' (' + builds[index]['time'] + ')</h1>';
+    		if (builds[index]["pull_request"]) {
+    			html += '<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/' 
+    			+ builds[index]["pull_request"] + '">' + builds[index]["pull_request"] + '</a></h2>';
+    		}
+    		if (builds[index]['notes'] != null) {
+                html += builds[index]['notes'];
+            }
+            html += '</div>';
+            $('#changelog-contents').append(html);
+            html = "";
+    	}
     },
 
     suggestPackage: function() {
