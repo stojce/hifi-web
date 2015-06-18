@@ -23,13 +23,91 @@
     </nav>
 </header>
 <div id="container">
+	<div id="changelog-container">
+		<div id="changelog-close"></div>
+		<div id="changelog-title">Changelog</div>
+		<div id="changelog-contents">
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+						<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+						<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+			<div class="changelog-item">
+				<h1>2671 (June 18 at 10:22 PDT)</h1>
+				<h2>From Pull Request: <a href="https://github.com/highfidelity/hifi/pull/5157">5157</a></h2>
+				<ul>
+					<li>Fix line data handling</li>
+					<li>Fix bug in octree packer for QVector<vec3> and add support for QLists in VariantMapToScriptValue.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
     <div id="inner-container">
         <div id="interface">
-            <div class="interface">
+            <div class="interface" id="interface-logo">
                 <h2>Interface</h2>
                 <a id="interface-logo"></a>
             </div>
-            <div class="interface">
+            <div class="interface" id="interface-details">
                 <div  class="choose-os-container">
                     <div id="os-icon">
                         <a class="os-icon os-icon-mac selected"></a>
@@ -48,10 +126,11 @@
                     <div id="choose-build-version-interface"></div>
                     <p class="build-time"></p>
                 </div>
-                <div  class="download-container">
+                <div class="download-container">
                     <a class="download">Download</a>
                 </div>
                 <div class="release-notes"></div>
+                <div id="changelog-link">Changelog</div>
             </div>
         </div>
         <div id="stackmanager">
