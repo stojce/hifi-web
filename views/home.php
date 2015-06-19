@@ -278,9 +278,10 @@
           <h3>Linden Lab</h3>
         </li>
         <li>
-          <p>And an intriguing assortment of forward-looking angels.</p>
+          <h3>HTC</h3>
         </li>
       </ul>
+      <p>And an intriguing assortment of forward-looking angels.</p>
     </article>
   </section>
   <section id="advisors">
