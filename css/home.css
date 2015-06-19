@@ -1039,9 +1039,8 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #investors > article li {
-        top: 35px;
         height: 95px;
-        padding: 19px 33px;
+        padding: 19px 37px 19px 20px;
         width: 99px;
     }
 }
@@ -1338,7 +1337,7 @@ article p a {
 @media screen and (max-width: 770px) {
     #investors > article li:nth-child(6) {
         left: 320px;
-        margin-top: 140px;
+        margin-top: 122px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -1525,12 +1524,12 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #investors > article > ul {
-        height: 350px;
+        height: 290px;
     }
 }
 @media screen and (max-width: 530px) {
     #investors > article > ul {
-        height: 230px;
+        height: 210px;
     }
 }
 
@@ -1555,12 +1554,13 @@ article p a {
 }
 @media screen and (max-width: 770px) {
     #investors > article > h2 {
-        margin-bottom: 20px;
+        padding-top: 2em;
+        margin-bottom: .5em;
     }
 }
 @media screen and (max-width: 530px) {
     #investors > article > h2 {
-        margin-bottom: 0;
+        padding-top: 0;
     }
 }
 
