@@ -135,7 +135,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         <li>
           <span>
             Deep knowledge of rendering systems, with experience working on multiple pieces 
-            of high performance visual systems--e.g., shaders, animation, lighting, particle 
+            of high performance visual systems&mdash;e.g., shaders, animation, lighting, particle 
             systems, and/or procedural routines
           </span>
         </li>
