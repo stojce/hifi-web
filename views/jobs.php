@@ -11,7 +11,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
   <a href="#cpp-generalist"><span data-hover="C++ Generalist">C++ Generalist</span></a>
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
   <a href="#devops-engineer"><span data-hover="DevOps Engineer">DevOps Engineer</span></a>
-  <a href="#visual-designer"><span data-hover="Visual Designer">Visual Designer</span></a>
   <a href="#javascript-content-developer"><span data-hover="Javascript Content Developer">Javascript Content Developer</span></a>
   <br />
   <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
@@ -136,7 +135,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         <li>
           <span>
             Deep knowledge of rendering systems, with experience working on multiple pieces 
-            of high performance visual systems—e.g., shaders, animation, lighting, particle 
+            of high performance visual systems--e.g., shaders, animation, lighting, particle 
             systems, and/or procedural routines
           </span>
         </li>
@@ -448,62 +447,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         <li>
           <span>
             Ruthless automator
-          </span>
-        </li>
-      </ul>
-    </div>
-  </article>
-  <article class="no-border-bottom no-border-top">
-    <p class="lead"><a name="visual-designer">Visual Designer</a></p>
-    <p>
-      High Fidelity is building a broad range of components to support great VR
-      experiences, ranging from an interface for Head-Mounted Displays to a web-based
-      UGC marketplace. We’re looking for an experienced designer to make these pieces
-      easy to understand, beautiful, and fast.
-    </p>
-    <p>
-      The lead visual designer will also create a range of marketing materials including
-      flyers, posters, banner ads, slide presentations, videos, emails and social media
-      pages along with company logos and iconography.The ideal candidate can give examples
-      of having influenced the trajectory and success of a product directly through their
-      design work.
-    </p>
-    <div class="requirements">
-      <h3>Skills / Requirements</h3>
-      <ul>
-        <li>
-          <span>
-            5+ years experience working with companies designing everything from print pieces
-            to interactive experiences
-          </span>
-        </li>
-        <li>
-          <span>
-            Portfolio demonstrating a range of styles arrived at by both research and intuition
-          </span>
-        </li>
-        <li>
-          <span>
-            Exemplary time management skills
-          </span>
-        </li>
-        <li>
-          <span>
-            Capable of working on multiple projects in parallel
-          </span>
-        </li>
-        <li>
-          <span>
-            Self-directed and comfortable working under varying degrees of ambiguity
-          </span>
-        </li>
-      </ul>
-      <h3>Professional Qualities</h3>
-      <ul>
-        <li>
-          <span>
-            Uncontainable excitement around VR and a tendency to bore other people at parties
-            talking about it
           </span>
         </li>
       </ul>
