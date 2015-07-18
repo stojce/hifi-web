@@ -109,8 +109,8 @@
         </li>
         <li>
           <figure>
-            <img src="img/team/freddy.gif" class="img-circle" alt="Freddy Heiberger" />
-            <h3>Freddy Heiberger</h3>
+            <img src="img/team/freidrica.gif" class="img-circle" alt="Freidrica Heiberger" />
+            <h3>Freidrica Heiberger</h3>
             <p>
               Thinks about audio design, economic 
               models, and what's for dinner. Encased 
