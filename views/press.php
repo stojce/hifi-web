@@ -55,6 +55,14 @@
         </ul>
     </section>
     <div class="container">
+
+        <div>
+            <a href="http://voicesofvr.com/173-philip-rosedale-on-creating-the-metaverse-by-linking-virtual-worlds-together-with-high-fidelity" target="_blank">
+                <div>7/22/2015</div>
+                <div>Philip Rosedale on creating the metaverse by linking virtual worlds together with High Fidelity</div>
+                <div>Voices of VR Podcast</div>
+            </a>
+        </div>
         <div>
             <a href="http://www.technologyreview.com/emtech/digital/15/video/watch/philip-rosedale-high-fidelity-gets-virtually-real/" target="_blank">
                 <div>6/1/2015</div>
