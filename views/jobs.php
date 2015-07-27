@@ -17,7 +17,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
   <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
 </nav>
 
-<div role="main" id="main" >
+<div role="main" id="main">
   <article class="radius-border-top no-border-bottom">
     <p class="lead"><a name="physics-engineer">Physics Engineer</a></p>
     <p>
