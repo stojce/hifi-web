@@ -12,12 +12,13 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
   <a href="#character-animation-engineer"><span data-hover="Character Animation Engineer">Character Animation Engineer</span></a>
   <a href="#devops-engineer"><span data-hover="DevOps Engineer">DevOps Engineer</span></a>
   <a href="#javascript-content-developer"><span data-hover="Javascript Content Developer">Javascript Content Developer</span></a>
+  <a href="#technical-writer"><span data-hover="Technical Writer">Technical Writer</span></a>
   <br />
   <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
 </nav>
 
 <div role="main" id="main">
-  <article class="no-border-bottom radius-border-top">
+  <article class="radius-border-top no-border-bottom">
     <p class="lead"><a name="physics-engineer">Physics Engineer</a></p>
     <p>
       How do you simulate rigid body collisions in a VR environment containing
@@ -119,7 +120,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     <p class="lead"><a name="3d-graphics-engineer">3D Graphics Engineer</a></p>
     <p>
       We're looking for a 3D graphics engineer to help build our virtual 
-      world’s 3D graphics engine, working closely with us to create something 
+      world's 3D graphics engine, working closely with us to create something 
       astonishing. We are creating an open source rendering engine that can 
       display a very large user-created environment at high FPS, using data 
       streaming at low latency from multiple simultaneous servers.
@@ -447,6 +448,67 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
         <li>
           <span>
             Ruthless automator
+          </span>
+        </li>
+      </ul>
+    </div>
+  </article>
+  <article class="no-border-bottom no-border-top">
+    <p class="lead"><a name="technical-writer">Technical Writer</a></p>
+    <p>
+      High Fidelity seeks a master technical writer to develop and organize its online documentation, targeting a
+      broad range of audiences including casual end users, content developers, and programmers.
+    </p>
+    <div class="requirements">
+      <h3>Skills / Requirements</h3>
+      <ul>
+        <li>
+          <span>
+            Strong technical understanding of Javascript
+          </span>
+        </li>
+        <li>
+          <span>
+            Ability to understand and explain concepts like scripting and technical architecture through prose and
+            diagrams
+          </span>
+        </li>
+        <li>
+          <span>
+            Ability to gear content to both technical and non-technical audiences
+          </span>
+        </li>
+        <li>
+          <span>
+            Ability to tame the beast, organizing an extremely broad body of content in a navigable format 
+          </span>
+        </li>
+      </ul>
+        <h3>Bonus Points</h3>
+      <ul>
+        <li>
+          <span>
+            Experience with gaming technology
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience documenting Git-based open source software
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with tools and processes to capture user community edit suggestions
+          </span>
+        </li>
+        <li>
+          <span>
+            C++ literacy
+          </span>
+        </li>
+        <li>
+          <span>
+            Experience with tools and processes to auto-generate documentation from source code
           </span>
         </li>
       </ul>
