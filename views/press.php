@@ -55,7 +55,13 @@
         </ul>
     </section>
     <div class="container">
-
+        <div>
+            <a href="http://recode.net/2015/07/31/in-the-shadow-of-second-life-virtual-reality-startups-say-this-time-itll-work-really/" target="_blank">
+                <div>7/31/2015</div>
+                <div>Welcome to the Metaverse</div>
+                <div>Re/code</div>
+            </a>
+        </div>
         <div>
             <a href="http://voicesofvr.com/173-philip-rosedale-on-creating-the-metaverse-by-linking-virtual-worlds-together-with-high-fidelity" target="_blank">
                 <div>7/22/2015</div>
