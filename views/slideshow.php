@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: stojce
- * Date: 8/21/15
- * Time: 23:18
- */
+$json = trim(str_replace(PHP_EOL, '', View::read('slideshowData')));
+?>
+<div class="galleria galleria-theme-fullscreen">
+</div>
+<script>
+    var slideData = <?php echo "'" , $json , "';"; ?>
+
+</script>
