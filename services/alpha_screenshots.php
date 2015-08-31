@@ -72,5 +72,3 @@ if (!empty($images)) {
     fwrite($fh, json_encode($images));
     fclose($fh);
 }
-
-var_dump($images);
