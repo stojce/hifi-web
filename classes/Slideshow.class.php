@@ -1,15 +1,11 @@
 <?php
 
-use Guzzle\Plugin\Cookie\Cookie;
-use Guzzle\Plugin\Cookie\CookieJar\ArrayCookieJar;
-
 class Slideshow
 {
     public static function getSlideshowData() {
-        $filepath = "media/slideshow.json";
         $json = '';
-        if (file_exists($filepath)) {
-            $json = file_get_contents($filepath );
+        if (file_exists(SCREENSHOT_FILE_PATH)) {
+            $json = file_get_contents(SCREENSHOT_FILE_PATH);
         }
 
         return $json;

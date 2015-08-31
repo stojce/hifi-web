@@ -21,7 +21,8 @@ var slideshow = {
       fullscreenDoubleTap: true,
       showInfo: false,
       dataSource: JSON.parse(slideData),
-      autoplay: 7000
+      autoplay: 7000,
+      dummy: 'img/dummy_slide.png'
     });
   },
 
