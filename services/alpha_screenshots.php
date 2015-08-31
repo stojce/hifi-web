@@ -20,7 +20,7 @@ function getPosts($fromId) {
 }
 
 function parsePosts($posts, $max_count) {
-    $images = [];
+    $images = array();
     if (!empty($posts) && !empty($posts['post_stream']) && !empty($posts['post_stream']['posts'])) {
 
         $posts = array_reverse($posts['post_stream']['posts']);
@@ -46,7 +46,7 @@ function parsePosts($posts, $max_count) {
     return $images;
 }
 
-$images = [];
+$images = array();
 $imgsCount = SCREENSHOTS_COUNT;
 $last_post_id = PHP_INT_MAX;
 
