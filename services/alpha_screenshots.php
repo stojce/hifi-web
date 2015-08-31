@@ -12,11 +12,6 @@ function getPosts($fromId) {
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 
-//    // TMP
-//    $cookies = "_forum_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTQzZGMyNDIwODg1ZjE4YTY3YWI1MzNjYWQ1MGRiNzE1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTdVZ1B2UXo0dHBHc0RDcTNqVDBBK2p0SDBEZzY3RUdXMDdLa0I2UERuTzA9BjsARg%3D%3D--d35114770e39c51afad408f6a946619c215dcc9c; _t=624e3036804b91cb0c0caf85f8f2051d";
-//    curl_setopt($ch, CURLOPT_COOKIE, $cookies);
-//    //
-
     $result = curl_exec($ch);
     curl_close($ch);
 
@@ -40,9 +35,6 @@ function parsePosts($posts, $max_count) {
                 $imClass = new stdClass;
                 $imClass->image = DISCOURSE_URL . $matches[2];
                 $images[] =  $imClass;
-                echo " - has image\n";
-            } else {
-                echo " - NO image\n";
             }
 
             if (count($images) >= $max_count) {
