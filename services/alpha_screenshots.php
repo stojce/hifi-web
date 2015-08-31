@@ -25,9 +25,6 @@ function parsePosts($posts, $max_count) {
 
         $posts = array_reverse($posts['post_stream']['posts']);
         foreach($posts as $post) {
-
-            echo $post['post_number'];
-
             $imgsrc_regex = '#<\s*img [^\>]*src\s*=\s*(["\'])(.*?)\1#im';
             preg_match($imgsrc_regex, $post['cooked'], $matches);
 
