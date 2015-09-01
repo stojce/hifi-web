@@ -41,8 +41,8 @@ define('DISCOURSE_API_PADDING', 15);
 define('SCREENSHOTS_URL', 'https://alphas.highfidelity.io/t/random-picture-thread/244/%u.json?api_key=%s&api_username=%s');
 define('DISCOURSE_URL', 'https://alphas.highfidelity.io/');
 define('SCREENSHOT_FILE_PATH', dirname(__FILE__) . "/media/slideshow.json");
-define('DISCOURSE_API_KEY', 'a6a3bd60c49c77d9cd63417f2463f2d1f6e926366c886948870eaddf438b9d7b');
-define('DISCOURSE_API_USERNAME', 'highfidelity');
+define('DISCOURSE_API_KEY', 'api_key');
+define('DISCOURSE_API_USERNAME', 'api_username');
 
 require_once('vendor/autoload.php');
 require_once('functions.php');
