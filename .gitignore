@@ -9,3 +9,4 @@ blog/wp-config.php
 blog/db-config.php
 /tmp
 .idea
+slideshow.json

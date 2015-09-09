@@ -35,5 +35,15 @@ defineOnce('MC_ALPHA_SUBSCRIBE_LIST_ID', '56eb53e74a');
 
 defineOnce('VIMEO_NICKNAME', 'highfidelityinc');
 
+// screenshots settings
+define('SCREENSHOTS_COUNT', 30);
+define('DISCOURSE_API_PADDING', 15);
+define('SCREENSHOTS_URL', 'https://alphas.highfidelity.io/t/random-picture-thread/244/%u.json?api_key=%s&api_username=%s');
+define('DISCOURSE_URL', 'https://alphas.highfidelity.io/');
+define('SCREENSHOT_FILE_PATH', dirname(__FILE__) . "/media/slideshow.json");
+
+defineOnce('DISCOURSE_API_KEY', 'api_key');
+defineOnce('DISCOURSE_API_USERNAME', 'api_username');
+
 require_once('vendor/autoload.php');
 require_once('functions.php');
