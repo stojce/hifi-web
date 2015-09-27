@@ -2,8 +2,8 @@
  * HighFidelity's common styling
  *
  * This file is assumed to be included on every HF page when using the
- * common layout. Each shared rule on most pages should live here. 
- * 
+ * common layout. Each shared rule on most pages should live here.
+ *
  * Page-specific styling rules should be at their own styling file(s).
  *
  */
@@ -22,6 +22,14 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-style: normal;
     font-weight: normal;
+}
+
+a {
+    outline: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 #main ol span,
@@ -119,7 +127,7 @@ em {
 div#main > article li {
     font-size: 0.9em;
     line-height: 1.3em;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
 }
 
 #main > article a {
@@ -157,26 +165,26 @@ div#main > article li {
     #main > article {
         font-size: 1.65em;
     }
-    
+
     #container {
         width: 760px;
     }
-    
+
     #main > article p.lead {
         font-size: 42px;
         line-height: 1.2em;
     }
-    
+
     #main > article h2 {
         font-size: 1.5em;
         margin-top: 15px;
     }
-    
+
     #main > article p {
         margin-bottom: 20px;
         line-height: 1.4em;
     }
-    
+
     #main > article ol,
     #main > article ul {
         font-size: 1em;
@@ -187,31 +195,31 @@ div#main > article li {
     body {
         background-size: contain;
     }
-    
+
     header {
         font-size: .8em;
     }
-    
+
     #main > article {
         font-size: 1.2em;
     }
-    
+
     #main > article h2 {
         font-size: 1.3em;
         margin-top: 12px;
         margin-bottom: 10px;
     }
-    
+
     #main > article p.lead {
         font-size: 30px;
         line-height: 1.3em;
     }
-    
+
     #main > article p {
         margin-bottom: 15px;
         font-size: 1em;
     }
-    
+
     #container {
         width: calc(100% - 62px);
     }
@@ -221,26 +229,26 @@ div#main > article li {
     header {
         font-size: .7em;
     }
-    
+
     #main > article {
         padding: 10px 25px;
         font-size: 1em;
     }
-    
+
     #main > article h2 {
         font-size: 1.1em;
         margin-top: 10px;
         line-height: 1em;
     }
-    
+
     #main > article p.lead {
         font-size: 22px;
     }
-    
+
     #main > article p {
         margin-bottom: 10px;
     }
-    
+
     #container {
         width: calc(100% - 62px);
     }
@@ -258,7 +266,7 @@ div#main > article li {
     #container > * {
         display: none;
     }
-    
+
     #container,
     html.skrollr.dancer .hifi-container {
         margin: auto;
@@ -270,7 +278,7 @@ div#main > article li {
         background-position: center;
         color: rgb(54, 152, 191);
     }
-    
+
     #container:after {
         position: absolute;
         content: 'Oops, looks like your screen is too small - try a larger device.';

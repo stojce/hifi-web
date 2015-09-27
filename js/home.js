@@ -8,6 +8,7 @@ var home = {
     processedDevices: [],
 
     init: function() {
+        smoothScroll.init();
         $('#placenames select').bind('change', home.refreshRequirements).chosen({disable_search_threshold: 100});
         window.addEventListener('resize', function() {
             $('#placenames select').chosen('destroy').chosen({disable_search_threshold: 100});
@@ -41,7 +42,7 @@ var home = {
             $('#placenames').addClass('expanded');
         });
 
-        $('#placenames ul > li > a[href^="hifi://"]').bind('click', function(event) {
+        $('.directory-list > li > a[href^="hifi://"]').bind('click', function(event) {
             event.preventDefault();
             var options = {
                 img: $('img', this).attr('src'),
@@ -59,7 +60,7 @@ var home = {
                     $(document).scrollTop($('#placenames form').offset().top);
                     return false;
                 });
-            });            
+            });
             return false;
         });
     },
@@ -72,7 +73,7 @@ var home = {
                 value.match(/pkg/i)
                     ? ' requires Mountain Lion (10.8) or newer'
                     : (
-                        (value.match(/exe/i)) 
+                        (value.match(/exe/i))
                             ? ' requires Windows 7 or newer'
                             : ''
                     )

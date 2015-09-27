@@ -19,6 +19,7 @@ View::addStyle('css/home.css');
 
 View::addScript('js/chosen/chosen.jquery.min.js');
 View::addStyle('css/chosen/chosen.min.css');
+View::addScript('js/smooth-scroll/smooth-scroll.min.js');
 
 View::renderCommonLayout('home');
 

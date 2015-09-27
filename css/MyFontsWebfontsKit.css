@@ -1,21 +1,21 @@
 /**
  * @license
  * MyFonts Webfont Build ID 2916112, 2014-11-05T11:27:32-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: Quadon-Bold by Rene Bieder
  * URL: http://www.myfonts.com/fonts/rene-bieder/quadon/bold/
  * Copyright: Copyright &#x00A9; 2012 by Rene Bieder. All rights reserved.
  * Licensed pageviews: 100,000
- * 
- * 
+ *
+ *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2916112
- * 
+ *
  * © 2014 MyFonts Inc
 */
 
@@ -23,6 +23,10 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/2c7f10");
 
-  
 @font-face {font-family: 'Quadon-Bold';src: url('webfonts/2C7F10_0_0.eot');src: url('webfonts/2C7F10_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C7F10_0_0.woff2') format('woff2'),url('webfonts/2C7F10_0_0.woff') format('woff'),url('webfonts/2C7F10_0_0.ttf') format('truetype');}
- 
+@font-face {font-family: 'Quadon-Light';src: url('webfonts/Quadon%20Light.otf');}
+@font-face {font-family: 'Quadon-Medium';src: url('webfonts/Quadon%20Medium.otf');}
+
+@font-face {font-family: 'PoroximaNova-Light';src: url('webfonts/ProximaNova-Light.otf');}
+@font-face {font-family: 'PoroximaNova-Regular';src: url('webfonts/ProximaNova-Regular.otf');}
+@font-face {font-family: 'PoroximaNova-RegularItalic';src: url('webfonts/ProximaNova-RegularItalic.otf');}
