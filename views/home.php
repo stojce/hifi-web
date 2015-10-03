@@ -38,9 +38,10 @@
                 for Mac OS, Windows and Linux is open to everybody.
             </p>
 
-            <div class="crazy-link">
-                <a href="download">DOWNLOAD</a>
-            </div>
+            <a href="download" class="crazy-link">
+                <span>download</span>
+            </a>
+
         </div>
     </article>
 </section>
@@ -166,6 +167,36 @@
 <section id="blog" class="default-section">
     <h3>Blog</h3>
     <a href="blog" class="external-link">See All Posts</a>
+
+    <div>
+        <div class="blog-post">
+            <div class="post-date">Tuesday, August 18, 2015</div>
+            <div class="post-title">Summer Intern Project: Controllers, Cameras, and Vives</div>
+            <div class="post-subtitle">Posted by Sam G. / 3 comments</div>
+            <div class="post-text">
+                Hey everyone! Sam here. I’ve spent this summer interning at High Fidelity with all these
+                awesome developers and here’s some of the stuff I’ve done:<br/>
+                To make controllers easier to add and maintain, I moved multiple devices like the hydras, playstation
+                controllers, and 360 controllers over to the new UserInputMapper, which [...]
+            </div>
+            <a href="https://highfidelity.com/blog/2015/09/update-for-september-2015/" class="external-link">Read</a>
+        </div>
+
+
+        <div class="blog-post">
+            <div class="post-date">Wednesday, July 17, 2015</div>
+            <div class="post-title">Oculus Rift and HTC Vive: First Contact</div>
+            <div class="post-subtitle">Posted by Philip Rosedale / 3 comments</div>
+            <div class="post-text">
+                <img
+                    src="http://highfidelity-site-dev.s3.amazonaws.com/blog/wp-content/uploads/2015/09/7fefadf1-decf-4ee4-8a79-8907cf4e4878.jpg">
+            </div>
+
+            <a class="external-link" href="https://highfidelity.com/blog/2015/09/measuring-vr-audio-latency/">Read</a>
+        </div>
+
+    </div>
+
 </section>
 
 <section id="up-to-date">
@@ -178,7 +209,12 @@
             <svg viewBox="40 0 34 29">
                 <use xlink:href="./img/up-to-date.svg#subscribe"></use>
             </svg>
-            Subscribe to us</a>
+            Subscribe to us
+            <svg class="right-arrow" viewBox="0 0 7 19">
+                <use xlink:href="./img/right-arrow.svg#ra"></use>
+            </svg>
+
+        </a>
         <a href="https://twitter.com/highfidelityinc" class="external-link">
             <svg viewBox="0 0 34 29">
                 <use xlink:href="./img/up-to-date.svg#twitter"></use>
@@ -201,15 +237,15 @@
     <ul>
         <li>
             ‘MAKING VIRTUAL REALITY LESS VIRTUAL
-            <img src="img/press/the-atlantic.jpg">
+            <img class="atlantic" src="img/press/the-atlantic.jpg">
         </li>
         <li>
             ‘HIGH FIDELITY RAISES $11M TO BUILD DEPLOYABLE VIRTUAL WORLDS
-            <img src="img/press/techcrunch.svg">
+            <img class="tc" src="img/press/techcrunch.svg">
         </li>
         <li>
             ‘THE QUEST TO PUT MORE REALITY IN VIRTUAL REALITY
-            <img src="img/press/mit-tech-review.png">
+            <img class="mit" src="img/press/mit-tech-review.png">
         </li>
     </ul>
 </section>
@@ -219,16 +255,17 @@
         <strong>We’re in Alpha</strong> and we’re building new things every day. Come kick the tires:
     </p>
 
-    <div class="crazy-link">
-        <a href="download">DOWNLOAD</a>
-    </div>
+    <a href="download" class="crazy-link">
+        <span>download</span>
+    </a>
 </section>
 
-<section id="jobs" class="default-section">
+<section id="jobs">
+    <div>
     <h3>Jobs</h3>
     <a href="https://worklist.net/" class="external-link">See All Jobs</a>
 
-    <div>
+    <div class="job-text">
         <div class="title">
             Are you a <strong>C++ Generalist?</strong>
             A <strong>Javascript Developer</strong>,
@@ -243,6 +280,7 @@
         <p> Check out our job listings, or visit Worklist, our distributed development system, and show us what you’ve
             got.
         </p>
+
         <p class="worklist-jobs">
             <svg viewBox="0 0 39 39">
                 <use xlink:href="./img/worklist.svg#worklist"></use>
@@ -250,6 +288,11 @@
             <a href="https://worklist.net/" class="external-link">Worklist</a>
         </p>
     </div>
+
+    </div>
+
+        <img src="img/windmill.png">
+
 </section>
 
 

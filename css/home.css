@@ -8,7 +8,19 @@ html body {
 
 body > section {
     overflow: auto;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima nova", sans-serif;
+}
+
+body > section.default-section {
+    padding: 100px 100px 100px 195px;
+}
+
+body > section.default-section > h3 {
+    display: inline-block;
+    font-family: Quadon-Light;
+    font-size: 30px;
+    margin-left: -95px;
+    width: 95px;
 }
 
 body > #heading {
@@ -64,7 +76,7 @@ body > #download-summary > article h4 {
 }
 
 body > #download-summary > article p {
-    font-family: PoroximaNova-Light, sans-serif;
+    font-weight: 100;
     font-size: 19px;
     line-height: 25px;
     padding-bottom: 13px;
@@ -75,30 +87,37 @@ article h4 > span.strong {
     color: #009dc0;
 }
 
-.crazy-link {
+a.crazy-link {
+    color: #333333;
+    font-family: "proxima nova", sans-serif;
+    font-size: 17px;
     border-bottom: 1px solid #000;
-    color: transparent;
+    background-color: transparent;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    padding-bottom: 8px;
+    padding-bottom: 1px;
     width: 257px;
-    margin-top: 50px;
-}
-
-.crazy-link > a {
-    background-color: #fff;
-    padding-left: 77px;
-    padding-right: 70px;
-    padding-top: 4px;
-    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    left: -1px;
-    font-size: 17px;
-    font-family: proxima-nova, sans-serif;
 }
 
-.crazy-link > a:hover {
-    text-decoration: none;
+a.crazy-link:hover {
+    border-color: #118BB2;
+}
+
+a.crazy-link > span {
+    text-align: center;
+    display: inline-block;
+    width: 259px;
+    background-color: white;
+    position: relative;
+    left: -1px;
+    margin-bottom: 5px;
+}
+
+a.crazy-link > span:hover {
+    color: #118BB2;
 }
 
 body > #heading > div {
@@ -149,6 +168,10 @@ body > #the-market p {
     width: 11em;
     display: inline-block;
     font-size: 18px;
+}
+
+.external-link:hover {
+    color: #118BB2;
 }
 
 body > #directory {
@@ -238,7 +261,7 @@ body > #under-hood > .hood-title span.strong {
 }
 
 body > #under-hood > ul {
-    font-family: PoroximaNova-Light, sans-serif;
+    font-weight: 100;
     margin: 73px 0 0 80px;
 }
 
@@ -288,7 +311,9 @@ body > #up-to-date h3 > .strong {
 
 body > #up-to-date #right-signup {
     float: left;
-    padding-left: 123px;
+    padding-left: 124px;
+    padding-top: 10px;
+    padding-bottom: 12px;
 }
 
 body > #up-to-date #right-signup a {
@@ -297,24 +322,24 @@ body > #up-to-date #right-signup a {
 }
 
 body > #up-to-date #right-signup a:first-child {
-    margin-bottom: 36px;
+    margin-bottom: 25px;
+    padding-bottom: 6px;
 }
 
 body > #up-to-date #right-signup a > svg {
     fill: white;
-    width: 40px;
-    height: 40px;
-    margin-left: -65px;
-    padding-right: 18px;
+    width: 34px;
+    height: 34px;
+    margin-left: -51px;
+    padding-right: 9px;
     position: relative;
     top: 16px;
 }
 
-body > #press {
-    padding: 100px 100px 120px 195px;
-}
-
-body > #press h3 {
+body > #up-to-date #right-signup a > svg.right-arrow {
+    height: 20px;
+    top: 11px;
+    right: -91px;
 }
 
 body > #press blockquote:before {
@@ -339,11 +364,10 @@ body > #press blockquote {
 
 body > #press cite {
     float: right;
-    font-family: PoroximaNova-Regular;
     font-style: italic;
     font-size: 18px;
-    margin-right: 150px;
-    margin-bottom: 90px;
+    margin-right: 160px;
+    margin-bottom: 96px;
 }
 
 body > #press ul {
@@ -352,23 +376,34 @@ body > #press ul {
 }
 
 body > #press li {
-    font-family: PoroximaNova-Light;
+    font-weight: 100;
     float: left;
     width: 33%;
     list-style-type: none;
     color: #009dc0;
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 45px;
     box-sizing: border-box;
     height: 140px;
     position: relative;
 }
 
 body > #press li > img {
-    height: 20px;
     bottom: 0px;
     left: 10px;
     position: absolute;
+}
+
+body > #press li > img.atlantic {
+    height: 33px;
+}
+
+body > #press li > img.mit {
+    height: 40px;
+}
+
+body > #press li > img.tc {
+    height: 22px;
 }
 
 body > #alpha {
@@ -388,24 +423,29 @@ body > #alpha p {
     width: 50%;
 }
 
-body > #alpha div.crazy-link {
-    margin-left: 100px;
-    float: left;
-    border-color: white;
-    margin-top: 35px;
-}
-
-body > #alpha div.crazy-link a {
+body > #alpha a.crazy-link {
     color: white;
     background-color: #333;
-    padding-top: 30px;
+    border-color: white;
+    margin-top: 30px;
+    margin-left: 100px;
 }
 
-body > section.default-section {
-    padding: 100px 100px 100px 195px;
+body > #alpha a.crazy-link:hover {
+    color: #118BB2;
+    border-color: #118BB2;
 }
 
-body > section.default-section > h3 {
+body > #alpha a.crazy-link span {
+    background-color: #333;
+}
+
+body > section#jobs {
+    color: white;
+    background: url(../img/jobs-background.png) repeat-x;
+}
+
+body > section#jobs > div > h3{
     display: inline-block;
     font-family: Quadon-Light;
     font-size: 30px;
@@ -413,24 +453,91 @@ body > section.default-section > h3 {
     width: 95px;
 }
 
-body > section#jobs {
-    color: white;
-    background-color: #009DC0;
+body > section#jobs > img {
+    position: relative;
+    left: -113px;
+    float: left;
+    width: 250px;
+    z-index: 1;
+    top: 61px;
+}
+
+.job-text {
+    margin-top: 36px;
+    width: 75%;
+    position: relative;
+    z-index: 10;
+}
+
+body > section#jobs > div {
+    float: left;
+    width: 75%;
+    background: #009DC0;
+    padding-top: 100px;
+    padding-left: 195px;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+}
+
+body > section#blog > div {
+    margin-top: 55px;
+}
+
+body > section#blog > div > .blog-post:first-child {
+    padding-right: 30px;
+}
+
+body > section#blog > div > .blog-post:last-child {
+    padding-left: 30px;
+}
+
+body > section#blog .blog-post {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    font-size: 18px;
+}
+
+body > section#blog .blog-post > .post-date {
+    color: #009DC0;
+    padding-bottom: 22px;
+    font-weight: 100;
+}
+
+body > section#blog .blog-post > .post-title {
+    font-family: Quadon-Medium;
+    color: #009DC0;
+    font-size: 29px;
+    padding-bottom: 8px;
+    padding-right: 130px;
+    line-height: 44px;
+}
+
+body > section#blog .blog-post > .post-subtitle {
+    padding-bottom: 35px;
+    word-spacing: 2px;
+}
+
+body > section#blog .blog-post > .post-text {
+    padding-bottom: 35px;
+}
+
+body > section#blog .blog-post > .post-text > br {
+    line-height: 50px;
+}
+
+body > section#blog .blog-post > .post-text img {
+    max-width: 100%;
 }
 
 body > section#jobs .external-link {
     color: white;
 }
 
-body > section#jobs > div {
-    margin-top: 36px;
-    width: 50%;
-}
-
 body > section#jobs .title {
     font-family: Quadon-Light;
     font-size: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 27px;;
 }
 
 body > section#jobs .title > strong {
@@ -439,20 +546,20 @@ body > section#jobs .title > strong {
 }
 
 body > section#jobs p {
-    font-family: PoroximaNova-Light;
+    font-weight: 100;
     font-size: 18px;
     padding-bottom: 13px;
 }
 
 body > section#jobs p.worklist-jobs {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 body > section#jobs p.worklist-jobs > svg {
     width: 39px;
     height: 39px;
     position: relative;
-    top: 11px;
+    top: 26px;
     padding-right: 15px;
 }
 
@@ -496,7 +603,7 @@ article p strong {
 }
 
 article {
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima nova", sans-serif;
     padding-bottom: .7em;
 }
 
@@ -767,7 +874,7 @@ article h3 {
 
 #place-modal .modal-footer > p,
 #place-modal .modal-footer > p a {
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima nova", sans-serif;
 }
 
 @media screen and (max-width: 1090px) {
@@ -853,7 +960,7 @@ article h3 {
 
 #openvr ul {
     text-align: center;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima nova", sans-serif;
     font-size: 1.7em;
     padding: 0;
 }
@@ -1391,7 +1498,7 @@ article p a {
     right: 9em;
     margin-top: -20px;
     line-height: 1.3em;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima nova", sans-serif;
     text-align: right;
 }
 
@@ -1418,7 +1525,7 @@ article p a {
 }
 
 #team h3 + p {
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima nova", sans-serif;
 }
 
 #team ul {

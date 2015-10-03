@@ -26,7 +26,3 @@
 @font-face {font-family: 'Quadon-Bold';src: url('webfonts/2C7F10_0_0.eot');src: url('webfonts/2C7F10_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C7F10_0_0.woff2') format('woff2'),url('webfonts/2C7F10_0_0.woff') format('woff'),url('webfonts/2C7F10_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Quadon-Light';src: url('webfonts/Quadon%20Light.otf');}
 @font-face {font-family: 'Quadon-Medium';src: url('webfonts/Quadon%20Medium.otf');}
-
-@font-face {font-family: 'PoroximaNova-Light';src: url('webfonts/ProximaNova-Light.otf');}
-@font-face {font-family: 'PoroximaNova-Regular';src: url('webfonts/ProximaNova-Regular.otf');}
-@font-face {font-family: 'PoroximaNova-RegularItalic';src: url('webfonts/ProximaNova-RegularItalic.otf');}
