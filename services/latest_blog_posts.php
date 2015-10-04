@@ -4,7 +4,7 @@ $blog_html = file_get_contents(BLOG_URL);
 
 $DOM = new DOMDocument;
 libxml_use_internal_errors(true);
-$DOM->loadHTML($blog_html);
+$DOM->loadHTML(mb_convert_encoding($blog_html, 'HTML-ENTITIES', 'UTF-8'));
 libxml_clear_errors();
 
 $articles = $DOM->getElementsByTagName('article');
