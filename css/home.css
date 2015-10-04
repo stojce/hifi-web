@@ -11,16 +11,40 @@ body > section {
     font-family: "proxima nova", sans-serif;
 }
 
-body > section.default-section {
-    padding: 100px 100px 100px 195px;
+@media screen and (max-width: 767px) {
+
+    body > section.default-section {
+        padding: 40px 40px 40px 40px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    body > section.default-section {
+        padding: 100px 100px 100px 195px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    body > section.default-section {
+        padding: 100px 100px 100px 195px;
+    }
+
 }
 
 body > section.default-section > h3 {
-    display: inline-block;
     font-family: Quadon-Light;
     font-size: 30px;
-    margin-left: -95px;
-    width: 95px;
+}
+
+@media (min-width: 992px) {
+    body > section.default-section > h3 {
+        display: inline-block;
+        margin-left: -95px;
+        width: 95px;
+    }
 }
 
 body > #heading {
@@ -36,7 +60,7 @@ body > #heading svg {
 
 body > #heading > h3 {
     color: #a9d1e1;
-    font-size: 44px;
+    font-size: 3.1em;
     text-align: center;
     padding: 130px 45px 108px;;
     margin: 1px 0;
@@ -48,21 +72,18 @@ body > #heading > h3 > .strong {
     color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+    body > #heading > h3 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+        padding-top: 75px;
+        padding-bottom: 30px;
+    }
+}
+
 body > #download-summary > article {
     color: #231f20;
-    float: left;
-    width: 50%;
-    height: 480px;
-}
-
-body > #download-summary > article > div.download-text {
-    padding-top: 87px;
-    padding-left: 104px;
-    padding-right: 98px;
-}
-
-body > #download-summary > article > div.deploy {
-    padding: 72px 89px 0 98px;
+    padding-bottom: 50px;
 }
 
 body > #download-summary > article:first-child {
@@ -80,6 +101,35 @@ body > #download-summary > article p {
     font-size: 19px;
     line-height: 25px;
     padding-bottom: 13px;
+}
+
+@media (min-width: 992px) {
+    body > #download-summary > article {
+        float: left;
+        width: 50%;
+        height: 480px;
+    }
+
+    body > #download-summary > article > div.deploy {
+        padding: 72px 89px 0 98px;
+    }
+
+    body > #download-summary > article > div.download-text {
+        padding: 87px 104px 0 98px;
+    }
+}
+
+@media (max-width: 991px) {
+    body > #download-summary > article a.crazy-link {
+        margin: 0 auto;
+        display: block;
+    }
+
+    body > #download-summary > article > div {
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 article h4 > span.strong {
@@ -109,10 +159,10 @@ a.crazy-link:hover {
 a.crazy-link > span {
     text-align: center;
     display: inline-block;
-    width: 259px;
+    width: 261px;
     background-color: white;
     position: relative;
-    left: -1px;
+    left: -2px;
     margin-bottom: 5px;
 }
 
@@ -131,33 +181,132 @@ body > #the-market {
 
 body > #the-market > div:first-child {
     float: left;
-    width: 60%;
 }
 
 body > #the-market > div:last-child {
     float: left;
-    width: 25%;
     color: #231f20;
-    padding-left: 87px;
     font-size: 18px;
 }
 
 body > #the-market h4 {
-    margin-top: 130px;
     margin-bottom: 46px;
     font-family: Quadon-light, Georgia, serif;
     font-size: 32px;
     letter-spacing: -1px;
 }
 
-body > #the-market img {
-    float: left;
-    width: 255px;
-    height: 255px;
-}
-
 body > #the-market p {
     padding-bottom: 65px;
+}
+
+body > #the-market img {
+    float: left;
+}
+
+@media (min-width: 1200px) {
+    body > #the-market h4 {
+        margin-top: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    body > #the-market img {
+        width: 33%;
+        height: 33%;
+    }
+
+    body > #the-market > div:last-child {
+        width: 25%;
+        padding-left: 87px;
+    }
+
+    body > #the-market > div:first-child {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body > #the-market h4 {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body > #the-market h4 {
+        margin-top: 40px;
+    }
+
+    body > #the-market > div:first-child {
+        width: 50%;
+    }
+
+    body > #the-market > div:last-child {
+        width: 35%;
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+
+    body > #the-market img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    body > #the-market img {
+        width: 33%;
+        height: 33%;
+    }
+
+    body > #the-market > div:first-child {
+        width: 100%;
+    }
+
+    body > #the-market > div:last-child {
+        width: 75%;
+        padding-bottom: 40px;
+    }
+}
+
+body > #directory > .bottom-links {
+    text-align: center;
+    padding: 35px;
+}
+
+body > #directory > .bottom-links a {
+    margin: 10px 15px;
+}
+
+@media screen and (min-width: 992px) {
+    body > #directory > .bottom-links {
+        display: none;
+    }
+}
+
+@media (max-width: 1191px) {
+    body > #directory a.domains-link {
+        margin-right: 4em;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    body > #directory a.domains-link {
+        margin-right: 8.6em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body > #directory .top-links {
+        display: none;
+    }
+
+    body > #directory a.domains-link {
+        margin-right: 0;
+    }
 }
 
 .external-link {
@@ -192,16 +341,7 @@ body > #directory > div.directory-title {
 
 body > #directory a.domains-link {
     font-size: 18px;
-}
-
-body > #directory .directory-title > a {
-    margin-right: 16px;
-}
-
-body > #directory a.domains-link {
     color: #009DC0;
-    margin-left: 2.7em;
-    margin-right: 8.6em;
 }
 
 body > #directory h4 {
@@ -209,6 +349,7 @@ body > #directory h4 {
     font-size: 1.9em;
     letter-spacing: 0.06em;
     font-family: Quadon-Light;
+    margin-right: 2.7em;
 }
 
 body > #directory ul.directory-list {
@@ -243,13 +384,11 @@ body > #directory li h4 {
 
 body > #under-hood {
     background-color: #363636;
-    padding: 0px 160px 123px 100px;
 }
 
 body > #under-hood > .hood-title {
     font-family: Quadon-Light;
     font-size: 30px;
-    padding-top: 143px;
     color: white;
     line-height: 44px;
     margin: 0;
@@ -266,14 +405,14 @@ body > #under-hood > ul {
 }
 
 body > #under-hood > ul li {
-    float: left;
-    width: 50%;
     list-style: none;
     color: white;
     font-size: 1.3em;
-    height: 6.6em;
     box-sizing: border-box;
-    padding-right: 60px;
+}
+
+body > #under-hood > ul > li > div {
+    margin-left: 110px;
 }
 
 body > #under-hood > ul li svg {
@@ -282,7 +421,6 @@ body > #under-hood > ul li svg {
     height: 70px;
     fill: transparent;
     padding-right: 35px;
-    padding-bottom: 40px;
 }
 
 body > #under-hood > ul .title {
@@ -291,16 +429,54 @@ body > #under-hood > ul .title {
     letter-spacing: 0.08em;
 }
 
+@media screen and (max-width: 991px) {
+    body > #under-hood {
+        padding: 0 60px 23px 40px;
+    }
+
+    body > #under-hood > .hood-title {
+        padding-top: 40px;
+    }
+
+    body > #under-hood > ul {
+        margin: 73px 0 0 0;
+        padding: 0;
+    }
+
+    body > #under-hood > ul li {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body > #under-hood {
+        padding: 40px 160px 123px 100px;
+    }
+
+    body > #under-hood > .hood-title {
+        padding-top: 100px;
+    }
+
+    body > #under-hood > ul {
+        margin: 73px 0 0 80px;
+    }
+
+    body > #under-hood > ul li {
+        float: left;
+        width: 50%;
+        min-height: 120px;
+    }
+}
+
 body > #up-to-date {
     color: white;
     background-color: #009DC0;
-    padding: 71px 197px;
+    padding: 40px;
 }
 
 body > #up-to-date h3 {
     font-family: Quadon-Light;
-    float: left;
-    width: 50%;
     font-size: 29px;
     line-height: 40px;
 }
@@ -310,8 +486,7 @@ body > #up-to-date h3 > .strong {
 }
 
 body > #up-to-date #right-signup {
-    float: left;
-    padding-left: 124px;
+    padding-left: 54px;
     padding-top: 10px;
     padding-bottom: 12px;
 }
@@ -340,6 +515,23 @@ body > #up-to-date #right-signup a > svg.right-arrow {
     height: 20px;
     top: 11px;
     right: -91px;
+}
+
+@media (min-width: 992px) {
+
+    body > #up-to-date h3 {
+        float: left;
+        width: 50%;
+    }
+
+    body > #up-to-date #right-signup {
+        float: left;
+        padding-left: 124px;
+    }
+
+    body > #up-to-date {
+        padding: 71px 197px;
+    }
 }
 
 body > #press blockquote:before {
@@ -377,21 +569,10 @@ body > #press ul {
 
 body > #press li {
     font-weight: 100;
-    float: left;
-    width: 33%;
     list-style-type: none;
     color: #009dc0;
     font-size: 20px;
     padding-right: 45px;
-    box-sizing: border-box;
-    height: 140px;
-    position: relative;
-}
-
-body > #press li > img {
-    bottom: 0px;
-    left: 10px;
-    position: absolute;
 }
 
 body > #press li > img.atlantic {
@@ -406,6 +587,36 @@ body > #press li > img.tc {
     height: 22px;
 }
 
+@media (max-width: 991px) {
+
+    body > #press li {
+        margin-bottom: 30px;
+    }
+
+    body > #press li > img {
+        display: block;
+        padding: 20px 0 30px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    body > #press li > img {
+        bottom: 0px;
+        left: 10px;
+        position: absolute;
+    }
+
+    body > #press li {
+        box-sizing: border-box;
+        height: 140px;
+        position: relative;
+        float: left;
+        width: 33%;
+    }
+}
+
 body > #alpha {
     background-color: #333333;
     color: white;
@@ -418,17 +629,11 @@ body > #alpha strong {
     font-weight: normal;
 }
 
-body > #alpha p {
-    float: left;
-    width: 50%;
-}
-
 body > #alpha a.crazy-link {
     color: white;
     background-color: #333;
     border-color: white;
     margin-top: 30px;
-    margin-left: 100px;
 }
 
 body > #alpha a.crazy-link:hover {
@@ -440,43 +645,22 @@ body > #alpha a.crazy-link span {
     background-color: #333;
 }
 
-body > section#jobs {
-    color: white;
-    background: url(../img/jobs-background.png) repeat-x;
+@media (min-width: 992px) {
+    body > #alpha p {
+        float: left;
+        width: 50%;
+    }
+
+    body > #alpha a.crazy-link {
+        margin-left: 100px;
+    }
 }
 
-body > section#jobs > div > h3{
-    display: inline-block;
-    font-family: Quadon-Light;
-    font-size: 30px;
-    margin-left: -95px;
-    width: 95px;
-}
-
-body > section#jobs > img {
-    position: relative;
-    left: -113px;
-    float: left;
-    width: 250px;
-    z-index: 1;
-    top: 61px;
-}
-
-.job-text {
-    margin-top: 36px;
-    width: 75%;
-    position: relative;
-    z-index: 10;
-}
-
-body > section#jobs > div {
-    float: left;
-    width: 75%;
-    background: #009DC0;
-    padding-top: 100px;
-    padding-left: 195px;
-    box-sizing: border-box;
-    padding-bottom: 90px;
+@media (max-width: 991px) {
+    body > #alpha a.crazy-link {
+        margin: 0 auto;
+        display: block;
+    }
 }
 
 body > section#blog > div {
@@ -492,9 +676,6 @@ body > section#blog > div > .blog-post:last-child {
 }
 
 body > section#blog .blog-post {
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
     font-size: 18px;
 }
 
@@ -509,7 +690,6 @@ body > section#blog .blog-post > .post-title {
     color: #009DC0;
     font-size: 29px;
     padding-bottom: 8px;
-    padding-right: 130px;
     line-height: 44px;
 }
 
@@ -528,6 +708,63 @@ body > section#blog .blog-post > .post-text > br {
 
 body > section#blog .blog-post > .post-text img {
     max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    body > section#blog .blog-post:last-child {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    body > section#blog .blog-post {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+    }
+
+    body > section#blog .blog-post > .post-title {
+        padding-right: 130px;
+    }
+
+    body > section#jobs > div > h3 {
+        margin-left: -95px;
+    }
+}
+
+body > section#jobs {
+    color: white;
+    background: url(../img/jobs-background.png) repeat-x;
+}
+
+body > section#jobs > div > h3 {
+    display: inline-block;
+    font-family: Quadon-Light;
+    font-size: 30px;
+    width: 95px;
+}
+
+body > section#jobs > img {
+    position: relative;
+    left: -113px;
+    float: left;
+    width: 250px;
+    z-index: 1;
+    top: 61px;
+}
+
+.job-text {
+    margin-top: 36px;
+    position: relative;
+    z-index: 10;
+}
+
+body > section#jobs > div {
+    background: #009DC0;
+    padding-top: 100px;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+    min-height: 610px;
 }
 
 body > section#jobs .external-link {
@@ -561,6 +798,39 @@ body > section#jobs p.worklist-jobs > svg {
     position: relative;
     top: 26px;
     padding-right: 15px;
+}
+
+@media (max-width: 991px) {
+
+    .job-text {
+        width: 85%;
+    }
+
+    body > section#jobs > div {
+        padding-left: 40px;
+    }
+    body > section#jobs > img {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .job-text {
+        width: 75%;
+    }
+
+    body > section#jobs > div {
+        float: left;
+        width: 75%;
+        padding-left: 195px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body > section#jobs .external-link {
+        width: 9em;
+    }
 }
 
 body > #container,
@@ -605,12 +875,6 @@ article p strong {
 article {
     font-family: "proxima nova", sans-serif;
     padding-bottom: .7em;
-}
-
-@media screen and (max-width: 530px) {
-    article {
-        margin: 3.3em 0 0;
-    }
 }
 
 article h2,
@@ -830,8 +1094,8 @@ article h3 {
 
 #place-modal .modal-dialog {
     min-width: 600px;
-    max-width: 800px;
-    width: 60%;
+    width: 90%;
+    height: 90%;
     margin-top: 3.5em;
     position: relative;
 }
