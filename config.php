@@ -42,6 +42,10 @@ define('SCREENSHOTS_URL', 'https://alphas.highfidelity.io/t/random-picture-threa
 define('DISCOURSE_URL', 'https://alphas.highfidelity.io/');
 define('SCREENSHOT_FILE_PATH', dirname(__FILE__) . "/media/slideshow.json");
 
+define('BLOG_URL', 'https://highfidelity.com/blog/');
+define('BLOG_POST_CHARS_VISIBLE', 400);
+define('BLOG_POST_AUTHORS_BASE_URL', 'https://highfidelity.com/blog/wp-content/authors/');
+
 defineOnce('DISCOURSE_API_KEY', 'api_key');
 defineOnce('DISCOURSE_API_USERNAME', 'api_username');
 

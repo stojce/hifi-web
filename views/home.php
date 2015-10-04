@@ -1,4 +1,7 @@
-<?php $i = 0; ?>
+<?php
+$posts = View::read('posts');
+$posts = array_slice($posts, 0, 2);
+?>
 
 <div id="heading">
     <h3>We’re building an
@@ -79,7 +82,7 @@
     </div>
     <div class="directory-list-wrap">
         <ul class="directory-list">
-            <?php foreach (View::read('places') as $place): $i++; ?>
+            <?php foreach (View::read('places') as $place): ?>
                 <li>
                     <a href="<?php echo htmlentities($place->address) ?>">
                         <img height="258" width="458"
@@ -184,40 +187,38 @@
     </ul>
 </section>
 
+<?php if (!empty($posts) && is_array($posts)): ?>
 <section id="blog" class="default-section">
     <h3>Blog</h3>
     <a href="blog" class="external-link">See All Posts</a>
 
     <div>
+        <?php foreach ($posts as $post): ?>
         <div class="blog-post">
-            <div class="post-date">Tuesday, August 18, 2015</div>
-            <div class="post-title">Summer Intern Project: Controllers, Cameras, and Vives</div>
-            <div class="post-subtitle">Posted by Sam G. / 3 comments</div>
-            <div class="post-text">
-                Hey everyone! Sam here. I’ve spent this summer interning at High Fidelity with all these
-                awesome developers and here’s some of the stuff I’ve done:<br/>
-                To make controllers easier to add and maintain, I moved multiple devices like the hydras, playstation
-                controllers, and 360 controllers over to the new UserInputMapper, which [...]
+            <div class="post-date"><?php echo $post['time'];?></div>
+            <div class="post-title">
+                <a href="<?php echo $post['link'];?>"><?php echo $post['title'];?></a>
             </div>
-            <a href="https://highfidelity.com/blog/2015/09/update-for-september-2015/" class="external-link">Read</a>
+            <div class="post-subtitle">Posted by <?php echo $post['author'];?> / <?php echo $post['comments'];?></div>
+            <div class="post-text">
+
+                <?php
+                    // if there is an image in the post -- show it, otherwise show the post text
+                    if (empty($post['images'])) {
+                        echo $post['post'], '[...]';
+                    } else {
+                        echo '<img src="', $post["images"][0], '">';
+                    }
+                ?>
+
+            </div>
+            <a href="<?php echo $post['link'];?>" class="external-link">Read</a>
         </div>
 
-
-        <div class="blog-post">
-            <div class="post-date">Wednesday, July 17, 2015</div>
-            <div class="post-title">Oculus Rift and HTC Vive: First Contact</div>
-            <div class="post-subtitle">Posted by Philip Rosedale / 3 comments</div>
-            <div class="post-text">
-                <img
-                    src="http://highfidelity-site-dev.s3.amazonaws.com/blog/wp-content/uploads/2015/09/7fefadf1-decf-4ee4-8a79-8907cf4e4878.jpg">
-            </div>
-
-            <a class="external-link" href="https://highfidelity.com/blog/2015/09/measuring-vr-audio-latency/">Read</a>
-        </div>
-
+        <?php endforeach; ?>
     </div>
-
 </section>
+<?php endif; ?>
 
 <section id="up-to-date">
     <h3>

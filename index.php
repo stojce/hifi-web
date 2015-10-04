@@ -12,6 +12,9 @@ View::write('places', array_slice($places->data->places, 0, 16));
 $domains = json_decode(file_get_contents('https://metaverse.highfidelity.io/api/v1/stats/domains', false, $context));
 View::write('onlinedomains', $domains->data->num_online);
 
+// get posts
+include_once 'services/latest_blog_posts.php';
+View::write('posts', $posts);
 
 View::write('page', 'home');
 View::addScript('js/home.js');
