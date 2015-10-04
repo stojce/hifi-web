@@ -188,36 +188,37 @@ $posts = array_slice($posts, 0, 2);
 </section>
 
 <?php if (!empty($posts) && is_array($posts)): ?>
-<section id="blog" class="default-section">
-    <h3>Blog</h3>
-    <a href="blog" class="external-link">See All Posts</a>
+    <section id="blog" class="default-section">
+        <h3>Blog</h3>
+        <a href="blog" class="external-link">See All Posts</a>
 
-    <div>
-        <?php foreach ($posts as $post): ?>
-        <div class="blog-post">
-            <div class="post-date"><?php echo $post['time'];?></div>
-            <div class="post-title">
-                <a href="<?php echo $post['link'];?>"><?php echo $post['title'];?></a>
-            </div>
-            <div class="post-subtitle">Posted by <?php echo $post['author'];?> / <?php echo $post['comments'];?></div>
-            <div class="post-text">
+        <div>
+            <?php foreach ($posts as $post): ?>
+                <div class="blog-post">
+                    <div class="post-date"><?php echo $post['time']; ?></div>
+                    <div class="post-title">
+                        <?php echo $post['title']; ?>
+                    </div>
+                    <div class="post-subtitle">Posted by <?php echo $post['author']; ?>
+                        / <?php echo $post['comments']; ?></div>
+                    <div class="post-text">
 
-                <?php
-                    // if there is an image in the post -- show it, otherwise show the post text
-                    if (empty($post['images'])) {
-                        echo $post['post'], '[...]';
-                    } else {
-                        echo '<img src="', $post["images"][0], '">';
-                    }
-                ?>
+                        <?php
+                        // if there is an image in the post -- show it, otherwise show the post text
+                        if (empty($post['images'])) {
+                            echo $post['post'], '[...]';
+                        } else {
+                            echo '<img src="', $post["images"][0], '">';
+                        }
+                        ?>
 
-            </div>
-            <a href="<?php echo $post['link'];?>" class="external-link">Read</a>
+                    </div>
+                    <a href="<?php echo $post['link']; ?>" class="external-link">Read</a>
+                </div>
+
+            <?php endforeach; ?>
         </div>
-
-        <?php endforeach; ?>
-    </div>
-</section>
+    </section>
 <?php endif; ?>
 
 <section id="up-to-date">

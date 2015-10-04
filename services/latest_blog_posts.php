@@ -2,18 +2,13 @@
 
 $blog_html = file_get_contents(BLOG_URL);
 
-// disable invalid html reporting
-$old_reporting = error_reporting(0);
-
 $DOM = new DOMDocument;
-$DOM->strictErrorChecking = false;
-$DOM->loadHTML($blog_html, LIBXML_ERR_NONE);
-
-error_reporting($old_reporting);
+libxml_use_internal_errors(true);
+$DOM->loadHTML($blog_html);
+libxml_clear_errors();
 
 $articles = $DOM->getElementsByTagName('article');
-
-$posts = [];
+$posts = array();
 
 for ($i = 0; $i < $articles->length - 2; $i++) {
 
@@ -54,6 +49,7 @@ for ($i = 0; $i < $articles->length - 2; $i++) {
     }
 
     $content = $articles->item($i)->getElementsByTagName('section')->item(0);
+
     $meta = $content->getElementsByTagName('p')->item(0);
     $footer = $content->getElementsByTagName('footer')->item(0);
     $content->removeChild($meta);
@@ -62,7 +58,7 @@ for ($i = 0; $i < $articles->length - 2; $i++) {
     $post = substr($post, 0, strpos(wordwrap($post, BLOG_POST_CHARS_VISIBLE, "<>"), "<>"));
     $post = nl2br($post);
 
-    $images = [];
+    $images = array();
 
     $imgs = $content->getElementsByTagName('img');
 
@@ -76,14 +72,12 @@ for ($i = 0; $i < $articles->length - 2; $i++) {
 
     }
 
-    $posts[] = [
+    $posts[] = array(
         'link' => $link,
         'title' => $title,
         'time' => $time,
         'author' => $author,
         'comments' => $comments,
         'post' => $post,
-        'images' => $images];
+        'images' => $images);
 }
-
-
