@@ -63,6 +63,15 @@ var home = {
             });
             return false;
         });
+
+        $('#email-signup')
+            .on('focus', function () {
+                this.placeholder = 'email address';
+            })
+            .on('blur', function () {
+                this.placeholder = 'Subscribe to us';
+            });
+
     },
 
     refreshRequirements: function() {

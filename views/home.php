@@ -77,7 +77,7 @@ $posts = array_slice($posts, 0, 2);
            target="_blank"><?php echo View::read('onlinedomains') ?> Domains Online Now</a>
         <span class="top-links">
             <a href="https://metaverse.highfidelity.com/directory" class="external-link">All Domains</a>
-            <a href="#" class="external-link">Build Your Own</a>
+            <a href="https://docs.highfidelity.com/" class="external-link">Build Your Own</a>
         </span>
     </div>
     <div class="directory-list-wrap">
@@ -227,16 +227,15 @@ $posts = array_slice($posts, 0, 2);
     </h3>
 
     <div id="right-signup">
-        <a href="https://www.youtube.com/user/HighFidelityio" class="external-link">
-            <svg viewBox="40 0 34 29">
-                <use xlink:href="./img/up-to-date.svg#subscribe"></use>
-            </svg>
-            Subscribe to us
-            <svg class="right-arrow" viewBox="0 0 7 19">
-                <use xlink:href="./img/right-arrow.svg#ra"></use>
-            </svg>
 
-        </a>
+        <svg viewBox="40 0 34 29">
+            <use xlink:href="./img/up-to-date.svg#subscribe"></use>
+        </svg>
+        <input id="email-signup" type="email" placeholder="Subscribe to us">
+        <svg class="right-arrow" viewBox="0 0 7 19">
+            <use xlink:href="./img/right-arrow.svg#ra"></use>
+        </svg>
+
         <a href="https://twitter.com/highfidelityinc" class="external-link">
             <svg viewBox="0 0 34 29">
                 <use xlink:href="./img/up-to-date.svg#twitter"></use>
@@ -251,8 +250,9 @@ $posts = array_slice($posts, 0, 2);
     <a href="press" class="external-link">See All Press</a>
 
     <blockquote>
-        The expressive faces looked incredibly human-like, which adds a whole other dimension to the interaction by
-        invoking emotion
+        &ldquo;The expressive faces looked incredibly human-like, which adds a whole other dimension to the interaction
+        by
+        invoking emotion&rdquo;
     </blockquote>
     <cite>- quoVice News</cite>
 
@@ -285,7 +285,7 @@ $posts = array_slice($posts, 0, 2);
 <section id="jobs">
     <div>
         <h3>Jobs</h3>
-        <a href="https://worklist.net/" class="external-link">See All Jobs</a>
+        <a href="https://highfidelity.com/jobs" class="external-link">See All Jobs</a>
 
         <div class="job-text">
             <div class="title">

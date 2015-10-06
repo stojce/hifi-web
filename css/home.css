@@ -12,38 +12,33 @@ body > section {
 }
 
 @media screen and (max-width: 767px) {
-
     body > section.default-section {
-        padding: 40px 40px 40px 40px;
+        padding: 90px 40px
     }
-
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
+@media (min-width: 768px) {
     body > section.default-section {
         padding: 100px 100px 100px 195px;
     }
-
-}
-
-@media (min-width: 992px) {
-    body > section.default-section {
-        padding: 100px 100px 100px 195px;
-    }
-
 }
 
 body > section.default-section > h3 {
     font-family: Quadon-Light;
     font-size: 30px;
+    display: inline-block;
+    width: 95px;
+}
+
+@media (max-width: 991px) {
+    body > section.default-section > h3 {
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 992px) {
     body > section.default-section > h3 {
-        display: inline-block;
         margin-left: -95px;
-        width: 95px;
     }
 }
 
@@ -116,6 +111,10 @@ body > #download-summary > article p {
 
     body > #download-summary > article > div.download-text {
         padding: 87px 104px 0 98px;
+    }
+
+    body > #download-summary > article > div.download-text .crazy-link {
+        margin-top: 40px;
     }
 }
 
@@ -413,6 +412,7 @@ body > #under-hood > ul li {
 
 body > #under-hood > ul > li > div {
     margin-left: 110px;
+    padding-right: 30px;
 }
 
 body > #under-hood > ul li svg {
@@ -435,7 +435,7 @@ body > #under-hood > ul .title {
     }
 
     body > #under-hood > .hood-title {
-        padding-top: 40px;
+        padding-top: 70px;
     }
 
     body > #under-hood > ul {
@@ -485,10 +485,53 @@ body > #up-to-date h3 > .strong {
     font-family: Quadon-Medium;
 }
 
+@media (max-width: 991px) {
+    body > #up-to-date {
+
+        padding-bottom: 80px;
+    }
+
+    body > #up-to-date h3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
 body > #up-to-date #right-signup {
     padding-left: 54px;
     padding-top: 10px;
     padding-bottom: 12px;
+}
+
+body > #up-to-date #right-signup input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    width: 11em;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+body > #up-to-date #right-signup input:focus {
+    outline: 0;
+}
+
+body > #up-to-date #right-signup input::-webkit-input-placeholder {
+    color: white;
+}
+
+body > #up-to-date #right-signup input:-moz-placeholder {
+    color: white;
+}
+
+body > #up-to-date #right-signup input::-moz-placeholder {
+    color: white;
+}
+
+body > #up-to-date #right-signup input:-ms-input-placeholder {
+    color: white;
 }
 
 body > #up-to-date #right-signup a {
@@ -501,7 +544,7 @@ body > #up-to-date #right-signup a:first-child {
     padding-bottom: 6px;
 }
 
-body > #up-to-date #right-signup a > svg {
+body > #up-to-date #right-signup svg {
     fill: white;
     width: 34px;
     height: 34px;
@@ -511,10 +554,10 @@ body > #up-to-date #right-signup a > svg {
     top: 16px;
 }
 
-body > #up-to-date #right-signup a > svg.right-arrow {
+body > #up-to-date #right-signup svg.right-arrow {
     height: 20px;
     top: 11px;
-    right: -91px;
+    right: -50px;
 }
 
 @media (min-width: 992px) {
@@ -534,24 +577,17 @@ body > #up-to-date #right-signup a > svg.right-arrow {
     }
 }
 
-body > #press blockquote:before {
-    content: open-quote;
-}
-
-body > #press blockquote:after {
-    content: close-quote;
-}
-
 body > #press blockquote {
     font-family: Quadon-Medium;
     color: #009DC0;
     border: 0;
-    quotes: "\201C" "\201D";
-    padding: 0;
+    quotes: none;
+    padding: 30px 0;
     font-size: 45px;
     margin-top: 37px;
     line-height: 55px;
     width: 80%;
+    text-indent: -25px;
 }
 
 body > #press cite {
@@ -658,7 +694,7 @@ body > #alpha a.crazy-link span {
 
 @media (max-width: 991px) {
     body > #alpha a.crazy-link {
-        margin: 0 auto;
+        margin: 70px auto 25px;
         display: block;
     }
 }
@@ -809,6 +845,7 @@ body > section#jobs p.worklist-jobs > svg {
     body > section#jobs > div {
         padding-left: 40px;
     }
+
     body > section#jobs > img {
         display: none;
     }
