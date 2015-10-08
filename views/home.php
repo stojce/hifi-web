@@ -80,19 +80,17 @@ $posts = array_slice($posts, 0, 2);
             <a href="https://docs.highfidelity.com/" class="external-link">Build Your Own</a>
         </span>
     </div>
-    <div class="directory-list-wrap">
-        <ul class="directory-list">
+    <div id='owl-carousel'>
             <?php foreach (View::read('places') as $place): ?>
-                <li>
-                    <a href="<?php echo htmlentities($place->address) ?>">
-                        <img height="258" width="458"
-                             src="<?php echo htmlentities($place->previews->lobby) ?>"
-                             hdsrc="<?php echo htmlentities($place->previews->lobby) ?>"/>
-                        <h4><?php echo htmlspecialchars($place->name) ?></h4>
+                <div class="item">
+                    <a href="<?php echo $place['address'] ?>">
+                        <img
+                             src="<?php echo $place['thumb']?>"
+                             hdsrc="<?php echo $place['thumb']?>"/>
+                        <h4><?php echo $place['name'] ?></h4>
                     </a>
-                </li>
+                </div>
             <?php endforeach; ?>
-        </ul>
     </div>
     <div class="bottom-links">
         <a href="https://metaverse.highfidelity.com/directory" class="external-link">All Domains</a>

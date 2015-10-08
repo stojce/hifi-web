@@ -42,7 +42,7 @@ var home = {
             $('#placenames').addClass('expanded');
         });
 
-        $('.directory-list > li > a[href^="hifi://"]').bind('click', function(event) {
+        $('#owl-carousel a[href^="hifi://"]').bind('click', function(event) {
             event.preventDefault();
             var options = {
                 img: $('img', this).attr('src'),
@@ -71,6 +71,15 @@ var home = {
             .on('blur', function () {
                 this.placeholder = 'Subscribe to us';
             });
+
+        $("#owl-carousel").owlCarousel({
+            items: 3.2,
+            itemsDesktop : [1199, 3],
+            itemsDesktopSmall : [991, 2.7],
+            itemsTablet : [768, 2.2],
+            itemsTabletSmall : false,
+            itemsMobile : [479, 1.3],
+        });
 
     },
 

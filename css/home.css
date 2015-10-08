@@ -326,12 +326,6 @@ body > #directory {
     overflow: hidden;
 }
 
-body > #directory > .directory-list-wrap {
-    height: 258px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
 body > #directory > div.directory-title {
     padding-top: 6.6em;
     padding-left: 7em;
@@ -343,7 +337,7 @@ body > #directory a.domains-link {
     color: #009DC0;
 }
 
-body > #directory h4 {
+body > #directory .directory-title > h4 {
     display: inline-block;
     font-size: 1.9em;
     letter-spacing: 0.06em;
@@ -351,34 +345,30 @@ body > #directory h4 {
     margin-right: 2.7em;
 }
 
-body > #directory ul.directory-list {
-    list-style-type: none;
-    padding: 0;
-    display: inline-flex;
-    margin: 0;
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y;
 }
 
-body > #directory li {
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto;
     float: left;
-    width: 458px;
-    height: 258px;
 }
 
-body > #directory li a {
-    height: 50px;
-    display: inline-block;
-}
-
-body > #directory li h4 {
+.owl-item h4 {
+    font-family: Quadon-Light;
     color: white;
     text-align: right;
-    width: 435px;
     top: -60px;
     font-size: 32px;
     position: relative;
     text-shadow: -1px -1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333, 1px 1px 0 #333;
-    height: 40px;
-    overflow: hidden;
+    height: 0;
+    padding-right: 10px;
 }
 
 body > #under-hood {
