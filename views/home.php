@@ -81,16 +81,16 @@ $posts = array_slice($posts, 0, 2);
         </span>
     </div>
     <div id='owl-carousel'>
-            <?php foreach (View::read('places') as $place): ?>
-                <div class="item">
-                    <a href="<?php echo $place['address'] ?>">
-                        <img
-                             src="<?php echo $place['thumb']?>"
-                             hdsrc="<?php echo $place['thumb']?>"/>
-                        <h4><?php echo $place['name'] ?></h4>
-                    </a>
-                </div>
-            <?php endforeach; ?>
+        <?php foreach (View::read('places') as $place): ?>
+            <div class="item">
+                <a href="<?php echo $place['address'] ?>">
+                    <img
+                        src="<?php echo $place['thumb'] ?>"
+                        hdsrc="<?php echo $place['thumb'] ?>"/>
+                    <h4><?php echo $place['name'] ?></h4>
+                </a>
+            </div>
+        <?php endforeach; ?>
     </div>
     <div class="bottom-links">
         <a href="https://metaverse.highfidelity.com/directory" class="external-link">All Domains</a>
@@ -225,14 +225,16 @@ $posts = array_slice($posts, 0, 2);
     </h3>
 
     <div id="right-signup">
-
-        <svg viewBox="40 0 34 29">
-            <use xlink:href="./img/up-to-date.svg#subscribe"></use>
-        </svg>
-        <input id="email-signup" type="email" placeholder="Subscribe to us">
-        <svg class="right-arrow" viewBox="0 0 7 19">
-            <use xlink:href="./img/right-arrow.svg#ra"></use>
-        </svg>
+        <form action="<?php echo SUBSCRIBE_URL; ?>" method="post" id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <svg viewBox="40 0 34 29">
+                <use xlink:href="./img/up-to-date.svg#subscribe"></use>
+            </svg>
+            <input id="email-signup" name="EMAIL" type="email" autocomplete="off" placeholder="Subscribe to us">
+            <svg class="right-arrow" viewBox="0 0 7 19" onclick="$('#mc-embedded-subscribe-form').submit();">
+                <use xlink:href="./img/right-arrow.svg#ra"></use>
+            </svg>
+        </form>
 
         <a href="https://twitter.com/highfidelityinc" class="external-link">
             <svg viewBox="0 0 34 29">

@@ -548,6 +548,7 @@ body > #up-to-date #right-signup svg.right-arrow {
     height: 20px;
     top: 11px;
     right: -50px;
+    cursor: pointer;
 }
 
 @media (min-width: 992px) {
