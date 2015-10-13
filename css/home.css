@@ -306,8 +306,11 @@ body > #directory .directory-title > h4 {
 
 @media screen and (max-width: 767px) {
 
-    body > #directory .directory-title > h4 {
+    body > #directory > div.directory-title {
+        padding: 2.6em 0.5em 0.6em 7em;
+    }
 
+    body > #directory .directory-title > h4 {
         margin-right: 1em;
     }
 
