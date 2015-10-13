@@ -76,7 +76,7 @@ var home = {
             items: 3.2,
             itemsDesktop : [1199, 3],
             itemsDesktopSmall : [991, 2.7],
-            itemsTablet : [768, 2.2],
+            itemsTablet : [768, 1.4],
             itemsTabletSmall : false,
             itemsMobile : [479, 1.3],
         });

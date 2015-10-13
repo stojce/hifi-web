@@ -41,7 +41,7 @@ $posts = array_slice($posts, 0, 2);
                 for Mac OS, Windows and Linux is open to everybody.
             </p>
 
-            <a href="download" class="crazy-link">
+            <a href="download" class="hifi-link">
                 <span>download</span>
             </a>
 
@@ -258,16 +258,22 @@ $posts = array_slice($posts, 0, 2);
 
     <ul>
         <li>
-            ‘MAKING VIRTUAL REALITY LESS VIRTUAL
-            <img class="atlantic" src="img/press/the-atlantic.jpg">
+            <a target="_blank" href="http://www.theatlantic.com/technology/archive/2013/12/making-virtual-reality-less-virtual/282640/">
+                ‘MAKING VIRTUAL REALITY LESS VIRTUAL
+                <img class="atlantic" src="img/press/the-atlantic.jpg">
+            </a>
         </li>
         <li>
-            ‘HIGH FIDELITY RAISES $11M TO BUILD DEPLOYABLE VIRTUAL WORLDS
-            <img class="tc" src="img/press/techcrunch.svg">
+            <a target="_blank" href="http://techcrunch.com/2015/02/25/high-fidelity-raises-11m-to-build-deployable-virtual-worlds/">
+                ‘HIGH FIDELITY RAISES $11M TO BUILD DEPLOYABLE VIRTUAL WORLDS
+                <img class="tc" src="img/press/techcrunch.svg">
+            </a>
         </li>
         <li>
-            ‘THE QUEST TO PUT MORE REALITY IN VIRTUAL REALITY
-            <img class="mit" src="img/press/mit-tech-review.png">
+            <a target="_blank" href="http://www.technologyreview.com/featuredstory/531751/the-quest-to-put-more-reality-in-virtual-reality/">
+                ‘THE QUEST TO PUT MORE REALITY IN VIRTUAL REALITY
+                <img class="mit" src="img/press/mit-tech-review.png">
+            </a>
         </li>
     </ul>
 </section>
@@ -277,7 +283,7 @@ $posts = array_slice($posts, 0, 2);
         <strong>We’re in Alpha</strong> and we’re building new things every day. Come kick the tires:
     </p>
 
-    <a href="download" class="crazy-link">
+    <a href="download" class="hifi-link">
         <span>download</span>
     </a>
 </section>
